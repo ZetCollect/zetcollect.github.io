@@ -100,7 +100,6 @@ const translations = {
     
     // Contact Us
     'contact.title': 'Contact Us',
-    'contact.header': 'Contact us',
     'contact.subtitle': 'Please contact us to discuss any other queries.',
     'contact.form.title': 'Talk to ZetCollect to create your digital future.',
     'contact.form.first_name': 'First Name*',
@@ -108,7 +107,7 @@ const translations = {
     'contact.form.email': 'Business Email*',
     'contact.form.job_title': 'Job Title*',
     'contact.form.contact_number': 'Work Phone*',
-    'contact.form.organisation': 'Company*',
+    'contact.form.organisation': 'Company Name*',
     'contact.form.country': 'Country*',
     'contact.form.country.cameroon': 'Cameroon',
     'contact.form.country.kenya': 'Kenya',
@@ -188,10 +187,14 @@ const translations = {
     
     // ReleaseNotesPage
     'release.title': 'Release notes',
-    'release.description1': 'ZetCollect\'s SaaS environment operates on a Continuous Integration and Continuous Deployment (CI/CD) schedule, with updates automatically released each week as they become available. While updates follow a CI/CD process, we collect all updates from the past month and consolidate them into a comprehensive page of release notes for easy review.',
-    'release.description2': 'For customers using our Virtual Private Cloud (VPC) environment, updates are rolled out quarterly. Before deployment to production, we consolidate all upcoming releases in advance for review. VPC customers have a two-week testing period before updates are released, and those with a staging environment receive an extended 45-day testing window.',
-    'release.saas.title': 'SaaS: 2023-2025 release schedule',
-    'release.saas.loginPrompt': 'Please log in to view the notes linked below.',
+    'release.description1': 'ZetCollect is a cutting-edge finance collection app tailored for African institutions. Its intuitive mobile interface ensures seamless payments, even offline. Advanced security and analytics empower efficient, transparent operations.',
+    'release.description2': 'Our SaaS platform brings fresh updates every week, neatly summarized each month. VPC users enjoy quarterly updates with a 14-day test period, or 45 days with staging. ZetCollect offers secure, flexible, and insightful tools to simplify your financial operations.',
+    'release.saas.title': 'ZetCollect App: 2025 release',
+    'release.saas.systemVersion': 'ZetCollect System Version:  1.2.0 - 25th April 2025',
+    'release.saas.systemVersion2': 'ZetCollect System Version:  1.2.1 - 27th June 2025',
+    'release.saas.title2': 'ZetCollect Website: 2025 release',
+    'release.saas.systemVersionWeb': 'ZetCollect Website Version:  1.0.0 Beta - 25th April 2025',
+    'release.saas.systemVersionWeb2': 'ZetCollect Website Version:  1.0.1 Beta - 27th June 2025',
     
     // FAQPage
     'faq.title': 'Frequently Asked Questions',
@@ -295,7 +298,6 @@ const translations = {
     
     // Contact Us
     'contact.title': 'Nous Contacter',
-    'contact.header': 'Nous contacter',
     'contact.subtitle': 'Veuillez nous contacter pour discuter de toute autre question.',
     'contact.form.title': 'Parlez à ZetCollect pour créer votre avenir numérique.',
     'contact.form.first_name': 'Prénom*',
@@ -303,7 +305,7 @@ const translations = {
     'contact.form.email': 'Courriel professionnel*',
     'contact.form.job_title': 'Titre du poste*',
     'contact.form.contact_number': 'Téléphone professionnel*',
-    'contact.form.organisation': 'Entreprise*',
+    'contact.form.organisation': 'Entreprise nom*',
     'contact.form.country': 'Pays*',
     'contact.form.country.cameroon': 'Cameroun',
     'contact.form.country.kenya': 'Kenya',
@@ -382,11 +384,15 @@ const translations = {
     'support.feature.sync': 'Synchronisation quotidienne',
     
     // ReleaseNotesPage
-    'release.title': 'Notes de version',
-    'release.description1': 'L\'environnement SaaS de ZetCollect fonctionne selon un calendrier d\'intégration continue et de déploiement continu (CI/CD), avec des mises à jour automatiquement publiées chaque semaine lorsqu\'elles sont disponibles. Bien que les mises à jour suivent un processus CI/CD, nous collectons toutes les mises à jour du mois passé et les consolidons dans une page complète de notes de version pour une consultation facile.',
-    'release.description2': 'Pour les clients utilisant notre environnement de cloud privé virtuel (VPC), les mises à jour sont déployées trimestriellement. Avant le déploiement en production, nous consolidons toutes les versions à venir à l\'avance pour examen. Les clients VPC disposent d\'une période de test de deux semaines avant la publication des mises à jour, et ceux ayant un environnement de staging bénéficient d\'une fenêtre de test prolongée de 45 jours.',
-    'release.saas.title': 'SaaS : Calendrier des versions 2023-2025',
-    'release.saas.loginPrompt': 'Veuillez vous connecter pour consulter les notes liées ci-dessous.',
+    "release.title": "Notes de version",
+    "release.description1": "ZetCollect est une application incontournable pour des collectes financières sans stress en Afrique. Son interface mobile intuitive fonctionne parfaitement, même hors ligne. Sécurité avancée et analyses intelligentes renforcent l'efficacité et la confiance.",
+    "release.description2": "Notre plateforme SaaS propose des mises à jour hebdomadaires, résumées chaque mois pour plus de clarté. Les utilisateurs VPC reçoivent des mises à jour trimestrielles avec 14 jours de test, ou 45 jours avec environnement de staging. ZetCollect offre des outils sécurisés, flexibles et perspicaces.",
+    "release.saas.title": "Application ZetCollect : Version 2025",
+    "release.saas.systemVersion": "Version du système ZetCollect : 1.2.0 - 25 avril 2025",
+    "release.saas.systemVersion2": "Version du système ZetCollect : 1.2.1 - 27 juin 2025",
+    "release.saas.title2": "le site ZetCollect : Version 2025",
+    "release.saas.systemVersionWeb": "Version du le site ZetCollect : 1.0.0 Bêta - 25 avril 2025",
+    "release.saas.systemVersionWeb2": "Version du le site ZetCollect : 1.0.1 Bêta - 27 juin 2025",
     
     // FAQPage
     'faq.title': 'Foire aux Questions',
@@ -490,7 +496,6 @@ const translations = {
     
     // Contact Us
     'contact.title': 'Wasiliana Nasi',
-    'contact.header': 'Wasiliana nasi',
     'contact.subtitle': 'Tafadhali wasiliana nasi kujadili maswali yoyote ya ziada.',
     'contact.form.title': 'Zungumza na ZetCollect ili kuunda mustakabali wako wa kidijitali.',
     'contact.form.first_name': 'Jina la Kwanza*',
@@ -498,7 +503,7 @@ const translations = {
     'contact.form.email': 'Barua pepe ya Biashara*',
     'contact.form.job_title': 'Cheo cha Kazi*',
     'contact.form.contact_number': 'Simu ya Kazini*',
-    'contact.form.organisation': 'Kampuni*',
+    'contact.form.organisation': 'Jina la kampuni*',
     'contact.form.country': 'Nchi*',
     'contact.form.country.cameroon': 'Kameruni',
     'contact.form.country.kenya': 'Kenya',
@@ -577,11 +582,15 @@ const translations = {
     'support.feature.sync': 'Ulandanishi wa Kila Siku',
     
     // ReleaseNotesPage
-    'release.title': 'Maelezo ya Toleo',
-    'release.description1': 'Mazingira ya SaaS ya ZetCollect yanafanya kazi kwa ratiba ya Ujumuishaji Unaendelea na Usambazaji Unaendelea (CI/CD), na masasisho yanatolewa kiotomatiki kila wiki yanapopatikana. Ingawa masasisho yanafuata mchakato wa CI/CD, tunakusanya masasisho yote ya mwezi uliopita na kuyajumuisha katika ukurasa wa kina wa maelezo ya toleo kwa uchambuzi rahisi.',
-    'release.description2': 'Kwa wateja wanaotumia mazingira yetu ya Wingu la Kibinafsi la Kibinafsi (VPC), masasisho yanatolewa kila robo mwaka. Kabla ya kusambazwa kwa uzalishaji, tunajumuisha toleo zote zinazokuja mapema kwa uchambuzi. Wateja wa VPC wana kipindi cha majaribio cha wiki mbili kabla ya masasisho kutolewa, na wale waliopo na mazingira ya staging hupokea dirisha la majaribio la siku 45.',
-    'release.saas.title': 'SaaS: Ratiba ya Toleo 2023-2025',
-    'release.saas.loginPrompt': 'Tafadhali ingia ili kuona maelezo yaliyohusishwa hapa chini.',
+    "release.title": "Maelezo ya Toleo",
+    "release.description1": "ZetCollect ni programu ya kukusanya fedha inayofaa kwa taasisi za Afrika. Muundo wake wa kirafiki wa simu hufanya kazi bila hitilafu, hata nje ya mtandao. Usalama wa hali ya juu na uchanganuzi wa data huongeza ufanisi na imani.",
+    "release.description2": "Jukwaa letu la SaaS huleta masasisho ya kila wiki, yaliyofupishwa kila mwezi kwa uwazi. Watumiaji wa VPC hupokea masasisho ya kila robo mwaka na siku 14 za majaribio, au siku 45 na mazingira ya staging. ZetCollect hutoa zana za usalama, zinazobadilika, na za uchanganuzi.",
+    "release.saas.title": "Programu ya ZetCollect: Toleo la 2025",
+    "release.saas.systemVersion": "Toleo la Mfumo wa ZetCollect: 1.2.0 - 25 Aprili 2025",
+    "release.saas.systemVersion2": "Toleo la Mfumo wa ZetCollect: 1.2.1 - 27 Juni 2025",
+    "release.saas.title2": "tovuti ya ZetCollect: Toleo la 2025",
+    "release.saas.systemVersionWeb": "Toleo la tovuti wa ZetCollect: 1.0.0 Beta - 25 Aprili 2025",
+    "release.saas.systemVersionWeb2": "Toleo la tovuti wa ZetCollect: 1.0.1 Beta - 27 Juni 2025",
     
     // FAQPage
     'faq.title': 'Maswali Yanayoulizwa Mara kwa Mara',

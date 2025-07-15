@@ -20,9 +20,6 @@ const ContactUs = () => {
         {/* Header Section */}
         <div className="mb-16 text-center text-gray-800">
           <p className="text-5xl font-bold text-black">{t('contact.title')}</p>
-          <h1 className="mt-4 text-2xl font-semibold text-gray-600 lg:text-2xl">
-            {t('contact.header')}
-          </h1>
           <p className="max-w-3xl mx-auto mt-6 text-xl text-gray-600">
             {t('contact.subtitle')}
           </p>
@@ -119,19 +116,6 @@ const ContactUs = () => {
                 </select>
               </div>
             </div>
-
-            {/* Message Area */}
-            <div>
-              <label htmlFor="your_message" className="sr-only">{t('contact.form.message')}</label>
-              <textarea
-                id="your_message"
-                placeholder={t('contact.form.message')}
-                rows="6"
-                className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                required
-              ></textarea>
-            </div>
-
             {/* How did you hear */}
             <div>
               <label htmlFor="how_did_you_hear" className="sr-only">{t('contact.form.how_did_you_hear')}</label>

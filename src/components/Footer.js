@@ -46,27 +46,27 @@ const Footer = () => {
           <div className="grid w-full grid-cols-2 gap-12 mt-10 sm:grid-cols-3 lg:w-2/3 lg:mt-0">
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
-              <Link to="/Work-in-Progress-Page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.about')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.who_we_serve')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.resource_center')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
-              <Link to="/contactPage" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('common.contactUs')}</Link>
+              <Link to="/work-in-progress-page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.about')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.who_we_serve')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.resource_center')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
+              <Link to="/contact-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('common.contactUs')}</Link>
             </div>
             
             {/* Column 2 */}
             <div className="flex flex-col gap-4">
-              <Link to="/Work-in-Progress-Page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.newsroom')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.articles')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.events_webinars')}</Link>
-              <Link to="/Release-notes-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('release.title')}</Link>
+              <Link to="/work-in-progress-page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.newsroom')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.articles')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.events_webinars')}</Link>
+              <Link to="/release-notes-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('release.title')}</Link>
             </div>
             
             {/* Column 3 */}
             <div className="flex flex-col gap-4">
-              <Link to="/Work-in-Progress-Page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.support')}</Link>
-              <Link to="/FAQPage" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
-              <Link to="/Customer-Support-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
-              <Link to="/Work-in-Progress-Page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
+              <Link to="/work-in-progress-page" className="text-base font-semibold text-gray-900 transition duration-200 hover:text-primary">{t('footer.support')}</Link>
+              <Link to="/faq-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
+              <Link to="/customer-support-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
             </div>
           </div>
         </div>

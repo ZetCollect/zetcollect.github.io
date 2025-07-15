@@ -93,7 +93,7 @@ const ContactPage = () => {
                     <input
                       type="tel"
                       id="work_phone"
-                      placeholder={t('contact.form.work_phone')}
+                      placeholder={t('contact.form.contact_number')}
                       className="w-full px-4 py-3 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"
                       required
                     />
@@ -105,7 +105,7 @@ const ContactPage = () => {
                     <input
                       type="text"
                       id="company"
-                      placeholder={t('contact.form.company')}
+                      placeholder={t('contact.form.organisation')}
                       className="w-full px-4 py-3 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"
                       required
                     />
@@ -127,24 +127,7 @@ const ContactPage = () => {
                       <option value="Republic of Congo">{t('contact.form.country.congo')}</option>
                     </select>
                   </div>
-
-                  {/* Functional Role (Dropdown) */}
-                  <div>
-                    <label htmlFor="help_needed" className="sr-only">{t('contact.form.functional_role')}</label>
-                    <select
-                      id="help_needed"
-                      className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
-                      required
-                    >
-                      <option value="" disabled selected className="text-gray-500">{t('contact.form.functional_role')}</option>
-                      <option value="finance">{t('contact.form.functional_role.finance')}</option>
-                      <option value="hr">{t('contact.form.functional_role.hr')}</option>
-                      <option value="operator">{t('contact.form.functional_role.operator')}</option>
-                      <option value="it">{t('contact.form.functional_role.it')}</option>
-                    </select>
-                  </div>
-
-                  {/* Job Level (Dropdown) */}
+                    {/* Job Level (Dropdown) */}
                   <div>
                     <label htmlFor="job_level" className="sr-only">{t('contact.form.job_level')}</label>
                     <select
@@ -161,8 +144,23 @@ const ContactPage = () => {
                     </select>
                   </div>
 
+                  {/* Functional Role (Dropdown) */}
+                  <div>
+                    <label htmlFor="help_needed" className="sr-only">{t('contact.form.functional_role')}</label>
+                    <select
+                      id="help_needed"
+                      className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent"
+                      required
+                    >
+                      <option value="" disabled selected className="text-gray-500">{t('contact.form.functional_role')}</option>
+                      <option value="finance">{t('contact.form.functional_role.finance')}</option>
+                      <option value="hr">{t('contact.form.functional_role.hr')}</option>
+                      <option value="operator">{t('contact.form.functional_role.operator')}</option>
+                      <option value="it">{t('contact.form.functional_role.it')}</option>
+                    </select>
+                  </div>
                   {/* How did you hear about ZetCollect? (Dropdown) */}
-                  <div className="md:col-span-2">
+                  {/* <div className="md:col-span-2">
                     <label htmlFor="how_did_you_hear" className="sr-only">{t('contact.form.how_did_you_hear')}</label>
                     <select
                       id="how_did_you_hear"
@@ -172,7 +170,7 @@ const ContactPage = () => {
                       <option value="search">{t('contact.form.how_did_you_hear.search')}</option>
                       <option value="referral">{t('contact.form.how_did_you_hear.referral')}</option>
                     </select>
-                  </div>
+                  </div> */}
                 </div>
 
                 {/* Opt-in Checkbox */}

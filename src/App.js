@@ -60,11 +60,11 @@ const App = () => {
                 </>
               }
             />
-            <Route path="/ContactPage" element={<ContactPage id="ContactPage" />} />
-            <Route path="/FAQPage" element={<FAQPage id="FAQPage" />} />
-            <Route path="/Release-notes-page" element={<ReleaseNotesPage id="ReleaseNotesPage" />} />
-            <Route path="/Work-in-Progress-Page" element={<WorkInProgressPage id="ReleaseNotesPage" />} />
-            <Route path="/Customer-Support-Page" element={<CustomerSupportPage id="CustomerSupportPage" />} />
+            <Route path="/contact-page" element={<ContactPage id="ContactPage" />} />
+            <Route path="/faq-page" element={<FAQPage id="FAQPage" />} />
+            <Route path="/release-notes-page" element={<ReleaseNotesPage id="ReleaseNotesPage" />} />
+            <Route path="/work-in-progress-page" element={<WorkInProgressPage id="ReleaseNotesPage" />} />
+            <Route path="/customer-support-page" element={<CustomerSupportPage id="CustomerSupportPage" />} />
           </Routes>
         </div>
       </Router>

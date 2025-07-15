@@ -1,5 +1,5 @@
 import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -9,6 +9,7 @@ const Navbar = () => {
   const [isLangOpen, setIsLangOpen] = useState(false);
   const { language, setLanguage, t } = useLanguage();
   const timeoutRef = useRef(null);
+  const location = useLocation();
 
   const languages = [
     { code: 'en', label: 'English', flag: '🇬🇧' },
@@ -17,10 +18,10 @@ const Navbar = () => {
   ];
 
   const navigation = [
-    { name: t('nav.home') || 'Home', href: '#hero' },
-    { name: t('nav.features') || 'Features', href: '#features' },
-    { name: t('nav.why') || 'Why ZetCollect', href: '#why-zetcollect' },
-    { name: t('nav.upcoming') || 'Upcoming', href: '#upcoming' },
+    { name: t('nav.home') || 'Home', href: '/', hash: '#hero' },
+    { name: t('nav.features') || 'Features', href: '/', hash: '#features' },
+    { name: t('nav.why') || 'Why ZetCollect', href: '/', hash: '#why-zetcollect' },
+    { name: t('nav.upcoming') || 'Upcoming', href: '/', hash: '#upcoming' },
   ];
 
   const supportLinks = [
@@ -55,13 +56,22 @@ const Navbar = () => {
     }, 200);
   };
 
+  const handleNavClick = (href, hash, e) => {
+    if (location.pathname === '/' && hash) {
+      e.preventDefault();
+      const targetElement = document.getElementById(hash.substring(1));
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+    // If not on the homepage or no hash, let the Link handle navigation
+  };
+
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
-      {/* Top Row: Utility Navigation */}
       <div className="text-sm text-white bg-primary">
         <div className="flex items-center justify-end h-8 px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
           <nav className="flex space-x-6">
-            {/* Support Dropdown */}
             <div
               className="relative group"
               onMouseEnter={handleMouseEnterSupport}
@@ -94,7 +104,6 @@ const Navbar = () => {
               )}
             </div>
 
-            {/* Language Dropdown */}
             <div
               className="relative group"
               onMouseEnter={handleMouseEnterLang}
@@ -137,28 +146,26 @@ const Navbar = () => {
         </div>
       </div>
 
-      {/* Main Navbar Content */}
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
             <img className="w-[200px] h-auto" src="/applogo.png" alt="Company Logo" />
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="items-center hidden space-x-4 lg:flex">
             <nav className="flex space-x-8">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
+                  to={item.href + (item.hash || '')}
+                  onClick={(e) => handleNavClick(item.href, item.hash, e)}
                   className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-Complementary"
+                  aria-label={`Navigate to ${item.name} section`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
             </nav>
-            {/* Request Demo Button */}
             <a
               href="#demo"
               className="px-4 py-2 text-sm font-medium text-white transition-colors rounded-lg bg-primary hover:bg-primary/80"
@@ -167,7 +174,6 @@ const Navbar = () => {
             </a>
           </div>
 
-          {/* Mobile menu button */}
           <div className="flex items-center space-x-2 lg:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -179,21 +185,23 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="py-4 border-t border-gray-200 lg:hidden">
             <div className="space-y-2">
               {navigation.map((item) => (
-                <a
+                <Link
                   key={item.name}
-                  href={item.href}
-                  onClick={() => setIsMenuOpen(false)}
+                  to={item.href + (item.hash || '')}
+                  onClick={(e) => {
+                    handleNavClick(item.href, item.hash, e);
+                    setIsMenuOpen(false);
+                  }}
                   className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-secondary hover:bg-gray-50"
+                  aria-label={`Navigate to ${item.name} section`}
                 >
                   {item.name}
-                </a>
+                </Link>
               ))}
-              {/* Login Button */}
               <Link
                 to="/login"
                 onClick={() => setIsMenuOpen(false)}
@@ -201,7 +209,6 @@ const Navbar = () => {
               >
                 {t('nav.login') || 'Login'}
               </Link>
-              {/* Request Demo Button for Mobile */}
               <a
                 href="#demo"
                 onClick={() => setIsMenuOpen(false)}
@@ -211,14 +218,12 @@ const Navbar = () => {
               </a>
             </div>
 
-            {/* Mobile Utility Navigation */}
             <div className="pt-4 mt-4 space-y-2 text-gray-700 border-t border-gray-200">
               <span className="block px-3 text-xs font-semibold text-gray-500 uppercase">Utility Links</span>
               <Link to="#" className="block px-3 py-1 hover:bg-gray-50">
                 SEARCH
               </Link>
 
-              {/* Mobile Language Selector */}
               <div className="relative px-3 py-1">
                 <button
                   onClick={() => setIsLangOpen(!isLangOpen)}
@@ -251,7 +256,6 @@ const Navbar = () => {
                 )}
               </div>
 
-              {/* Support Links in Mobile */}
               <div className="pl-4 space-y-2">
                 <span className="block text-sm font-semibold text-gray-500">SUPPORT</span>
                 {supportLinks.map((link) => (

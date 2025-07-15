@@ -12,7 +12,7 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import '../App.css'
+import '../App.css'; // Assuming your global styles are here
 
 const KeyFeatures = () => {
   const { t } = useLanguage();
@@ -40,7 +40,7 @@ const KeyFeatures = () => {
   };
 
   return (
-     <section id="features" className="py-16 bg-white lg:py-24">
+    <section id="features" className="py-16 bg-white lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         {/* Header */}
         <div className="mb-16 text-center">
@@ -62,7 +62,7 @@ const KeyFeatures = () => {
               <div key={index} className="w-full h-64 flip-card group">
                 <div className="w-full h-full flip-card-inner group-hover:rotate-y-180">
                   {/* Front Side */}
-                  <div className={`flip-card-front w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300`}>
+                  <div className={`flip-card-front w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 shadow-lg custom-shadow-blue hover:custom-shadow-blue-xl`}>
                     <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className={`w-6 h-6 ${colors.icon}`} />
                     </div>
@@ -72,7 +72,7 @@ const KeyFeatures = () => {
                   </div>
 
                   {/* Back Side */}
-                  <div className={`flip-card-back w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 flex items-center justify-center`}>
+                  <div className={`flip-card-back w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 flex items-center justify-center shadow-lg custom-shadow-blue hover:custom-shadow-blue-xl`}>
                     <p className="text-sm leading-relaxed text-center text-gray-600">
                       {feature.description}
                     </p>
@@ -83,6 +83,21 @@ const KeyFeatures = () => {
           })}
         </div>
       </div>
+
+      {/* Custom Styles for More Visible Blue Drop Shadows */}
+      <style>{`
+        /* Define a custom shadow with a more visible blue tint */
+        .custom-shadow-blue {
+          /* Increased opacity to 0.25 for more visibility */
+          box-shadow: 0 6px 12px -3px rgba(59, 130, 246, 0.25), 0 3px 6px -3px rgba(59, 130, 246, 0.2); 
+        }
+
+        /* Define a custom hover shadow with a significantly stronger blue tint */
+        .hover\\:custom-shadow-blue-xl:hover {
+          /* Increased opacity to 0.4 and larger spread for a pronounced effect on hover */
+          box-shadow: 0 20px 30px -8px rgba(59, 130, 246, 0.4), 0 8px 12px -6px rgba(59, 130, 246, 0.3);
+        }
+      `}</style>
     </section>
   );
 };

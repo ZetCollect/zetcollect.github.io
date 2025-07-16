@@ -25,7 +25,7 @@ const Navbar = () => {
   ];
 
   const supportLinks = [
-    { name: 'FAQ', href: '/FAQPage' },
+    { name: 'FAQ', href: '/faq-page' },
     { name: 'Customer Support', href: '/Customer-Support-Page' },
     { name: 'Training and Certification', href: '/Work-in-Progress-Page' },
   ];

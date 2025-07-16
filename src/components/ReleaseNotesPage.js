@@ -27,36 +27,34 @@ const ReleaseNotesPage = () => {
             <h2 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
               {t('release.saas.title')}
             </h2>
-            {/* Login prompt box */}
+            {/* System Version 1 */}
             <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-              <p className="text-lg text-primary">
-                {t('release.saas.systemVersion')}
-              </p>
+              {/* Using dangerouslySetInnerHTML to render HTML from translation */}
+              <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersion') }} />
             </div>
-            <div className= "mt-5">
+            {/* System Version 2 */}
+            <div className="mt-5">
               <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                <p className="text-lg text-primary">
-                  {t('release.saas.systemVersion2')}
-                </p>
+                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
+                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersion2') }} />
               </div>
             </div>
           </div>
 
-          <div className="mb-12">
+          <div className="mb-12"> {/* Added mb-12 for consistent spacing */}
             <h2 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
               {t('release.saas.title2')}
             </h2>
-            {/* Login System Version */}
+            {/* System Version Web */}
             <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-              <p className="text-lg text-primary">
-                {t('release.saas.systemVersionWeb')}
-              </p>
+              {/* Using dangerouslySetInnerHTML to render HTML from translation */}
+              <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb') }} />
             </div>
-            <div className= "mt-5">
+            {/* System Version Web 2 */}
+            <div className="mt-5">
               <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                <p className="text-lg text-primary">
-                  {t('release.saas.systemVersionWeb2')}
-                </p>
+                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
+                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb2') }} />
               </div>
             </div>
           </div>

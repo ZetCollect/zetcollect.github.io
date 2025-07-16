@@ -1,10 +1,11 @@
 import React from 'react';
-import { 
-  MapPin, 
-  Bell, 
-  TrendingUp, 
-  Route, 
-  User, 
+import {
+  MapPin,
+  Bell,
+  TrendingUp,
+  Route,
+  User,
+  Landmark,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -57,6 +58,15 @@ const UpcomingFeaturesSection = () => {
       textColor: 'text-orange-600',
       progress: 0
     },
+    {
+      icon: Landmark,
+      title: t('upcoming.currency.title'),
+      description: t('upcoming.currency.desc'),
+      color: 'Complementary',
+      bgColor: 'bg-yellow-50',
+      textColor: 'text-yellow-600',
+      progress: 0
+    },
   ];
 
   return (
@@ -76,7 +86,7 @@ const UpcomingFeaturesSection = () => {
         <div className="grid gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
           {upcomingFeatures.map((feature, index) => {
             const Icon = feature.icon;
-            
+
             return (
               <div
                 key={index}
@@ -103,7 +113,7 @@ const UpcomingFeaturesSection = () => {
                 {/* Progress Indicator */}
                 <div className="relative">
                   <div className="w-full h-2 overflow-hidden bg-gray-200 rounded-full">
-                    <div 
+                    <div
                       className={`h-full bg-${feature.color} transition-all duration-1000 ease-out`}
                       style={{ width: `${feature.progress}%` }}
                     />

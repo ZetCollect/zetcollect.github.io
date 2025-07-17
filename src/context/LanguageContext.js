@@ -13,6 +13,39 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const translations = {
   en: {
+    // Blog Page
+    "blog.title": "Articles",
+    "blog.category.financial": "FINANCIAL TECHNOLOGY",
+    "blog.post1.title": "Transforming Financial Collections with ZetCollect’s Mobile-First Innovation",
+    "blog.post1.description": "ZetCollect simplifies financial collections across Africa with its intuitive, offline-capable mobile app. Packed with robust security and smart analytics, it streamlines payments and builds trust. Discover how it’s revolutionizing finance for institutions.",
+    "blog.post2.title": "Securing Financial Futures with ZetCollect’s Advanced Protection",
+    "blog.post2.description": "ZetCollect safeguards your financial collections with cutting-edge fraud prevention tools. Its robust security ensures trust and reliability for African institutions. Learn how it protects your operations.",
+    "blog.post3.title": "Boost Efficiency with ZetCollect’s Smart Analytics",
+    "blog.post3.description": "ZetCollect’s powerful analytics dashboard delivers real-time insights for smarter financial decisions. Tailored for Africa, it streamlines collections and enhances transparency. Explore its data-driven impact.",
+
+    // Events Page
+    "events.title": "Events",
+    "events.subtitle": "Find what events are coming next.",
+    "events.filter.all": "All Events",
+    "events.filterType": "Event Type",
+    "events.type.webinar": "Webinar",
+    "events.type.inperson": "Inperson",
+    "events.upcoming": "Upcoming Events",
+    "events.event1.month": "AUGUST",
+    "events.event1.day": "4",
+    "events.event1.type": "Webinar",
+    "events.event1.title": "ZetCollect Virtual Showcase",
+    "events.event1.description": "Our ZetCollect Live Demonstration event offers an in-depth look into a comprehensive suite of services designed to revolutionize cash collections. You will explore how ZetCollect empowers organizations with Client Management, Collector Management, Branch Setup, and Mobile Collection capabilities. Witness firsthand how our Booklet System, Transaction History, Reports & Analytics, and robust User Access & Roles enhance efficiency and streamline operations. Additionally, discover the benefits of SMS Notifications and seamless Daily Synchronization. Don’t miss this opportunity to see how ZetCollect can transform your approach to cash collection and management.",
+    "events.event1.dateTime": "MONDAY, August, 4, 2025, AT GMT+1",
+    "events.event1.time": "10:00AM TO 11:00AM",
+    "events.event2.month": "OCTOBER",
+    "events.event2.day": "6",
+    "events.event2.type": "Inperson",
+    "events.event2.title": "Annual Tech Innovation Summit",
+    "events.event2.description": "Join industry leaders and innovators at the Annual Tech Innovation Summit to discuss the latest trends in technology, digital transformation, and future-proof strategies. Featuring keynote speakers, interactive workshops, and networking opportunities.",
+    "events.event2.dateTime": "MONDAY, OCTOBER, 6, 2025, AT GMT+1",
+    "events.event2.time": "09:00AM TO 05:00PM",
+
     // Navigation
     'nav.home': 'Home',
     'nav.features': 'Features',
@@ -100,7 +133,6 @@ const translations = {
     'upcoming.currency.title': 'New Currency System (KES)',
     'upcoming.currency.desc': 'Seamless integration of Kenya Shillings (KES) for all transactions and financial reporting.',
 
-    
     // Contact Us
     'contact.title': 'Contact Us',
     'contact.subtitle': 'Please contact us to discuss any other queries.',
@@ -156,7 +188,7 @@ const translations = {
     'footer.newsroom': 'NEWSROOM',
     'footer.articles': 'Articles',
     'footer.events_webinars': 'Events and Webinars',
-    'footer.support': 'Support',
+    'footer.support': 'SUPPORT',
     'footer.faq': 'FAQ',
     'footer.training_certification': 'Training and Certification',
     'footer.rights': 'Powered By © {year} Evolv IZSoftwares Group Ltd. All rights reserved.',
@@ -190,7 +222,7 @@ const translations = {
     
     // ReleaseNotesPage
     'release.title': 'Release notes',
-    'release.description1': 'ZetCollect is a cutting-edge finance collection app tailored for African institutions. Its intuitive mobile interface ensures seamless payments, even offline. Advanced security and analytics empower efficient, transparent operations.',
+    'release.description1': 'ZetCollect is your go-to app for stress-free financial collections across Africa. Its user-friendly mobile design works flawlessly, even offline, making payments a breeze. With top-notch security and smart analytics, it boosts efficiency and trust.',
     'release.description2': 'Our SaaS platform brings fresh updates every week, neatly summarized each month. VPC users enjoy quarterly updates with a 14-day test period, or 45 days with staging. ZetCollect offers secure, flexible, and insightful tools to simplify your financial operations.',
     'release.saas.title': 'ZetCollect System: 2025 release',
     'release.saas.systemVersion': '<strong>Version</strong>: 1.2.0 - 25th April 2025',
@@ -198,6 +230,8 @@ const translations = {
     'release.saas.title2': 'ZetCollect Website: 2025 release',
     'release.saas.systemVersionWeb': '<strong>Version</strong>: 1.0.0-Beta - 25th April 2025',
     'release.saas.systemVersionWeb2': '<strong>Version</strong>: 1.0.1-Beta - 27th June 2025',
+    'release.saas.systemVersionWeb3': '<strong>Version</strong>: 1.0.2-Beta - 13th July 2025',
+    'release.saas.systemVersionWeb4': '<strong>Version</strong>: 1.0.3-Beta - 18th July 2025',
     
     // FAQPage
     'faq.title': 'Frequently Asked Questions',
@@ -214,6 +248,39 @@ const translations = {
     'faq.answers.booklet_system': 'The Booklet (Carnet) System assigns each client a digital collection booklet. Collectors mark transactions on the app based on entries in this digital booklet. This process creates a transparent and verifiable record, significantly reducing the risk of fraud and misreporting.',
   },
   fr: {
+    // Blog Page
+    "blog.title": "Blog",
+    "blog.category.financial": "TECHNOLOGIE FINANCIÈRE",
+    "blog.post1.title": "Transformer la collecte financière avec l’innovation mobile de ZetCollect",
+    "blog.post1.description": "ZetCollect simplifie la collecte financière en Afrique grâce à son application mobile intuitive, fonctionnant hors ligne. Dotée d’une sécurité robuste et d’analyses intelligentes, elle optimise les paiements et renforce la confiance.",
+    "blog.post2.title": "Sécuriser l’avenir financier avec la protection avancée de ZetCollect",
+    "blog.post2.description": "ZetCollect protège vos collectes financières avec des outils de prévention de la fraude de pointe. Sa sécurité robuste garantit confiance et fiabilité pour les institutions africaines.",
+    "blog.post3.title": "Améliorer l’efficacité avec les analyses intelligentes de ZetCollect",
+    "blog.post3.description": "Le tableau de bord analytique de ZetCollect offre des insights en temps réel pour des décisions financières plus intelligentes. Conçu pour l’Afrique, il optimise les collectes et améliore la transparence.",
+
+    // Events Page
+    "events.title": "Événements",
+    "events.subtitle": "Découvrez les événements à venir.",
+    "events.filter.all": "Tous les événements",
+    "events.filterType": "Type d'événement",
+    "events.type.webinar": "Webinaire",
+    "events.type.inperson": "En personne",
+    "events.upcoming": "Événements à venir",
+    "events.event1.month": "AOÛT",
+    "events.event1.day": "4",
+    "events.event1.type": "Webinaire",
+    "events.event1.title": "Vitrine virtuelle de ZetCollect",
+    "events.event1.description": "Notre événement de démonstration en direct de ZetCollect offre un aperçu approfondi d’une suite complète de services conçus pour révolutionner les collectes financières. Vous découvrirez comment ZetCollect autonomise les organisations avec la gestion des clients, la gestion des collecteurs, la configuration des succursales et les capacités de collecte mobile. Soyez témoin de première main de la manière dont notre système de carnets, l’historique des transactions, les rapports et analyses, et les rôles d’accès utilisateur robustes améliorent l’efficacité et rationalisent les opérations. De plus, découvrez les avantages des notifications SMS et de la synchronisation quotidienne transparente. Ne manquez pas cette opportunité de voir comment ZetCollect peut transformer votre approche de la collecte et de la gestion financière.",
+    "events.event1.dateTime": "LUNDI, 4 AOÛT 2025, À GMT+1",
+    "events.event1.time": "10H00 À 11H00",
+    "events.event2.month": "OCTOBRE",
+    "events.event2.day": "6",
+    "events.event2.type": "En personne",
+    "events.event2.title": "Sommet annuel de l’innovation technologique",
+    "events.event2.description": "Rejoignez les leaders de l’industrie et les innovateurs au Sommet annuel de l’innovation technologique pour discuter des dernières tendances en matière de technologie, de transformation numérique et de stratégies à l’épreuve du futur. Avec des conférenciers principaux, des ateliers interactifs et des opportunités de réseautage.",
+    "events.event2.dateTime": "LUNDI, 6 OCTOBRE 2025, À GMT+1",
+    "events.event2.time": "09H00 À 17H00",
+
     // Navigation
     'nav.home': 'Accueil',
     'nav.features': 'Fonctionnalités',
@@ -285,6 +352,7 @@ const translations = {
     'demo.points.fraud_prevention': 'Fonctionnalités de prévention de la fraude',
     'demo.points.multi_branch': 'Gestion multi-succursales',
     
+    // Upcoming Features
     'upcoming.title': 'Fonctionnalités à Venir',
     'upcoming.subtitle': 'Des fonctionnalités passionnantes à venir pour améliorer votre expérience de collecte',
     'upcoming.gps.title': 'Traçabilité GPS',
@@ -355,7 +423,7 @@ const translations = {
     'footer.newsroom': 'SALLE DE PRESSE',
     'footer.articles': 'Articles',
     'footer.events_webinars': 'Événements et Webinaires',
-    'footer.support': 'Support',
+    'footer.support': 'SUPPORT',
     'footer.faq': 'FAQ',
     'footer.training_certification': 'Formation et Certification',
     'footer.rights': 'Propulsé par © {year} Evolv IZSoftwares Group Ltd. Tous droits réservés.',
@@ -391,12 +459,14 @@ const translations = {
     "release.title": "Notes de version",
     "release.description1": "ZetCollect est une application incontournable pour des collectes financières sans stress en Afrique. Son interface mobile intuitive fonctionne parfaitement, même hors ligne. Sécurité avancée et analyses intelligentes renforcent l'efficacité et la confiance.",
     "release.description2": "Notre plateforme SaaS propose des mises à jour hebdomadaires, résumées chaque mois pour plus de clarté. Les utilisateurs VPC reçoivent des mises à jour trimestrielles avec 14 jours de test, ou 45 jours avec environnement de staging. ZetCollect offre des outils sécurisés, flexibles et perspicaces.",
-    "release.saas.title": " ZetCollect système:  2025 libérer",
+    "release.saas.title": "Système ZetCollect : Version 2025",
     "release.saas.systemVersion": "<strong>Version</strong>: 1.2.0 - 25 avril 2025",
     "release.saas.systemVersion2": "<strong>Version</strong>: 1.2.1 - 27 juin 2025",
-    "release.saas.title2": "ZetCollect le site: 2025 libérer",
+    "release.saas.title2": "Site Web ZetCollect : Version 2025",
     "release.saas.systemVersionWeb": "<strong>Version</strong>: 1.0.0-Bêta - 25 avril 2025",
     "release.saas.systemVersionWeb2": "<strong>Version</strong>: 1.0.1-Bêta - 27 juin 2025",
+    "release.saas.systemVersionWeb3": "<strong>Version</strong>: 1.0.2-Bêta - 13 juillet 2025",
+    "release.saas.systemVersionWeb4": "<strong>Version</strong>: 1.0.3-Bêta - 18 juillet 2025",
     
     // FAQPage
     'faq.title': 'Foire aux Questions',
@@ -413,6 +483,39 @@ const translations = {
     'faq.answers.booklet_system': 'Le système de carnets attribue à chaque client un carnet de collecte numérique. Les collecteurs enregistrent les transactions sur l\'application en fonction des entrées de ce carnet numérique. Ce processus crée un enregistrement transparent et vérifiable, réduisant considérablement le risque de fraude et d\'erreurs de rapport.',
   },
   sw: {
+    // Blog Page
+    "blog.title": "Habari",
+    "blog.category.financial": "TEKNOLOJIA YA FEDHA",
+    "blog.post1.title": "Kubadilisha Ukukusanya Fedha na Ubunifu wa Simu wa ZetCollect",
+    "blog.post1.description": "ZetCollect hurahisisha ukusanyaji wa fedha barani Afrika kwa programu yake ya simu inayofaa, inayofanya kazi nje ya mtandao. Ikiwa na usalama wa hali ya juu na uchanganuzi wa data, inaboresha malipo na kujenga imani.",
+    "blog.post2.title": "Kulinda Mustakabali wa Fedha na Ulinzi wa Juu wa ZetCollect",
+    "blog.post2.description": "ZetCollect hulinda ukusanyaji wako wa fedha kwa zana za hali ya juu za kuzuia udanganyifu. Usalama wake wa kuaminika unahakikisha imani kwa taasisi za Afrika.",
+    "blog.post3.title": "Kuongeza Ufanisi na Uchanganuzi wa Akili wa ZetCollect",
+    "blog.post3.description": "Dashibodi ya uchanganuzi ya ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi bora ya kifedha. Iliyoundwa kwa Afrika, inaboresha ukusanyaji na kuongeza uwazi.",
+
+    // Events Page
+    "events.title": "Matukio",
+    "events.subtitle": "Pata matukio yanayofuata.",
+    "events.filter.all": "Matukio Yote",
+    "events.filterType": "Aina ya Tukio",
+    "events.type.webinar": "Semina ya Mtandaoni",
+    "events.type.inperson": "Mwa moja kwa moja",
+    "events.upcoming": "Matukio Yanayokuja",
+    "events.event1.month": "AGOSTI",
+    "events.event1.day": "4",
+    "events.event1.type": "Semina ya Mtandaoni",
+    "events.event1.title": "Maonyesho ya Mtandaoni ya ZetCollect",
+    "events.event1.description": "Tukio letu la Maonyesho ya Moja kwa Moja ya ZetCollect linatoa uchunguzi wa kina wa huduma za kina zilizoundwa kubadilisha ukusanyaji wa fedha. Utagundua jinsi ZetCollect inavyowezesha mashirika na Usimamizi wa Wateja, Usimamizi wa Wakusanya, Usanidi wa Matawi, na uwezo wa Ukusanyaji wa Simu. Shuhudia mwenyewe jinsi Mfumo wetu wa Vitabu, Historia ya Miamala, Ripoti na Uchanganuzi, na Majukumu ya Ufikiaji ya Watumiaji yanavyoboresha ufanisi na kurahisisha shughuli. Zaidi ya hayo, gundua faida za Arifa za SMS na Ulandanishi wa Kila Siku usio na mshono. Usikose fursa hii ya kuona jinsi ZetCollect inavyoweza kubadilisha mbinu yako ya ukusanyaji na usimamizi wa fedha.",
+    "events.event1.dateTime": "JUMATATU, 4 AGOSTI 2025, SAA GMT+1",
+    "events.event1.time": "10:00 ASUBUHI HADI 11:00 ASUBUHI",
+    "events.event2.month": "OKTOBA",
+    "events.event2.day": "6",
+    "events.event2.type": "Mwa moja kwa moja",
+    "events.event2.title": "Mkutano wa Kila Mwaka wa Ubunifu wa Teknolojia",
+    "events.event2.description": "Jiunge na viongozi wa sekta na wavumbuzi katika Mkutano wa Kila Mwaka wa Ubunifu wa Teknolojia kujadili mwelekeo wa hivi karibuni katika teknolojia, mabadiliko ya kidijitali, na mikakati ya kuhakikisha mustakabali. Inajumuisha wazungumzaji wa msingi, warsha za maingiliano, na fursa za mitandao.",
+    "events.event2.dateTime": "JUMATATU, 6 OKTOBA 2025, SAA GMT+1",
+    "events.event2.time": "09:00 ASUBUHI HADI 05:00 ALASIRI",
+
     // Navigation
     'nav.home': 'Nyumbani',
     'nav.features': 'Vipengele',
@@ -426,7 +529,7 @@ const translations = {
     // Hero Section
     'hero.title': 'Badilisha Ukusanyaji wa Pesa na ZetCollect',
     'hero.subtitle': 'Kuwezesha taasisi za kifedha za Afrika kwa suluhisho za kidijitali za ukusanyaji zilizo na ufanisi, uwazi na upinzani wa ulaghai',
-    'hero.cta.demo': 'Angalia Mfano',
+    'hero.cta.demo': 'Anza',
     'hero.cta.request': 'Omba Mfano',
     'hero.cta.features': 'Chunguza Vipengele',
     
@@ -500,6 +603,7 @@ const translations = {
     'upcoming.currency.title': 'Mfumo Mpya wa Sarafu (KES)',
     'upcoming.currency.desc': 'Ujumuishaji usio na mshono wa Shilingi za Kenya (KES) kwa miamala yote na ripoti za kifedha.',
     
+   
     // Contact Us
     'contact.title': 'Wasiliana Nasi',
     'contact.subtitle': 'Tafadhali wasiliana nasi kujadili maswali yoyote ya ziada.',
@@ -509,7 +613,7 @@ const translations = {
     'contact.form.email': 'Barua pepe ya Biashara*',
     'contact.form.job_title': 'Cheo cha Kazi*',
     'contact.form.contact_number': 'Simu ya Kazini*',
-    'contact.form.organisation': 'Jina la kampuni*',
+    'contact.form.organisation': 'Jina la Kampuni*',
     'contact.form.country': 'Nchi*',
     'contact.form.country.cameroon': 'Kameruni',
     'contact.form.country.kenya': 'Kenya',
@@ -555,7 +659,7 @@ const translations = {
     'footer.newsroom': 'CHUMBA CHA HABARI',
     'footer.articles': 'Makala',
     'footer.events_webinars': 'Matukio na Semina za Mtandao',
-    'footer.support': 'Msaada',
+    'footer.support': 'MSAADA',
     'footer.faq': 'Maswali Yanayoulizwa Mara kwa Mara',
     'footer.training_certification': 'Mafunzo na Uthibitisho',
     'footer.rights': 'Imewashwa na © {year} Evolv IZSoftwares Group Ltd. Haki Zote Zimehifadhiwa.',
@@ -597,6 +701,8 @@ const translations = {
     "release.saas.title2": "Tovuti ya ZetCollect: Toleo la 2025",
     "release.saas.systemVersionWeb": "<strong>Toleo la</strong>: 1.0.0-Beta - 25 Aprili 2025",
     "release.saas.systemVersionWeb2": "<strong>Toleo la</strong>: 1.0.1-Beta - 27 Juni 2025",
+    "release.saas.systemVersionWeb3": "<strong>Toleo la</strong>: 1.0.2-Beta - 12 Julai 2025",
+    "release.saas.systemVersionWeb4": "<strong>Toleo la</strong>: 1.0.3-Beta - 18 Julai 2025",
     
     // FAQPage
     'faq.title': 'Maswali Yanayoulizwa Mara kwa Mara',

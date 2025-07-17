@@ -65,7 +65,7 @@ const UpcomingFeaturesSection = () => {
       color: 'Complementary',
       bgColor: 'bg-yellow-50',
       textColor: 'text-yellow-600',
-      progress: 0
+      progress: 10
     },
   ];
 

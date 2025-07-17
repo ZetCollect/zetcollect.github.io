@@ -6,11 +6,11 @@ const ContactUs = () => {
   const formBgColor = 'bg-secondary';
 
   const countries = [
-    { value: 'kenya', label: t('contact.form.country.kenya') },
-    { value: 'cameroon', label: t('contact.form.country.cameroon') },
-    { value: 'gabon', label: t('contact.form.country.gabon') },
-    { value: 'tchad', label: t('contact.form.country.tchad') },
-    { value: 'republic-of-congo', label: t('contact.form.country.congo') },
+    { value: 'Cameroon', label: t('contact.form.country.cameroon') },
+    { value: 'Gabon', label: t('contact.form.country.gabon') },
+    { value: 'Kenya', label: t('contact.form.country.kenya') },
+    { value: 'Tchad', label: t('contact.form.country.tchad') },
+    { value: 'Republic-Of-Congo', label: t('contact.form.country.congo') },
   ];
 
   return (

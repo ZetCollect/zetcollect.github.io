@@ -14,6 +14,8 @@ import FAQPage from './components/FAQPage';
 import ReleaseNotesPage from './components/ReleaseNotesPage';
 import WorkInProgressPage from './components/WorkInProgressPage';
 import CustomerSupportPage from './components/CustomerSupportPage';
+import Articles from './components/Articles';
+import EventsPage from './components/Events';
 
 const App = () => {
   useEffect(() => {
@@ -65,6 +67,8 @@ const App = () => {
             <Route path="/release-notes-page" element={<ReleaseNotesPage id="ReleaseNotesPage" />} />
             <Route path="/work-in-progress-page" element={<WorkInProgressPage id="ReleaseNotesPage" />} />
             <Route path="/customer-support-page" element={<CustomerSupportPage id="CustomerSupportPage" />} />
+            <Route path="/articles" element={<Articles id="CustomerSupportPage" />} />
+            <Route path="/events" element={<EventsPage id="Events" />} />
           </Routes>
         </div>
       </Router>

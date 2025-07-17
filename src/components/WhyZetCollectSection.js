@@ -1,58 +1,60 @@
 import React, { useState } from 'react';
-import { 
-  Globe, 
-  Shield, 
-  Smartphone, 
-  Settings, 
-  Plug, 
+import {
+  Globe,
+  Shield,
+  Smartphone,
+  Settings,
+  Plug,
   BarChart3,
   ArrowRight,
   Quote,
   ChevronLeft,
-  ChevronRight
+  ChevronRight,
+  XCircle // Import XCircle for the close button
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
 import { useLanguage } from '../context/LanguageContext';
 
 const WhyZetCollectSection = () => {
   const { t } = useLanguage();
   const [activeTestimonial, setActiveTestimonial] = useState(0);
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [modalContent, setModalContent] = useState({ title: '', description: '' });
 
   const differentiators = [
     {
       icon: Globe,
       title: t('why.africa.title') || 'Africa-Focused',
-      description: t('why.africa.desc') || 'Designed specifically for African financial institutions, addressing unique regional challenges.',
+      description: t('why.africa.desc') || 'Designed specifically for African financial institutions, addressing unique regional challenges. ZetCollect understands the diverse economic landscapes and regulatory environments across Africa, ensuring that its features are not just functional but also culturally and economically relevant. This deep understanding allows for seamless integration into local financial ecosystems, making collections more efficient and secure in varied African contexts.',
       image: '🌍',
     },
     {
       icon: Shield,
       title: t('why.fraud.title') || 'Fraud Prevention',
-      description: t('why.fraud.desc') || 'Advanced security features to protect your transactions and data.',
+      description: t('why.fraud.desc') || 'Advanced security features to protect your transactions and data. ZetCollect employs multi-layered encryption, real-time transaction monitoring, and biometric authentication options to safeguard against unauthorized access and fraudulent activities. Our robust security protocols are constantly updated to combat evolving cyber threats, providing financial institutions with peace of mind and ensuring the integrity of every collection.',
       image: '🛡️',
     },
     {
       icon: Smartphone,
       title: t('why.mobile.title') || 'Mobile-First',
-      description: t('why.mobile.desc') || 'Optimized for mobile use, ensuring accessibility in low-connectivity areas.',
+      description: t('why.mobile.desc') || 'Optimized for mobile use, ensuring accessibility in low-connectivity areas. The intuitive mobile application allows agents to conduct transactions offline, with data syncing automatically once connectivity is restored. This design caters to the realities of varied network conditions in Africa, ensuring that collection operations remain uninterrupted and efficient, regardless of location or signal strength.',
       image: '📱',
     },
     {
       icon: Settings,
       title: t('why.customizable.title') || 'Customizable',
-      description: t('why.customizable.desc') || 'Tailor the platform to meet your specific operational needs.',
+      description: t('why.customizable.desc') || 'Tailor the platform to meet your specific operational needs. ZetCollect offers a flexible architecture that allows financial institutions to customize workflows, reporting templates, and user roles. This adaptability ensures that the system aligns perfectly with existing business processes and can evolve as your operational requirements change, providing a truly bespoke solution.',
       image: '⚙️',
     },
     {
       icon: Plug,
       title: t('why.integrable.title') || 'Integrable',
-      description: t('why.integrable.desc') || 'Seamlessly integrates with your existing systems and workflows.',
+      description: t('why.integrable.desc') || 'Seamlessly integrates with your existing systems and workflows. ZetCollect provides robust APIs and connector tools that facilitate smooth data exchange with core banking systems, accounting software, and CRM platforms. This reduces manual data entry, minimizes errors, and creates a unified operational view, enhancing overall efficiency and data accuracy.',
       image: '🔌',
     },
     {
       icon: BarChart3,
       title: t('why.data.title') || 'Data-Driven',
-      description: t('why.data.desc') || 'Powerful analytics to drive informed decision-making.',
+      description: t('why.data.desc') || 'Powerful analytics to drive informed decision-making. ZetCollect’s dashboard provides real-time insights into collection performance, agent productivity, and geographical trends. This data-driven approach empowers institutions to identify bottlenecks, optimize routes, forecast collection patterns, and make strategic decisions that enhance profitability and operational efficiency.',
       image: '📊',
     },
   ];
@@ -103,6 +105,16 @@ const WhyZetCollectSection = () => {
     setActiveTestimonial((prev) => (prev === testimonials.length - 1 ? 0 : prev + 1));
   };
 
+  const openModal = (title, description) => {
+    setModalContent({ title, description });
+    setIsModalOpen(true);
+  };
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+    setModalContent({ title: '', description: '' }); // Clear content on close
+  };
+
   return (
     <section id="why-zetcollect" className="py-16 bg-gray-50 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
@@ -123,7 +135,7 @@ const WhyZetCollectSection = () => {
             return (
               <div
                 key={index}
-                className="flex flex-col items-center p-10 text-center transition-all duration-300 bg-white shadow-2xl rounded-2xl hover:-translate-y-2 hover:shadow-3xl custom-shadow-strong" 
+                className="flex flex-col items-center p-10 transition-all duration-300 bg-white shadow-2xl rounded-2xl hover:-translate-y-2 hover:shadow-3xl custom-shadow-strong"
               >
                 {/* Icon and Title */}
                 <div className="flex items-center justify-center w-24 h-24 mb-6 rounded-full bg-primary bg-opacity-10">
@@ -132,16 +144,21 @@ const WhyZetCollectSection = () => {
                 <h3 className="mb-4 text-2xl font-bold text-gray-900">
                   {item.title}
                 </h3>
-                <p className="mb-6 text-base leading-relaxed text-gray-600">
-                  {item.description}
+                {/* Justify the description text in the card */}
+                {/* Remove text-center if it was previously there, as text-justify will override or conflict */}
+                <p className="mb-6 text-base leading-relaxed text-justify text-gray-600">
+                  {item.description.length > 150 ? item.description.substring(0, 150) + '...' : item.description}
                 </p>
-                <Link
-                  to="#"
-                  className="inline-flex items-center space-x-2 font-semibold transition-colors text-secondary hover:text-secondary/80"
-                >
-                  <span>Learn more</span>
-                  <ArrowRight className="w-5 h-5" />
-                </Link>
+                {/* Read More Button - now opens modal and is aligned right */}
+                <div className="w-full text-right">
+                  <button
+                    onClick={() => openModal(item.title, item.description)}
+                    className="inline-flex items-center space-x-2 font-semibold transition-colors text-secondary hover:text-secondary/80 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-secondary"
+                  >
+                    <span>Read more</span>
+                    <ArrowRight className="w-5 h-5" />
+                  </button>
+                </div>
               </div>
             );
           })}
@@ -152,7 +169,7 @@ const WhyZetCollectSection = () => {
           <div className="max-w-3xl mx-auto">
             {/* Quote Icon */}
             <Quote className="w-12 h-12 mx-auto mb-6 text-Complementary opacity-70" />
-            
+
             {/* Current Testimonial */}
             <div className="text-center transition-all duration-500 ease-in-out opacity-0 animate-[fadeIn_0.5s_ease-in-out_forwards]">
               <blockquote className="mb-6 text-xl font-semibold leading-relaxed lg:text-2xl">
@@ -203,12 +220,37 @@ const WhyZetCollectSection = () => {
         </div>
       </div>
 
+      {/* --- Modal Component --- */}
+      {isModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50" onClick={closeModal}>
+          <div
+            className="relative w-full max-w-lg p-8 m-4 bg-white rounded-lg shadow-xl"
+            onClick={(e) => e.stopPropagation()} // Prevent click from closing modal
+          >
+            <button
+              onClick={closeModal}
+              className="absolute text-gray-500 top-4 right-4 hover:text-gray-700 focus:outline-none"
+              aria-label="Close modal"
+            >
+              <XCircle className="w-6 h-6" />
+            </button>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">
+              {modalContent.title}
+            </h2>
+            {/* Justify the description text in the modal */}
+            <p className="leading-relaxed text-justify text-gray-700">
+              {modalContent.description}
+            </p>
+          </div>
+        </div>
+      )}
+
       {/* Custom Styles for Drop Shadow and Fade-In */}
       <style>{`
         /* Defining a custom shadow with a blue tint for a visible drop shadow */
         .custom-shadow-strong {
           /* Using a blue color (e.g., from a standard blue-500) for the shadow */
-          box-shadow: 0 25px 50px -12px rgba(0, 184, 148, 0.2); 
+          box-shadow: 0 25px 50px -12px rgba(0, 184, 148, 0.2);
         }
 
         /* Defining a custom hover shadow with a slightly stronger blue tint for a pronounced effect on hover */

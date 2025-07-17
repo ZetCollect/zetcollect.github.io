@@ -47,7 +47,7 @@ const Footer = () => {
             {/* Column 1 */}
             <div className="flex flex-col gap-4">
               <p className="font-bold ">{t('footer.about')}</p>
-              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
+              <Link to="/about-us" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
               <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.resource_center')}</Link>
               <Link to="/contact-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('common.contactUs')}</Link>
             </div>

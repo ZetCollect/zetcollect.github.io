@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext'; // Adjust the path
+import { useLanguage } from '../context/LanguageContext';
 
 const ContactPage = () => {
   const { t } = useLanguage();
@@ -11,7 +11,6 @@ const ContactPage = () => {
     { country: 'Kenya', name: 'SMEP Microfinance Bank', img: 'SMEP Microfinance Bank logo.png' },
     { country: 'Cameroon', name: 'Cameroon Cooperative Credit Union League Ltd', img: 'CamCCUL Logo.jpg' },
     { country: 'Cameroon', name: 'CRCCU', img: 'cropped-cropped-Logo-Croped logo.jpg' },
-    { country: 'Cameroon', name: 'Cameroon', img: 'SMECreditPro.jpg' },
     { country: 'Gabon', name: 'Banque de l’Habitat du Gabon (BHG)', img: '(BHG) logo.png' },
   ];
 
@@ -210,7 +209,6 @@ const ContactPage = () => {
                     src={service.img} 
                     alt={`${service.country} ${service.name} Logo`} 
                     className="object-contain h-20 mb-2"
-                    onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/150x80/cccccc/000000?text=Logo+Missing'; }}
                   />
                   <p className="text-sm font-semibold text-center text-gray-800">{service.country} - {service.name}</p>
                 </div>

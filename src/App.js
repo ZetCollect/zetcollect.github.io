@@ -16,6 +16,7 @@ import WorkInProgressPage from './components/WorkInProgressPage';
 import CustomerSupportPage from './components/CustomerSupportPage';
 import Articles from './components/Articles';
 import EventsPage from './components/Events';
+import AboutUsPage from './components/AboutUsPage';
 
 const App = () => {
   useEffect(() => {
@@ -69,6 +70,7 @@ const App = () => {
             <Route path="/customer-support-page" element={<CustomerSupportPage id="CustomerSupportPage" />} />
             <Route path="/articles" element={<Articles id="CustomerSupportPage" />} />
             <Route path="/events" element={<EventsPage id="Events" />} />
+            <Route path="/about-us" element={<AboutUsPage id="AboutUs" />} />
           </Routes>
         </div>
       </Router>

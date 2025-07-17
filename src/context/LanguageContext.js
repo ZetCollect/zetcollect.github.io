@@ -13,8 +13,80 @@ import React, { createContext, useContext, useState, useEffect } from 'react';
 
 const translations = {
   en: {
+    // About Page
+    "about.title": "About ZetCollect:",
+    // "about.subtitle": "Empowering Financial Inclusion Across Africa",
+    "about.description": "ZetCollect is a cutting-edge, mobile-first platform designed to transform cash collection and management for microfinance institutions, cooperatives, and financial service providers across Africa. Built with the unique needs of African markets in mind, ZetCollect streamlines operations, enhances transparency, and fosters trust between institutions and their clients. Our mission is to empower organizations to manage collections efficiently, securely, and at scale, while bridging the gap to financial inclusion in underserved communities.",
+    "about.numbers.title": "ZetCollect Group in Numbers",
+    "about.numbers.teamExperience": "Team Professional Experience",
+    "about.numbers.successStories": "Success Stories",
+    "about.numbers.industryCovers": "Industry Covers",
+    "about.geography.title": "Our Geography",
+    "about.geography.description": "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
+    "about.geography.kenya": "Kenya",
+    "about.geography.kenyaOffice": "Office locations: Nairobi",
+    "about.geography.rwanda": "Rwanda",
+    "about.geography.rwandaOffice": "V. Office locations: Kigali",
+    "about.geography.cameroon": "Cameroon",
+    "about.geography.cameroonOffice": "V. Office locations: Douala",
+    "about.clients.title": "Our Clients",
+    "about.clients.description": "We have collaborated with companies from 3 continents which are Africa, North America and Europe. Some of our prominent clients include:",
+    "about.clients.logoAlt": "Client Logo {index}",
+    "about.pricingPolicy.title": "Our Pricing Policy",
+    "about.pricingPolicy.description": "Depending on a project and the nature of the delivered service, we resort to one of the following pricing models:",
+    "about.pricingPolicy.fixedPrice": "FIXED PRICE MODEL",
+    "about.pricingPolicy.hourlyEngagement": "HOURLY ENGAGEMENT MODEL",
+    "about.pricingPolicy.retainerBased": "RETAINER-BASED MODEL",
+    "about.pricingPolicy.subscriptionBased": "SUBSCRIPTION-BASED MODEL",
+    "about.pricingPolicy.supportUpkeep": "SUPPORT AND UPKEEP MODEL",
+    "about.pricingPolicy.onSiteDedicated": "ON-SITE DEDICATED MODEL",
+    "about.keyFeatures.title": "Our Key Features",
+    "about.keyFeatures.clientManagement.title": "Client Management",
+    "about.keyFeatures.clientManagement.description": "Seamlessly onboard, track, and manage client profiles with real-time updates, ensuring personalized service and accurate records.",
+    "about.keyFeatures.collectorManagement.title": "Collector Management",
+    "about.keyFeatures.collectorManagement.description": "Empower field agents with intuitive tools to schedule, track, and report collections, optimized for both online and offline environments.",
+    "about.keyFeatures.mobileCollection.title": "Mobile Collection",
+    "about.keyFeatures.mobileCollection.description": "Our offline-capable mobile app enables collectors to process payments anywhere, anytime, ensuring uninterrupted service in low-connectivity areas.",
+    "about.keyFeatures.bookletSystem.title": "Booklet System",
+    "about.keyFeatures.bookletSystem.description": "Digitize traditional collection booklets with a secure, user-friendly interface for tracking transactions and reducing errors.",
+    "about.keyFeatures.reportsAnalytics.title": "Reports & Analytics",
+    "about.keyFeatures.reportsAnalytics.description": "Gain actionable insights with real-time dashboards, customizable reports, and predictive analytics to optimize operations and drive smarter decisions.",
+    "about.keyFeatures.transactionHistory.title": "Transaction History",
+    "about.keyFeatures.transactionHistory.description": "Maintain a transparent, auditable record of all transactions, accessible to both institutions and clients for trust and accountability.",
+    "about.keyFeatures.smsNotifications.title": "SMS Notifications",
+    "about.keyFeatures.smsNotifications.description": "Keep clients informed with automated, timely SMS updates on payments, balances, and reminders, enhancing engagement and compliance.",
+    "about.keyFeatures.userAccessRoles.title": "User Access & Roles",
+    "about.keyFeatures.userAccessRoles.description": "Securely manage permissions with role-based access, ensuring data integrity and operational efficiency across teams.",
+    "about.keyFeatures.dailySynchronization.title": "Daily Synchronization",
+    "about.keyFeatures.dailySynchronization.description": "Automatically sync data across devices and systems, even in low-bandwidth settings, to keep information up-to-date and reliable.",
+    "about.keyFeatures.branchSetup.title": "Branch Setup",
+    "about.keyFeatures.branchSetup.description": "Easily configure and manage multiple branches, tailoring workflows to regional needs while maintaining centralized oversight.",
+    // Why ZetCollect
+    "why.title": "Why ZetCollect",
+    "why.title2": "What Our Client Get Choosing ZetCollect",
+    "why.subtitle": "Built specifically for African microfinance realities",
+    "why.quality.title": "Quality-Centric Company",
+    "why.quality.alt": "Quality Badge",
+    "why.quality.desc": "We provide only high-quality software and services to our clients. We guarantee you will get tangible business value, enjoy healthy project processes, professional and motivated teams, effective communication between IZSoftwares, your teams, and stakeholders. Our pledge to deliver high-quality software and services is not a mere promise; it’s a covenant woven into every line of code and articulated in each strategic decision.",
+    "why.security.title": "Top-notch Security",
+    "why.security.alt": "Security Icon",
+    "why.security.desc": "Our security protocols are not confined to meeting industry standards; they exceed them. We view security as a living, breathing entity that evolves alongside the ever-changing threat landscape. Just as a sentry adapts to emerging challenges, our security measures undergo constant refinement and enhancement. Consider us architects of a digital citadel, where strong encryption algorithms stands as the cornerstone, multi-layered defenses serve as bastions, and proactive monitoring functions as our watchtower. While certifications are valuable, we believe that true security is an ongoing commitment and 'security is everyone's responsibility'.",
+    "why.africa.title": "Built for Africa's Realities",
+    "why.africa.desc": "Designed for low-connectivity environments with offline-first capabilities and optimized for local market conditions.",
+    "why.fraud.title": "Fraud-Resistant",
+    "why.fraud.desc": "Advanced security features including digital booklets, GPS tracking, and real-time validation prevent fraudulent activities.",
+    "why.mobile.title": "Mobile-First",
+    "why.mobile.desc": "Optimized for smartphones and tablets with intuitive interfaces that work perfectly on any device.",
+    "why.customizable.title": "Fully Customizable",
+    "why.customizable.desc": "Adapt the platform to your specific workflows, branding, and operational requirements.",
+    "why.integrable.title": "Integrable",
+    "why.integrable.desc": "Seamlessly integrate with existing core banking systems and third-party financial services.",
+    "why.data.title": "Data-Driven Decisions",
+    "why.data.desc": "Comprehensive analytics and reporting tools provide actionable insights for better business decisions.",
+    "why.readMore": "Read more",
+
     // Blog Page
-    "blog.title": "Articles",
+    "blog.title": "Blog",
     "blog.category.financial": "FINANCIAL TECHNOLOGY",
     "blog.post1.title": "Transforming Financial Collections with ZetCollect’s Mobile-First Innovation",
     "blog.post1.description": "ZetCollect simplifies financial collections across Africa with its intuitive, offline-capable mobile app. Packed with robust security and smart analytics, it streamlines payments and builds trust. Discover how it’s revolutionizing finance for institutions.",
@@ -29,7 +101,7 @@ const translations = {
     "events.filter.all": "All Events",
     "events.filterType": "Event Type",
     "events.type.webinar": "Webinar",
-    "events.type.inperson": "Inperson",
+    "events.type.inperson": "In Person",
     "events.upcoming": "Upcoming Events",
     "events.event1.month": "AUGUST",
     "events.event1.day": "4",
@@ -40,7 +112,7 @@ const translations = {
     "events.event1.time": "10:00AM TO 11:00AM",
     "events.event2.month": "OCTOBER",
     "events.event2.day": "6",
-    "events.event2.type": "Inperson",
+    "events.event2.type": "In Person",
     "events.event2.title": "Annual Tech Innovation Summit",
     "events.event2.description": "Join industry leaders and innovators at the Annual Tech Innovation Summit to discuss the latest trends in technology, digital transformation, and future-proof strategies. Featuring keynote speakers, interactive workshops, and networking opportunities.",
     "events.event2.dateTime": "MONDAY, OCTOBER, 6, 2025, AT GMT+1",
@@ -56,7 +128,7 @@ const translations = {
     'nav.contact': 'Contact',
     'nav.login': 'Login',
     
-    // Hero Section
+   // Hero Section
     'hero.title': 'Transform Cash Collections with ZetCollect',
     'hero.subtitle': 'Empowering African microfinance institutions with efficient, transparent, and fraud-resistant digital collection solutions',
     'hero.cta.demo': 'Get Started',
@@ -87,21 +159,6 @@ const translations = {
     'features.sync.title': 'Daily Synchronization',
     'features.sync.desc': 'Seamless data sync between mobile devices and central database.',
     
-    // Why ZetCollect
-    'why.title': 'Why ZetCollect',
-    'why.subtitle': 'Built specifically for African microfinance realities',
-    'why.africa.title': 'Built for Africa\'s Realities',
-    'why.africa.desc': 'Designed for low-connectivity environments with offline-first capabilities and optimized for local market conditions.',
-    'why.fraud.title': 'Fraud-Resistant',
-    'why.fraud.desc': 'Advanced security features including digital booklets, GPS tracking, and real-time validation prevent fraudulent activities.',
-    'why.mobile.title': 'Mobile-First',
-    'why.mobile.desc': 'Optimized for smartphones and tablets with intuitive interfaces that work perfectly on any device.',
-    'why.customizable.title': 'Fully Customizable',
-    'why.customizable.desc': 'Adapt the platform to your specific workflows, branding, and operational requirements.',
-    'why.integrable.title': 'Integrable',
-    'why.integrable.desc': 'Seamlessly integrate with existing core banking systems and third-party financial services.',
-    'why.data.title': 'Data-Driven Decisions',
-    'why.data.desc': 'Comprehensive analytics and reporting tools provide actionable insights for better business decisions.',
     
     // Demo Section
     'demo.title': 'ZetCollect in Action',
@@ -221,8 +278,8 @@ const translations = {
     'support.feature.sync': 'Daily Synchronization',
     
     // ReleaseNotesPage
-    'release.title': 'Release notes',
-    'release.description1': 'ZetCollect is your go-to app for stress-free financial collections across Africa. Its user-friendly mobile design works flawlessly, even offline, making payments a breeze. With top-notch security and smart analytics, it boosts efficiency and trust.',
+    'release.title': 'Release Notes',
+    'release.description1': 'ZetCollect is a cutting-edge finance collection app tailored for African institutions. Its intuitive mobile interface ensures seamless payments, even offline. Advanced security and analytics empower efficient, transparent operations.',
     'release.description2': 'Our SaaS platform brings fresh updates every week, neatly summarized each month. VPC users enjoy quarterly updates with a 14-day test period, or 45 days with staging. ZetCollect offers secure, flexible, and insightful tools to simplify your financial operations.',
     'release.saas.title': 'ZetCollect System: 2025 release',
     'release.saas.systemVersion': '<strong>Version</strong>: 1.2.0 - 25th April 2025',
@@ -230,8 +287,6 @@ const translations = {
     'release.saas.title2': 'ZetCollect Website: 2025 release',
     'release.saas.systemVersionWeb': '<strong>Version</strong>: 1.0.0-Beta - 25th April 2025',
     'release.saas.systemVersionWeb2': '<strong>Version</strong>: 1.0.1-Beta - 27th June 2025',
-    'release.saas.systemVersionWeb3': '<strong>Version</strong>: 1.0.2-Beta - 13th July 2025',
-    'release.saas.systemVersionWeb4': '<strong>Version</strong>: 1.0.3-Beta - 18th July 2025',
     
     // FAQPage
     'faq.title': 'Frequently Asked Questions',
@@ -248,15 +303,87 @@ const translations = {
     'faq.answers.booklet_system': 'The Booklet (Carnet) System assigns each client a digital collection booklet. Collectors mark transactions on the app based on entries in this digital booklet. This process creates a transparent and verifiable record, significantly reducing the risk of fraud and misreporting.',
   },
   fr: {
+    // About Page
+    "about.title": "A propos ZetCollect :",
+    // "about.subtitle": "Favoriser l'inclusion financière à travers l'Afrique",
+    "about.description": "ZetCollect est une plateforme mobile de pointe conçue pour transformer la collecte et la gestion de fonds pour les institutions de microfinance, les coopératives et les fournisseurs de services financiers à travers l'Afrique. Construit en tenant compte des besoins uniques des marchés africains, ZetCollect rationalise les opérations, améliore la transparence et renforce la confiance entre les institutions et leurs clients. Notre mission est de permettre aux organisations de gérer les collectes de manière efficace, sécurisée et à grande échelle, tout en comblant le fossé de l'inclusion financière dans les communautés mal desservies.",
+    "about.numbers.title": "ZetCollect en chiffres",
+    "about.numbers.teamExperience": "Expérience professionnelle de l'équipe",
+    "about.numbers.successStories": "Histoires de succès",
+    "about.numbers.industryCovers": "Secteurs couverts",
+    "about.geography.title": "Notre géographie",
+    "about.geography.description": "Basé au Kenya et opérant à l'international, notre équipe favorise la transformation numérique des entreprises à l'échelle mondiale. Nous assurons une présence sur site et virtuelle pour fournir des services à nos principaux marchés cibles :",
+    "about.geography.kenya": "Kenya",
+    "about.geography.kenyaOffice": "Bureaux : Nairobi",
+    "about.geography.rwanda": "Rwanda",
+    "about.geography.rwandaOffice": "Bureaux virtuels : Kigali",
+    "about.geography.cameroon": "Cameroun",
+    "about.geography.cameroonOffice": "Bureaux virtuels : Douala",
+    "about.clients.title": "Nos clients",
+    "about.clients.description": "Nous avons collaboré avec des entreprises de 3 continents : Afrique, Amérique du Nord et Europe. Parmi nos clients prestigieux figurent :",
+    "about.clients.logoAlt": "Logo du client {index}",
+    "about.pricingPolicy.title": "Notre politique de tarification",
+    "about.pricingPolicy.description": "En fonction d'un projet et de la nature du service fourni, nous utilisons l'un des modèles de tarification suivants :",
+    "about.pricingPolicy.fixedPrice": "MODÈLE À PRIX FIXE",
+    "about.pricingPolicy.hourlyEngagement": "MODÈLE D'ENGAGEMENT HORAIRE",
+    "about.pricingPolicy.retainerBased": "MODÈLE BASÉ SUR UN CONTRAT DE RETENUE",
+    "about.pricingPolicy.subscriptionBased": "MODÈLE BASÉ SUR UN ABONNEMENT",
+    "about.pricingPolicy.supportUpkeep": "MODÈLE DE SUPPORT ET D'ENTRETIEN",
+    "about.pricingPolicy.onSiteDedicated": "MODÈLE DÉDIÉ SUR SITE",
+    "about.keyFeatures.title": "Nos fonctionnalités clés",
+    "about.keyFeatures.clientManagement.title": "Gestion des clients",
+    "about.keyFeatures.clientManagement.description": "Intégrez, suivez et gérez les profils des clients en temps réel, garantissant un service personnalisé et des enregistrements précis.",
+    "about.keyFeatures.collectorManagement.title": "Gestion des collecteurs",
+    "about.keyFeatures.collectorManagement.description": "Donnez aux agents de terrain des outils intuitifs pour planifier, suivre et rapporter les collectes, optimisés pour les environnements en ligne et hors ligne.",
+    "about.keyFeatures.mobileCollection.title": "Collecte mobile",
+    "about.keyFeatures.mobileCollection.description": "Notre application mobile, fonctionnant hors ligne, permet aux collecteurs de traiter les paiements n'importe où, n'importe quand, garantissant un service ininterrompu dans les zones à faible connectivité.",
+    "about.keyFeatures.bookletSystem.title": "Système de carnet",
+    "about.keyFeatures.bookletSystem.description": "Numérisez les carnets de collecte traditionnels avec une interface sécurisée et conviviale pour suivre les transactions et réduire les erreurs.",
+    "about.keyFeatures.reportsAnalytics.title": "Rapports et analyses",
+    "about.keyFeatures.reportsAnalytics.description": "Obtenez des informations exploitables avec des tableaux de bord en temps réel, des rapports personnalisables et des analyses prédictives pour optimiser les opérations et prendre des décisions éclairées.",
+    "about.keyFeatures.transactionHistory.title": "Historique des transactions",
+    "about.keyFeatures.transactionHistory.description": "Maintenez un registre transparent et auditable de toutes les transactions, accessible aux institutions et aux clients pour renforcer la confiance et la responsabilité.",
+    "about.keyFeatures.smsNotifications.title": "Notifications SMS",
+    "about.keyFeatures.smsNotifications.description": "Tenez les clients informés avec des mises à jour SMS automatisées et opportunes sur les paiements, les soldes et les rappels, améliorant l'engagement et la conformité.",
+    "about.keyFeatures.userAccessRoles.title": "Accès et rôles des utilisateurs",
+    "about.keyFeatures.userAccessRoles.description": "Gérez les autorisations en toute sécurité avec un accès basé sur les rôles, garantissant l'intégrité des données et l'efficacité opérationnelle des équipes.",
+    "about.keyFeatures.dailySynchronization.title": "Synchronisation quotidienne",
+    "about.keyFeatures.dailySynchronization.description": "Synchronisez automatiquement les données entre les appareils et les systèmes, même dans des environnements à faible bande passante, pour maintenir les informations à jour et fiables.",
+    "about.keyFeatures.branchSetup.title": "Configuration des succursales",
+    "about.keyFeatures.branchSetup.description": "Configurez et gérez facilement plusieurs succursales, en adaptant les flux de travail aux besoins régionaux tout en maintenant une supervision centralisée.",
+    // Why ZetCollect
+    "why.title": "Pourquoi ZetCollect",
+    "why.title2": "Ce que nos clients obtiennent en choisissant ZetCollect:",
+    "why.subtitle": "Conçu spécifiquement pour les réalités de la microfinance africaine",
+    "why.quality.title": "Entreprise centrée sur la qualité",
+    "why.quality.alt": "Badge de qualité",
+    "why.quality.desc": "Nous fournissons uniquement des logiciels et services de haute qualité à nos clients. Nous garantissons que vous obtiendrez une valeur commerciale tangible, bénéficierez de processus de projet sains, d'équipes professionnelles et motivées, et d'une communication efficace entre IZSoftwares, vos équipes et les parties prenantes. Notre engagement à fournir des logiciels et services de haute qualité n'est pas une simple promesse ; c'est un pacte intégré dans chaque ligne de code et articulé dans chaque décision stratégique.",
+    "why.security.title": "Sécurité de premier ordre",
+    "why.security.alt": "Icône de sécurité",
+    "why.security.desc": "Nos protocoles de sécurité ne se limitent pas à respecter les normes de l'industrie ; ils les dépassent. Nous considérons la sécurité comme une entité vivante, évoluant avec le paysage des menaces en constante évolution. Tout comme une sentinelle s'adapte aux défis émergents, nos mesures de sécurité sont constamment affinées et améliorées. Considérez-nous comme les architectes d'une citadelle numérique, où des algorithmes de cryptage robustes constituent la pierre angulaire, des défenses multicouches servent de bastions, et une surveillance proactive fonctionne comme notre tour de guet. Bien que les certifications soient précieuses, nous croyons que la véritable sécurité est un engagement continu et que 'la sécurité est la responsabilité de tous'.",
+    "why.africa.title": "Conçu pour les réalités africaines",
+    "why.africa.desc": "Conçu pour les environnements à faible connectivité avec des capacités hors ligne prioritaires et optimisé pour les conditions du marché local.",
+    "why.fraud.title": "Résistant à la fraude",
+    "why.fraud.desc": "Fonctionnalités de sécurité avancées, y compris des carnets numériques, un suivi GPS et une validation en temps réel, pour prévenir les activités frauduleuses.",
+    "why.mobile.title": "Priorité au mobile",
+    "why.mobile.desc": "Optimisé pour les smartphones et les tablettes avec des interfaces intuitives qui fonctionnent parfaitement sur n'importe quel appareil.",
+    "why.customizable.title": "Entièrement personnalisable",
+    "why.customizable.desc": "Adaptez la plateforme à vos flux de travail, votre image de marque et vos besoins opérationnels spécifiques.",
+    "why.integrable.title": "Intégrable",
+    "why.integrable.desc": "Intégrez facilement avec les systèmes bancaires existants et les services financiers tiers.",
+    "why.data.title": "Décisions basées sur les données",
+    "why.data.desc": "Des outils d'analyse et de rapport complets fournissent des informations exploitables pour de meilleures décisions commerciales.",
+    "why.readMore": "En savoir plus",
+
     // Blog Page
     "blog.title": "Blog",
-    "blog.category.financial": "TECHNOLOGIE FINANCIÈRE",
-    "blog.post1.title": "Transformer la collecte financière avec l’innovation mobile de ZetCollect",
-    "blog.post1.description": "ZetCollect simplifie la collecte financière en Afrique grâce à son application mobile intuitive, fonctionnant hors ligne. Dotée d’une sécurité robuste et d’analyses intelligentes, elle optimise les paiements et renforce la confiance.",
-    "blog.post2.title": "Sécuriser l’avenir financier avec la protection avancée de ZetCollect",
-    "blog.post2.description": "ZetCollect protège vos collectes financières avec des outils de prévention de la fraude de pointe. Sa sécurité robuste garantit confiance et fiabilité pour les institutions africaines.",
-    "blog.post3.title": "Améliorer l’efficacité avec les analyses intelligentes de ZetCollect",
-    "blog.post3.description": "Le tableau de bord analytique de ZetCollect offre des insights en temps réel pour des décisions financières plus intelligentes. Conçu pour l’Afrique, il optimise les collectes et améliore la transparence.",
+    "blog.category.financial": "Technologie financière",
+    "blog.post1.title": "Transformer les collectes financières avec l'innovation mobile de ZetCollect",
+    "blog.post1.description": "ZetCollect simplifie les collectes financières à travers l'Afrique avec son application mobile intuitive, fonctionnant hors ligne. Dotée d'une sécurité robuste et d'analyses intelligentes, elle rationalise les paiements et renforce la confiance. Découvrez comment elle révolutionne la finance pour les institutions.",
+    "blog.post2.title": "Sécuriser l'avenir financier avec la protection avancée de ZetCollect",
+    "blog.post2.description": "ZetCollect protège vos collectes financières avec des outils de prévention de la fraude de pointe. Sa sécurité robuste garantit la confiance et la fiabilité pour les institutions africaines. Découvrez comment elle protège vos opérations.",
+    "blog.post3.title": "Améliorer l'efficacité avec les analyses intelligentes de ZetCollect",
+    "blog.post3.description": "Le tableau de bord analytique puissant de ZetCollect fournit des informations en temps réel pour des décisions financières plus intelligentes. Adapté à l'Afrique, il rationalise les collectes et améliore la transparence. Explorez son impact basé sur les données.",
 
     // Events Page
     "events.title": "Événements",
@@ -270,16 +397,16 @@ const translations = {
     "events.event1.day": "4",
     "events.event1.type": "Webinaire",
     "events.event1.title": "Vitrine virtuelle de ZetCollect",
-    "events.event1.description": "Notre événement de démonstration en direct de ZetCollect offre un aperçu approfondi d’une suite complète de services conçus pour révolutionner les collectes financières. Vous découvrirez comment ZetCollect autonomise les organisations avec la gestion des clients, la gestion des collecteurs, la configuration des succursales et les capacités de collecte mobile. Soyez témoin de première main de la manière dont notre système de carnets, l’historique des transactions, les rapports et analyses, et les rôles d’accès utilisateur robustes améliorent l’efficacité et rationalisent les opérations. De plus, découvrez les avantages des notifications SMS et de la synchronisation quotidienne transparente. Ne manquez pas cette opportunité de voir comment ZetCollect peut transformer votre approche de la collecte et de la gestion financière.",
-    "events.event1.dateTime": "LUNDI, 4 AOÛT 2025, À GMT+1",
-    "events.event1.time": "10H00 À 11H00",
+    "events.event1.description": "Notre événement de démonstration en direct de ZetCollect offre un aperçu approfondi d'une suite complète de services conçus pour révolutionner les collectes de fonds. Vous explorerez comment ZetCollect permet aux organisations de gérer les clients, les collecteurs, la configuration des succursales et les capacités de collecte mobile. Découvrez de première main comment notre système de carnet, l'historique des transactions, les rapports et analyses, et les rôles d'accès robustes améliorent l'efficacité et rationalisent les opérations. De plus, découvrez les avantages des notifications SMS et de la synchronisation quotidienne transparente. Ne manquez pas cette opportunité de voir comment ZetCollect peut transformer votre approche de la collecte et de la gestion de fonds.",
+    "events.event1.dateTime": "LUNDI, 4 août 2025, À GMT+1",
+    "events.event1.time": "10:00 À 11:00",
     "events.event2.month": "OCTOBRE",
     "events.event2.day": "6",
     "events.event2.type": "En personne",
-    "events.event2.title": "Sommet annuel de l’innovation technologique",
-    "events.event2.description": "Rejoignez les leaders de l’industrie et les innovateurs au Sommet annuel de l’innovation technologique pour discuter des dernières tendances en matière de technologie, de transformation numérique et de stratégies à l’épreuve du futur. Avec des conférenciers principaux, des ateliers interactifs et des opportunités de réseautage.",
-    "events.event2.dateTime": "LUNDI, 6 OCTOBRE 2025, À GMT+1",
-    "events.event2.time": "09H00 À 17H00",
+    "events.event2.title": "Sommet annuel de l'innovation technologique",
+    "events.event2.description": "Rejoignez les leaders de l'industrie et les innovateurs au Sommet annuel de l'innovation technologique pour discuter des dernières tendances en technologie, transformation numérique et stratégies à l'épreuve du futur. Avec des conférenciers principaux, des ateliers interactifs et des opportunités de réseautage.",
+    "events.event2.dateTime": "LUNDI, 6 octobre 2025, À GMT+1",
+    "events.event2.time": "09:00 À 17:00",
 
     // Navigation
     'nav.home': 'Accueil',
@@ -321,23 +448,7 @@ const translations = {
     'features.sms.desc': 'Rappels et confirmations automatisés par SMS pour une meilleure communication.',
     'features.sync.title': 'Synchronisation Quotidienne',
     'features.sync.desc': 'Synchronisation transparente des données entre appareils mobiles et base de données centrale.',
-    
-    // Why ZetCollect
-    'why.title': 'Pourquoi ZetCollect',
-    'why.subtitle': 'Conçu spécifiquement pour les réalités de la microfinance africaine',
-    'why.africa.title': 'Conçu pour les Réalités Africaines',
-    'why.africa.desc': 'Conçu pour les environnements à faible connectivité avec des capacités hors ligne et optimisé pour les conditions du marché local.',
-    'why.fraud.title': 'Résistant à la Fraude',
-    'why.fraud.desc': 'Fonctionnalités de sécurité avancées incluant carnets numériques, suivi GPS et validation en temps réel.',
-    'why.mobile.title': 'Mobile d\'Abord',
-    'why.mobile.desc': 'Optimisé pour smartphones et tablettes avec interfaces intuitives fonctionnant parfaitement sur tout appareil.',
-    'why.customizable.title': 'Entièrement Personnalisable',
-    'why.customizable.desc': 'Adaptez la plateforme à vos flux de travail, marque et exigences opérationnelles spécifiques.',
-    'why.integrable.title': 'Intégrable',
-    'why.integrable.desc': 'Intégration transparente avec les systèmes bancaires centraux existants et services financiers tiers.',
-    'why.data.title': 'Décisions Basées sur les Données',
-    'why.data.desc': 'Outils d\'analyse et de reporting complets fournissent des insights exploitables pour de meilleures décisions.',
-    
+  
     // Demo Section
     'demo.title': 'ZetCollect en Action',
     'demo.subtitle': 'Regardez comment ZetCollect rationalise les collections pour les IMF africaines',
@@ -352,7 +463,6 @@ const translations = {
     'demo.points.fraud_prevention': 'Fonctionnalités de prévention de la fraude',
     'demo.points.multi_branch': 'Gestion multi-succursales',
     
-    // Upcoming Features
     'upcoming.title': 'Fonctionnalités à Venir',
     'upcoming.subtitle': 'Des fonctionnalités passionnantes à venir pour améliorer votre expérience de collecte',
     'upcoming.gps.title': 'Traçabilité GPS',
@@ -459,14 +569,12 @@ const translations = {
     "release.title": "Notes de version",
     "release.description1": "ZetCollect est une application incontournable pour des collectes financières sans stress en Afrique. Son interface mobile intuitive fonctionne parfaitement, même hors ligne. Sécurité avancée et analyses intelligentes renforcent l'efficacité et la confiance.",
     "release.description2": "Notre plateforme SaaS propose des mises à jour hebdomadaires, résumées chaque mois pour plus de clarté. Les utilisateurs VPC reçoivent des mises à jour trimestrielles avec 14 jours de test, ou 45 jours avec environnement de staging. ZetCollect offre des outils sécurisés, flexibles et perspicaces.",
-    "release.saas.title": "Système ZetCollect : Version 2025",
+    "release.saas.title": " ZetCollect système:  2025 libérer",
     "release.saas.systemVersion": "<strong>Version</strong>: 1.2.0 - 25 avril 2025",
     "release.saas.systemVersion2": "<strong>Version</strong>: 1.2.1 - 27 juin 2025",
-    "release.saas.title2": "Site Web ZetCollect : Version 2025",
+    "release.saas.title2": "ZetCollect le site: 2025 libérer",
     "release.saas.systemVersionWeb": "<strong>Version</strong>: 1.0.0-Bêta - 25 avril 2025",
     "release.saas.systemVersionWeb2": "<strong>Version</strong>: 1.0.1-Bêta - 27 juin 2025",
-    "release.saas.systemVersionWeb3": "<strong>Version</strong>: 1.0.2-Bêta - 13 juillet 2025",
-    "release.saas.systemVersionWeb4": "<strong>Version</strong>: 1.0.3-Bêta - 18 juillet 2025",
     
     // FAQPage
     'faq.title': 'Foire aux Questions',
@@ -483,19 +591,91 @@ const translations = {
     'faq.answers.booklet_system': 'Le système de carnets attribue à chaque client un carnet de collecte numérique. Les collecteurs enregistrent les transactions sur l\'application en fonction des entrées de ce carnet numérique. Ce processus crée un enregistrement transparent et vérifiable, réduisant considérablement le risque de fraude et d\'erreurs de rapport.',
   },
   sw: {
+    // About Page
+    "about.title": "Kuhusu ZetCollect:",
+    // "about.subtitle": "Kuwezesha Uchukuzi wa Fedha Afrika",
+    "about.description": "ZetCollect ni jukwaa la kisasa la simu za mkononi lililoundwa ili kubadilisha ukusanyaji wa pesa na usimamizi kwa taasisi za microfinance, vyama vya ushirika, na watoa huduma za kifedha kote Afrika. Imejengwa kwa kuzingatia mahitaji ya kipekee ya masoko ya Afrika, ZetCollect hurahisisha shughuli, huongeza uwazi, na hukuza imani kati ya taasisi na wateja wao. Dhamira yetu ni kuwezesha mashirika kusimamia ukusanyaji kwa ufanisi, usalama, na kwa kiwango kikubwa, huku ikijenga daraja la kuingiza huduma za kifedha katika jamii ambazo hazijapatiwa huduma za kutosha.",
+    "about.numbers.title": "ZetCollect Group kwa Nambari",
+    "about.numbers.teamExperience": "Uzoefu wa Kitaalam wa Timu",
+    "about.numbers.successStories": "Hadithi za Mafanikio",
+    "about.numbers.industryCovers": "Sekta Zilizofunikwa",
+    "about.geography.title": "Jiografia Yetu",
+    "about.geography.description": "Ikiwa na makao yake makuu nchini Kenya na ikifanya kazi kimataifa, timu yetu inasukuma mabadiliko ya kidijitali kwa Biashara duniani kote. Tunahakikisha uwepo wa moja kwa moja na wa mtandaoni ili kutoa huduma kwa masoko yetu ya msingi ya lengo katika:",
+    "about.geography.kenya": "Kenya",
+    "about.geography.kenyaOffice": "Maeneo ya ofisi: Nairobi",
+    "about.geography.rwanda": "Rwanda",
+    "about.geography.rwandaOffice": "Maeneo ya ofisi ya mtandaoni: Kigali",
+    "about.geography.cameroon": "Kamerun",
+    "about.geography.cameroonOffice": "Maeneo ya ofisi ya mtandaoni: Douala",
+    "about.clients.title": "Wateja Wetu",
+    "about.clients.description": "Tumeshirikiana na makampuni kutoka mabara 3 ambayo ni Afrika, Amerika ya Kaskazini na Ulaya. Baadhi ya wateja wetu mashuhuri ni pamoja na:",
+    "about.clients.logoAlt": "Nembo ya Mteja {index}",
+    "about.pricingPolicy.title": "Sera Yetu ya Bei",
+    "about.pricingPolicy.description": "Kulingana na mradi na asili ya huduma inayotolewa, tunatumia mojawapo ya mifano ya bei ifuatayo:",
+    "about.pricingPolicy.fixedPrice": "MFANO WA BEI YA KUDUMU",
+    "about.pricingPolicy.hourlyEngagement": "MFANO WA USHIRIKIANO WA SAA",
+    "about.pricingPolicy.retainerBased": "MFANO WA MSINGI WA HAKI",
+    "about.pricingPolicy.subscriptionBased": "MFANO WA MSINGI WA USHAURI",
+    "about.pricingPolicy.supportUpkeep": "MFANO WA US AIDIZI NA UTAFITI",
+    "about.pricingPolicy.onSiteDedicated": "MFANO WA KUDUMU WA TOVUTI",
+    "about.keyFeatures.title": "Vipengele vyetu vya Msingi",
+    "about.keyFeatures.clientManagement.title": "Usimamizi wa Wateja",
+    "about.keyFeatures.clientManagement.description": "Ingiza, fuatilia, na simamia maelezo ya wateja kwa sasisho za wakati halisi, kuhakikisha huduma za kibinafsi na rekodi sahihi.",
+    "about.keyFeatures.collectorManagement.title": "Usimamizi wa Wakusanyaji",
+    "about.keyFeatures.collectorManagement.description": "Wape nguvu wawakilishi wa shambani na zana za angavu za kuratibu, kufuatilia, na kuripoti ukusanyaji, zilizoboreshwa kwa mazingira ya mtandaoni na nje ya mtandao.",
+    "about.keyFeatures.mobileCollection.title": "Ukusanyaji wa Simu",
+    "about.keyFeatures.mobileCollection.description": "Programu yetu ya simu inayoweza kufanya kazi nje ya mtandao inawawezesha wakusanyaji kushughulikia malipo popote, wakati wowote, kuhakikisha huduma isiyokatizwa katika maeneo yenye muunganisho wa chini.",
+    "about.keyFeatures.bookletSystem.title": "Mfumo wa Daftari",
+    "about.keyFeatures.bookletSystem.description": "Badilisha daftari za jadi za ukusanyaji kuwa dijitali kwa kiolesura cha usalama na rahisi kutumia kwa kufuatilia miamala na kupunguza makosa.",
+    "about.keyFeatures.reportsAnalytics.title": "Ripoti na Uchanganuzi",
+    "about.keyFeatures.reportsAnalytics.description": "Pata maarifa yanayoweza kutekelezwa na dashibodi za wakati halisi, ripoti zinazoweza kubinafsishwa, na uchanganuzi wa utabiri ili kuboresha shughuli na kuendesha maamuzi ya busara zaidi.",
+    "about.keyFeatures.transactionHistory.title": "Historia ya Miamala",
+    "about.keyFeatures.transactionHistory.description": "Dumisha rekodi ya wazi na inayoweza kukaguliwa ya miamala yote, inayopatikana kwa taasisi na wateja kwa ajili ya uaminifu na uwajibikaji.",
+    "about.keyFeatures.smsNotifications.title": "Arifa za SMS",
+    "about.keyFeatures.smsNotifications.description": "Wafahamishe wateja kwa arifa za SMS za kiotomatiki na za wakati unaofaa kuhusu malipo, salio, na vikumbusho, vikiimarisha ushirikiano na uzingatiaji.",
+    "about.keyFeatures.userAccessRoles.title": "Upatikanaji wa Watumiaji na Majukumu",
+    "about.keyFeatures.userAccessRoles.description": "Simamia ruhusa kwa usalama kwa upatikanaji unaotegemea majukumu, kuhakikisha uadilifu wa data na ufanisi wa uendeshaji wa timu.",
+    "about.keyFeatures.dailySynchronization.title": "Usawazishaji wa Kila Siku",
+    "about.keyFeatures.dailySynchronization.description": "Sawazisha data kiotomatiki kwenye vifaa na mifumo, hata katika mazingira ya kipimo data cha chini, ili kuweka taarifa za sasa na za kuaminika.",
+    "about.keyFeatures.branchSetup.title": "Usanidi wa Tawi",
+    "about.keyFeatures.branchSetup.description": "Sanidi na simamia matawi mengi kwa urahisi, ukibinafsisha mtiririko wa kazi kwa mahitaji ya kikanda huku ukidumisha usimamizi wa kati.",
+    // Why ZetCollect
+    "why.title": "Kwa Nini ZetCollect",
+    "why.title2": "Nini Mteja Wetu Anapata Kuchagua ZetCollect:",
+    "why.subtitle": "Imejengwa mahsusi kwa hali halisi ya microfinance ya Afrika",
+    "why.quality.title": "Kampuni Inayozingatia Ubora",
+    "why.quality.alt": "Beji ya Ubora",
+    "why.quality.desc": "Tunatoa tu programu na huduma za ubora wa juu kwa wateja wetu. Tunahakikisha utapata thamani ya Biashara inayoonekana, utafurahia michakato ya mradi yenye afya, timu za kitaalamu na zenye motisha, na mawasiliano ya ufanisi kati ya IZSoftwares, timu zako, na wadau. Ahadi yetu ya kutoa programu na huduma za ubora wa juu sio ahadi tu; ni agano lililofumwa katika kila mstari wa msimbo na lililoelezwa katika kila uamuzi wa kimkakati.",
+    "why.security.title": "Usalama wa Kiwango cha Juu",
+    "why.security.alt": "Ikoni ya Usalama",
+    "why.security.desc": "Mipango yetu ya usalama haijazuiliwa na kufikia viwango vya sekta; inavizidi. Tunaona usalama kama chombo cha kuishi, kinachobadilika pamoja na mazingira ya vitisho yanayobadilika kila mara. Kama vile askari anavyorekebisha changamoto zinazoibuka, hatua zetu za usalama hupitia urekebishaji na uboreshaji wa mara kwa mara. Tufikirie kama wabunifu wa ngome ya dijitali, ambapo algoriti za usimbaji thabiti zinasimama kama msingi, ulinzi wa tabaka nyingi unahudumu kama ngome, na ufuatiliaji wa kujihami unafanya kazi kama mnara wetu wa uchunguzi. Ingawa vyeti vina thamani, tunaamini kwamba usalama wa kweli ni kujitolea kwa kuendelea na 'usalama ni wajibu wa kila mtu'.",
+    "why.africa.title": "Imejengwa kwa Hali Halisi za Afrika",
+    "why.africa.desc": "Imeundwa kwa mazingira ya muunganisho wa chini na uwezo wa kufanya kazi nje ya mtandao wa kwanza na imeboreshwa kwa hali za soko la ndani.",
+    "why.fraud.title": "Inayostahimili Ulaghai",
+    "why.fraud.desc": "Vipengele vya usalama vya hali ya juu ikiwa ni pamoja na daftari za dijitali, uchukuzi wa GPS, na uthibitishaji wa wakati halisi huzuia shughuli za ulaghai.",
+    "why.mobile.title": "Simu za Kwanza",
+    "why.mobile.desc": "Imeboreshwa kwa simu za mkononi na kompyuta za mkononi na violesura vya angavu vinavyofanya kazi vizuri kwenye kifaa chochote.",
+    "why.customizable.title": "Inayoweza Kubinafsishwa Kabisa",
+    "why.customizable.desc": "Rekebisha jukwaa kwa mtiririko wako wa kazi, chapa, na mahitaji ya uendeshaji.",
+    "why.integrable.title": "Inayoweza Kuunganishwa",
+    "why.integrable.desc": "Unganisha bila mshono na mifumo ya benki ya msingi iliyopo na huduma za kifedha za wahusika wengine.",
+    "why.data.title": "Maamuzi Yanayotokana na Data",
+    "why.data.desc": "Zana za uchanganuzi na ripoti za kina hutoa maarifa yanayoweza kutekelezwa kwa maamuzi bora ya Biashara.",
+    "why.readMore": "Soma zaidi",
+
     // Blog Page
-    "blog.title": "Habari",
-    "blog.category.financial": "TEKNOLOJIA YA FEDHA",
-    "blog.post1.title": "Kubadilisha Ukukusanya Fedha na Ubunifu wa Simu wa ZetCollect",
-    "blog.post1.description": "ZetCollect hurahisisha ukusanyaji wa fedha barani Afrika kwa programu yake ya simu inayofaa, inayofanya kazi nje ya mtandao. Ikiwa na usalama wa hali ya juu na uchanganuzi wa data, inaboresha malipo na kujenga imani.",
+    "blog.title": "Blogu",
+    "blog.category.financial": "Teknolojia ya Fedha",
+    "blog.post1.title": "Kubadilisha Ukusanyaji wa Fedha na Ubunifu wa Simu za Mkononi wa ZetCollect",
+    "blog.post1.description": "ZetCollect hurahisisha ukusanyaji wa fedha kote Afrika na programu yake ya simu ya angavu, inayoweza kufanya kazi nje ya mtandao. Imejaa usalama thabiti na uchanganuzi wa akili, hurahisisha malipo na kujenga uaminifu. Gundua jinsi inavyobadilisha fedha kwa taasisi.",
     "blog.post2.title": "Kulinda Mustakabali wa Fedha na Ulinzi wa Juu wa ZetCollect",
-    "blog.post2.description": "ZetCollect hulinda ukusanyaji wako wa fedha kwa zana za hali ya juu za kuzuia udanganyifu. Usalama wake wa kuaminika unahakikisha imani kwa taasisi za Afrika.",
+    "blog.post2.description": "ZetCollect inalinda ukusanyaji wako wa fedha na zana za kuzuia udanganyifu za hali ya juu. Usalama wake thabiti unahakikisha uaminifu na kutegemewa kwa taasisi za Afrika. Jifunze jinsi inavyolinda shughuli zako.",
     "blog.post3.title": "Kuongeza Ufanisi na Uchanganuzi wa Akili wa ZetCollect",
-    "blog.post3.description": "Dashibodi ya uchanganuzi ya ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi bora ya kifedha. Iliyoundwa kwa Afrika, inaboresha ukusanyaji na kuongeza uwazi.",
+    "blog.post3.description": "Dashibodi yenye nguvu ya uchanganuzi wa ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi ya fedha ya akili zaidi. Imebuniwa kwa Afrika, hurahisisha ukusanyaji na huongeza uwazi. Chunguza athari zake zinazoendeshwa na data.",
 
     // Events Page
     "events.title": "Matukio",
-    "events.subtitle": "Pata matukio yanayofuata.",
+    "events.subtitle": "Gundua matukio yanayokuja yafuatayo.",
     "events.filter.all": "Matukio Yote",
     "events.filterType": "Aina ya Tukio",
     "events.type.webinar": "Semina ya Mtandaoni",
@@ -504,32 +684,32 @@ const translations = {
     "events.event1.month": "AGOSTI",
     "events.event1.day": "4",
     "events.event1.type": "Semina ya Mtandaoni",
-    "events.event1.title": "Maonyesho ya Mtandaoni ya ZetCollect",
-    "events.event1.description": "Tukio letu la Maonyesho ya Moja kwa Moja ya ZetCollect linatoa uchunguzi wa kina wa huduma za kina zilizoundwa kubadilisha ukusanyaji wa fedha. Utagundua jinsi ZetCollect inavyowezesha mashirika na Usimamizi wa Wateja, Usimamizi wa Wakusanya, Usanidi wa Matawi, na uwezo wa Ukusanyaji wa Simu. Shuhudia mwenyewe jinsi Mfumo wetu wa Vitabu, Historia ya Miamala, Ripoti na Uchanganuzi, na Majukumu ya Ufikiaji ya Watumiaji yanavyoboresha ufanisi na kurahisisha shughuli. Zaidi ya hayo, gundua faida za Arifa za SMS na Ulandanishi wa Kila Siku usio na mshono. Usikose fursa hii ya kuona jinsi ZetCollect inavyoweza kubadilisha mbinu yako ya ukusanyaji na usimamizi wa fedha.",
-    "events.event1.dateTime": "JUMATATU, 4 AGOSTI 2025, SAA GMT+1",
+    "events.event1.title": "Onyesho la Mtandaoni la ZetCollect",
+    "events.event1.description": "Tukio letu la Maonyesho ya Moja kwa Moja ya ZetCollect linatoa uchunguzi wa kina wa seti kamili ya huduma zilizoundwa ili kubadilisha ukusanyaji wa fedha. Utafanyia uchunguzi jinsi ZetCollect inavyowezesha mashirika kwa Usimamizi wa Wateja, Usimamizi wa Wakusanyaji, Usanidi wa Tawi, na Uwezo wa Ukusanyaji wa Simu. Shuhudia moja kwa moja jinsi Mfumo wetu wa Daftari, Historia ya Miamala, Ripoti na Uchanganuzi, na Majukumu ya Upatikanaji wa Watumiaji yanavyoboresha ufanisi na kurahisisha shughuli. Zaidi ya hayo, gundua faida za Arifa za SMS na Usawazishaji wa Kila Siku usio na mshono. Usikose fursa hii ya kuona jinsi ZetCollect inavyoweza kubadilisha mbinu yako ya ukusanyaji na usimamizi wa fedha.",
+    "events.event1.dateTime": "JUMATATU, Agosti 4, 2025, SAA GMT+1",
     "events.event1.time": "10:00 ASUBUHI HADI 11:00 ASUBUHI",
     "events.event2.month": "OKTOBA",
     "events.event2.day": "6",
     "events.event2.type": "Mwa moja kwa moja",
-    "events.event2.title": "Mkutano wa Kila Mwaka wa Ubunifu wa Teknolojia",
-    "events.event2.description": "Jiunge na viongozi wa sekta na wavumbuzi katika Mkutano wa Kila Mwaka wa Ubunifu wa Teknolojia kujadili mwelekeo wa hivi karibuni katika teknolojia, mabadiliko ya kidijitali, na mikakati ya kuhakikisha mustakabali. Inajumuisha wazungumzaji wa msingi, warsha za maingiliano, na fursa za mitandao.",
-    "events.event2.dateTime": "JUMATATU, 6 OKTOBA 2025, SAA GMT+1",
-    "events.event2.time": "09:00 ASUBUHI HADI 05:00 ALASIRI",
+    "events.event2.title": "Mkutano wa Mwaka wa Ubunifu wa Teknolojia",
+    "events.event2.description": "Jiunge na viongozi wa sekta na wabunifu katika Mkutano wa Mwaka wa Ubunifu wa Teknolojia kujadili mwelekeo wa hivi karibuni wa teknolojia, mabadiliko ya kidijitali, na mikakati ya kuthibitisha siku za usoni. Inahusisha wazungumzaji wa msingi, warsha za maingiliano, na fursa za mitandao.",
+    "events.event2.dateTime": "JUMATATU, Oktoba 6, 2025, SAA GMT+1",
+    "events.event2.time": "09:00 ASUBUHI HADI 05:00 USIKU",
 
     // Navigation
     'nav.home': 'Nyumbani',
     'nav.features': 'Vipengele',
     'nav.why': 'Kwa Nini ZetCollect',
-    'nav.demo': 'Mfano',
+    'nav.demo': 'Onyesho',
     'nav.upcoming': 'Vipengele Vinavyokuja',
     'nav.pricing': 'Bei',
-    'nav.contact': 'Mawasiliano',
+    'nav.contact': 'Wasiliana',
     'nav.login': 'Ingia',
     
-    // Hero Section
+   // Hero Section
     'hero.title': 'Badilisha Ukusanyaji wa Pesa na ZetCollect',
     'hero.subtitle': 'Kuwezesha taasisi za kifedha za Afrika kwa suluhisho za kidijitali za ukusanyaji zilizo na ufanisi, uwazi na upinzani wa ulaghai',
-    'hero.cta.demo': 'Anza',
+    'hero.cta.demo': 'Angalia Mfano',
     'hero.cta.request': 'Omba Mfano',
     'hero.cta.features': 'Chunguza Vipengele',
     
@@ -556,22 +736,6 @@ const translations = {
     'features.sms.desc': 'Vikumbusho na uthibitisho wa kiotomatiki kupitia SMS kwa mawasiliano bora.',
     'features.sync.title': 'Ulandanishi wa Kila Siku',
     'features.sync.desc': 'Ulandanishi unaofaa wa data kati ya vifaa vya simu na hifadhidata kuu.',
-    
-    // Why ZetCollect
-    'why.title': 'Kwa Nini ZetCollect',
-    'why.subtitle': 'Imeundwa maalum kwa ukweli wa kifedha cha Afrika',
-    'why.africa.title': 'Imeundwa kwa Ukweli wa Afrika',
-    'why.africa.desc': 'Imeundwa kwa mazingira ya muunganisho mdogo na uwezo wa bila mtandao na iliyoboreshwa kwa hali za soko la ndani.',
-    'why.fraud.title': 'Inayopinga Ulaghai',
-    'why.fraud.desc': 'Vipengele vya usalama vya hali ya juu vikiwa ni pamoja na vitabu vya kidijitali, ufuatiliaji wa GPS na uthibitisho wa wakati halisi.',
-    'why.mobile.title': 'Simu Kwanza',
-    'why.mobile.desc': 'Imeongezwa kwa simu mahiri na kompyuta kibao na interface za kina zinazofanya kazi vizuri kwenye kifaa chochote.',
-    'why.customizable.title': 'Inayoweza Kubadilishwa Kabisa',
-    'why.customizable.desc': 'Rekebisha jukwaa kulingana na mtiririko wako wa kazi, nembo na mahitaji ya uendeshaji.',
-    'why.integrable.title': 'Inayoweza Kuunganishwa',
-    'why.integrable.desc': 'Uunganisho unaofaa na mifumo ya benki kuu iliyopo na huduma za kifedha za nje.',
-    'why.data.title': 'Maamuzi Yanayotegemea Data',
-    'why.data.desc': 'Zana za kina za uchanganuzi na ripoti hutoa maarifa yanayoweza kutumika kwa maamuzi bora ya biashara.',
     
     // Demo Section
     'demo.title': 'ZetCollect Ikifanya Kazi',
@@ -603,7 +767,6 @@ const translations = {
     'upcoming.currency.title': 'Mfumo Mpya wa Sarafu (KES)',
     'upcoming.currency.desc': 'Ujumuishaji usio na mshono wa Shilingi za Kenya (KES) kwa miamala yote na ripoti za kifedha.',
     
-   
     // Contact Us
     'contact.title': 'Wasiliana Nasi',
     'contact.subtitle': 'Tafadhali wasiliana nasi kujadili maswali yoyote ya ziada.',
@@ -613,7 +776,7 @@ const translations = {
     'contact.form.email': 'Barua pepe ya Biashara*',
     'contact.form.job_title': 'Cheo cha Kazi*',
     'contact.form.contact_number': 'Simu ya Kazini*',
-    'contact.form.organisation': 'Jina la Kampuni*',
+    'contact.form.organisation': 'Jina la kampuni*',
     'contact.form.country': 'Nchi*',
     'contact.form.country.cameroon': 'Kameruni',
     'contact.form.country.kenya': 'Kenya',
@@ -659,7 +822,7 @@ const translations = {
     'footer.newsroom': 'CHUMBA CHA HABARI',
     'footer.articles': 'Makala',
     'footer.events_webinars': 'Matukio na Semina za Mtandao',
-    'footer.support': 'MSAADA',
+    'footer.support': 'Msaada',
     'footer.faq': 'Maswali Yanayoulizwa Mara kwa Mara',
     'footer.training_certification': 'Mafunzo na Uthibitisho',
     'footer.rights': 'Imewashwa na © {year} Evolv IZSoftwares Group Ltd. Haki Zote Zimehifadhiwa.',
@@ -701,8 +864,6 @@ const translations = {
     "release.saas.title2": "Tovuti ya ZetCollect: Toleo la 2025",
     "release.saas.systemVersionWeb": "<strong>Toleo la</strong>: 1.0.0-Beta - 25 Aprili 2025",
     "release.saas.systemVersionWeb2": "<strong>Toleo la</strong>: 1.0.1-Beta - 27 Juni 2025",
-    "release.saas.systemVersionWeb3": "<strong>Toleo la</strong>: 1.0.2-Beta - 12 Julai 2025",
-    "release.saas.systemVersionWeb4": "<strong>Toleo la</strong>: 1.0.3-Beta - 18 Julai 2025",
     
     // FAQPage
     'faq.title': 'Maswali Yanayoulizwa Mara kwa Mara',
@@ -722,26 +883,27 @@ const translations = {
 
 const LanguageContext = createContext(undefined);
 
+/**
+ * @param {{ children: React.ReactNode }} props
+ */
 export const LanguageProvider = ({ children }) => {
-  const [language, setLanguage] = useState(() => {
-    const saved = localStorage.getItem('zetcollect-language');
-    return saved || 'en';
-  });
+  const [language, setLanguage] = useState('en');
 
   useEffect(() => {
-    localStorage.setItem('zetcollect-language', language);
-  }, [language]);
+    const savedLanguage = localStorage.getItem('language');
+    if (savedLanguage && ['en', 'fr', 'sw'].includes(savedLanguage)) {
+      setLanguage(savedLanguage);
+    }
+  }, []);
 
   const t = (key, params = {}) => {
-    if (!translations[language][key]) {
-      console.warn(`Translation missing for key: ${key} in language: ${language}`);
-      return key;
+    let translation = translations[language][key] || translations.en[key] || key;
+    if (params && Object.keys(params).length > 0) {
+      Object.keys(params).forEach((param) => {
+        translation = translation.replace(`{${param}}`, params[param]);
+      });
     }
-    let text = translations[language][key];
-    Object.keys(params).forEach((param) => {
-      text = text.replace(`{${param}}`, params[param]);
-    });
-    return text;
+    return translation;
   };
 
   return (
@@ -751,9 +913,12 @@ export const LanguageProvider = ({ children }) => {
   );
 };
 
+/**
+ * @returns {LanguageContextType}
+ */
 export const useLanguage = () => {
   const context = useContext(LanguageContext);
-  if (context === undefined) {
+  if (!context) {
     throw new Error('useLanguage must be used within a LanguageProvider');
   }
   return context;

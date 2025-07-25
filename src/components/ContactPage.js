@@ -12,6 +12,7 @@ const ContactPage = () => {
     { country: 'Cameroon', name: 'Cameroon Cooperative Credit Union League Ltd', img: 'CamCCUL Logo.jpg' },
     { country: 'Cameroon', name: 'CRCCU', img: 'cropped-cropped-Logo-Croped logo.jpg' },
     { country: 'Gabon', name: 'Banque de l’Habitat du Gabon (BHG)', img: '(BHG) logo.png' },
+    { country: 'Cameroon', name: 'ACEP Cameroun - Fondation Grameen Crédit-Agricole', img: 'log_ACEP_NEW.png' },
   ];
 
   return (
@@ -158,18 +159,6 @@ const ContactPage = () => {
                       <option value="it">{t('contact.form.functional_role.it')}</option>
                     </select>
                   </div>
-                  {/* How did you hear about ZetCollect? (Dropdown) */}
-                  {/* <div className="md:col-span-2">
-                    <label htmlFor="how_did_you_hear" className="sr-only">{t('contact.form.how_did_you_hear')}</label>
-                    <select
-                      id="how_did_you_hear"
-                      className="w-full px-4 py-3 text-gray-900 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"
-                    >
-                      <option value="" disabled selected className="text-gray-500">{t('contact.form.how_did_you_hear')}</option>
-                      <option value="search">{t('contact.form.how_did_you_hear.search')}</option>
-                      <option value="referral">{t('contact.form.how_did_you_hear.referral')}</option>
-                    </select>
-                  </div> */}
                 </div>
 
                 {/* Opt-in Checkbox */}

@@ -48,7 +48,8 @@ const Footer = () => {
             <div className="flex flex-col gap-4">
               <p className="font-bold ">{t('footer.about')}</p>
               <Link to="/about-us" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
-              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.resource_center')}</Link>
+              <Link to="/pricing" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.pricing')}</Link>
+              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.customer_story')}</Link>
               <Link to="/contact-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('common.contactUs')}</Link>
             </div>
             
@@ -65,7 +66,7 @@ const Footer = () => {
               <p className="font-bold ">{t('footer.support')}</p>
               <Link to="/faq-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
               <Link to="/customer-support-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
-              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
+              <Link to="/training-and-certification" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
             </div>
           </div>
         </div>

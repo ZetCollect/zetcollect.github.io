@@ -21,7 +21,7 @@ const Navbar = () => {
     { name: t('nav.home') || 'Home', href: '/', hash: '#hero' },
     { name: t('nav.features') || 'Features', href: '/', hash: '#features' },
     { name: t('nav.why') || 'Why ZetCollect', href: '/', hash: '#why-zetcollect' },
-    { name: t('nav.upcoming') || 'Upcoming', href: '/', hash: '#upcoming' },
+    { name: t('nav.pricing') || 'Pricing', href: '/pricing', hash: '' },
   ];
 
   const supportLinks = [
@@ -57,6 +57,11 @@ const Navbar = () => {
   };
 
   const handleNavClick = (href, hash, e) => {
+    // Allow full navigation for Pricing or any non-homepage link
+    if (href !== '/' || !hash) {
+      return; // Let the Link component handle navigation
+    }
+    // Handle smooth scrolling for homepage anchor links
     if (location.pathname === '/' && hash) {
       e.preventDefault();
       const targetElement = document.getElementById(hash.substring(1));
@@ -64,7 +69,6 @@ const Navbar = () => {
         targetElement.scrollIntoView({ behavior: 'smooth' });
       }
     }
-    // If not on the homepage or no hash, let the Link handle navigation
   };
 
   return (

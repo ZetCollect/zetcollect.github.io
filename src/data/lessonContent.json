@@ -1,0 +1,50 @@
+
+[
+  {
+    "id": "protecting-accounts",
+    "titleKey": "lessons.protecting-accounts.title",
+    "categoryKey": "lessons.protecting-accounts.category",
+    "contentKey": "lessons.protecting-accounts.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.protecting-accounts.relatedCourses.onboarding.title", "link": "/training/onboarding" },
+      { "titleKey": "lessons.protecting-accounts.relatedCourses.compliance.title", "link": "/training/compliance" }
+    ]
+  },
+  {
+    "id": "adding-business-kyc3",
+    "titleKey": "lessons.adding-business-kyc3.title",
+    "categoryKey": "lessons.adding-business-kyc3.category",
+    "contentKey": "lessons.adding-business-kyc3.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.adding-business-kyc3.relatedCourses.onboarding.title", "link": "/training/onboarding" },
+      { "titleKey": "lessons.adding-business-kyc3.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
+    ]
+  },
+  {
+    "id": "understanding-kyc-requirements",
+    "titleKey": "lessons.understanding-kyc-requirements.title",
+    "categoryKey": "lessons.understanding-kyc-requirements.category",
+    "contentKey": "lessons.understanding-kyc-requirements.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.understanding-kyc-requirements.relatedCourses.compliance.title", "link": "/training/compliance" }
+    ]
+  },
+  {
+    "id": "mobile-app-basics",
+    "titleKey": "lessons.mobile-app-basics.title",
+    "categoryKey": "lessons.mobile-app-basics.category",
+    "contentKey": "lessons.mobile-app-basics.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.mobile-app-basics.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
+    ]
+  },
+  {
+    "id": "fraud-prevention-training",
+    "titleKey": "lessons.fraud-prevention-training.title",
+    "categoryKey": "lessons.fraud-prevention-training.category",
+    "contentKey": "lessons.fraud-prevention-training.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.fraud-prevention-training.relatedCourses.compliance.title", "link": "/training/compliance" }
+    ]
+  }
+]

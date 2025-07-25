@@ -1,0 +1,50 @@
+[
+  {
+    "id": "onboarding",
+    "titleKey": "courses.onboarding.title",
+    "lessons": [
+      {
+        "id": "protecting-accounts",
+        "titleKey": "courses.onboarding.lesson.protecting-accounts.title",
+        "descriptionKey": "courses.onboarding.lesson.protecting-accounts.description",
+        "image": "/2FA.jpg"
+      }
+    ]
+  },
+  {
+    "id": "product-knowledge",
+    "titleKey": "courses.product-knowledge.title",
+    "lessons": [
+      {
+        "id": "mobile-app-basics",
+        "titleKey": "courses.product-knowledge.lesson.mobile-app-basics.title",
+        "descriptionKey": "courses.product-knowledge.lesson.mobile-app-basics.description",
+        "image": "/Asset 23x.png"
+      }
+    ]
+  },
+  {
+    "id": "compliance",
+    "titleKey": "courses.compliance.title",
+    "lessons": [
+      {
+        "id": "understanding-kyc-requirements",
+        "titleKey": "courses.compliance.lesson.understanding-kyc-requirements.title",
+        "descriptionKey": "courses.compliance.lesson.understanding-kyc-requirements.description",
+        "image": "/kyc.jpg"
+      },
+      {
+        "id": "fraud-prevention-training",
+        "titleKey": "courses.compliance.lesson.fraud-prevention-training.title",
+        "descriptionKey": "courses.compliance.lesson.fraud-prevention-training.description",
+        "image": "/privacy-confidential-protection-security-solitude-concept.jpg"
+      },
+      {
+        "id": "data-privacy-regulations",
+        "titleKey": "courses.compliance.lesson.data-privacy-regulations.title",
+        "descriptionKey": "courses.compliance.lesson.data-privacy-regulations.description",
+        "image": "/woman-with-gdpr-speech-bubbe-holding-padlock-icon.jpg"
+      }
+    ]
+  }
+]

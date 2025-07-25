@@ -1,5 +1,5 @@
 import React from 'react';
-import { MapPin, Globe, Shield, Smartphone, Settings, Plug, BarChart3 } from 'lucide-react';
+import { MapPin, Globe, Shield, Smartphone, Settings, Plug, BarChart3, Star, Lock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import Footer from '../components/Footer';
 
@@ -62,17 +62,15 @@ const AboutUsPage = () => {
     },
   ];
 
-  // Why ZetCollect Benefits (including Quality-Centric and Top-notch Security)
+  // Why ZetCollect Benefits
   const benefits = [
     {
-      image: '/quality.png',
-      alt: t('why.quality.alt'),
+      icon: Star,
       title: t('why.quality.title'),
       description: t('why.quality.desc'),
     },
     {
-      image: '/security.dbeca56dcb3f8cf76e08374baad55cd5.png',
-      alt: t('why.security.alt'),
+      icon: Lock,
       title: t('why.security.title'),
       description: t('why.security.desc'),
     },
@@ -117,7 +115,6 @@ const AboutUsPage = () => {
             <h1 className="mb-2 text-4xl font-bold text-gray-900 lg:text-5xl">
               {t('about.title')}
             </h1>
-            {/* <p className="text-2xl font-bold text-gray-700">{t('about.subtitle')}</p> */}
             <p className="mt-6 mb-4 text-lg leading-relaxed text-gray-700">
               {t('about.description')}
             </p>
@@ -159,7 +156,7 @@ const AboutUsPage = () => {
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
                     <MapPin className="flex-shrink-0 w-5 h-5 mr-2 text-secondary" />
-                    <span>{t('about.geography.kenyaOffice') || 'Office locations: Nairobi'}</span>
+                    <span>{t('about.geography.kenyaOffice')}</span>
                   </li>
                 </ul>
               </div>
@@ -209,7 +206,7 @@ const AboutUsPage = () => {
                   <div key={index} className="flex-shrink-0 mx-8">
                     <img
                       src={logo}
-                      alt={t('about.clients.logoAlt', { index: index + 1 }) || `Client Logo ${index + 1}`}
+                      alt={t('about.clients.logoAlt', { index: index + 1 })}
                       className="object-contain h-20 transition-all duration-300"
                     />
                   </div>
@@ -245,20 +242,23 @@ const AboutUsPage = () => {
               {t('about.pricingPolicy.description')}
             </p>
             <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-              <div className="p-6 font-semibold text-center text-gray-800 transition-colors bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
-                {t('about.pricingPolicy.subscriptionBased')}
+              <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
+                <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.subscriptionBased')}</h3>
+                <p className="text-justify text-gray-700">{t('about.pricingPolicy.subscriptionBasedDesc')}</p>
               </div>
-              <div className="p-6 font-semibold text-center text-gray-800 transition-colors bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
-                {t('about.pricingPolicy.supportUpkeep')}
+              <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
+                <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.payAsYouGo')}</h3>
+                <p className="text-justify text-gray-700">{t('about.pricingPolicy.payAsYouGoDesc')}</p>
               </div>
-              <div className="p-6 font-semibold text-center text-gray-800 transition-colors bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
-                {t('about.pricingPolicy.onSiteDedicated')}
+              <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
+                <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.serviceContinuity')}</h3>
+                <p className="text-justify text-gray-700">{t('about.pricingPolicy.serviceContinuityDesc')}</p>
               </div>
             </div>
           </div>
 
           {/* Why ZetCollect Section */}
-          <div className="pt-12 mt-12 border-t border-gray-800 " aria-label="Why ZetCollect">
+          <div className="pt-12 mt-12 border-t border-gray-800" aria-label="Why ZetCollect">
             <h2 className="mb-8 text-3xl font-bold text-gray-900">
               {t('why.title2')}
             </h2>
@@ -275,16 +275,7 @@ const AboutUsPage = () => {
                     className="flex flex-col items-start p-6 bg-gray-100 rounded-lg shadow-sm border-primary md:flex-row"
                   >
                     <div className="flex items-center justify-center flex-shrink-0 w-16 h-16 mb-4 mr-6 rounded-full md:mb-0">
-                      {benefit.image ? (
-                        <img
-                          src={benefit.image}
-                          alt={benefit.alt}
-                          className="w-16 h-16"
-                          aria-hidden="true"
-                        />
-                      ) : (
-                        <Icon className="w-10 h-10 text-primary" aria-hidden="true" />
-                      )}
+                      <Icon className="w-10 h-10 text-primary" aria-hidden="true" />
                     </div>
                     <div className="flex-1">
                       <h3 className="mb-2 text-xl font-semibold text-gray-900">{benefit.title}</h3>

@@ -249,7 +249,7 @@ const WhyZetCollectSection = () => {
       <style>{`
         /* Defining a custom shadow with a blue tint for a visible drop shadow */
         .custom-shadow-strong {
-          /* Using a blue color (e.g., from a standard blue-500) for the shadow */
+          /* Using a blue color (e.g., from a standard primary) for the shadow */
           box-shadow: 0 25px 50px -12px rgba(0, 184, 148, 0.2);
         }
 

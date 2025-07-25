@@ -18,6 +18,7 @@ The current version has the following features:
 ### 10. Daily Notification
 
 
+
 # Upcoming Features
 
 ### 1. GPS Traceability

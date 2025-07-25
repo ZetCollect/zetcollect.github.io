@@ -69,6 +69,12 @@ const ReleaseNotesPage = () => {
                 <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb4') }} />
               </div>
             </div>
+            <div className="mt-5">
+              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
+                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
+                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb5') }} />
+              </div>
+            </div>
           </div>
         </div>
       </section>

@@ -20,16 +20,14 @@ const translations = {
     "about.numbers.title": "ZetCollect Group in Numbers",
     "about.numbers.teamExperience": "Team Professional Experience",
     "about.numbers.successStories": "Success Stories",
-    "about.numbers.industryCovers": "Industry Covers",
+    "about.numbers.industryCovers": "Microfinance Covers",
     "about.geography.title": "Our Geography",
     "about.geography.description":
       "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
     "about.geography.kenya": "Kenya",
-    "about.geography.kenyaOffice": "Office locations: Nairobi",
-    "about.geography.rwanda": "Rwanda",
-    "about.geography.rwandaOffice": "V. Office locations: Kigali",
+    "about.geography.kenyaOffice": "Office Locations: Oracle Tower, Westland, Nairobi",
     "about.geography.cameroon": "Cameroon",
-    "about.geography.cameroonOffice": "V. Office locations: Douala",
+    "about.geography.cameroonOffice": "V. Office Locations: Akwa, Douala",
     "about.clients.title": "Our Clients",
     "about.clients.description":
       "We have collaborated with companies from 3 continents which are Africa, North America and Europe. Some of our prominent clients include:",
@@ -39,13 +37,13 @@ const translations = {
       "Depending on a project and the nature of the delivered service, we offer the following pricing models:",
     "about.pricingPolicy.subscriptionBased": "Subscription-Based Model",
     "about.pricingPolicy.subscriptionBasedDesc":
-      "This model allows clients to access our comprehensive suite of services, provided by our solution which are ZetCollect and Supply Chain Optimization as a Service (SCOS). The subscription includes regular updates, new features, and enhancements. Clients maintain continuous access to these services for the duration of their subscription.",
+      "Our Subscription-Based Model provides a flexible and cost-effective way to access ZetCollect's core features. Under this model, businesses pay a regular, recurring fee for access to the platform’s services. This model is typically used by our standard Business accounts. However, please note that while you’ll have access to the core functionalities, Subscription-Based users will not receive the latest features, but will have update on lastest security patch.",
     "about.pricingPolicy.payAsYouGo": "Pay As You Go",
     "about.pricingPolicy.payAsYouGoDesc":
       "Our pay-as-you-go model offers flexibility for clients to use ZetCollect and SCOS services as needed, paying only for the features and resources utilized. This approach is ideal for businesses seeking scalable solutions without long-term commitments.",
     "about.pricingPolicy.serviceContinuity": "Service Continuity Model",
     "about.pricingPolicy.serviceContinuityDesc":
-      "The service continuity model ensures uninterrupted access to ZetCollect and SCOS with dedicated support, proactive maintenance, and priority updates. This model is designed for businesses requiring consistent performance and reliability.",
+      "The Service Continuity Model is designed for organizations that need uninterrupted access to the most current features, updates, and optimizations. Enterprise accounts typically opt for this model, ensuring they receive continuous updates to the platform, including the latest functionalities, security patches, and performance improvements. This model guarantees that your institution will always be equipped with the most up-to-date version of ZetCollect.",
     "about.pricingPolicy.onSiteDedicated": "On-Site Dedicated Model",
     "about.keyFeatures.title": "Our Key Features",
     "about.keyFeatures.clientManagement.title": "Client Management",
@@ -338,7 +336,7 @@ const translations = {
     "release.description1":
       "ZetCollect is a cutting-edge finance collection app tailored for African institutions. Its intuitive mobile interface ensures seamless payments, even offline. Advanced security and analytics empower efficient, transparent operations.",
     "release.description2":
-      "Our SaaS platform brings fresh updates every week, neatly summarized each month. VPC users enjoy quarterly updates with a 14-day test period, or 45 days with staging. ZetCollect offers secure, flexible, and insightful tools to simplify your financial operations.",
+      "Our SaaS platform brings fresh updates every week, neatly summarized each month. ZetCollect updates its website weekly and releases app updates every two weeks. ",
     "release.saas.title": "ZetCollect System: 2025 release",
     "release.saas.systemVersion":
       "<strong>Version</strong>: 1.2.0 - 25th April 2025",
@@ -353,6 +351,8 @@ const translations = {
       "<strong>Version</strong>: 1.0.3-Beta - 12th July 2025",
     "release.saas.systemVersionWeb4":
       "<strong>Version</strong>: 1.0.4-Beta - 18th July 2025",
+    "release.saas.systemVersionWeb5":
+      "<strong>Version</strong>: 1.0.5-Beta - 25th July 2025",
 
     // FAQPage
     "faq.title": "Frequently Asked Questions",
@@ -430,7 +430,7 @@ const translations = {
     "pricing.compareFeatures.routeOptimization":
       "Route and Schedule Optimization",
     "pricing.compareFeatures.clientSelfAccessPortal":
-      "Client Self-Service Portal (Future)",
+      "Client Self-Service Portal",
     "pricing.compareFeatures.localBusinessHours":
       "Local Business Hours Support",
     "pricing.compareFeatures.enterpriseSupport": "24/7 Enterprise Support",
@@ -529,6 +529,10 @@ const translations = {
     "lessons.fraud-prevention-training.relatedCourses.compliance.title":
       "Compliance and Regulation",
   },
+
+
+
+
   fr: {
     // About Page
     "about.title": "À propos de ZetCollect :",
@@ -872,13 +876,15 @@ const translations = {
       "<strong>Version</strong>: 1.2.1 - 27 juin 2025",
     "release.saas.title2": "ZetCollect le site: 2025 libérer",
     "release.saas.systemVersionWeb":
-      "<strong>Version</strong>: 1.0.0-Bêta - 25 avril 2025",
+      "<strong>Version</strong>: 1.0.1-Bêta - 25 avril 2025",
     "release.saas.systemVersionWeb2":
-      "<strong>Version</strong>: 1.0.1-Bêta - 27 juin 2025",
+      "<strong>Version</strong>: 1.0.2-Bêta - 27 juin 2025",
     "release.saas.systemVersionWeb3":
-      "<strong>Version</strong>: 1.0.2-Beta - 12th Juillet 2025",
+      "<strong>Version</strong>: 1.0.3-Beta - 12th Juillet 2025",
     "release.saas.systemVersionWeb4":
-      "<strong>Version</strong>: 1.0.3-Beta - 18th Juillet 2025",
+      "<strong>Version</strong>: 1.0.4-Beta - 18th Juillet 2025",
+    "release.saas.systemVersionWeb5":
+      "<strong>Version</strong>: 1.0.5-Beta - 25th Juillet 2025",
 
     // FAQPage
     "faq.title": "Foire aux Questions",
@@ -962,7 +968,7 @@ const translations = {
     "pricing.compareFeatures.routeOptimization":
       "Optimisation des itinéraires et des horaires",
     "pricing.compareFeatures.clientSelfAccessPortal":
-      "Portail en libre-service pour les clients (à venir)",
+      "Portail en libre-service pour les clients",
     "pricing.compareFeatures.localBusinessHours":
       "Support pendant les heures ouvrables locales",
     "pricing.compareFeatures.enterpriseSupport": "Support entreprise 24/7",
@@ -1067,6 +1073,13 @@ const translations = {
     "lessons.fraud-prevention-training.relatedCourses.compliance.title":
       "Conformité et réglementation",
   },
+
+
+
+
+
+
+
   sw: {
     // About Page
     "about.title": "Kuhusu ZetCollect:",
@@ -1407,13 +1420,15 @@ const translations = {
       "<strong>Toleo la</strong>: 1.2.1 - 27 Juni 2025",
     "release.saas.title2": "Tovuti ya ZetCollect: Toleo la 2025",
     "release.saas.systemVersionWeb":
-      "<strong>Toleo la</strong>: 1.0.0-Beta - 25 Aprili 2025",
+      "<strong>Toleo la</strong>: 1.0.1-Beta - 25 Aprili 2025",
     "release.saas.systemVersionWeb2":
-      "<strong>Toleo la</strong>: 1.0.1-Beta - 27 Juni 2025",
+      "<strong>Toleo la</strong>: 1.0.2-Beta - 27 Juni 2025",
     "release.saas.systemVersionWeb3":
-      "<strong>Version</strong>: 1.0.2-Beta - 12th Julai 2025",
+      "<strong>Version</strong>: 1.0.3-Beta - 12th Julai 2025",
     "release.saas.systemVersionWeb4":
-      "<strong>Version</strong>: 1.0.3-Beta - 18th Julai 2025",
+      "<strong>Version</strong>: 1.0.4-Beta - 18th Julai 2025",
+    "release.saas.systemVersionWeb5":
+      "<strong>Version</strong>: 1.0.5-Beta - 25th Julai 2025",
 
     // FAQPage
     "faq.title": "Maswali Yanayoulizwa Mara kwa Mara",
@@ -1492,7 +1507,8 @@ const translations = {
     "pricing.features.routeOptimization": "Uboreshaji wa Njia na Ratiba",
     "pricing.features.clientSelfAccessPortal":
       "Jukwaa la Kujihudumia la Mteja (Ramani ya Baadaye)",
-    // OnboardingCoursePage Component
+    
+      // OnboardingCoursePage Component
     "onboarding.title": "Kozi",
     "onboarding.allCourses": "Kozi Zote",
     "onboarding.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
@@ -1528,17 +1544,19 @@ const translations = {
       "Kanuni za Faragha ya Data na Mbinu Bora",
     "courses.compliance.lesson.data-privacy-regulations.description":
       "Kozi muhimu kuhusu sheria za ulinzi wa data (kwa mfano, GDPR, kanuni za mitaa) na jinsi ya kushughulikia data ya wateja kwa usalama na kwa mujibu wa sheria.",
-    // ProductKnowledgeCoursePage Component
+    
+      // ProductKnowledgeCoursePage Component
     "productKnowledge.title": "Kozi",
     "productKnowledge.allCourses": "Kozi Zote",
     "productKnowledge.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
     "productKnowledge.onboardingAndIssueResolution":
-      "Kuingiza na Kusuluhisha Masuala",
+    "Kuingiza na Kusuluhisha Masuala",
     "productKnowledge.filter.all": "Masomo Yote",
     "productKnowledge.filter.completed": "Yamekamilika",
     "productKnowledge.filter.inProgress": "Inaendelea",
     "productKnowledge.noLessons":
-      "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
+    "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
+
     // CourseLessonPage Component
     "courseLesson.title": "{lessonTitle}",
     "courseLesson.notFound":
@@ -1591,26 +1609,19 @@ const translations = {
     "pricing.compareFeatures.clientManagement": "Usimamizi wa Wateja",
     "pricing.compareFeatures.collectorManagement": "Usimamizi wa Wakusanyaji",
     "pricing.compareFeatures.branchSetup": "Usanidi wa Tawi na Taasisi",
-    "pricing.compareFeatures.mobileCollection":
-      "Kiolesura cha Ukusanyaji wa Simu",
+    "pricing.compareFeatures.mobileCollection": "Kiolesura cha Ukusanyaji wa Simu",
     "pricing.compareFeatures.bookletSystem": "Mfumo wa Vijarida",
     "pricing.compareFeatures.transactionHistory": "Historia ya Miamala",
     "pricing.compareFeatures.reportsAnalytics": "Ripoti na Uchanganuzi",
-    "pricing.compareFeatures.userAccessRoles":
-      "Upatikanaji wa Watumiaji na Majukumu",
+    "pricing.compareFeatures.userAccessRoles": "Upatikanaji wa Watumiaji na Majukumu",
     "pricing.compareFeatures.smsNotifications": "Arifa za SMS za Hiari",
-    "pricing.compareFeatures.dailySynchronization":
-      "Usawazishaji wa Data wa Kila Siku",
-    "pricing.compareFeatures.gpsTraceability":
-      "Ufuatiliaji wa GPS kwa Wakusanyaji",
-    "pricing.compareFeatures.missedCollectionAlerts":
-      "Arifa za Ukusanyaji Uliosahaulika",
+    "pricing.compareFeatures.dailySynchronization":   "Usawazishaji wa Data wa Kila Siku",
+    "pricing.compareFeatures.gpsTraceability":  "Ufuatiliaji wa GPS kwa Wakusanyaji",
+    "pricing.compareFeatures.missedCollectionAlerts":  "Arifa za Ukusanyaji Uliosahaulika",
     "pricing.compareFeatures.clientRiskProfile": "Profaili ya Hatari ya Wateja",
     "pricing.compareFeatures.routeOptimization": "Uboreshaji wa Njia na Ratiba",
-    "pricing.compareFeatures.clientSelfAccessPortal":
-      "Portali ya Huduma ya Wateja (ya Baadaye)",
-    "pricing.compareFeatures.localBusinessHours":
-      "Msaada wa Saa za Biashara za Ndani",
+    "pricing.compareFeatures.clientSelfAccessPortal":   "Portali ya Huduma ya Wateja",
+    "pricing.compareFeatures.localBusinessHours":  "Msaada wa Saa za Biashara za Ndani",
     "pricing.compareFeatures.enterpriseSupport": "Msaada wa Mashirika 24/7",
   },
 };

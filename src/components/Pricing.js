@@ -28,9 +28,7 @@ const Pricing = () => {
     { name: t('pricing.compareFeatures.missedCollectionAlerts'), business: false, enterprise: true },
     { name: t('pricing.compareFeatures.clientRiskProfile'), business: false, enterprise: true },
     { name: t('pricing.compareFeatures.routeOptimization'), business: false, enterprise: true },
-    { name: t('pricing.compareFeatures.clientSelfAccessPortal'), business: false, enterprise: true },
-    { name: t('pricing.compareFeatures.localBusinessHours'), business: true, enterprise: false },
-    { name: t('pricing.compareFeatures.enterpriseSupport'), business: false, enterprise: true },
+    { name: t('pricing.compareFeatures.clientSelfAccessPortal'), business: false, enterprise: true }
   ];
 
   return (
@@ -71,10 +69,7 @@ const Pricing = () => {
                 </p>
                 <h4 className="mb-4 text-lg font-semibold text-left">{t('pricing.section2.business.features.title')}</h4>
                 <ul className="mb-8 space-y-3">
-                  <li className="flex items-center text-gray-700">
-                    <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
-                    {t('pricing.compareFeatures.localBusinessHours')}
-                  </li>
+                 
                   <li className="flex items-center text-gray-700">
                     <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
                     {t('pricing.compareFeatures.clientManagement')}
@@ -91,6 +86,10 @@ const Pricing = () => {
                     <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
                     {t('pricing.compareFeatures.mobileCollection')}
                   </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
+                    {t('pricing.compareFeatures.localBusinessHours')}
+                  </li>
                 </ul>
               </div>
               <button className="px-6 py-3 mt-6 font-semibold text-white rounded-full bg-primary hover:bg-secondary">
@@ -105,13 +104,8 @@ const Pricing = () => {
                 <p className="mb-6 text-left text-white">
                   {t('pricing.section2.enterprise.description')}
                 </p>
-                <h4 className="mb-4 text-lg font-semibold text-left">{t('pricing.section2.enterprise.features.title')}</h4>
-                <ul className="mb-8 space-y-3">
-                  <li className="mb-4 text-lg font-semibold text-left">Business plus:</li>
-                  <li className="flex items-center text-white">
-                    <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
-                    {t('pricing.compareFeatures.enterpriseSupport')}
-                  </li>
+                <h4 className="mb-4 text-lg font-semibold text-left">Everything from Business, Plus:</h4>
+                <ul className="mb-8 space-y-3">                 
                   <li className="flex items-center text-white">
                     <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
                     {t('pricing.compareFeatures.gpsTraceability')}
@@ -127,6 +121,10 @@ const Pricing = () => {
                   <li className="flex items-center text-white">
                     <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
                     {t('pricing.compareFeatures.routeOptimization')}
+                  </li>
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2"><CheckIcon /></span>
+                    {t('pricing.compareFeatures.enterpriseSupport')}
                   </li>
                 </ul>
               </div>
@@ -175,6 +173,21 @@ const Pricing = () => {
                     </td>
                   </tr>
                 ))}
+                <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                    Support
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Local Business Hours
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      24/7 Entreprise Support
+                    </div>
+                  </td>
+                </tr>
               </tbody>
             </table>
           </div>

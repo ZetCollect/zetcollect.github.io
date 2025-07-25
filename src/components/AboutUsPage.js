@@ -135,7 +135,7 @@ const AboutUsPage = () => {
                 <p className="text-lg text-gray-700">{t('about.numbers.successStories')}</p>
               </div>
               <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
-                <p className="mb-2 text-5xl font-extrabold text-primary">3+</p>
+                <p className="mb-2 text-5xl font-extrabold text-primary">5+</p>
                 <p className="text-lg text-gray-700">{t('about.numbers.industryCovers')}</p>
               </div>
             </div>
@@ -150,22 +150,13 @@ const AboutUsPage = () => {
               {t('about.geography.description')}
             </p>
 
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
               <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
                 <h3 className="mb-4 text-xl font-semibold text-gray-900">{t('about.geography.kenya')}</h3>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
                     <MapPin className="flex-shrink-0 w-5 h-5 mr-2 text-secondary" />
                     <span>{t('about.geography.kenyaOffice')}</span>
-                  </li>
-                </ul>
-              </div>
-              <div className="p-6 bg-gray-100 rounded-lg shadow-sm">
-                <h3 className="mb-4 text-xl font-semibold text-gray-900">{t('about.geography.rwanda')}</h3>
-                <ul className="space-y-2 text-gray-700">
-                  <li className="flex items-center">
-                    <MapPin className="flex-shrink-0 w-5 h-5 mr-2 text-secondary" />
-                    <span>{t('about.geography.rwandaOffice')}</span>
                   </li>
                 </ul>
               </div>
@@ -241,15 +232,12 @@ const AboutUsPage = () => {
             <p className="mb-8 text-lg leading-relaxed text-gray-700">
               {t('about.pricingPolicy.description')}
             </p>
-            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-2">
               <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
                 <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.subscriptionBased')}</h3>
                 <p className="text-justify text-gray-700">{t('about.pricingPolicy.subscriptionBasedDesc')}</p>
               </div>
-              <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
-                <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.payAsYouGo')}</h3>
-                <p className="text-justify text-gray-700">{t('about.pricingPolicy.payAsYouGoDesc')}</p>
-              </div>
+              
               <div className="p-6 bg-white border border-gray-300 rounded-lg shadow-sm hover:border-primary">
                 <h3 className="mb-4 text-xl font-semibold text-center text-gray-800">{t('about.pricingPolicy.serviceContinuity')}</h3>
                 <p className="text-justify text-gray-700">{t('about.pricingPolicy.serviceContinuityDesc')}</p>

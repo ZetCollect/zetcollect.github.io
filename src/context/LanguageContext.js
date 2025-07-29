@@ -25,7 +25,8 @@ const translations = {
     "about.geography.description":
       "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
     "about.geography.kenya": "Kenya",
-    "about.geography.kenyaOffice": "Office Locations: Oracle Tower, Westland, Nairobi",
+    "about.geography.kenyaOffice":
+      "Office Locations: Oracle Tower, Westland, Nairobi",
     "about.geography.cameroon": "Cameroon",
     "about.geography.cameroonOffice": "V. Office Locations: Akwa, Douala",
     "about.clients.title": "Our Clients",
@@ -301,7 +302,7 @@ const translations = {
     "footer.faq": "FAQ",
     "footer.training_certification": "Training and Certification",
     "footer.rights":
-      "Powered By © {year} Evolv ZetCollect Group Ltd. All rights reserved.",
+      "Powered By © {year} Evolv IZSoftwares Group Ltd. All rights reserved.",
 
     // WorkInProgressPage
     "wip.title": "Page Under Construction",
@@ -423,6 +424,7 @@ const translations = {
     "pricing.compareFeatures.smsNotifications": "Optional SMS Notifications",
     "pricing.compareFeatures.dailySynchronization":
       "Daily Data Synchronization",
+    "pricing.compareFeatures.passwordPolicy": "Password Policy",
     "pricing.compareFeatures.gpsTraceability": "GPS Tracking for Agents",
     "pricing.compareFeatures.missedCollectionAlerts":
       "Missed Collection Alerts",
@@ -481,7 +483,7 @@ const translations = {
     "productKnowledge.noLessons":
       "No lessons found for this category or filter.",
     // CourseLessonPage Component
-    "courseLesson.title": "{lessonTitle}", // Placeholder for dynamic lesson title
+    "courseLesson.title": "{lessonTitle}",
     "courseLesson.notFound":
       "Lesson not found. Please check the URL or return to the main training page.",
     "courseLesson.backToCourse": "Back to {category}",
@@ -528,6 +530,114 @@ const translations = {
       '<h1 class="text-4xl font-bold text-gray-900 mb-6">Identifying and Preventing Fraud</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Fraud is a constant threat in the financial sector. This training equips you with the knowledge to identify common fraud indicators and implement effective prevention strategies.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Common Fraud Types:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Phishing and Smishing.</li><li>Identity Theft.</li><li>Account Takeover.</li><li>Social Engineering.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Prevention Strategies:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Verify customer identity rigorously.</li><li>Educate clients on security best practices.</li><li>Report suspicious activities immediately.</li><li>Use strong, unique passwords and 2FA.</li></ul><p class="text-lg text-red-600 font-semibold mb-6">Remember: If something feels off, it probably is. Always err on the side of caution.</p>',
     "lessons.fraud-prevention-training.relatedCourses.compliance.title":
       "Compliance and Regulation",
+
+      // First Section: ZetCollect Empowers Agents
+  "combined.section1.title": "ZetCollect transforms payment collection for agents.",
+  "combined.section1.description": "ZetCollect empowers agents with innovative tools to digitize cash collections and expand financial access across Africa.",
+  "combined.section1.share": "Share the story",
+
+  // Second Section: ZetCollect Capabilities
+  "combined.section2.title": "What ZetCollect Offers",
+  "combined.section2.description": "A comprehensive platform designed to streamline payment collections and empower your team.",
+  "combined.section2.capability1.title": "Enhanced Client Support",
+  "combined.section2.capability1.description": "Tools to manage client relationships and track payment histories effectively.",
+  "combined.section2.capability2.title": "Performance Insights",
+  "combined.section2.capability2.description": "Real-time data to monitor and optimize agent performance and operations.",
+  "combined.section2.capability3.title": "Scalable Operations",
+  "combined.section2.capability3.description": "Flexible solutions to support growth across multiple locations and teams.",
+
+  // Third Section: About ZetCollect
+  "combined.section3.impact.title": "Impact",
+  "combined.section3.impact.stat1.value": "400%+",
+  "combined.section3.impact.stat1.description": "agent network growth in 2 years",
+  "combined.section3.impact.stat2.value": "~500",
+  "combined.section3.impact.stat2.description": "new agent signups per week",
+  "combined.section3.impact.stat3.value": "~5min",
+  "combined.section3.impact.stat3.description": "average transaction processing time",
+  "combined.section3.about.title": "About ZetCollect",
+  "combined.section3.about.description": "ZetCollect, a pioneering fintech platform based in Nairobi, Kenya, launched in 2022 to transform payment collection and financial inclusion across Africa. Founded by visionary tech entrepreneurs, ZetCollect provides innovative tools to empower agents and businesses, serving over 10,000 agents and processing millions in transactions annually.",
+  "combined.section3.table.header.area": "AREA",
+  "combined.section3.table.header.benefit": "BENEFIT",
+  "combined.section3.table.header.region": "REGION",
+  "combined.section3.table.header.industry": "INDUSTRY",
+  "combined.section3.table.row1.area": "Payment Processing",
+  "combined.section3.table.row1.benefit": "Fast and reliable transaction handling",
+  "combined.section3.table.row1.region": "Africa",
+  "combined.section3.table.row1.industry": "Finance",
+
+  // Section: The Challenge for ZetCollect
+  "combined.section4.title": "The Challenge for ZetCollect",
+  "combined.section4.description1": "ZetCollect needed to efficiently onboard hundreds of new agents to meet rising demand.",
+  "combined.section4.description2": "Since its launch in 2022, ZetCollect has been a leader in bridging the financial inclusion gap in Africa, equipping agents with tools to manage payments and support local economies. With a growing network of agents, the platform aims to serve more communities, but scaling requires overcoming onboarding hurdles.",
+  "combined.section4.quote": "Our mission at ZetCollect is to bring financial services to every corner of Africa",
+  "combined.section4.quote.author": "Beryl, Operations Director at ZetCollect",
+  "combined.section4.description3": "Expanding the agent network involves training on complex payment systems and ensuring consistent service quality, especially in diverse and remote regions.",
+  "combined.section4.description4": "ZetCollect addresses this with its intuitive platform, designed to support rapid growth and operational excellence.",
+
+  // Section: The Solution
+  "combined.section5.title": "The Solution",
+  "combined.section5.description1": "ZetCollect’s platform provides a seamless solution for onboarding and scaling its agent network. Its intuitive tools enable agents to manage transactions efficiently, even in challenging environments.",
+  "combined.section5.description2": "The system offers real-time support and insights, allowing agents to focus on delivering value to clients rather than administrative tasks. This adaptability ensures consistent performance as the network grows.",
+  "combined.section5.description3": "With ZetCollect, businesses can expand their reach and enhance financial inclusion across Africa with confidence.",
+
+  // Section: Impact Cards
+  "combined.section6.card1.value": "4x",
+  "combined.section6.card1.description": "as many agents empowered",
+  "combined.section6.card2.value": "~5min",
+  "combined.section6.card2.description": "average transaction time",
+
+  // Section: Get Started Banner
+  "combined.section7.title": "Ready to transform your payment operations?",
+  "combined.section7.button": "Get Started",
+
+  // Section: ZetCollect Advantage
+  "combined.section8.title": "Why Choose ZetCollect",
+  "combined.section8.description": "Discover the unique strengths that make ZetCollect the preferred solution for payment innovation.",
+  "combined.section8.advantage1.title": "Unmatched Reliability",
+  "combined.section8.advantage1.description": "Built to deliver consistent, high-quality service tailored to your needs.",
+  "combined.section8.advantage2.title": "Robust Security",
+  "combined.section8.advantage2.description": "Advanced measures to protect your transactions and data with confidence.",
+  "combined.section8.advantage3.title": "Tailored for Africa",
+  "combined.section8.advantage3.description": "Designed to address local challenges and support diverse operational needs.",
+
+  // Section: Additional Customer Success Stories
+  "combined.section9.title": "Additional Customer Success Stories",
+  "combined.section9.viewAll": "View all Success Stories",
+  "combined.section9.story1.label": "Customer Story",
+  "combined.section9.story1.title": "Young Microfinances expands with ZetCollect.",
+  "combined.section9.story1.description": "See how ZetCollect supports Young Microfinances in scaling their operations.",
+  "combined.section9.story1.link": "Learn more",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+  "microfinances.section1.title": "ZetCollect transforms payment collection for ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+  "microfinances.section1.description": "ZetCollect empowers ACEP Cameroun - Fondation Grameen Crédit-Agricole with innovative tools to digitize loan disbursements and enhance financial inclusion across Africa.",
+  "microfinances.section1.share": "Share the story",
+
+  // Third Section: Impact and About ACEP Cameroun
+  "microfinances.section2.impact.title": "Impact",
+  "microfinances.section2.impact.stat1.value": "300%+",
+  "microfinances.section2.impact.stat1.description": "loan disbursement growth in 2 years",
+  "microfinances.section2.impact.stat2.value": "~400",
+  "microfinances.section2.impact.stat2.description": "new borrower signups per month",
+  "microfinances.section2.impact.stat3.value": "~10min",
+  "microfinances.section2.impact.stat3.description": "average loan processing time",
+  "microfinances.section2.about.title": "About ACEP Cameroun - Fondation Grameen Crédit-Agricole with ZetCollect",
+  "microfinances.section2.about.description": "ACEP Cameroun - Fondation Grameen Crédit-Agricole, partnered with ZetCollect since 2024, leverages advanced payment solutions to expand financial services to underserved communities in Africa. Serving over 5,000 borrowers, this collaboration has revolutionized micro-lending efficiency.",
+
+  // Section: The Challenge
+  "microfinances.section3.title": "The Challenge",
+  "microfinances.section3.description1": "ACEP Cameroun - Fondation Grameen Crédit-Agricole faced significant hurdles in scaling loan disbursements across remote and rural regions of Cameroon. The organization struggled with outdated manual processes that slowed down loan approvals and limited their reach to underserved populations. Limited infrastructure and connectivity issues further complicated the timely delivery of financial services, making it challenging to meet the growing demand from local farmers and small business owners.",
+  "microfinances.section3.description2": "Additionally, the lack of real-time data and efficient tracking systems hindered the ability to monitor loan performance and ensure repayment consistency. This created a bottleneck that threatened the organization's mission to promote agricultural development and economic empowerment, prompting the need for a robust technological solution to overcome these operational barriers.",
+
+  // Section: The Solution
+  "microfinances.section4.title": "The Solution",
+  "microfinances.section4.description1": "ZetCollect introduced a cutting-edge platform tailored to streamline loan processing and repayments for ACEP Cameroun - Fondation Grameen Crédit-Agricole. The solution offered a user-friendly interface that allowed staff to manage loan applications and disbursements efficiently, even in areas with limited internet access. By integrating mobile technology, ZetCollect enabled field agents to collect repayments directly from borrowers, reducing delays and improving cash flow.",
+  "microfinances.section4.description2": "The platform also provided advanced analytics and reporting tools, empowering the organization to track loan portfolios in real-time and make data-driven decisions. This technological upgrade not only addressed connectivity challenges but also enhanced the overall efficiency of loan management, allowing ACEP Cameroun to scale its operations and serve more clients across diverse regions with confidence and reliability.",
+
+  // Section: The Transformation
+  "microfinances.section5.title": "The Transformation",
+  "microfinances.section5.description1": "With ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole significantly improved financial access for thousands of borrowers, particularly in rural Cameroon. The adoption of the platform led to a remarkable increase in loan disbursement rates, enabling smallholder farmers and entrepreneurs to invest in their businesses and improve their livelihoods. This transformation has strengthened the organization's reputation as a leader in microfinance innovation.",
+  "microfinances.section5.description2": "Furthermore, the enhanced efficiency and transparency brought by ZetCollect have fostered greater trust among borrowers and stakeholders, resulting in higher repayment rates and sustained growth. By overcoming previous limitations, ACEP Cameroun is now better positioned to expand its outreach, support more communities, and contribute to the economic development of the region, marking a new era of success and impact."
   },
 
 
@@ -832,7 +942,7 @@ const translations = {
     "footer.faq": "FAQ",
     "footer.training_certification": "Formation et Certification",
     "footer.rights":
-      "Propulsé par © {year} Evolv ZetCollect Group Ltd. Tous droits réservés.",
+      "Propulsé par © {year} Evolv IZSoftwares Group Ltd. Tous droits réservés.",
 
     // WorkInProgressPage
     "wip.title": "Page en Construction",
@@ -960,6 +1070,7 @@ const translations = {
       "Notifications SMS optionnelles",
     "pricing.compareFeatures.dailySynchronization":
       "Synchronisation quotidienne des données",
+    "pricing.compareFeatures.passwordPolicy": "Politique de mot de passe",
     "pricing.compareFeatures.gpsTraceability": "Suivi GPS pour les agents",
     "pricing.compareFeatures.missedCollectionAlerts":
       "Alertes de collecte manquée",
@@ -1072,13 +1183,115 @@ const translations = {
       '<h1 class="text-4xl font-bold text-gray-900 mb-6">Identifier et prévenir la fraude</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">La fraude est une menace constante dans le secteur financier. Cette formation vous équipe des connaissances nécessaires pour identifier les indicateurs de fraude courants et mettre en œuvre des stratégies de prévention efficaces.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Types de fraude courants :</h2><ul class="list-disc list-inside mb-6 space-y-2 text "list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Hameçonnage et smishing.</li><li>Vol d\'identité.</li><li>Prise de contrôle de compte.</li><li>Ingénierie sociale.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Stratégies de prévention :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Vérifiez rigoureusement l\'identité des clients.</li><li>Éduquez les clients sur les meilleures pratiques de sécurité.</li><li>Signalez immédiatement les activités suspectes.</li><li>Utilisez des mots de passe forts et uniques ainsi que la 2FA.</li></ul><p class="text-lg text-red-600 font-semibold mb-6">Rappelez-vous : si quelque chose semble anormal, c\'est probablement le cas. Péchez toujours par excès de prudence.</p>',
     "lessons.fraud-prevention-training.relatedCourses.compliance.title":
       "Conformité et réglementation",
+
+// First Section: ZetCollect Empowers Agents
+  "combined.section1.title": "ZetCollect transforme la collecte de paiements pour les agents.",
+  "combined.section1.description": "ZetCollect dote les agents d'outils innovants pour numériser les collectes en espèces et élargir l'accès financier à travers l'Afrique.",
+  "combined.section1.share": "Partager l'histoire",
+
+  // Second Section: ZetCollect Capabilities
+  "combined.section2.title": "Ce que propose ZetCollect",
+  "combined.section2.description": "Une plateforme complète conçue pour simplifier la collecte de paiements et renforcer votre équipe.",
+  "combined.section2.capability1.title": "Support client amélioré",
+  "combined.section2.capability1.description": "Outils pour gérer les relations avec les clients et suivre efficacement les historiques de paiement.",
+  "combined.section2.capability2.title": "Perspectives de performance",
+  "combined.section2.capability2.description": "Données en temps réel pour surveiller et optimiser les performances des agents et les opérations.",
+  "combined.section2.capability3.title": "Opérations évolutives",
+  "combined.section2.capability3.description": "Solutions flexibles pour soutenir la croissance à travers plusieurs emplacements et équipes.",
+
+  // Third Section: About ZetCollect
+  "combined.section3.impact.title": "Impact",
+  "combined.section3.impact.stat1.value": "400%+",
+  "combined.section3.impact.stat1.description": "croissance du réseau d'agents en 2 ans",
+  "combined.section3.impact.stat2.value": "~500",
+  "combined.section3.impact.stat2.description": "nouvelles inscriptions d'agents par semaine",
+  "combined.section3.impact.stat3.value": "~5min",
+  "combined.section3.impact.stat3.description": "temps moyen de traitement des transactions",
+  "combined.section3.about.title": "À propos de ZetCollect",
+  "combined.section3.about.description": "ZetCollect, une plateforme fintech pionnière basée à Nairobi, Kenya, lancée en 2022 pour transformer la collecte de paiements et l'inclusion financière en Afrique. Fondée par des entrepreneurs technologiques visionnaires, ZetCollect fournit des outils innovants pour autonomiser les agents et les entreprises, servant plus de 10 000 agents et traitant des millions de transactions chaque année.",
+  "combined.section3.table.header.area": "DOMAINE",
+  "combined.section3.table.header.benefit": "AVANTAGE",
+  "combined.section3.table.header.region": "RÉGION",
+  "combined.section3.table.header.industry": "INDUSTRIE",
+  "combined.section3.table.row1.area": "Traitement des paiements",
+  "combined.section3.table.row1.benefit": "Gestion rapide et fiable des transactions",
+  "combined.section3.table.row1.region": "Afrique",
+  "combined.section3.table.row1.industry": "Finance",
+
+  // Section: The Challenge for ZetCollect
+  "combined.section4.title": "Le défi pour ZetCollect",
+  "combined.section4.description1": "ZetCollect devait intégrer efficacement des centaines de nouveaux agents pour répondre à la demande croissante.",
+  "combined.section4.description2": "Depuis son lancement en 2022, ZetCollect est un leader dans la réduction de l'écart d'inclusion financière en Afrique, équipant les agents d'outils pour gérer les paiements et soutenir les économies locales. Avec un réseau d'agents en expansion, la plateforme vise à servir plus de communautés, mais la mise à l'échelle nécessite de surmonter des obstacles d'intégration.",
+  "combined.section4.quote": "Notre mission chez ZetCollect est d'apporter des services financiers à chaque coin de l'Afrique",
+  "combined.section4.quote.author": "Beryl, Directrice des Opérations chez ZetCollect",
+  "combined.section4.description3": "L'expansion du réseau d'agents implique une formation sur des systèmes de paiement complexes et la garantie d'une qualité de service constante, en particulier dans les régions diverses et éloignées.",
+  "combined.section4.description4": "ZetCollect répond à cela avec sa plateforme intuitive, conçue pour soutenir une croissance rapide et une excellence opérationnelle.",
+
+  // Section: The Solution
+  "combined.section5.title": "La solution",
+  "combined.section5.description1": "La plateforme de ZetCollect offre une solution fluide pour l'intégration et l'expansion de son réseau d'agents. Ses outils intuitifs permettent aux agents de gérer efficacement les transactions, même dans des environnements difficiles.",
+  "combined.section5.description2": "Le système offre un support et des informations en temps réel, permettant aux agents de se concentrer sur la création de valeur pour les clients plutôt que sur les tâches administratives. Cette adaptabilité garantit des performances constantes à mesure que le réseau se développe.",
+  "combined.section5.description3": "Avec ZetCollect, les entreprises peuvent élargir leur portée et améliorer l'inclusion financière en Afrique avec confiance.",
+
+  // Section: Impact Cards
+  "combined.section6.card1.value": "4x",
+  "combined.section6.card1.description": "autant d'agents autonomisés",
+  "combined.section6.card2.value": "~5min",
+  "combined.section6.card2.description": "temps moyen de transaction",
+
+  // Section: Get Started Banner
+  "combined.section7.title": "Prêt à transformer vos opérations de paiement ?",
+  "combined.section7.button": "Commencer",
+
+  // Section: ZetCollect Advantage
+  "combined.section8.title": "Pourquoi choisir ZetCollect",
+  "combined.section8.description": "Découvrez les atouts uniques qui font de ZetCollect la solution préférée pour l'innovation en matière de paiement.",
+  "combined.section8.advantage1.title": "Fiabilité inégalée",
+  "combined.section8.advantage1.description": "Conçu pour offrir un service constant de haute qualité adapté à vos besoins.",
+  "combined.section8.advantage2.title": "Sécurité robuste",
+  "combined.section8.advantage2.description": "Mesures avancées pour protéger vos transactions et données en toute confiance.",
+  "combined.section8.advantage3.title": "Adapté à l'Afrique",
+  "combined.section8.advantage3.description": "Conçu pour répondre aux défis locaux et soutenir divers besoins opérationnels.",
+
+  // Section: Additional Customer Success Stories
+  "combined.section9.title": "Histoires de succès supplémentaires des clients",
+  "combined.section9.viewAll": "Voir toutes les histoires de succès",
+  "combined.section9.story1.label": "Histoire de client",
+  "combined.section9.story1.title": "Young Microfinances se développe avec ZetCollect.",
+  "combined.section9.story1.description": "Découvrez comment ZetCollect soutient Young Microfinances dans l'expansion de leurs opérations.",
+  "combined.section9.story1.link": "En savoir plus",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+  "microfinances.section1.title": "ZetCollect transforme la collecte de paiements pour ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+  "microfinances.section1.description": "ZetCollect dote ACEP Cameroun - Fondation Grameen Crédit-Agricole d'outils innovants pour numériser les décaissements de prêts et améliorer l'inclusion financière à travers l'Afrique.",
+  "microfinances.section1.share": "Partager l'histoire",
+
+  // Third Section: Impact and About ACEP Cameroun
+  "microfinances.section2.impact.title": "Impact",
+  "microfinances.section2.impact.stat1.value": "300%+",
+  "microfinances.section2.impact.stat1.description": "croissance des décaissements de prêts en 2 ans",
+  "microfinances.section2.impact.stat2.value": "~400",
+  "microfinances.section2.impact.stat2.description": "nouvelles inscriptions d'emprunteurs par mois",
+  "microfinances.section2.impact.stat3.value": "~10min",
+  "microfinances.section2.impact.stat3.description": "temps moyen de traitement des prêts",
+  "microfinances.section2.about.title": "À propos d'ACEP Cameroun - Fondation Grameen Crédit-Agricole avec ZetCollect",
+  "microfinances.section2.about.description": "ACEP Cameroun - Fondation Grameen Crédit-Agricole, en partenariat avec ZetCollect depuis 2024, exploite des solutions de paiement avancées pour élargir les services financiers aux communautés mal desservies en Afrique. Servant plus de 5 000 emprunteurs, cette collaboration a révolutionné l'efficacité du microcrédit.",
+
+  // Section: The Challenge
+  "microfinances.section3.title": "Le défi",
+  "microfinances.section3.description1": "ACEP Cameroun - Fondation Grameen Crédit-Agricole a rencontré des obstacles importants pour élargir les décaissements de prêts dans les régions reculées et rurales du Cameroun. L'organisation a lutté avec des processus manuels obsolètes qui ralentissaient les approbations de prêts et limitaient leur portée aux populations mal desservies. Les problèmes d'infrastructure et de connectivité ont encore compliqué la livraison en temps opportun des services financiers, rendant difficile la satisfaction de la demande croissante des agriculteurs locaux et des petits entrepreneurs.",
+  "microfinances.section3.description2": "De plus, l'absence de données en temps réel et de systèmes de suivi efficaces a entravé la capacité à surveiller les performances des prêts et à assurer une cohérence dans les remboursements. Cela a créé un goulot d'étranglement qui menaçait la mission de l'organisation de promouvoir le développement agricole et l'autonomisation économique, nécessitant une solution technologique robuste pour surmonter ces barrières opérationnelles.",
+
+  // Section: The Solution
+  "microfinances.section4.title": "La solution",
+  "microfinances.section4.description1": "ZetCollect a introduit une plateforme de pointe adaptée pour rationaliser le traitement des prêts et les remboursements pour ACEP Cameroun - Fondation Grameen Crédit-Agricole. La solution offrait une interface conviviale qui permettait au personnel de gérer les demandes de prêts et les décaissements efficacement, même dans les zones à accès Internet limité. En intégrant la technologie mobile, ZetCollect a permis aux agents de terrain de collecter les remboursements directement auprès des emprunteurs, réduisant les délais et améliorant les flux de trésorerie.",
+  "microfinances.section4.description2": "La plateforme a également fourni des outils d'analyse et de reporting avancés, permettant à l'organisation de suivre les portefeuilles de prêts en temps réel et de prendre des décisions basées sur les données. Cette mise à niveau technologique a non seulement résolu les défis de connectivité, mais a également amélioré l'efficacité globale de la gestion des prêts, permettant à ACEP Cameroun d'élargir ses opérations et de servir plus de clients à travers diverses régions avec confiance et fiabilité.",
+
+  // Section: The Transformation
+  "microfinances.section5.title": "La transformation",
+  "microfinances.section5.description1": "Avec ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole a considérablement amélioré l'accès financier pour des milliers d'emprunteurs, en particulier dans le Cameroun rural. L'adoption de la plateforme a conduit à une augmentation remarquable des taux de décaissement des prêts, permettant aux petits agriculteurs et entrepreneurs d'investir dans leurs entreprises et d'améliorer leurs moyens de subsistance. Cette transformation a renforcé la réputation de l'organisation en tant que leader dans l'innovation en microfinance.",
+  "microfinances.section5.description2": "De plus, l'efficacité et la transparence accrues apportées par ZetCollect ont favorisé une plus grande confiance parmi les emprunteurs et les parties prenantes, entraînant des taux de remboursement plus élevés et une croissance soutenue. En surmontant les limitations précédentes, ACEP Cameroun est désormais mieux positionné pour élargir sa portée, soutenir plus de communautés et contribuer au développement économique de la région, marquant une nouvelle ère de succès et d'impact."
   },
-
-
-
-
-
-
 
   sw: {
     // About Page
@@ -1376,7 +1589,7 @@ const translations = {
     "footer.faq": "Maswali Yanayoulizwa Mara kwa Mara",
     "footer.training_certification": "Mafunzo na Uthibitisho",
     "footer.rights":
-      "Imewashwa na © {year} Evolv ZetCollect Group Ltd. Haki Zote Zimehifadhiwa.",
+      "Imewashwa na © {year} Evolv IZSoftwares Group Ltd. Haki Zote Zimehifadhiwa.",
 
     // WorkInProgressPage
     "wip.title": "Ukurasa Unaendelea kujengwa",
@@ -1499,6 +1712,7 @@ const translations = {
     "pricing.features.userAccessRoles": "Ufikiaji na Majukumu ya Watumiaji",
     "pricing.features.smsNotifications": "Arifa za SMS (za Hiari)",
     "pricing.features.dailySynchronization": "Ulandanishi wa Kila Siku",
+    "pricing.compareFeatures.passwordPolicy": "Sera ya nenosiri",
     "pricing.features.gpsTraceability":
       "Ufuatiliaji wa GPS (Ufuatiliaji wa Jiografia wa Wakusanya)",
     "pricing.features.missedCollectionAlerts": "Arifa za Ukusanyaji Uliokosa",
@@ -1507,8 +1721,8 @@ const translations = {
     "pricing.features.routeOptimization": "Uboreshaji wa Njia na Ratiba",
     "pricing.features.clientSelfAccessPortal":
       "Jukwaa la Kujihudumia la Mteja (Ramani ya Baadaye)",
-    
-      // OnboardingCoursePage Component
+
+    // OnboardingCoursePage Component
     "onboarding.title": "Kozi",
     "onboarding.allCourses": "Kozi Zote",
     "onboarding.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
@@ -1544,18 +1758,18 @@ const translations = {
       "Kanuni za Faragha ya Data na Mbinu Bora",
     "courses.compliance.lesson.data-privacy-regulations.description":
       "Kozi muhimu kuhusu sheria za ulinzi wa data (kwa mfano, GDPR, kanuni za mitaa) na jinsi ya kushughulikia data ya wateja kwa usalama na kwa mujibu wa sheria.",
-    
-      // ProductKnowledgeCoursePage Component
+
+    // ProductKnowledgeCoursePage Component
     "productKnowledge.title": "Kozi",
     "productKnowledge.allCourses": "Kozi Zote",
     "productKnowledge.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
     "productKnowledge.onboardingAndIssueResolution":
-    "Kuingiza na Kusuluhisha Masuala",
+      "Kuingiza na Kusuluhisha Masuala",
     "productKnowledge.filter.all": "Masomo Yote",
     "productKnowledge.filter.completed": "Yamekamilika",
     "productKnowledge.filter.inProgress": "Inaendelea",
     "productKnowledge.noLessons":
-    "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
+      "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
 
     // CourseLessonPage Component
     "courseLesson.title": "{lessonTitle}",
@@ -1609,20 +1823,135 @@ const translations = {
     "pricing.compareFeatures.clientManagement": "Usimamizi wa Wateja",
     "pricing.compareFeatures.collectorManagement": "Usimamizi wa Wakusanyaji",
     "pricing.compareFeatures.branchSetup": "Usanidi wa Tawi na Taasisi",
-    "pricing.compareFeatures.mobileCollection": "Kiolesura cha Ukusanyaji wa Simu",
+    "pricing.compareFeatures.mobileCollection":
+      "Kiolesura cha Ukusanyaji wa Simu",
     "pricing.compareFeatures.bookletSystem": "Mfumo wa Vijarida",
     "pricing.compareFeatures.transactionHistory": "Historia ya Miamala",
     "pricing.compareFeatures.reportsAnalytics": "Ripoti na Uchanganuzi",
-    "pricing.compareFeatures.userAccessRoles": "Upatikanaji wa Watumiaji na Majukumu",
+    "pricing.compareFeatures.userAccessRoles":
+      "Upatikanaji wa Watumiaji na Majukumu",
     "pricing.compareFeatures.smsNotifications": "Arifa za SMS za Hiari",
-    "pricing.compareFeatures.dailySynchronization":   "Usawazishaji wa Data wa Kila Siku",
-    "pricing.compareFeatures.gpsTraceability":  "Ufuatiliaji wa GPS kwa Wakusanyaji",
-    "pricing.compareFeatures.missedCollectionAlerts":  "Arifa za Ukusanyaji Uliosahaulika",
+    "pricing.compareFeatures.dailySynchronization":
+      "Usawazishaji wa Data wa Kila Siku",
+    "pricing.compareFeatures.gpsTraceability":
+      "Ufuatiliaji wa GPS kwa Wakusanyaji",
+    "pricing.compareFeatures.missedCollectionAlerts":
+      "Arifa za Ukusanyaji Uliosahaulika",
     "pricing.compareFeatures.clientRiskProfile": "Profaili ya Hatari ya Wateja",
     "pricing.compareFeatures.routeOptimization": "Uboreshaji wa Njia na Ratiba",
-    "pricing.compareFeatures.clientSelfAccessPortal":   "Portali ya Huduma ya Wateja",
-    "pricing.compareFeatures.localBusinessHours":  "Msaada wa Saa za Biashara za Ndani",
+    "pricing.compareFeatures.clientSelfAccessPortal":
+      "Portali ya Huduma ya Wateja",
+    "pricing.compareFeatures.localBusinessHours":
+      "Msaada wa Saa za Biashara za Ndani",
     "pricing.compareFeatures.enterpriseSupport": "Msaada wa Mashirika 24/7",
+
+      // First Section: ZetCollect Empowers Agents
+  "combined.section1.title": "ZetCollect inabadilisha ukusanyaji wa malipo kwa wawakilishi.",
+  "combined.section1.description": "ZetCollect inawapa wawakilishi zana za ubunifu za kugeuza dijitali ukusanyaji wa pesa taslimu na kupanua upatikanaji wa kifedha kote Afrika.",
+  "combined.section1.share": "Shiriki hadithi",
+
+  // Second Section: ZetCollect Capabilities
+  "combined.section2.title": "ZetCollect Inatoa Nini",
+  "combined.section2.description": "Jukwaa la kina lililoundwa ili kurahisisha ukusanyaji wa malipo na kuimarisha timu yako.",
+  "combined.section2.capability1.title": "Msaada wa Wateja Ulioboreshwa",
+  "combined.section2.capability1.description": "Zana za kudhibiti uhusiano na wateja na kufuatilia historia za malipo kwa ufanisi.",
+  "combined.section2.capability2.title": "Maarifa ya Utendaji",
+  "combined.section2.capability2.description": "Data ya wakati halisi ya kufuatilia na kuboresha utendaji wa wawakilishi na shughuli.",
+  "combined.section2.capability3.title": "Shughuli Zilizoweza Kupanuka",
+  "combined.section2.capability3.description": "Suluhisho zinazonyumbulika za kusaidia ukuaji katika maeneo na timu nyingi.",
+
+  // Third Section: About ZetCollect
+  "combined.section3.impact.title": "Athari",
+  "combined.section3.impact.stat1.value": "400%+",
+  "combined.section3.impact.stat1.description": "ukuu wa mtandao wa wawakilishi katika miaka 2",
+  "combined.section3.impact.stat2.value": "~500",
+  "combined.section3.impact.stat2.description": "usajili wa wawakilishi wapya kwa wiki",
+  "combined.section3.impact.stat3.value": "~5min",
+  "combined.section3.impact.stat3.description": "muda wa wastani wa uchukuzi wa muamala",
+  "combined.section3.about.title": "Kuhusu ZetCollect",
+  "combined.section3.about.description": "ZetCollect, jukwaa la fintech la upainia lenye makao yake Nairobi, Kenya, lililozinduliwa mwaka 2022 ili kubadilisha ukusanyaji wa malipo na ujumuishaji wa kifedha kote Afrika. Lililoanzishwa na wajasiriamali wa teknolojia wenye maono, ZetCollect hutoa zana za ubunifu za kuwezesha wawakilishi na Biashara, ikihudumia wawakilishi zaidi ya 10,000 na kuchakata mamilioni ya miamala kila mwaka.",
+  "combined.section3.table.header.area": "ENEO",
+  "combined.section3.table.header.benefit": "FAIDA",
+  "combined.section3.table.header.region": "MKOA",
+  "combined.section3.table.header.industry": "TAFRIJA",
+  "combined.section3.table.row1.area": "Uchakataji wa Malipo",
+  "combined.section3.table.row1.benefit": "Uchukuzi wa muamala wa haraka na wa kuaminika",
+  "combined.section3.table.row1.region": "Afrika",
+  "combined.section3.table.row1.industry": "Fedha",
+
+  // Section: The Challenge for ZetCollect
+  "combined.section4.title": "Changamoto kwa ZetCollect",
+  "combined.section4.description1": "ZetCollect ilihitaji kuwaingiza wawakilishi wapya mamia kwa ufanisi ili kukidhi mahitaji yanayopanda.",
+  "combined.section4.description2": "Tangu ilipozinduliwa mwaka 2022, ZetCollect imekuwa kiongozi katika kupunguza pengo la ujumuishaji wa kifedha Afrika, ikiwezesha wawakilishi na zana za kudhibiti malipo na kusaidia uchumi wa ndani. Pamoja na mtandao wa wawakilishi unaokua, jukwaa linalenga kuhudumia jamii zaidi, lakini upanuzi unahitaji kushinda vizuizi vya kujiunga.",
+  "combined.section4.quote": "Dhamira yetu katika ZetCollect ni kuleta huduma za kifedha kila kona ya Afrika",
+  "combined.section4.quote.author": "Beryl, Mkurugenzi wa Operesheni katika ZetCollect",
+  "combined.section4.description3": "Kupanua mtandao wa wawakilishi kunahusisha mafunzo juu ya mifumo tata ya malipo na kuhakikisha ubora wa huduma thabiti, hasa katika maeneo tofauti na ya mbali.",
+  "combined.section4.description4": "ZetCollect inashughulikia hili kwa jukwaa lake la angavu, lililoundwa kusaidia ukuaji wa haraka na ubora wa uendeshaji.",
+
+  // Section: The Solution
+  "combined.section5.title": "Suluhisho",
+  "combined.section5.description1": "Jukwaa la ZetCollect linatoa suluhisho la kutosha kwa kujiunga na kupanua mtandao wake wa wawakilishi. Zana zake za angavu zinawezesha wawakilishi kudhibiti miamala kwa ufanisi, hata katika mazingira magumu.",
+  "combined.section5.description2": "Mfumo hutoa msaada wa wakati halisi na maarifa, kuruhusu wawakilishi kuzingatia kutoa thamani kwa wateja badala ya kazi za kiutawala. Upatikanaji huu unahakikisha utendaji thabiti kadiri mtandao unavyokua.",
+  "combined.section5.description3": "Pamoja na ZetCollect, Biashara zinaweza kupanua upatikanaji wao na kuimarisha ujumuishaji wa kifedha kote Afrika kwa kujiamini.",
+
+  // Section: Impact Cards
+  "combined.section6.card1.value": "4x",
+  "combined.section6.card1.description": "wawakilishi wengi zaidi waliowezeshwa",
+  "combined.section6.card2.value": "~5min",
+  "combined.section6.card2.description": "muda wa wastani wa muamala",
+
+  // Section: Get Started Banner
+  "combined.section7.title": "Je, uko tayari kubadilisha shughuli zako za malipo?",
+  "combined.section7.button": "Anza",
+
+  // Section: ZetCollect Advantage
+  "combined.section8.title": "Kwa Nini Chagua ZetCollect",
+  "combined.section8.description": "Gundua nguvu za kipekee zinazofanya ZetCollect kuwa suluhisho linalopendelewa kwa ubunifu wa malipo.",
+  "combined.section8.advantage1.title": "Uaminifu Usio na Mlinganisho",
+  "combined.section8.advantage1.description": "Imejengwa ili kutoa huduma thabiti ya ubora wa juu iliyoboreshwa kwa mahitaji yako.",
+  "combined.section8.advantage2.title": "Usalama wa Nguvu",
+  "combined.section8.advantage2.description": "Hatua za hali ya juu za kulinda miamala yako na data kwa kujiamini.",
+  "combined.section8.advantage3.title": "Imebuniwa kwa Afrika",
+  "combined.section8.advantage3.description": "Imeundwa kushughulikia changamoto za ndani na kusaidia mahitaji tofauti ya uendeshaji.",
+
+  // Section: Additional Customer Success Stories
+  "combined.section9.title": "Hadithi za Ziada za Mafanikio ya Wateja",
+  "combined.section9.viewAll": "Tazama Hadithi Zote za Mafanikio",
+  "combined.section9.story1.label": "Hadithi ya Mteja",
+  "combined.section9.story1.title": "Young Microfinances inapopanua na ZetCollect.",
+  "combined.section9.story1.description": "Angalia jinsi ZetCollect inavyosaidia Young Microfinances katika kupanua shughuli zao.",
+  "combined.section9.story1.link": "Jifunze zaidi",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+  "microfinances.section1.title": "ZetCollect inabadilisha ukusanyaji wa malipo kwa ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+  "microfinances.section1.description": "ZetCollect inawapa ACEP Cameroun - Fondation Grameen Crédit-Agricole zana za ubunifu za kugeuza dijitali umwagaji wa mikopo na kuimarisha ujumuishaji wa kifedha kote Afrika.",
+  "microfinances.section1.share": "Shiriki hadithi",
+
+  // Third Section: Impact and About ACEP Cameroun
+  "microfinances.section2.impact.title": "Athari",
+  "microfinances.section2.impact.stat1.value": "300%+",
+  "microfinances.section2.impact.stat1.description": "ukuu wa umwagaji wa mikopo katika miaka 2",
+  "microfinances.section2.impact.stat2.value": "~400",
+  "microfinances.section2.impact.stat2.description": "usajili wa wakopaji wapya kwa mwezi",
+  "microfinances.section2.impact.stat3.value": "~10min",
+  "microfinances.section2.impact.stat3.description": "muda wa wastani wa uchukuzi wa mkopo",
+  "microfinances.section2.about.title": "Kuhusu ACEP Cameroun - Fondation Grameen Crédit-Agricole na ZetCollect",
+  "microfinances.section2.about.description": "ACEP Cameroun - Fondation Grameen Crédit-Agricole, ikiwa na ushirikiano na ZetCollect tangu 2024, inatumia suluhisho za malipo za hali ya juu kupanua huduma za kifedha kwa jamii zisizohudumiwa Afrika. Ikihudumia wakopaji zaidi ya 5,000, ushirikiano huu umebadilisha ufanisi wa mikopo midogo.",
+
+  // Section: The Challenge
+  "microfinances.section3.title": "Changamoto",
+  "microfinances.section3.description1": "ACEP Cameroun - Fondation Grameen Crédit-Agricole ilikabiliana na vizuizi vikubwa katika kupanua umwagaji wa mikopo katika maeneo ya mbali na vijijini ya Kamerun. Shirika lilikabiliwa na michakato ya zamani ya mikono ambayo ilipunguza idhini za mikopo na kupunguza upatikanaji wao kwa idadi ya watu wasiohudumiwa. Masuala ya miundombinu na muunganisho yalizidisha ugumu wa kutoa huduma za kifedha kwa wakati, ikifanya iwe changamoto kukidhi mahitaji yanayokua kutoka kwa wakulima wa ndani na wamiliki wa Biashara ndogo.",
+  "microfinances.section3.description2": "Zaidi ya hayo, ukosefu wa data ya wakati halisi na mifumo ya ufuatiliaji wa ufanisi ulizuia uwezo wa kufuatilia utendaji wa mikopo na kuhakikisha msimamo wa malipo. Hii ilizua kizuizi ambacho kilitishia dhamira ya shirika ya kukuza maendeleo ya kilimo na uwezeshaji wa kiuchumi, ikihitaji suluhisho la teknolojia la nguvu kushinda vizuizi hivi vya uendeshaji.",
+
+  // Section: The Solution
+  "microfinances.section4.title": "Suluhisho",
+  "microfinances.section4.description1": "ZetCollect ilianzisha jukwaa la hali ya juu lililoboreshwa ili kurahisisha uchukuzi wa mikopo na malipo kwa ACEP Cameroun - Fondation Grameen Crédit-Agricole. Suluhisho hilo lilitoa kiolesura kinachofaa mtumiaji ambacho kiliwaruhusu wafanyakazi kudhibiti maombi ya mikopo na umwagaji kwa ufanisi, hata katika maeneo yenye upatikanaji mdogo wa mtandao. Kwa kuunganisha teknolojia ya simu, ZetCollect iliwezesha wawakilishi wa shambani kukusanya malipo moja kwa moja kutoka kwa wakopaji, ikipunguza ucheleweshaji na kuboresha mtiririko wa pesa.",
+  "microfinances.section4.description2": "Jukwaa hilo pia lilitoa zana za uchanganuzi na ripoti za hali ya juu, zikiwezesha shirika kufuatilia portfolios za mikopo kwa wakati halisi na kufanya maamuzi yanayotegemea data. Uboreshaji huu wa teknolojia haukushughulikia tu changamoto za muunganisho bali pia uliimarisha ufanisi wa jumla wa usimamizi wa mikopo, ukiiruhusu ACEP Cameroun kupanua shughuli zake na kuhudumia wateja zaidi katika maeneo tofauti kwa kujiamini na kuaminika.",
+
+  // Section: The Transformation
+  "microfinances.section5.title": "Mabadiliko",
+  "microfinances.section5.description1": "Pamoja na ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole iliboresha kwa kiasi kikubwa upatikanaji wa kifedha kwa maelfu ya wakopaji, hasa katika Kamerun ya vijijini. Uchukuzi wa jukwaa ulisababisha ongezeko la kushangaza la viwango vya umwagaji wa mikopo, ukiwezesha wakulima wadogo na wajasiriamali kuwekeza katika Biashara zao na kuboresha maisha yao. Mabadiliko haya yameimarisha sifa ya shirika kama kiongozi katika ubunifu wa microfinance.",
+  "microfinances.section5.description2": "Zaidi ya hayo, ufanisi ulioboreshwa na uwazi ulioletwa na ZetCollect umekuza imani kubwa zaidi miongoni mwa wakopaji na washikadau, ikisababisha viwango vya juu vya malipo na ukuaji endelevu. Kwa kushinda mapungufu ya awali, ACEP Cameroun sasa iko katika nafasi bora ya kupanua upatikanaji wake, kusaidia jamii zaidi, na kuchangia maendeleo ya kiuchumi ya mkoa, ikiashiria enzi mpya ya mafanikio na athari."
   },
 };
 

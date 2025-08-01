@@ -78,7 +78,7 @@ const CustomerSupportPage = () => {
           {/* Left Section: Image */}
           <div className="md:w-1/2">
             <img
-              src="focused-african-american-man-with-headset-looking-down.jpg"
+              src="/focused-african-american-man-with-headset.jpg"
               alt="Customer Support"
               className="object-cover w-full h-64 rounded-t-2xl md:h-full md:rounded-l-2xl md:rounded-tr-none"
             />

@@ -75,7 +75,7 @@ const CustomerStory = () => {
             </div>
           </div>
           <div className="flex justify-center lg:w-1/3">
-            <img src="/group-business-people-analysis-with-marketing-report-graph-young-specialists-are-discussing-business-ideas-new-digital-start-up-project.jpg" alt="ZetCollect App Screenshot" className="w-full h-auto rounded-lg shadow-xl" />
+            <img src="/group-business-people-analysis.jpg" alt="ZetCollect App Screenshot" className="w-full h-auto rounded-lg shadow-xl" />
           </div>
         </div>
       </section>

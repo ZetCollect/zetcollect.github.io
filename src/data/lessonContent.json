@@ -7,7 +7,7 @@
     "contentKey": "lessons.protecting-accounts.content",
     "relatedCourses": [
       { "titleKey": "lessons.protecting-accounts.relatedCourses.onboarding.title", "link": "/training/onboarding" },
-      { "titleKey": "lessons.protecting-accounts.relatedCourses.compliance.title", "link": "/training/compliance" }
+      { "titleKey": "lessons.protecting-accounts.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
     ]
   },
   {
@@ -21,15 +21,6 @@
     ]
   },
   {
-    "id": "understanding-kyc-requirements",
-    "titleKey": "lessons.understanding-kyc-requirements.title",
-    "categoryKey": "lessons.understanding-kyc-requirements.category",
-    "contentKey": "lessons.understanding-kyc-requirements.content",
-    "relatedCourses": [
-      { "titleKey": "lessons.understanding-kyc-requirements.relatedCourses.compliance.title", "link": "/training/compliance" }
-    ]
-  },
-  {
     "id": "mobile-app-basics",
     "titleKey": "lessons.mobile-app-basics.title",
     "categoryKey": "lessons.mobile-app-basics.category",
@@ -39,12 +30,13 @@
     ]
   },
   {
-    "id": "fraud-prevention-training",
-    "titleKey": "lessons.fraud-prevention-training.title",
-    "categoryKey": "lessons.fraud-prevention-training.category",
-    "contentKey": "lessons.fraud-prevention-training.content",
+    "id": "secure-transaction-protocols",
+    "titleKey": "lessons.zetcollect-security.title",
+    "categoryKey": "lessons.zetcollect-security.category",
+    "contentKey": "lessons.zetcollect-security.content",
     "relatedCourses": [
-      { "titleKey": "lessons.fraud-prevention-training.relatedCourses.compliance.title", "link": "/training/compliance" }
+      { "titleKey": "lessons.zetcollect-security.relatedCourses.onboarding.title", "link": "/training/onboarding" },
+      { "titleKey": "lessons.zetcollect-security.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
     ]
   }
 ]

@@ -23,7 +23,11 @@ import ProductKnowledgeCoursePage from './components/ProductKnowledgeCoursePage'
 import CourseLessonPage from './components/CourseLessonPage';
 import Pricing from './components/Pricing';
 import CustomerStory from './components/CustomerStory';
-import MicrofinancesStory from './components/MicrofinancesStory';
+import CustomerSuccessStories from './components/CustomerSuccessStories';
+import YoungMicrofinancesStory from './components/MicrofinancesStory';
+import GabonMerchantsStory from './components/GabonMerchantsStory';
+import TchadAgentsStory from './components/TchadAgentsStory';
+import SecurityCoursePage from './components/SecurityCoursePage';
 
 const App = () => {
   useEffect(() => {
@@ -82,9 +86,13 @@ const App = () => {
             <Route path="/training-and-certification" element={<TrainingAndCertificationPage id="TrainingAndCertificationPage" />} />
             <Route path="/training/onboarding" element={<OnboardingCoursePage />} />
             <Route path="/training/product-knowledge" element={<ProductKnowledgeCoursePage />} />
+            <Route path="/training/security" element={<SecurityCoursePage />} />
             <Route path="/course-lesson/:lessonId" element={<CourseLessonPage />} />
-            <Route path="/customer-story" element={<CustomerStory />} />
-            <Route path="/customer-story/microfinances" element={<MicrofinancesStory />} />
+            <Route path="/customer-story" element={<CustomerSuccessStories />} />
+            <Route path="/customer-story/microfinances" element={<YoungMicrofinancesStory />} />
+            <Route path="/customer-story/empowerments" element={<CustomerStory />} />
+            <Route path="/customer-story/merchants-gabon" element={<GabonMerchantsStory />} />
+            <Route path="/customer-story/agents-Tchad" element={<TchadAgentsStory />} />
             <Route path="/customer-story/:id" element={<CustomerStory />} />
             {/* Catch-all route for any undefined paths (404 page) */}
             <Route path="*" element={<div>404 Not Found</div>} />

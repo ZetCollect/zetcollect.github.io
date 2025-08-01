@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
@@ -57,11 +57,9 @@ const Navbar = () => {
   };
 
   const handleNavClick = (href, hash, e) => {
-    // Allow full navigation for Pricing or any non-homepage link
     if (href !== '/' || !hash) {
-      return; // Let the Link component handle navigation
+      return;
     }
-    // Handle smooth scrolling for homepage anchor links
     if (location.pathname === '/' && hash) {
       e.preventDefault();
       const targetElement = document.getElementById(hash.substring(1));
@@ -70,6 +68,15 @@ const Navbar = () => {
       }
     }
   };
+
+  useEffect(() => {
+    if (location.hash === '#demo' && location.pathname === '/') {
+      const targetElement = document.getElementById('demo');
+      if (targetElement) {
+        targetElement.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }, [location]);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -170,12 +177,13 @@ const Navbar = () => {
                 </Link>
               ))}
             </nav>
-            <a
-              href="#demo"
+            <Link
+              to="/#demo"
+              onClick={(e) => handleNavClick('/', '#demo', e)}
               className="px-4 py-2 text-sm font-medium text-white transition-colors rounded-lg bg-primary hover:bg-primary/80"
             >
               Request Demo
-            </a>
+            </Link>
           </div>
 
           <div className="flex items-center space-x-2 lg:hidden">
@@ -213,13 +221,16 @@ const Navbar = () => {
               >
                 {t('nav.login') || 'Login'}
               </Link>
-              <a
-                href="#demo"
-                onClick={() => setIsMenuOpen(false)}
+              <Link
+                to="/#demo"
+                onClick={(e) => {
+                  handleNavClick('/', '#demo', e);
+                  setIsMenuOpen(false);
+                }}
                 className="block px-3 py-2 mt-4 font-medium text-center text-white transition-colors rounded-lg bg-primary hover:bg-primary/80"
               >
                 Request Demo
-              </a>
+              </Link>
             </div>
 
             <div className="pt-4 mt-4 space-y-2 text-gray-700 border-t border-gray-200">

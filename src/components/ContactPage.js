@@ -23,17 +23,13 @@ const ContactPage = () => {
             {/* Left Section: Gradient Background and Heading */}
             <div className={`${gradientClasses} md:w-1/2 flex flex-col justify-center items-center p-8 lg:p-12 text-white rounded-lg md:rounded-r-none`}>
               <div className="max-w-xl text-center md:text-left">
-                <p className="mb-4 text-sm font-semibold tracking-widest uppercase opacity-80">
-                  {t('contact.header')}
-                </p>
                 <h1 className="text-3xl font-extrabold leading-tight lg:text-5xl">
                   {t('contact.form.title')}
                 </h1>
               </div>
             </div>
-
             {/* Right Section: Form Container */}
-            <div className="flex flex-col justify-center p-8 bg-white rounded-lg md:w-1/2 lg:p-12 md:rounded-l-none">
+            <div className="flex flex-col justify-center p-8 bg-white border rounded-lg border-secondary vmd:w-1/2 lg:p-12 md:rounded-l-none">
               <h2 className="mb-8 text-2xl font-bold text-gray-900">{t('contact.title')}</h2>
 
               <form className="space-y-6">

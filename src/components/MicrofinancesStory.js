@@ -1,6 +1,7 @@
 import React from 'react';
 import Footer from '../components/Footer';
 import { useLanguage } from '../context/LanguageContext';
+import ResponsiveBannner from '../components/ResponsiveBanner';
 
 const MicrofinancesStory = () => {
    const { t } = useLanguage();
@@ -50,13 +51,13 @@ const MicrofinancesStory = () => {
 
       {/* Third Section: Impact and About ACEP Cameroun */}
       <section className="px-4 py-16 text-white bg-secondary sm:px-6 lg:px-8">
-        <div className="flex flex-col items-start justify-between mx-auto max-w-7xl lg:flex-row">
+        <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           {/* Left Side: Impact Statistics */}
-          <div className="mb-12 text-center lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-left">
+          <div className="mb-12 text-center lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-center">
             <h2 className="mb-8 text-3xl font-bold sm:text-4xl">{t('microfinances.section2.impact.title')}</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
               {impactStats.map((stat, index) => (
-                <div key={index} className="flex flex-col items-center lg:items-start">
+                <div key={index} className="flex flex-col items-center lg:items-center">
                   <p className="text-5xl font-extrabold text-primary">{stat.value}</p>
                   <p className="mt-2 text-sm text-white">{stat.description}</p>
                 </div>
@@ -93,7 +94,7 @@ const MicrofinancesStory = () => {
           </p>
         </div>
       </section>
-
+     
       {/* Section: The Solution */}
       <section className="px-4 py-16 bg-gray-50 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -109,6 +110,14 @@ const MicrofinancesStory = () => {
         </div>
       </section>
 
+       <ResponsiveBannner
+        title={t('combined.actionBanner.title')}
+        description={t('combined.actionBanner.description')}
+        ctaText={t('combined.actionBanner.ctaButton')}
+        ctaLink="/contact-page"
+      />
+
+
       {/* Section: The Transformation */}
       <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
@@ -121,6 +130,25 @@ const MicrofinancesStory = () => {
           <p className="text-lg leading-relaxed text-gray-700">
             {t('microfinances.section5.description2')}
           </p>
+        </div>
+      </section>
+
+      <section className="px-4 py-16 sm:px-6 lg:px-8">
+        <div className="grid grid-cols-1 gap-8 mx-auto max-w-7xl md:grid-cols-2">
+          <div className="relative flex flex-col items-center justify-center h-64 p-6 bg-white rounded-lg shadow-md" style={{ backgroundImage: 'url(/top-stat-card-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0 bg-gray-800 rounded-lg opacity-20"></div>
+            <div className="relative z-10 text-center">
+              <p className="mb-2 text-6xl font-extrabold text-primary">{t('combined.section6.card1.value')}</p>
+              <p className="text-lg text-primary">{t('combined.section6.card1.description')}</p>
+            </div>
+          </div>
+          <div className="relative flex flex-col items-center justify-center h-64 p-6 bg-white rounded-lg shadow-md" style={{ backgroundImage: 'url(/top-stat-card-bg.webp)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+            <div className="absolute inset-0 bg-gray-800 rounded-lg opacity-20"></div>
+            <div className="relative z-10 text-center">
+              <p className="mb-2 text-6xl font-extrabold text-primary">{t('combined.section6.card2.value')}</p>
+              <p className="text-lg text-primary">{t('combined.section6.card2.description')}</p>
+            </div>
+          </div>
         </div>
       </section>
 

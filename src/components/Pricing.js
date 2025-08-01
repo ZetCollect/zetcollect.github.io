@@ -176,11 +176,27 @@ const Pricing = () => {
                 ))}
                  <tr className="border-b border-gray-100">
                   <td className="px-6 py-4 text-left text-gray-700">
+                   Custom Domain
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Default
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Private Domain
+                    </div>
+                  </td>
+                </tr>
+                
+                 <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
                    Custom Branding
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                     
+                     Default
                     </div>
                   </td>
                   <td className="px-6 py-4 text-center">

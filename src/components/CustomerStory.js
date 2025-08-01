@@ -1,10 +1,11 @@
 import React from 'react';
-import { Users, BarChart2, Globe, CheckCircle, Lock, MapPin } from 'lucide-react';
+import { Users, BarChart2, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import Footer from '../components/Footer';
 import { useLanguage } from '../context/LanguageContext';
+import ResponsiveBannner from '../components/ResponsiveBanner';
 
-const CombinedSections = () => {
+const CustomerStory = () => {
   const { t } = useLanguage();
 
   // Array for ZetCollect Capabilities
@@ -42,31 +43,11 @@ const CombinedSections = () => {
     },
   ];
 
-  // Array for ZetCollect Advantages
-  const advantages = [
-    {
-      icon: <CheckCircle className="w-10 h-10 text-primary" />,
-      title: t('combined.section8.advantage1.title'),
-      description: t('combined.section8.advantage1.description'),
-    },
-    {
-      icon: <Lock className="w-10 h-10 text-primary" />,
-      title: t('combined.section8.advantage2.title'),
-      description: t('combined.section8.advantage2.description'),
-    },
-    {
-      icon: <MapPin className="w-10 h-10 text-primary" />,
-      title: t('combined.section8.advantage3.title'),
-      description: t('combined.section8.advantage3.description'),
-    },
-  ];
-
-  // Array for Customer Success Stories
   const customerStories = [
     {
       id: "microfinances",
-      logo: "log_ACEP_NEW.png",
-      logoAlt: "Microfinances Logo",
+      logo: "/log_ACEP_NEW.png",
+      logoAlt: "Kenya Farmers Cooperative Logo",
       title: t('combined.section9.story1.title'),
       description: t('combined.section9.story1.description'),
     },
@@ -75,7 +56,7 @@ const CombinedSections = () => {
   return (
     <>
       {/* First Section: ZetCollect Empowers Agents */}
-      <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
+      <section className="px-4 py-16 bg-gradient-to-br from-white to-secondary sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           <div className="mb-12 text-center lg:w-3/4 lg:pr-12 lg:text-left lg:mb-0">
             <h1 className="mb-6 text-4xl font-extrabold leading-normal text-gray-900 sm:text-5xl lg:text-6xl">
@@ -94,7 +75,7 @@ const CombinedSections = () => {
             </div>
           </div>
           <div className="flex justify-center lg:w-1/3">
-            <img src="group-business-people-analysis-with-marketing-report-graph-young-specialists-are-discussing-business-ideas-new-digital-start-up-project.jpg" alt="ZetCollect App Screenshot" className="w-full h-auto rounded-lg shadow-xl" />
+            <img src="/group-business-people-analysis-with-marketing-report-graph-young-specialists-are-discussing-business-ideas-new-digital-start-up-project.jpg" alt="ZetCollect App Screenshot" className="w-full h-auto rounded-lg shadow-xl" />
           </div>
         </div>
       </section>
@@ -123,11 +104,11 @@ const CombinedSections = () => {
       </section>
 
       {/* Third Section: About ZetCollect */}
-      <section className="px-4 py-16 text-white bg-secondary sm:px-6 lg:px-8">
-        <div className="flex flex-col items-start justify-between mx-auto max-w-7xl lg:flex-row">
+      <section className="px-4 py-16 text-white bg-secondary/80 sm:px-6 lg:px-8">
+        <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           {/* Left Side: Impact Statistics */}
-          <div className="mb-12 text-center lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-left">
-            <h2 className="mb-8 text-3xl font-bold sm:text-4xl">{t('combined.section3.impact.title')}</h2>
+          <div className="mb-12 text-center lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-center">
+            <h2 className="mb-10 text-3xl font-bold sm:text-4xl">{t('combined.section3.impact.title')}</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
               {impactStats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center lg:items-start">
@@ -156,10 +137,7 @@ const CombinedSections = () => {
                 <thead className="bg-primary">
                   <tr>
                     <th scope="col" className="p-4 text-base font-medium tracking-wider text-left text-gray-300 uppercase sm:text-sm">
-                      {t('combined.section3.table.header.area')}
-                    </th>
-                    <th scope="col" className="p-4 text-base font-medium tracking-wider text-left text-gray-300 uppercase sm:text-sm">
-                      {t('combined.section3.table.header.benefit')}
+                      {t('combined.section3.table.header.feature')}
                     </th>
                     <th scope="col" className="p-4 text-base font-medium tracking-wider text-left text-gray-300 uppercase sm:text-sm">
                       {t('combined.section3.table.header.region')}
@@ -171,11 +149,8 @@ const CombinedSections = () => {
                 </thead>
                 <tbody className="divide-y divide-gray-700">
                   <tr>
-                    <td className="p-4 text-base font-medium text-gray-200">
-                      {t('combined.section3.table.row1.area')}
-                    </td>
                     <td className="p-4 text-base text-gray-300">
-                      {t('combined.section3.table.row1.benefit')}
+                      {t('combined.section3.table.row1.feature')}
                     </td>
                     <td className="p-4 text-base text-gray-300">
                       {t('combined.section3.table.row1.region')}
@@ -252,46 +227,25 @@ const CombinedSections = () => {
           </div>
         </div>
       </section>
-
-      {/* Last Section: Get Started Banner */}
-      <section className="px-4 py-12 bg-secondary sm:px-6 lg:px-8">
-        <div className="flex flex-row items-center justify-between max-w-6xl p-8 mx-auto space-x-8 bg-white rounded-lg shadow-md">
-          <div className="flex-shrink-0">
-            <img src="Asset 13x.png" alt="ZetCollect Illustration" className="w-48 h-auto rounded-lg" />
-          </div>
-          <div className="flex flex-col items-start">
-            <h2 className="mb-4 text-3xl font-bold text-gray-900 sm:text-4xl">
-              {t('combined.section7.title')}
-            </h2>
-            <Link to="/contact-page">
-              <button className="px-8 py-3 ml-auto font-bold text-white transition-colors duration-300 rounded-lg shadow-md bg-primary hover:bg-blue-700">
-                {t('combined.section7.button')}
-              </button>
-            </Link>
-          </div>
-        </div>
-      </section>
-
-      {/* Section: ZetCollect Advantage */}
+      
+      <ResponsiveBannner
+        title={t('combined.actionBanner.title')}
+        description={t('combined.actionBanner.description')}
+        ctaText={t('combined.actionBanner.ctaButton')}
+        ctaLink="/contact-page"
+      />
+      {/* Section: Transformation */}
       <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
-        <div className="mx-auto text-center max-w-7xl">
+        <div className="mx-auto max-w-7xl">
           <h2 className="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl">
             {t('combined.section8.title')}
           </h2>
-          <p className="max-w-3xl mx-auto mb-12 text-xl leading-relaxed text-center text-gray-700">
-            {t('combined.section8.description')}
+          <p className="mb-4 text-lg leading-relaxed text-gray-700">
+            {t('combined.section8.description1')}
           </p>
-          <div className="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
-            {advantages.map((advantage, index) => (
-              <div key={index} className="flex flex-col items-center">
-                <div className="flex items-center justify-center w-24 h-24 mb-4 border border-blue-100 rounded-full bg-blue-50">
-                  {advantage.icon}
-                </div>
-                <h3 className="mb-2 text-lg font-semibold text-gray-800">{advantage.title}</h3>
-                <p className="text-center text-gray-600">{advantage.description}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg leading-relaxed text-gray-700">
+            {t('combined.section8.description2')}
+          </p>
         </div>
       </section>
 
@@ -308,7 +262,7 @@ const CombinedSections = () => {
           <div className="grid grid-cols-1 gap-8 mt-8 md:grid-cols-2">
             {customerStories.map((story, index) => (
               <div key={index} className="overflow-hidden bg-white rounded-lg shadow-md">
-                <div className="flex items-center justify-center h-48 p-8 bg-yellow-400">
+                <div className="flex items-center justify-center h-48 p-8 bg-secondary">
                   <img src={story.logo} alt={story.logoAlt} className="max-w-full max-h-full" />
                 </div>
                 <div className="p-6 text-left">
@@ -332,4 +286,4 @@ const CombinedSections = () => {
   );
 };
 
-export default CombinedSections;
+export default CustomerStory;

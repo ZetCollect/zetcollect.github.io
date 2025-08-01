@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex flex-col w-full gap-6 lg:w-1/3">
             <img
               className="w-[200px] h-auto"
-              src='applogo.png'
+              src='/applogo.png'
               alt={t('footer.logo_alt')}
             />
             
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center mt-4 transition duration-300 text-primary hover:text-secondary">
-              <Link to="/contactPage" className="mr-2 text-base font-semibold">
+              <Link to="/contact-page" className="mr-2 text-base font-semibold">
                 {t('common.contactUs')}
               </Link>
               <svg className="w-6 h-6 transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

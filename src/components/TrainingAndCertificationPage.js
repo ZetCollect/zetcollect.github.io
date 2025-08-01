@@ -17,6 +17,11 @@ const TrainingAndCertificationPage = () => {
       image: 'product knowledge.png',
       link: '/training/product-knowledge',
     },
+    {
+      title: t('training.courses.security.title'),
+      image: 'ZetCollect Security.png',
+      link: '/training/security',
+    },
   ];
 
   return (
@@ -35,12 +40,12 @@ const TrainingAndCertificationPage = () => {
 
         <div className="relative z-10 flex flex-col items-center justify-between mx-auto md:flex-row max-w-7xl">
           {/* Left Content */}
-          <div className="mb-10 text-center md:w-1/2 md:text-left md:mb-0">
+          <div className="pl-4 mb-10 text-center md:w-1/2 md:text-left md:mb-0 sm:pl-6 lg:pl-8">
             <h1 className="mb-4 text-4xl font-bold text-white lg:text-5xl">
-              {t('training.title') || 'Take your career to the next level'}
+              {t('training.title')}
             </h1>
             <p className="max-w-lg mx-auto text-lg text-white opacity-90 lg:text-xl md:mx-0">
-              {t('training.subtitle') || 'Get the product knowledge you need to become successful in your field'}
+              {t('training.subtitle')}
             </p>
           </div>
         </div>
@@ -48,21 +53,23 @@ const TrainingAndCertificationPage = () => {
 
       {/* Courses Section - Modified to fit the second image design */}
       <div className="px-4 py-16 mx-auto text-center max-w-7xl sm:px-6 lg:px-8 lg:py-24" aria-label="Courses">
-        <h2 className="mb-4 text-4xl font-extrabold text-gray-900"> 
-          {t('training.courses.title') || 'Courses'}
-        </h2>
-        <p className="max-w-2xl mx-auto mb-12 text-lg text-gray-600">
-          {t('training.courses.subtitle') || 'A collection of learning resources empowering the Offline Distribution Team'}
-        </p>
+        <div className="pl-4 sm:pl-6 lg:pl-8">
+          <h2 className="mb-4 text-4xl font-extrabold text-gray-900"> 
+            {t('training.courses.title') || 'Courses'}
+          </h2>
+          <p className="max-w-2xl mx-auto mb-12 text-lg text-gray-600">
+            {t('training.courses.subtitle')}
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"> {/* Changed from flex to grid for better responsiveness */}
+        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3"> 
           {courses.map((course, index) => (
             <Link
               to={course.link}
               key={index}
-              className="block p-6 transition-transform duration-300 bg-white shadow-md rounded-xl hover:scale-105 hover:shadow-xl group" // Added group for hover effects on children
+              className="block p-6 transition-transform duration-300 bg-white shadow-md rounded-xl hover:scale-105 hover:shadow-xl group"
             >
-              <div className="flex items-center justify-center mb-6"> {/* Centered image */}
+              <div className="flex items-center justify-center mb-6"> 
                 <img
                   src={course.image}
                   alt={course.title}
@@ -71,7 +78,7 @@ const TrainingAndCertificationPage = () => {
                   aria-hidden="true"
                 />
               </div>
-              <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-primary"> {/* Added group-hover effect */}
+              <h3 className="text-xl font-bold text-gray-900 transition-colors group-hover:text-primary">
                 {course.title}
               </h3>
             </Link>

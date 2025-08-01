@@ -28,44 +28,52 @@ const OnboardingCoursePage = () => {
         {/* Header Section */}
         <div className="px-4 py-12 bg-secondary sm:px-6 lg:px-8">
           <div className="mx-auto max-w-7xl">
-            <h1 className="mb-6 text-4xl font-extrabold text-gray-900 lg:text-5xl">
-              {t('onboarding.title')}
-            </h1>
+            <div className="pl-4 sm:pl-6 lg:pl-8">
+              <h1 className="mb-6 text-4xl font-extrabold text-gray-900 lg:text-5xl">
+                {t('onboarding.title')}
+              </h1>
 
-            {/* Navigation Tabs and Filter */}
-            <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0 md:space-x-6">
-              <nav className="flex flex-wrap text-lg font-medium gap-x-6 gap-y-2">
-                <Link
-                  to="/training-and-certification"
-                  className={`pb-1 border-b-2 ${activeTab === 'All Courses' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
-                >
-                  {t('onboarding.allCourses')}
-                </Link>
-                <Link
-                  to="/training/product-knowledge"
-                  className={`pb-1 border-b-2 ${activeTab === 'ZetCollect Product Knowledge' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
-                >
-                  {t('onboarding.productKnowledge')}
-                </Link>
-                <Link
-                  to="/training/onboarding"
-                  className={`pb-1 border-b-2 ${activeTab === 'Onboarding and Issue Resolution' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
-                >
-                  {t('onboarding.onboardingAndIssueResolution')}
-                </Link>
-              </nav>
+              {/* Navigation Tabs and Filter */}
+              <div className="flex flex-col items-center justify-between space-y-4 md:flex-row md:space-y-0 md:space-x-6">
+                <nav className="flex flex-wrap text-lg font-medium gap-x-6 gap-y-2">
+                  <Link
+                    to="/training-and-certification"
+                    className={`pb-1 border-b-2 ${activeTab === 'All Courses' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
+                  >
+                    {t('onboarding.allCourses')}
+                  </Link>
+                  <Link
+                    to="/training/product-knowledge"
+                    className={`pb-1 border-b-2 ${activeTab === 'ZetCollect Product Knowledge' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
+                  >
+                    {t('onboarding.productKnowledge')}
+                  </Link>
+                  <Link
+                    to="/training/onboarding"
+                    className={`pb-1 border-b-2 ${activeTab === 'Onboarding and Issue Resolution' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
+                  >
+                    {t('onboarding.onboardingAndIssueResolution')}
+                  </Link>
+                  <Link
+                    to="/training/security"
+                    className={`pb-1 border-b-2 ${activeTab === 'ZetCollect Security' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
+                  >
+                    {t('onboarding.security')}
+                  </Link>
+                </nav>
 
-              {/* Filter Dropdown */}
-              <div className="relative w-full md:w-auto">
-                <select
-                  className="w-full py-2 pl-4 pr-8 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
-                  value={filter}
-                  onChange={(e) => setFilter(e.target.value)}
-                >
-                  <option value="All">{t('onboarding.filter.all')}</option>
-                  <option value="Completed">{t('onboarding.filter.completed')}</option>
-                  <option value="In Progress">{t('onboarding.filter.inProgress')}</option>
-                </select>
+                {/* Filter Dropdown */}
+                <div className="relative w-full md:w-auto">
+                  <select
+                    className="w-full py-2 pl-4 pr-8 border border-gray-300 rounded-md appearance-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                    value={filter}
+                    onChange={(e) => setFilter(e.target.value)}
+                  >
+                    <option value="All">{t('onboarding.filter.all')}</option>
+                    <option value="Completed">{t('onboarding.filter.completed')}</option>
+                    <option value="In Progress">{t('onboarding.filter.inProgress')}</option>
+                  </select>
+                </div>
               </div>
             </div>
           </div>

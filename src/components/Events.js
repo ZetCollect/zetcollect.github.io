@@ -40,8 +40,8 @@ const EventsPage = () => {
     <>
       <section className="min-h-screen bg-white">
         {/* Hero Section with Gradient Background */}
-        <div className="px-4 py-20 text-white bg-secondary sm:px-6 lg:px-8">
-          <div className="mx-auto max-w-7xl">
+        <div className="px-4 py-20 mb-8 text-white bg-secondary sm:px-8 lg:px-16">
+          <div className="px-4 mx-auto max-w-7xl sm:px-8 lg:px-15">
             <h1 className="mb-2 text-5xl font-extrabold">{t('events.title')}</h1>
             <p className="text-lg opacity-90">{t('events.subtitle') }</p>
           </div>

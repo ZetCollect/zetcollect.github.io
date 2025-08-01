@@ -47,16 +47,18 @@ const BlogPage = () => {
 
   return (
     <>
-      <section className="min-h-screen py-16 bg-white lg:py-14">
-        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-          {/* Blog Header */}
-          <div className="mb-12">
-            <h1 className="mb-2 text-5xl font-extrabold text-gray-900">
+      <section className="min-h-screen bg-white">
+        {/* Hero Section with Gradient Background */}
+        <div className="px-4 py-20 mb-8 text-white bg-secondary sm:px-8 lg:px-16">
+          <div className="px-4 mx-auto max-w-7xl sm:px-8 lg:px-15">
+            <h1 className="mb-2 text-5xl font-extrabold text-white">
               {t('blog.title')}
             </h1>
           </div>
+        </div>
 
-          {/* Blog Posts Grid */}
+        {/* Blog Posts Grid */}
+        <div className="px-4 mx-auto max-w-7xl sm:px-8 lg:px-15">
           <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
             {blogPosts.map((post, index) => (
               <div

@@ -32,6 +32,50 @@ const FAQPage = () => {
       question: t('faq.questions.booklet_system'),
       answer: t('faq.answers.booklet_system'),
     },
+    {
+      question: "How does ZetCollect's Transaction History feature work?",
+      answer: t('features.history.desc'),
+    },
+    {
+      question: "What does the Reports & Analytics feature offer?",
+      answer: t('features.reports.desc'),
+    },
+    {
+      question: "How does User Access & Roles ensure security?",
+      answer: t('features.access.desc'),
+    },
+    {
+      question: "What is the functionality of SMS Notifications?",
+      answer: t('features.sms.desc'),
+    },
+    {
+      question: "How does Daily Synchronization work in ZetCollect?",
+      answer: t('features.sync.desc'),
+    },
+    {
+      question: "What is GPS Traceability, and how will it benefit collectors?",
+      answer: t('upcoming.gps.desc'),
+    },
+    {
+      question: "What are Missed Collection Alerts?",
+      answer: t('upcoming.alerts.desc'),
+    },
+    {
+      question: "How does the Client Risk Profile & Rating system work?",
+      answer: t('upcoming.risk.desc'),
+    },
+    {
+      question: "What is Route & Schedule Optimization?",
+      answer: t('upcoming.route.desc'),
+    },
+    {
+      question: "What is the Client Self-Access Portal?",
+      answer: t('upcoming.portal.desc'),
+    },
+    {
+      question: "How will the New Currency System (CDF) be implemented?",
+      answer: t('upcoming.currency.desc'),
+    },
   ];
 
   return (

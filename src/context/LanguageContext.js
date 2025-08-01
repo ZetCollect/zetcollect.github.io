@@ -25,7 +25,8 @@ const translations = {
     "about.geography.description":
       "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
     "about.geography.kenya": "Kenya",
-    "about.geography.kenyaOffice": "Office Locations: Oracle Tower, Westland, Nairobi",
+    "about.geography.kenyaOffice":
+      "Office Locations: Oracle Tower, Westland, Nairobi",
     "about.geography.cameroon": "Cameroon",
     "about.geography.cameroonOffice": "V. Office Locations: Akwa, Douala",
     "about.clients.title": "Our Clients",
@@ -301,7 +302,7 @@ const translations = {
     "footer.faq": "FAQ",
     "footer.training_certification": "Training and Certification",
     "footer.rights":
-      "Powered By © {year} Evolv ZetCollect Group Ltd. All rights reserved.",
+      "Powered By © {year} Evolv IZSoftwares Group Ltd. All rights reserved.",
 
     // WorkInProgressPage
     "wip.title": "Page Under Construction",
@@ -378,6 +379,49 @@ const translations = {
       "How does the Booklet (Carnet) System prevent fraud?",
     "faq.answers.booklet_system":
       "The Booklet (Carnet) System assigns each client a digital collection booklet. Collectors mark transactions on the app based on entries in this digital booklet. This process creates a transparent and verifiable record, significantly reducing the risk of fraud and misreporting.",
+    "faq.questions.transaction_history":
+      "How does ZetCollect's Transaction History feature work?",
+    "faq.answers.transaction_history":
+      "Complete audit trail of all collection activities and payments, providing a detailed record for transparency and accountability.",
+    "faq.questions.reports_analytics":
+      "What does the Reports & Analytics feature offer?",
+    "faq.answers.reports_analytics":
+      "Real-time dashboards and comprehensive reporting for data-driven decisions, enabling insights into collection performance and trends.",
+    "faq.questions.user_access":
+      "How does User Access & Roles ensure security?",
+    "faq.answers.user_access":
+      "Role-based permissions ensuring secure access to sensitive information, protecting data integrity across the platform.",
+    "faq.questions.sms_notifications":
+      "What is the functionality of SMS Notifications?",
+    "faq.answers.sms_notifications":
+      "Automated reminders and confirmations via SMS for better communication, keeping clients and collectors informed.",
+    "faq.questions.daily_sync":
+      "How does Daily Synchronization work in ZetCollect?",
+    "faq.answers.daily_sync":
+      "Seamless data sync between mobile devices and central database, ensuring data consistency and availability.",
+    "faq.questions.gps_traceability":
+      "What is GPS Traceability, and how will it benefit collectors?",
+    "faq.answers.gps_traceability":
+      "Real-time location tracking for enhanced security and route optimization, improving collector efficiency and safety.",
+    "faq.questions.missed_alerts": "What are Missed Collection Alerts?",
+    "faq.answers.missed_alerts":
+      "Automated notifications for missed collections and follow-up reminders, ensuring timely follow-ups and accountability.",
+    "faq.questions.risk_profile":
+      "How does the Client Risk Profile & Rating system work?",
+    "faq.answers.risk_profile":
+      "AI-powered risk assessment and client rating system for better decision making, identifying potential risks proactively.",
+    "faq.questions.route_optimization":
+      "What is Route & Schedule Optimization?",
+    "faq.answers.route_optimization":
+      "Smart routing algorithms to optimize collector schedules and maximize efficiency, reducing time and costs.",
+    "faq.questions.self_access_portal":
+      "What is the Client Self-Access Portal?",
+    "faq.answers.self_access_portal":
+      "Allows clients to view their collection history and make payments independently, enhancing convenience and transparency.",
+    "faq.questions.currency_system":
+      "How will the New Currency System (CDF) be implemented?",
+    "faq.answers.currency_system":
+      "Seamless integration of Congolese Franc (CDF) for all transactions and financial reporting, ensuring compliance and ease of use.",
 
     // Training and Certification Page
     "training.title": "Take your career to the next level",
@@ -389,7 +433,7 @@ const translations = {
       "A collection of learning resources empowering the Offline Distribution Team",
     "training.courses.onboarding.title": "Onboarding and Issue Resolution",
     "training.courses.productKnowledge.title": "ZetCollect Product Knowledge",
-    "training.courses.compliance.title": "Compliance and Regulation",
+    "training.courses.security.title": "ZetCollect Security",
     // Pricing Page (Updated)
     "pricing.section1.title": "Fair pricing for faster growth",
     "pricing.section1.description":
@@ -423,6 +467,7 @@ const translations = {
     "pricing.compareFeatures.smsNotifications": "Optional SMS Notifications",
     "pricing.compareFeatures.dailySynchronization":
       "Daily Data Synchronization",
+    "pricing.compareFeatures.passwordPolicy": "Password Policy",
     "pricing.compareFeatures.gpsTraceability": "GPS Tracking for Agents",
     "pricing.compareFeatures.missedCollectionAlerts":
       "Missed Collection Alerts",
@@ -440,6 +485,7 @@ const translations = {
     "onboarding.productKnowledge": "ZetCollect Product Knowledge",
     "onboarding.onboardingAndIssueResolution":
       "Onboarding and Issue Resolution",
+    "onboarding.security": "ZetCollect Security",
     "onboarding.filter.all": "All Lessons",
     "onboarding.filter.completed": "Completed",
     "onboarding.filter.inProgress": "In Progress",
@@ -469,19 +515,39 @@ const translations = {
       "Data Privacy Regulations and Best Practices",
     "courses.compliance.lesson.data-privacy-regulations.description":
       "A critical course on data protection laws (e.g., GDPR, local regulations) and how to handle customer data securely and compliantly.",
+    "courses.security.title": "ZetCollect Security",
+    "courses.security.lesson.secure-transaction-protocols.title":
+      "Introduction to ZetCollect Security",
+    "courses.security.lesson.secure-transaction-protocols.description":
+      "ZetCollect prioritizes the security of your financial transactions with robust measures designed to protect your data and ensure trust....",
     // ProductKnowledgeCoursePage Component
     "productKnowledge.title": "Courses",
     "productKnowledge.allCourses": "All Courses",
     "productKnowledge.productKnowledge": "ZetCollect Product Knowledge",
     "productKnowledge.onboardingAndIssueResolution":
       "Onboarding and Issue Resolution",
+    "productKnowledge.security": "ZetCollect Security",
     "productKnowledge.filter.all": "All Lessons",
     "productKnowledge.filter.completed": "Completed",
     "productKnowledge.filter.inProgress": "In Progress",
     "productKnowledge.noLessons":
       "No lessons found for this category or filter.",
+
+    // SecurityCoursePage Component
+    "security.title": "Courses",
+    "security.description":
+      "Learn how to protect your data and systems with ZetCollect's comprehensive security courses.",
+    "security.allCourses": "All Courses",
+    "security.productKnowledge": "ZetCollect Product Knowledge",
+    "security.onboardingAndIssueResolution": "Onboarding and Issue Resolution",
+    "security.security": "ZetCollect Security",
+    "security.filter.all": "All Lessons",
+    "security.filter.completed": "Completed",
+    "security.filter.inProgress": "In Progress",
+    "security.noLessons": "No lessons found for this category or filter.",
+
     // CourseLessonPage Component
-    "courseLesson.title": "{lessonTitle}", // Placeholder for dynamic lesson title
+    "courseLesson.title": "{lessonTitle}",
     "courseLesson.notFound":
       "Lesson not found. Please check the URL or return to the main training page.",
     "courseLesson.backToCourse": "Back to {category}",
@@ -496,8 +562,9 @@ const translations = {
       '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction to 2FA</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Two-Factor Authentication (2FA) adds an extra layer of security to your ZetCollect account. It requires a second form of verification in addition to your password, significantly reducing the risk of unauthorized access.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Why is 2FA Important?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Protects against password theft.</li><li>Adds a crucial layer of defense against phishing attacks.</li><li>Ensures only you can access your account, even if your password is compromised.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">How to Enable 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Follow these simple steps to enable 2FA on your ZetCollect account:</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Log in to your ZetCollect dashboard.</li><li>Navigate to \'Security Settings\'.</li><li>Select \'Enable Two-Factor Authentication\'.</li><li>Choose your preferred method (e.g., authenticator app, SMS code).</li><li>Follow the on-screen instructions to complete the setup.</li></ol><p class="text-lg text-gray-600 italic mb-6">For more details, refer to our official user guide.</p>',
     "lessons.protecting-accounts.relatedCourses.onboarding.title":
       "Onboarding and Issue Resolution",
-    "lessons.protecting-accounts.relatedCourses.compliance.title":
-      "Compliance and Regulation",
+    "lessons.protecting-accounts.relatedCourses.product-knowledge.title":
+      "ZetCollect Product Knowledge",
+
     "lessons.adding-business-kyc3.title":
       "Adding a Business to a KYC Level 3 Account",
     "lessons.adding-business-kyc3.category": "Onboarding and Issue Resolution",
@@ -507,31 +574,278 @@ const translations = {
       "Onboarding and Issue Resolution",
     "lessons.adding-business-kyc3.relatedCourses.product-knowledge.title":
       "ZetCollect Product Knowledge",
-    "lessons.understanding-kyc-requirements.title":
-      "Understanding The KYC Requirements at ZetCollect",
-    "lessons.understanding-kyc-requirements.category":
-      "Compliance and Regulation",
-    "lessons.understanding-kyc-requirements.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction to KYC</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Know Your Customer (KYC) is a critical process for financial institutions to verify the identity of their clients. This is essential for preventing fraud, money laundering, and terrorist financing.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Key KYC Principles:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Customer Identification Program (CIP).</li><li>Customer Due Diligence (CDD).</li><li>Ongoing Monitoring.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Documents Commonly Required:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Government-issued ID (Passport, National ID).</li><li>Proof of address (Utility bill, Bank statement).</li><li>Proof of income (for certain account types).</li></ul><p class="text-lg text-gray-600 italic mb-6">Always ensure documents are valid and up-to-date.</p>',
-    "lessons.understanding-kyc-requirements.relatedCourses.compliance.title":
-      "Compliance and Regulation",
+
     "lessons.mobile-app-basics.title": "ZetCollect Mobile App Basics",
     "lessons.mobile-app-basics.category": "ZetCollect Product Knowledge",
     "lessons.mobile-app-basics.content":
       '<h1 class="text-4xl font-bold text-gray-900 mb-6">Getting Started with the ZetCollect App</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">This lesson covers the fundamental features and functionalities of the ZetCollect mobile application, designed for seamless financial management on the go.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Core Features:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Client Management.</li><li>Mobile Collection.</li><li>Booklet System.</li><li>Report and Analytics.</li></ul><p class="text-lg text-gray-600 italic mb-6">Regular updates bring new features and improvements.</p>',
     "lessons.mobile-app-basics.relatedCourses.product-knowledge.title":
       "ZetCollect Product Knowledge",
-    "lessons.fraud-prevention-training.title":
-      "Fraud Prevention Best Practices",
-    "lessons.fraud-prevention-training.category": "Compliance and Regulation",
-    "lessons.fraud-prevention-training.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Identifying and Preventing Fraud</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Fraud is a constant threat in the financial sector. This training equips you with the knowledge to identify common fraud indicators and implement effective prevention strategies.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Common Fraud Types:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Phishing and Smishing.</li><li>Identity Theft.</li><li>Account Takeover.</li><li>Social Engineering.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Prevention Strategies:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Verify customer identity rigorously.</li><li>Educate clients on security best practices.</li><li>Report suspicious activities immediately.</li><li>Use strong, unique passwords and 2FA.</li></ul><p class="text-lg text-red-600 font-semibold mb-6">Remember: If something feels off, it probably is. Always err on the side of caution.</p>',
-    "lessons.fraud-prevention-training.relatedCourses.compliance.title":
-      "Compliance and Regulation",
+
+    "lessons.zetcollect-security.title": "ZetCollect Security Overview",
+    "lessons.zetcollect-security.category": "ZetCollect Security",
+    "lessons.zetcollect-security.content":
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction to ZetCollect Security</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">ZetCollect prioritizes the security of your financial transactions with robust measures designed to protect your data and ensure trust. This lesson explores the key security features available to all users.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Key Security Features:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>End-to-end encryption for all transactions.</li><li>Real-time fraud detection and alerts.</li><li>Secure user authentication protocols.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">How to Stay Secure:</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Regularly update your ZetCollect app.</li><li>Monitor your account activity frequently.</li><li>Contact support if you notice suspicious behavior.</li></ol><p class="text-lg text-gray-600 italic mb-6">For additional security tips, visit our support page.</p>',
+    "lessons.zetcollect-security.relatedCourses.onboarding.title":
+      "Onboarding and Issue Resolution",
+    "lessons.zetcollect-security.relatedCourses.product-knowledge.title":
+      "ZetCollect Product Knowledge",
+
+    // First Section: ZetCollect Empowers Agents
+    "combined.section1.title":
+      "ZetCollect transforms payment collection for agents.",
+    "combined.section1.description":
+      "ZetCollect empowers agents with innovative tools to digitize cash collections and expand financial access across Africa.",
+    "combined.section1.share": "Share the story",
+
+    // Second Section: ZetCollect Capabilities
+    "combined.section2.title": "What ZetCollect Offers",
+    "combined.section2.description":
+      "A comprehensive platform designed to streamline payment collections and empower your team.",
+    "combined.section2.capability1.title": "Enhanced Client Support",
+    "combined.section2.capability1.description":
+      "Tools to manage client relationships and track payment histories effectively.",
+    "combined.section2.capability2.title": "Performance Insights",
+    "combined.section2.capability2.description":
+      "Real-time data to monitor and optimize agent performance and operations.",
+    "combined.section2.capability3.title": "Scalable Operations",
+    "combined.section2.capability3.description":
+      "Flexible solutions to support growth across multiple locations and teams.",
+
+    // Third Section: About ZetCollect
+    "combined.section3.impact.title": "Impact",
+    "combined.section3.impact.stat1.value": "400%+",
+    "combined.section3.impact.stat1.description":
+      "agent network growth in 2 years",
+    "combined.section3.impact.stat2.value": "~500",
+    "combined.section3.impact.stat2.description": "new agent signups per week",
+    "combined.section3.impact.stat3.value": "~5min",
+    "combined.section3.impact.stat3.description":
+      "average transaction processing time",
+    "combined.section3.about.title": "About ZetCollect",
+    "combined.section3.about.description":
+      "ZetCollect, a pioneering fintech platform based in Nairobi, Kenya, launched in 2022 to transform payment collection and financial inclusion across Africa. Founded by visionary tech entrepreneurs, ZetCollect provides innovative tools to empower agents and businesses, serving over 10,000 agents and processing millions in transactions annually.",
+    "combined.section3.table.header.feature": "FEATURE",
+    "combined.section3.table.header.region": "REGION",
+    "combined.section3.table.header.industry": "INDUSTRY",
+    "combined.section3.table.row1.area": "Payment Processing",
+    "combined.section3.table.row1.feature":
+      "Fast and reliable transaction handling",
+    "combined.section3.table.row1.region": "Africa",
+    "combined.section3.table.row1.industry": "Finance",
+
+    // Section: The Challenge for ZetCollect
+    "combined.section4.title": "The Challenge for ZetCollect",
+    "combined.section4.description1":
+      "ZetCollect needed to efficiently onboard hundreds of new agents to meet rising demand.",
+    "combined.section4.description2":
+      "Since its launch in 2022, ZetCollect has been a leader in bridging the financial inclusion gap in Africa, equipping agents with tools to manage payments and support local economies. With a growing network of agents, the platform aims to serve more communities, but scaling requires overcoming onboarding hurdles.",
+    "combined.section4.quote":
+      "Our mission at ZetCollect is to bring financial services to every corner of Africa",
+    "combined.section4.quote.author":
+      "Beryl, Operations Director at ZetCollect",
+    "combined.section4.description3":
+      "Expanding the agent network involves training on complex payment systems and ensuring consistent service quality, especially in diverse and remote regions.",
+    "combined.section4.description4":
+      "ZetCollect addresses this with its intuitive platform, designed to support rapid growth and operational excellence.",
+
+    // Section: The Solution
+    "combined.section5.title": "The Solution",
+    "combined.section5.description1":
+      "ZetCollect’s platform provides a seamless solution for onboarding and scaling its agent network. Its intuitive tools enable agents to manage transactions efficiently, even in challenging environments.",
+    "combined.section5.description2":
+      "The system offers real-time support and insights, allowing agents to focus on delivering value to clients rather than administrative tasks. This adaptability ensures consistent performance as the network grows.",
+    "combined.section5.description3":
+      "With ZetCollect, businesses can expand their reach and enhance financial inclusion across Africa with confidence.",
+
+    // Section: Impact Cards
+    "combined.section6.card1.value": "4x",
+    "combined.section6.card1.description": "as many agents empowered",
+    "combined.section6.card2.value": "~5min",
+    "combined.section6.card2.description": "average transaction time",
+
+    // Section: Action Banner
+    "combined.actionBanner.title": "Ready to Transform Your Business?",
+    "combined.actionBanner.description":
+      "We’re excited to help transform your collectionas a client through our software",
+    "combined.actionBanner.ctaButton": "Get Started",
+
+    // Section: Transformation
+    "combined.section8.title": "Transformation",
+    "combined.section8.description1":
+      "ZetCollect has transformed payment collection across Africa. This innovative platform has streamlined transactions for thousands of users, reducing processing times by 60% and enhancing efficiency. By integrating advanced technology, ZetCollect continues to drive financial inclusion and operational excellence.",
+    "combined.section8.description2":
+      "“ZetCollect has revolutionized our approach to payments, empowering our teams with faster and more reliable solutions,” said a ZetCollect spokesperson. The platform’s improvements in data management are paving the way for sustained growth and innovation.",
+
+    // Section: Additional Customer Success Stories
+    "combined.section9.title": "Additional Customer Success Stories",
+    "combined.section9.viewAll": "View all Success Stories",
+    "combined.section9.story1.label": "Customer Story",
+    "combined.section9.story1.title":
+      "Young Microfinances expands with ZetCollect.",
+    "combined.section9.story1.description":
+      "See how ZetCollect supports Young Microfinances in scaling their operations.",
+    "combined.section9.story1.link": "Learn more",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+    "microfinances.section1.title":
+      "ZetCollect transforms payment collection for ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+    "microfinances.section1.description":
+      "ZetCollect empowers ACEP Cameroun - Fondation Grameen Crédit-Agricole with innovative tools to digitize loan disbursements and enhance financial inclusion across Africa.",
+    "microfinances.section1.share": "Share the story",
+
+    // Third Section: Impact and About ACEP Cameroun
+    "microfinances.section2.impact.title": "Impact",
+    "microfinances.section2.impact.stat1.value": "300%+",
+    "microfinances.section2.impact.stat1.description":
+      "loan disbursement growth in 2 years",
+    "microfinances.section2.impact.stat2.value": "~400",
+    "microfinances.section2.impact.stat2.description":
+      "new borrower signups per month",
+    "microfinances.section2.impact.stat3.value": "~10min",
+    "microfinances.section2.impact.stat3.description":
+      "average loan processing time",
+    "microfinances.section2.about.title":
+      "About ACEP Cameroun - Fondation Grameen Crédit-Agricole with ZetCollect",
+    "microfinances.section2.about.description":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole, partnered with ZetCollect since 2024, leverages advanced payment solutions to expand financial services to underserved communities in Africa. Serving over 5,000 borrowers, this collaboration has revolutionized micro-lending efficiency.",
+
+    // Section: The Challenge
+    "microfinances.section3.title": "The Challenge",
+    "microfinances.section3.description1":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole faced significant hurdles in scaling loan disbursements across remote and rural regions of Cameroon. The organization struggled with outdated manual processes that slowed down loan approvals and limited their reach to underserved populations. Limited infrastructure and connectivity issues further complicated the timely delivery of financial services, making it challenging to meet the growing demand from local farmers and small business owners.",
+    "microfinances.section3.description2":
+      "Additionally, the lack of real-time data and efficient tracking systems hindered the ability to monitor loan performance and ensure repayment consistency. This created a bottleneck that threatened the organization's mission to promote agricultural development and economic empowerment, prompting the need for a robust technological solution to overcome these operational barriers.",
+
+    // Section: The Solution
+    "microfinances.section4.title": "The Solution",
+    "microfinances.section4.description1":
+      "ZetCollect introduced a cutting-edge platform tailored to streamline loan processing and repayments for ACEP Cameroun - Fondation Grameen Crédit-Agricole. The solution offered a user-friendly interface that allowed staff to manage loan applications and disbursements efficiently, even in areas with limited internet access. By integrating mobile technology, ZetCollect enabled field agents to collect repayments directly from borrowers, reducing delays and improving cash flow.",
+    "microfinances.section4.description2":
+      "The platform also provided advanced analytics and reporting tools, empowering the organization to track loan portfolios in real-time and make data-driven decisions. This technological upgrade not only addressed connectivity challenges but also enhanced the overall efficiency of loan management, allowing ACEP Cameroun to scale its operations and serve more clients across diverse regions with confidence and reliability.",
+
+    // Section: The Transformation
+    "microfinances.section5.title": "The Transformation",
+    "microfinances.section5.description1":
+      "With ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole significantly improved financial access for thousands of borrowers, particularly in rural Cameroon. The adoption of the platform led to a remarkable increase in loan disbursement rates, enabling smallholder farmers and entrepreneurs to invest in their businesses and improve their livelihoods. This transformation has strengthened the organization's reputation as a leader in microfinance innovation.",
+    "microfinances.section5.description2":
+      "Furthermore, the enhanced efficiency and transparency brought by ZetCollect have fostered greater trust among borrowers and stakeholders, resulting in higher repayment rates and sustained growth. By overcoming previous limitations, ACEP Cameroun is now better positioned to expand its outreach, support more communities, and contribute to the economic development of the region, marking a new era of success and impact.",
+
+    // Static Text Translations
+    "customerSuccessStories.section1.title":
+      "ZetCollect delivers Customer Success.",
+    "customerSuccessStories.section1.description":
+      "With ZetCollect, leading businesses in Africa empower agents to do more with innovative payment solutions, leveraging all their transaction data to uncover deeper insights, streamline operations, and enhance customer financial success.",
+    "customerSuccessStories.section2.title":
+      "Additional Customer Success Stories 1",
+    "customerSuccessStories.section2.viewAll": "View All",
+    "customerSuccessStories.section2.label": "Customer Story",
+    "customerSuccessStories.section2.link": "Read more",
+    "customerSuccessStories.section3.title":
+      "Additional Customer Success Stories 2",
+    "customerSuccessStories.section3.viewAll": "View All",
+    "customerSuccessStories.section3.label": "Customer Story",
+    "customerSuccessStories.section3.link": "Read more",
+
+    // First Section: ZetCollect Transforms Merchant Payments in Gabon
+    "gabonmerchants.section1.title":
+      "ZetCollect Transforms Merchant Payments in Gabon",
+    "gabonmerchants.section1.description":
+      "ZetCollect revolutionizes payment collections for merchants in Gabon, empowering them with efficient tools to enhance financial transactions across the region.",
+    "gabonmerchants.section1.share": "Share the story",
+
+    // Third Section: Impact and About Gabon Merchants
+    "gabonmerchants.section2.impact.title": "Impact",
+    "gabonmerchants.section2.impact.stat1.value": "30%",
+    "gabonmerchants.section2.impact.stat1.description":
+      "reduction in transaction costs",
+    "gabonmerchants.section2.impact.stat2.value": "250",
+    "gabonmerchants.section2.impact.stat2.description": "agents empowered",
+    "gabonmerchants.section2.impact.stat3.value": "40%",
+    "gabonmerchants.section2.impact.stat3.description":
+      "increase in customer satisfaction",
+    "gabonmerchants.section2.about.title": "About ZetCollect in Gabon",
+    "gabonmerchants.section2.about.description":
+      "ZetCollect, partnered with local merchants in Gabon since 2024, leverages its platform to optimize payment processes, serving over 1,200 merchants and boosting retail efficiency across urban and rural areas.",
+
+    // Section: The Challenge
+    "gabonmerchants.section3.title": "The Challenge",
+    "gabonmerchants.section3.description1":
+      "Gabonese merchants faced significant challenges with traditional payment systems, including high transaction costs and slow processing times that hindered their ability to serve customers effectively. Limited access to modern financial tools in both urban and rural areas compounded these issues, leading to lost sales and reduced competitiveness.",
+    "gabonmerchants.section3.description2":
+      "The lack of real-time payment tracking and reconciliation further complicated inventory management and cash flow, creating operational bottlenecks. This situation underscored the need for a scalable, technology-driven solution to modernize merchant payments and support economic growth in Gabon.",
+
+    // Section: The Solution
+    "gabonmerchants.section4.title": "The Solution",
+    "gabonmerchants.section4.description1":
+      "ZetCollect deployed a tailored platform to streamline merchant payments in Gabon, offering a mobile-based system that reduced transaction costs by 30% and enabled 250 agents to process payments efficiently. The solution included offline capabilities to address connectivity challenges in remote areas.",
+    "gabonmerchants.section4.description2":
+      "Advanced reporting tools were integrated to provide merchants with real-time insights into their transactions, improving inventory control and cash flow management. This technology empowered merchants to expand their customer base and enhance service delivery across Gabon’s diverse market landscape.",
+
+    // Section: The Transformation
+    "gabonmerchants.section5.title": "The Transformation",
+    "gabonmerchants.section5.description1":
+      "With ZetCollect, Gabonese merchants have transformed their payment operations, serving over 1,500 customers and reducing costs significantly as of 08:00 AM EAT on July 31, 2025. This has enabled small businesses to reinvest savings into growth, strengthening the local economy.",
+    "gabonmerchants.section5.description2":
+      "The platform’s success has built trust among merchants and customers, leading to a 40% increase in repeat business. ZetCollect’s innovative approach positions Gabon’s retail sector for sustained expansion and improved financial resilience.",
+
+    // First Section: ZetCollect Boosts Agent Efficiency in Tchad
+    "tchadagents.section1.title": "ZetCollect Boosts Agent Efficiency in Tchad",
+    "tchadagents.section1.description":
+      "ZetCollect enhances payment processing for agents in Tchad, empowering them with reliable tools to serve clients across the region.",
+    "tchadagents.section1.share": "Share the story",
+
+    // Third Section: Impact and About Tchad Agents
+    "tchadagents.section2.impact.title": "Impact",
+    "tchadagents.section2.impact.stat1.value": "40%",
+    "tchadagents.section2.impact.stat1.description":
+      "faster payment processing",
+    "tchadagents.section2.impact.stat2.value": "350",
+    "tchadagents.section2.impact.stat2.description": "clients served",
+    "tchadagents.section2.impact.stat3.value": "25%",
+    "tchadagents.section2.impact.stat3.description":
+      "increase in agent productivity",
+    "tchadagents.section2.about.title": "About ZetCollect in Tchad",
+    "tchadagents.section2.about.description":
+      "ZetCollect, partnered with agent networks in Tchad since 2024, optimizes payment operations, serving over 800 clients and improving financial services in urban and rural areas.",
+
+    // Section: The Challenge
+    "tchadagents.section3.title": "The Challenge",
+    "tchadagents.section3.description1":
+      "Agents in Tchad struggled with slow and unreliable payment processing systems, which limited their ability to serve clients effectively. Poor infrastructure and intermittent connectivity in remote areas compounded these issues, leading to delays and lost revenue opportunities.",
+    "tchadagents.section3.description2":
+      "The lack of efficient tracking and reporting tools also hindered agent performance monitoring, creating operational inefficiencies. This prompted the need for a robust solution to enhance payment reliability and support Tchad’s growing financial network.",
+
+    // Section: The Solution
+    "tchadagents.section4.title": "The Solution",
+    "tchadagents.section4.description1":
+      "ZetCollect introduced a mobile-based platform to boost agent efficiency in Tchad, enabling 40% faster payment processing and empowering 350 agents with offline capabilities to overcome connectivity issues.",
+    "tchadagents.section4.description2":
+      "The platform included real-time tracking and analytics, allowing agents to manage transactions and report performance effectively. This solution enhanced reliability and scalability, supporting Tchad’s financial operations across diverse regions.",
+
+    // Section: The Transformation
+    "tchadagents.section5.title": "The Transformation",
+    "tchadagents.section5.description1":
+      "With ZetCollect, agents in Tchad have improved payment processing for over 400 clients, achieving greater reliability as of 08:26 AM EAT on July 31, 2025. This has enabled agents to expand their reach and support local economic growth.",
+    "tchadagents.section5.description2":
+      "The increased efficiency has strengthened agent-client relationships, boosting trust and leading to a 25% rise in productivity. ZetCollect’s technology positions Tchad’s financial sector for sustained development and enhanced service delivery.",
+
+    "customerStories.microfinances.title": "Microfinance Success in Nairobi",
+    "customerStories.microfinances.description":
+      "In Nairobi, ZetCollect partnered with a microfinance network to digitize loan repayments, reducing processing times by 45% and empowering 400 agents to serve rural clients efficiently. This transformation, effective as of 09:15 AM EAT on July 31, 2025, boosts financial access across Kenya.",
+    "customerStories.cooperative.title":
+      "ZetCollect transforms payment collection for agents.",
+    "customerStories.cooperative.description":
+      "ZetCollect empowers agents with innovative tools to digitize cash collections and expand financial access across Africa.",
+    "customerStories.merchants-gabon.title":
+      "ZetCollect Transforms Merchant Payments in Gabon",
+    "customerStories.merchants-gabon.description":
+      "In Gabon, ZetCollect streamlined payment collections for local merchants, reducing transaction costs by 30% and enabling 250 agents to enhance customer service. This effort, active by 09:15 AM EAT on July 31, 2025, strengthens Tanzania's retail sector.",
+    "customerStories.agents-Tchad.title":
+      "ZetCollect Boosts Agent Efficiency in Tchad",
+    "customerStories.agents-Tchad.description":
+      "In Tchad, ZetCollect empowered a network of agents to process payments 40% faster, serving 350 clients with improved reliability. This success, recorded by 09:15 AM EAT on July 31, 2025, enhances financial operations in Tchad.",
   },
-
-
-
 
   fr: {
     // About Page
@@ -832,7 +1146,7 @@ const translations = {
     "footer.faq": "FAQ",
     "footer.training_certification": "Formation et Certification",
     "footer.rights":
-      "Propulsé par © {year} Evolv ZetCollect Group Ltd. Tous droits réservés.",
+      "Propulsé par © {year} Evolv IZSoftwares Group Ltd. Tous droits réservés.",
 
     // WorkInProgressPage
     "wip.title": "Page en Construction",
@@ -887,29 +1201,74 @@ const translations = {
       "<strong>Version</strong>: 1.0.5-Beta - 25th Juillet 2025",
 
     // FAQPage
-    "faq.title": "Foire aux Questions",
+    "faq.title": "Questions Fréquemment Posées",
     "faq.subtitle":
-      "Voici les réponses à toutes vos questions brûlantes sur ZetCollect. Vous pouvez également nous contacter directement ou explorer notre base de connaissances et la documentation de l'API.",
+      "Voici les réponses à toutes vos questions brûlantes sur ZetCollect. Vous pouvez également nous contacter directement ou explorer plus en détail notre base de connaissances et la documentation de notre API.",
     "faq.questions.client_management":
-      "Comment fonctionne la fonctionnalité de gestion des clients de ZetCollect ?",
+      "Comment fonctionne la fonctionnalité de Gestion des Clients de ZetCollect ?",
     "faq.answers.client_management":
-      "La gestion des clients de ZetCollect vous permet d'ajouter, de mettre à jour et de gérer facilement toutes les informations des clients, y compris les champs personnalisés. Vous pouvez attribuer des carnets de collecte spécifiques aux clients pour un suivi structuré et définir des attentes d'épargne quotidiennes pour suivre leur progression efficacement.",
+      "La Gestion des Clients de ZetCollect vous permet d’ajouter, de mettre à jour et de gérer facilement toutes les informations de vos clients, y compris des champs personnalisés. Vous pouvez attribuer des livres de collecte spécifiques aux clients pour un suivi structuré et définir des attentes d’épargne quotidienne pour surveiller efficacement leurs progrès.",
     "faq.questions.collector_management":
-      "Quelles fonctionnalités offre la gestion des collecteurs (agents) ?",
+      "Quelles fonctionnalités offre la Gestion des Collecteurs (Agents) ?",
     "faq.answers.collector_management":
-      "La fonctionnalité de gestion des collecteurs (agents) permet d'assigner des agents à des succursales spécifiques, d'attribuer des clients et des zones de collecte, et de suivre leurs activités quotidiennes en temps réel. Cela inclut le suivi des montants collectés et l'identification des collectes manquées.",
+      "La fonctionnalité de Gestion des Collecteurs (Agents) vous permet d’assigner des agents à des branches spécifiques, de leur attribuer des clients et des zones de collecte, et de suivre leurs activités quotidiennes en temps réel. Cela inclut le suivi des montants collectés et l’identification des collectes manquées.",
     "faq.questions.multi_branch":
-      "ZetCollect peut-il prendre en charge plusieurs succursales et institutions ?",
+      "ZetCollect peut-il supporter plusieurs branches et institutions ?",
     "faq.answers.multi_branch":
-      "Oui, ZetCollect prend en charge une configuration multi-succursales avec un contrôle d'accès basé sur les rôles, permettant de gérer efficacement différentes succursales. Il offre également un contrôle centralisé depuis le siège pour une surveillance complète des performances dans toutes vos succursales.",
+      "Oui, ZetCollect prend en charge une configuration multi-branches avec un contrôle d’accès basé sur les rôles, vous permettant de gérer efficacement différentes branches. Il offre également un contrôle centralisé depuis le siège pour un suivi complet des performances de toutes vos branches.",
     "faq.questions.mobile_collection":
-      "Quelles sont les capacités de l'interface de collecte mobile ?",
+      "Quelles sont les capacités de l’Interface de Collecte Mobile ?",
     "faq.answers.mobile_collection":
-      "L'interface de collecte mobile est une application Android conçue pour les collecteurs, permettant l'enregistrement en temps réel des collectes directement depuis les emplacements des clients. Elle fonctionne parfaitement en ligne et hors ligne, synchronisant automatiquement toutes les données lorsqu'une connexion Internet est disponible, garantissant une opération continue.",
+      "L’Interface de Collecte Mobile est une application Android conçue pour les collecteurs, permettant la saisie en temps réel des collectes directement depuis les lieux des clients. Elle fonctionne de manière fluide en ligne et hors ligne, synchronisant automatiquement toutes les données lorsqu’une connexion Internet est disponible, assurant une opération continue.",
     "faq.questions.booklet_system":
-      "Comment le système de carnets prévient-il la fraude ?",
+      "Comment le Système de Carnet (Booklet) prévient-il la fraude ?",
     "faq.answers.booklet_system":
-      "Le système de carnets attribue à chaque client un carnet de collecte numérique. Les collecteurs enregistrent les transactions sur l'application en fonction des entrées de ce carnet numérique. Ce processus crée un enregistrement transparent et vérifiable, réduisant considérablement le risque de fraude et d'erreurs de rapport.",
+      "Le Système de Carnet (Booklet) attribue un carnet de collecte numérique à chaque client. Les collecteurs marquent les transactions sur l’application en fonction des entrées dans ce carnet numérique. Ce processus crée un enregistrement transparent et vérifiable, réduisant considérablement le risque de fraude et de mauvaise déclaration.",
+    "faq.questions.transaction_history":
+      "Comment fonctionne la fonctionnalité Historique des Transactions de ZetCollect ?",
+    "faq.answers.transaction_history":
+      "Traçabilité complète de toutes les activités de collecte et paiements, offrant un enregistrement détaillé pour la transparence et la responsabilité.",
+    "faq.questions.reports_analytics":
+      "Que propose la fonctionnalité Rapports et Analytiques ?",
+    "faq.answers.reports_analytics":
+      "Tableaux de bord en temps réel et rapports détaillés pour des décisions basées sur les données, permettant des insights sur les performances de collecte et les tendances.",
+    "faq.questions.user_access":
+      "Comment l’Accès Utilisateur et les Rôles assurent-ils la sécurité ?",
+    "faq.answers.user_access":
+      "Permissions basées sur les rôles assurant un accès sécurisé aux informations sensibles, protégeant l’intégrité des données sur la plateforme.",
+    "faq.questions.sms_notifications":
+      "Quelle est la fonctionnalité des Notifications SMS ?",
+    "faq.answers.sms_notifications":
+      "Rappels et confirmations automatisés via SMS pour une meilleure communication, tenant les clients et collecteurs informés.",
+    "faq.questions.daily_sync":
+      "Comment fonctionne la Synchronisation Quotidienne dans ZetCollect ?",
+    "faq.answers.daily_sync":
+      "Synchronisation fluide des données entre les appareils mobiles et la base de données centrale, garantissant la cohérence et la disponibilité des données.",
+    "faq.questions.gps_traceability":
+      "Qu’est-ce que la Traçabilité GPS, et comment bénéficiera-t-elle aux collecteurs ?",
+    "faq.answers.gps_traceability":
+      "Suivi de localisation en temps réel pour une sécurité renforcée et une optimisation des itinéraires, améliorant l’efficacité et la sécurité des collecteurs.",
+    "faq.questions.missed_alerts":
+      "Quelles sont les Alertes de Collectes Manquées ?",
+    "faq.answers.missed_alerts":
+      "Notifications automatisées pour les collectes manquées et rappels de suivi, assurant un suivi opportun et la responsabilité.",
+    "faq.questions.risk_profile":
+      "Comment fonctionne le Système de Profil de Risque Client et d’Évaluation ?",
+    "faq.answers.risk_profile":
+      "Évaluation des risques alimentée par l’IA et système d’évaluation des clients pour une meilleure prise de décision, identifiant les risques potentiels de manière proactive.",
+    "faq.questions.route_optimization":
+      "Qu’est-ce que l’Optimisation des Itinéraires et des Horaires ?",
+    "faq.answers.route_optimization":
+      "Algorithmes de routage intelligents pour optimiser les horaires des collecteurs et maximiser l’efficacité, réduisant le temps et les coûts.",
+    "faq.questions.self_access_portal":
+      "Qu’est-ce que le Portail d’Accès Autonome des Clients ?",
+    "faq.answers.self_access_portal":
+      "Permet aux clients de consulter leur historique de collecte et d’effectuer des paiements de manière indépendante, améliorant la commodité et la transparence.",
+    "faq.questions.currency_system":
+      "Comment le Nouveau Système de Devise (CDF) sera-t-il mis en œuvre ?",
+    "faq.answers.currency_system":
+      "Intégration fluide du Franc Congolais (CDF) pour toutes les transactions et rapports financiers, assurant la conformité et la facilité d’utilisation.",
+
     // Training and Certification Page
     "training.title": "Élevez votre carrière au niveau supérieur",
     "training.subtitle":
@@ -922,7 +1281,7 @@ const translations = {
       "Intégration et résolution des problèmes",
     "training.courses.productKnowledge.title":
       "Connaissance des produits ZetCollect",
-    "training.courses.compliance.title": "Conformité et réglementation",
+    "training.courses.security.title": "ZetCollect sécurité",
     //pricing Page
     "pricing.section1.title":
       "Tarification équitable pour une croissance rapide",
@@ -960,6 +1319,7 @@ const translations = {
       "Notifications SMS optionnelles",
     "pricing.compareFeatures.dailySynchronization":
       "Synchronisation quotidienne des données",
+    "pricing.compareFeatures.passwordPolicy": "Politique de mot de passe",
     "pricing.compareFeatures.gpsTraceability": "Suivi GPS pour les agents",
     "pricing.compareFeatures.missedCollectionAlerts":
       "Alertes de collecte manquée",
@@ -983,31 +1343,43 @@ const translations = {
     "onboarding.filter.inProgress": "En cours",
     "onboarding.noLessons":
       "Aucune leçon trouvée pour cette catégorie ou ce filtre.",
-
     // Courses Data (from coursesData.json)
-    "courses.onboarding.title": "Intégration et résolution des problèmes",
+    "courses.onboarding.title": "Intégration et Résolution des Problèmes",
     "courses.onboarding.lesson.protecting-accounts.title":
-      "Protéger les comptes avec l'authentification à deux facteurs de ZetCollect",
+      "Protection des Comptes avec l'Authentification à Deux Facteurs de ZetCollect",
     "courses.onboarding.lesson.protecting-accounts.description":
-      "Dans ce cours, vous apprendrez tout ce que vous devez savoir sur l'authentification à deux facteurs (2FA) de ZetCollect. Vous serez équipé pour...",
-    "courses.product-knowledge.title": "Connaissance des produits ZetCollect",
+      "Dans ce cours, vous apprendrez tout ce qu'il faut savoir sur l'Authentification à Deux Facteurs (2FA) de ZetCollect. Vous serez équipé pour...",
+    "courses.product-knowledge.title": "Connaissance des Produits ZetCollect",
     "courses.product-knowledge.lesson.mobile-app-basics.title":
-      "Bases de l'application mobile ZetCollect",
+      "Bases de l'Application Mobile ZetCollect",
     "courses.product-knowledge.lesson.mobile-app-basics.description":
       "Apprenez à naviguer dans l'application mobile ZetCollect, à effectuer des transactions de base et à résoudre les problèmes courants.",
-    "courses.compliance.title": "Conformité et réglementation",
+    "courses.compliance.title": "Conformité et Réglementation",
     "courses.compliance.lesson.understanding-kyc-requirements.title":
-      "Comprendre les exigences KYC chez ZetCollect",
+      "Comprendre les Exigences KYC chez ZetCollect",
     "courses.compliance.lesson.understanding-kyc-requirements.description":
-      "Bienvenue dans la troisième partie de notre série ! Ici, vous apprendrez les bases de l'intégration des clients, la vérification de leurs documents et plus encore...",
+      "Bienvenue à la troisième partie de notre série ! Ici, vous apprendrez les bases de l'intégration des clients, de la vérification de leurs documents, et th..",
     "courses.compliance.lesson.fraud-prevention-training.title":
-      "Meilleures pratiques de prévention de la fraude",
+      "Meilleures Pratiques de Prévention de la Fraude",
     "courses.compliance.lesson.fraud-prevention-training.description":
-      "Comprendre les schémas de fraude courants et apprendre les meilleures pratiques pour protéger vous-même et vos clients contre la fraude financière.",
+      "Comprenez les schémas de fraude courants et apprenez les meilleures pratiques pour vous protéger, vous et vos clients, contre la fraude financière.",
     "courses.compliance.lesson.data-privacy-regulations.title":
-      "Réglementations et meilleures pratiques en matière de protection des données",
+      "Réglementations sur la Protection des Données et Meilleures Pratiques",
     "courses.compliance.lesson.data-privacy-regulations.description":
-      "Un cours essentiel sur les lois de protection des données (par exemple, RGPD, réglementations locales) et sur la manière de gérer les données des clients de manière sécurisée et conforme.",
+      "Un cours essentiel sur les lois de protection des données (par ex. GDPR, réglementations locales) et sur la manière de gérer les données clients de manière sécurisée et conforme.",
+    "courses.security.title": "Sécurité ZetCollect",
+    "courses.security.lesson.secure-transaction-protocols.title":
+      "Protocoles de Transaction Sécurisée avec ZetCollect",
+    "courses.security.lesson.secure-transaction-protocols.description":
+      "Explorez les protocoles de transaction sécurisée utilisés par ZetCollect pour assurer un traitement des paiements sûr et fiable. Vous apprendrez à...",
+    "courses.security.lesson.encryption-standards.title":
+      "Normes de Chiffrement chez ZetCollect",
+    "courses.security.lesson.encryption-standards.description":
+      "Ce cours couvre les normes de chiffrement mises en œuvre par ZetCollect pour protéger les données sensibles. Vous serez formé à...",
+    "courses.security.lesson.incident-response-training.title":
+      "Formation à la Réponse aux Incidents",
+    "courses.security.lesson.incident-response-training.description":
+      "Apprenez à répondre efficacement aux incidents de sécurité avec les stratégies de réponse aux incidents de ZetCollect. Vous serez préparé à...",
     // ProductKnowledgeCoursePage Component
     "productKnowledge.title": "Cours",
     "productKnowledge.allCourses": "Tous les cours",
@@ -1027,58 +1399,317 @@ const translations = {
     "courseLesson.backToAllCourses": "Retour à tous les cours",
     "courseLesson.relatedCourses": "Cours connexes",
 
+    // SecurityCoursePage Component (French)
+    "security.title": "Cours",
+    "security.description":
+      "Apprenez à protéger vos données et systèmes grâce aux cours de sécurité complets de ZetCollect.",
+    "security.allCourses": "Tous les Cours",
+    "security.securityAwareness": "Sensibilisation à la Sécurité",
+    "security.securityTraining": "Formation en Sécurité",
+    "security.filter.all": "Toutes les Leçons",
+    "security.filter.completed": "Terminées",
+    "security.filter.inProgress": "En Cours",
+    "security.noLessons":
+      "Aucune leçon trouvée pour cette catégorie ou ce filtre.",
+
     // lessonContent.json
     "lessons.protecting-accounts.title":
-      "Protéger les comptes avec l'authentification à deux facteurs de ZetCollect",
+      "Protection des Comptes avec l'Authentification à Deux Facteurs de ZetCollect",
     "lessons.protecting-accounts.category":
-      "Intégration et résolution des problèmes",
+      "Intégration et Résolution des Problèmes",
     "lessons.protecting-accounts.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction à l\'authentification à deux facteurs</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">L\'authentification à deux facteurs (2FA) ajoute une couche supplémentaire de sécurité à votre compte ZetCollect. Elle nécessite une seconde forme de vérification en plus de votre mot de passe, réduisant considérablement le risque d\'accès non autorisé.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Pourquoi la 2FA est-elle importante ?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Protège contre le vol de mot de passe.</li><li>Ajoute une couche essentielle de défense contre les attaques de phishing.</li><li>Garantit que seul vous pouvez accéder à votre compte, même si votre mot de passe est compromis.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Comment activer la 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Suivez ces étapes simples pour activer la 2FA sur votre compte ZetCollect :</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Connectez-vous à votre tableau de bord ZetCollect.</li><li>Accédez aux \'Paramètres de sécurité\'.</li><li>Sélectionnez \'Activer l\'authentification à deux facteurs\'.</li><li>Choisissez votre méthode préférée (par exemple, application d\'authentification, code SMS).</li><li>Suivez les instructions à l\'écran pour finaliser la configuration.</li></ol><p class="text-lg text-gray-600 italic mb-6">Pour plus de détails, consultez notre guide utilisateur officiel.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction à l\'Authentification à Deux Facteurs (2FA)</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">L\'authentification à deux facteurs (2FA) ajoute une couche supplémentaire de sécurité à votre compte ZetCollect. Elle exige une seconde forme de vérification en plus de votre mot de passe, réduisant considérablement le risque d\'accès non autorisé.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Pourquoi 2FA est Important ?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Protège contre le vol de mots de passe.</li><li>Ajoute une couche essentielle de défense contre les attaques de phishing.</li><li>Garantit que seul vous pouvez accéder à votre compte, même si votre mot de passe est compromis.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Comment Activer 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Suivez ces étapes simples pour activer 2FA sur votre compte ZetCollect :</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Connectez-vous à votre tableau de bord ZetCollect.</li><li>Accédez à \'Paramètres de Sécurité\'.</li><li>Sélectionnez \'Activer l\'Authentification à Deux Facteurs\'.</li><li>Choisissez votre méthode préférée (par exemple, application d\'authentification, code SMS).</li><li>Suivez les instructions à l\'écran pour compléter la configuration.</li></ol><p class="text-lg text-gray-600 italic mb-6">Pour plus de détails, consultez notre guide officiel de l\'utilisateur.</p>',
     "lessons.protecting-accounts.relatedCourses.onboarding.title":
-      "Intégration et résolution des problèmes",
-    "lessons.protecting-accounts.relatedCourses.compliance.title":
-      "Conformité et réglementation",
+      "Intégration et Résolution des Problèmes",
+    "lessons.protecting-accounts.relatedCourses.product-knowledge.title":
+      "Connaissance des Produits ZetCollect",
+
     "lessons.adding-business-kyc3.title":
-      "Ajouter une entreprise à un compte KYC de niveau 3",
+      "Ajout d'une Entreprise à un Compte KYC Niveau 3",
     "lessons.adding-business-kyc3.category":
-      "Intégration et résolution des problèmes",
+      "Intégration et Résolution des Problèmes",
     "lessons.adding-business-kyc3.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Comprendre le KYC de niveau 3 pour les entreprises</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Les comptes KYC de niveau 3 offrent des limites de transaction et des fonctionnalités améliorées pour les entreprises. Ce cours décrit les exigences et le processus étape par étape pour mettre à niveau votre compte d\'entreprise.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Documents requis :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Certificat d\'enregistrement de l\'entreprise.</li><li>Numéro d\'identification fiscale (TIN).</li><li>Preuve de l\'adresse de l\'entreprise.</li><li>Identification pour tous les directeurs/partenaires.</li><li>Relevé bancaire de l\'entreprise.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Processus de candidature :</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Connectez-vous à votre compte d\'entreprise ZetCollect.</li><li>Accédez à la section \'Mettre à niveau le compte\'.</li><li>Sélectionnez \'KYC de niveau 3 pour les entreprises\'.</li><li>Téléchargez tous les documents requis.</li><li>Soumettez votre candidature pour examen.</li></ol><p class="text-lg text-gray-600 italic mb-6">Le temps de traitement peut varier. Vous serez notifié par courriel une fois approuvé.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Comprendre le Niveau 3 KYC pour les Entreprises</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Les comptes KYC niveau 3 offrent des limites de transaction améliorées et des fonctionnalités supplémentaires pour les entreprises. Ce cours détaille les exigences et le processus étape par étape pour mettre à niveau votre compte d\'entreprise.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Documents Requis :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Certificat d\'enregistrement de l\'entreprise.</li><li>Numéro d\'identification fiscale (TIN).</li><li>Preuve de l\'adresse de l\'entreprise.</li><li>Identification de tous les directeurs/partenaires.</li><li>Relevé de compte bancaire de l\'entreprise.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Processus de Demande :</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Connectez-vous à votre compte d\'entreprise ZetCollect.</li><li>Accédez à la section \'Mettre à Niveau le Compte\'.</li><li>Sélectionnez \'KYC Niveau 3 pour les Entreprises\'.</li><li>Chargez tous les documents requis.</li><li>Soumettez votre demande pour examen.</li></ol><p class="text-lg text-gray-600 italic mb-6">Le temps de traitement peut varier. Vous serez notifié par email après approbation.</p>',
     "lessons.adding-business-kyc3.relatedCourses.onboarding.title":
-      "Intégration et résolution des problèmes",
+      "Intégration et Résolution des Problèmes",
     "lessons.adding-business-kyc3.relatedCourses.product-knowledge.title":
-      "Connaissance des produits ZetCollect",
-    "lessons.understanding-kyc-requirements.title":
-      "Comprendre les exigences KYC chez ZetCollect",
-    "lessons.understanding-kyc-requirements.category":
-      "Conformité et réglementation",
-    "lessons.understanding-kyc-requirements.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction au KYC</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Le processus de connaissance du client (KYC) est essentiel pour les institutions financières afin de vérifier l\'identité de leurs clients. Cela est crucial pour prévenir la fraude, le blanchiment d\'argent et le financement du terrorisme.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Principes clés du KYC :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Programme d\'identification des clients (CIP).</li><li>Vérification préalable des clients (CDD).</li><li>Surveillance continue.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Documents généralement requis :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Pièce d\'identité délivrée par le gouvernement (passeport, carte d\'identité nationale).</li><li>Preuve d\'adresse (facture de services publics, relevé bancaire).</li><li>Preuve de revenu (pour certains types de comptes).</li></ul><p class="text-lg text-gray-600 italic mb-6">Assurez-vous toujours que les documents sont valides et à jour.</p>',
-    "lessons.understanding-kyc-requirements.relatedCourses.compliance.title":
-      "Conformité et réglementation",
+      "Connaissance des Produits ZetCollect",
+
     "lessons.mobile-app-basics.title":
-      "Bases de l'application mobile ZetCollect",
+      "Bases de l'Application Mobile ZetCollect",
     "lessons.mobile-app-basics.category":
-      "Connaissance des produits ZetCollect",
+      "Connaissance des Produits ZetCollect",
     "lessons.mobile-app-basics.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Démarrer avec l\'application ZetCollect</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Cette leçon couvre les fonctionnalités et caractéristiques fondamentales de l\'application mobile ZetCollect, conçue pour une gestion financière fluide en déplacement.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Fonctionnalités principales :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Gestion des clients.</li><li>Collecte mobile.</li><li>Système de carnets.</li><li>Rapports et analyses.</li></ul><p class="text-lg text-gray-600 italic mb-6">Des mises à jour régulières apportent de nouvelles fonctionnalités et améliorations.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Démarrer avec l\'Application ZetCollect</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Cette leçon couvre les fonctionnalités et les fonctionnalités de base de l\'application mobile ZetCollect, conçue pour une gestion financière fluide en déplacement.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Fonctionnalités Principales :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Gestion des Clients.</li><li>Collecte Mobile.</li><li>Système de Carnet.</li><li>Rapports et Analyse.</li></ul><p class="text-lg text-gray-600 italic mb-6">Les mises à jour régulières apportent de nouvelles fonctionnalités et améliorations.</p>',
     "lessons.mobile-app-basics.relatedCourses.product-knowledge.title":
-      "Connaissance des produits ZetCollect",
-    "lessons.fraud-prevention-training.title":
-      "Meilleures pratiques de prévention de la fraude",
-    "lessons.fraud-prevention-training.category":
-      "Conformité et réglementation",
-    "lessons.fraud-prevention-training.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Identifier et prévenir la fraude</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">La fraude est une menace constante dans le secteur financier. Cette formation vous équipe des connaissances nécessaires pour identifier les indicateurs de fraude courants et mettre en œuvre des stratégies de prévention efficaces.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Types de fraude courants :</h2><ul class="list-disc list-inside mb-6 space-y-2 text "list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Hameçonnage et smishing.</li><li>Vol d\'identité.</li><li>Prise de contrôle de compte.</li><li>Ingénierie sociale.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Stratégies de prévention :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Vérifiez rigoureusement l\'identité des clients.</li><li>Éduquez les clients sur les meilleures pratiques de sécurité.</li><li>Signalez immédiatement les activités suspectes.</li><li>Utilisez des mots de passe forts et uniques ainsi que la 2FA.</li></ul><p class="text-lg text-red-600 font-semibold mb-6">Rappelez-vous : si quelque chose semble anormal, c\'est probablement le cas. Péchez toujours par excès de prudence.</p>',
-    "lessons.fraud-prevention-training.relatedCourses.compliance.title":
-      "Conformité et réglementation",
+      "Connaissance des Produits ZetCollect",
+
+    "lessons.zetcollect-security.title": "Aperçu de la Sécurité ZetCollect",
+    "lessons.zetcollect-security.category": "Sécurité ZetCollect",
+    "lessons.zetcollect-security.content":
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction à la Sécurité ZetCollect</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">ZetCollect accorde la priorité à la sécurité de vos transactions financières avec des mesures robustes conçues pour protéger vos données et garantir la confiance. Cette leçon explore les principales fonctionnalités de sécurité disponibles pour tous les utilisateurs.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Fonctionnalités de Sécurité Clés :</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Chiffrement de bout en bout pour toutes les transactions.</li><li>Détection et alertes de fraude en temps réel.</li><li>Protocoles d\'authentification sécurisés pour les utilisateurs.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Comment Rester Sécurisé :</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Mettez régulièrement à jour votre application ZetCollect.</li><li>Surveillez fréquemment l\'activité de votre compte.</li><li>Contactez le support si vous remarquez un comportement suspect.</li></ol><p class="text-lg text-gray-600 italic mb-6">Pour des conseils de sécurité supplémentaires, visitez notre page de support.</p>',
+    "lessons.zetcollect-security.relatedCourses.onboarding.title":
+      "Intégration et Résolution des Problèmes",
+    "lessons.zetcollect-security.relatedCourses.product-knowledge.title":
+      "Connaissance des Produits ZetCollect",
+
+    // First Section: ZetCollect Empowers Agents
+    "combined.section1.title":
+      "ZetCollect transforme la collecte de paiements pour les agents.",
+    "combined.section1.description":
+      "ZetCollect dote les agents d'outils innovants pour numériser les collectes en espèces et élargir l'accès financier à travers l'Afrique.",
+    "combined.section1.share": "Partager l'histoire",
+
+    // Second Section: ZetCollect Capabilities
+    "combined.section2.title": "Ce que propose ZetCollect",
+    "combined.section2.description":
+      "Une plateforme complète conçue pour simplifier la collecte de paiements et renforcer votre équipe.",
+    "combined.section2.capability1.title": "Support client amélioré",
+    "combined.section2.capability1.description":
+      "Outils pour gérer les relations avec les clients et suivre efficacement les historiques de paiement.",
+    "combined.section2.capability2.title": "Perspectives de performance",
+    "combined.section2.capability2.description":
+      "Données en temps réel pour surveiller et optimiser les performances des agents et les opérations.",
+    "combined.section2.capability3.title": "Opérations évolutives",
+    "combined.section2.capability3.description":
+      "Solutions flexibles pour soutenir la croissance à travers plusieurs emplacements et équipes.",
+
+    // Third Section: About ZetCollect
+    "combined.section3.impact.title": "Impact",
+    "combined.section3.impact.stat1.value": "400%+",
+    "combined.section3.impact.stat1.description":
+      "croissance du réseau d'agents en 2 ans",
+    "combined.section3.impact.stat2.value": "~500",
+    "combined.section3.impact.stat2.description":
+      "nouvelles inscriptions d'agents par semaine",
+    "combined.section3.impact.stat3.value": "~5min",
+    "combined.section3.impact.stat3.description":
+      "temps moyen de traitement des transactions",
+    "combined.section3.about.title": "À propos de ZetCollect",
+    "combined.section3.about.description":
+      "ZetCollect, une plateforme fintech pionnière basée à Nairobi, Kenya, lancée en 2022 pour transformer la collecte de paiements et l'inclusion financière en Afrique. Fondée par des entrepreneurs technologiques visionnaires, ZetCollect fournit des outils innovants pour autonomiser les agents et les entreprises, servant plus de 10 000 agents et traitant des millions de transactions chaque année.",
+    "combined.section3.table.header.feature": "FONCTIONNALITE",
+    "combined.section3.table.header.region": "RÉGION",
+    "combined.section3.table.header.industry": "INDUSTRIE",
+    "combined.section3.table.row1.feature":
+      "Gestion rapide et fiable des transactions",
+    "combined.section3.table.row1.region": "Afrique",
+    "combined.section3.table.row1.industry": "Finance",
+
+    // Section: The Challenge for ZetCollect
+    "combined.section4.title": "Le défi pour ZetCollect",
+    "combined.section4.description1":
+      "ZetCollect devait intégrer efficacement des centaines de nouveaux agents pour répondre à la demande croissante.",
+    "combined.section4.description2":
+      "Depuis son lancement en 2022, ZetCollect est un leader dans la réduction de l'écart d'inclusion financière en Afrique, équipant les agents d'outils pour gérer les paiements et soutenir les économies locales. Avec un réseau d'agents en expansion, la plateforme vise à servir plus de communautés, mais la mise à l'échelle nécessite de surmonter des obstacles d'intégration.",
+    "combined.section4.quote":
+      "Notre mission chez ZetCollect est d'apporter des services financiers à chaque coin de l'Afrique",
+    "combined.section4.quote.author":
+      "Beryl, Directrice des Opérations chez ZetCollect",
+    "combined.section4.description3":
+      "L'expansion du réseau d'agents implique une formation sur des systèmes de paiement complexes et la garantie d'une qualité de service constante, en particulier dans les régions diverses et éloignées.",
+    "combined.section4.description4":
+      "ZetCollect répond à cela avec sa plateforme intuitive, conçue pour soutenir une croissance rapide et une excellence opérationnelle.",
+
+    // Section: The Solution
+    "combined.section5.title": "La solution",
+    "combined.section5.description1":
+      "La plateforme de ZetCollect offre une solution fluide pour l'intégration et l'expansion de son réseau d'agents. Ses outils intuitifs permettent aux agents de gérer efficacement les transactions, même dans des environnements difficiles.",
+    "combined.section5.description2":
+      "Le système offre un support et des informations en temps réel, permettant aux agents de se concentrer sur la création de valeur pour les clients plutôt que sur les tâches administratives. Cette adaptabilité garantit des performances constantes à mesure que le réseau se développe.",
+    "combined.section5.description3":
+      "Avec ZetCollect, les entreprises peuvent élargir leur portée et améliorer l'inclusion financière en Afrique avec confiance.",
+
+    // Section: Impact Cards
+    "combined.section6.card1.value": "4x",
+    "combined.section6.card1.description": "autant d'agents autonomisés",
+    "combined.section6.card2.value": "~5min",
+    "combined.section6.card2.description": "temps moyen de transaction",
+
+    // Section: Action Banner
+    "combined.actionBanner.title": "Prêt à transformer votre entreprise ?",
+    "combined.actionBanner.description":
+      "Nous sommes ravis de contribuer à la transformation de votre collectif en tant que client grâce à notre logiciel.",
+    "combined.actionBanner.ctaButton": "Commemencer",
+
+    // Section : Transformation
+    "combined.section8.title": "Transformation",
+    "combined.section8.description1":
+      "ZetCollect a transformé la collecte de paiements à travers l'Afrique. Cette plateforme innovante a simplifié les transactions pour des milliers d'utilisateurs, réduisant les temps de traitement de 60 % et améliorant l'efficacité. En intégrant des technologies avancées, ZetCollect continue de promouvoir l'inclusion financière et l'excellence opérationnelle.",
+    "combined.section8.description2":
+      "« ZetCollect a révolutionné notre approche des paiements, permettant à nos équipes de bénéficier de solutions plus rapides et fiables », a déclaré un porte-parole de ZetCollect. Les améliorations de la plateforme en matière de gestion de données ouvrent la voie à une croissance et une innovation durables.",
+    // Section: Additional Customer Success Stories
+    "combined.section9.title":
+      "Histoires de succès supplémentaires des clients",
+    "combined.section9.viewAll": "Voir toutes les histoires de succès",
+    "combined.section9.story1.label": "Histoire de client",
+    "combined.section9.story1.title":
+      "Young Microfinances se développe avec ZetCollect.",
+    "combined.section9.story1.description":
+      "Découvrez comment ZetCollect soutient Young Microfinances dans l'expansion de leurs opérations.",
+    "combined.section9.story1.link": "En savoir plus",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+    "microfinances.section1.title":
+      "ZetCollect transforme la collecte de paiements pour ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+    "microfinances.section1.description":
+      "ZetCollect dote ACEP Cameroun - Fondation Grameen Crédit-Agricole d'outils innovants pour numériser les décaissements de prêts et améliorer l'inclusion financière à travers l'Afrique.",
+    "microfinances.section1.share": "Partager l'histoire",
+
+    // Third Section: Impact and About ACEP Cameroun
+    "microfinances.section2.impact.title": "Impact",
+    "microfinances.section2.impact.stat1.value": "300%+",
+    "microfinances.section2.impact.stat1.description":
+      "croissance des décaissements de prêts en 2 ans",
+    "microfinances.section2.impact.stat2.value": "~400",
+    "microfinances.section2.impact.stat2.description":
+      "nouvelles inscriptions d'emprunteurs par mois",
+    "microfinances.section2.impact.stat3.value": "~10min",
+    "microfinances.section2.impact.stat3.description":
+      "temps moyen de traitement des prêts",
+    "microfinances.section2.about.title":
+      "À propos d'ACEP Cameroun - Fondation Grameen Crédit-Agricole avec ZetCollect",
+    "microfinances.section2.about.description":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole, en partenariat avec ZetCollect depuis 2024, exploite des solutions de paiement avancées pour élargir les services financiers aux communautés mal desservies en Afrique. Servant plus de 5 000 emprunteurs, cette collaboration a révolutionné l'efficacité du microcrédit.",
+
+    // Section: The Challenge
+    "microfinances.section3.title": "Le défi",
+    "microfinances.section3.description1":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole a rencontré des obstacles importants pour élargir les décaissements de prêts dans les régions reculées et rurales du Cameroun. L'organisation a lutté avec des processus manuels obsolètes qui ralentissaient les approbations de prêts et limitaient leur portée aux populations mal desservies. Les problèmes d'infrastructure et de connectivité ont encore compliqué la livraison en temps opportun des services financiers, rendant difficile la satisfaction de la demande croissante des agriculteurs locaux et des petits entrepreneurs.",
+    "microfinances.section3.description2":
+      "De plus, l'absence de données en temps réel et de systèmes de suivi efficaces a entravé la capacité à surveiller les performances des prêts et à assurer une cohérence dans les remboursements. Cela a créé un goulot d'étranglement qui menaçait la mission de l'organisation de promouvoir le développement agricole et l'autonomisation économique, nécessitant une solution technologique robuste pour surmonter ces barrières opérationnelles.",
+
+    // Section: The Solution
+    "microfinances.section4.title": "La solution",
+    "microfinances.section4.description1":
+      "ZetCollect a introduit une plateforme de pointe adaptée pour rationaliser le traitement des prêts et les remboursements pour ACEP Cameroun - Fondation Grameen Crédit-Agricole. La solution offrait une interface conviviale qui permettait au personnel de gérer les demandes de prêts et les décaissements efficacement, même dans les zones à accès Internet limité. En intégrant la technologie mobile, ZetCollect a permis aux agents de terrain de collecter les remboursements directement auprès des emprunteurs, réduisant les délais et améliorant les flux de trésorerie.",
+    "microfinances.section4.description2":
+      "La plateforme a également fourni des outils d'analyse et de reporting avancés, permettant à l'organisation de suivre les portefeuilles de prêts en temps réel et de prendre des décisions basées sur les données. Cette mise à niveau technologique a non seulement résolu les défis de connectivité, mais a également amélioré l'efficacité globale de la gestion des prêts, permettant à ACEP Cameroun d'élargir ses opérations et de servir plus de clients à travers diverses régions avec confiance et fiabilité.",
+
+    // Section: The Transformation
+    "microfinances.section5.title": "La transformation",
+    "microfinances.section5.description1":
+      "Avec ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole a considérablement amélioré l'accès financier pour des milliers d'emprunteurs, en particulier dans le Cameroun rural. L'adoption de la plateforme a conduit à une augmentation remarquable des taux de décaissement des prêts, permettant aux petits agriculteurs et entrepreneurs d'investir dans leurs entreprises et d'améliorer leurs moyens de subsistance. Cette transformation a renforcé la réputation de l'organisation en tant que leader dans l'innovation en microfinance.",
+    "microfinances.section5.description2":
+      "De plus, l'efficacité et la transparence accrues apportées par ZetCollect ont favorisé une plus grande confiance parmi les emprunteurs et les parties prenantes, entraînant des taux de remboursement plus élevés et une croissance soutenue. En surmontant les limitations précédentes, ACEP Cameroun est désormais mieux positionné pour élargir sa portée, soutenir plus de communautés et contribuer au développement économique de la région, marquant une nouvelle ère de succès et d'impact.",
+
+    // Static Text Translations
+    "customerSuccessStories.section1.title":
+      "ZetCollect assure le Succès des Clients.",
+    "customerSuccessStories.section1.description":
+      "Avec ZetCollect, les entreprises leaders en Afrique permettent aux agents de faire plus grâce à des solutions de paiement innovantes, exploitant toutes leurs données de transaction pour découvrir des insights approfondis, rationaliser les opérations et améliorer le succès financier des clients.",
+    "customerSuccessStories.section2.title":
+      "Histoires de Succès Clients Supplémentaires 1",
+    "customerSuccessStories.section2.viewAll": "Voir Tout",
+    "customerSuccessStories.section2.label": "Histoire Client",
+    "customerSuccessStories.section2.link": "Lire la suite",
+    "customerSuccessStories.section3.title":
+      "Histoires de Succès Clients Supplémentaires 2",
+    "customerSuccessStories.section3.viewAll": "Voir Tout",
+    "customerSuccessStories.section3.label": "Histoire Client",
+    "customerSuccessStories.section3.link": "Lire la suite",
+
+    // First Section: ZetCollect Transforms Merchant Payments in Gabon
+    "gabonmerchants.section1.title":
+      "ZetCollect Transforme les Paiements des Commerçants au Gabon",
+    "gabonmerchants.section1.description":
+      "ZetCollect révolutionne la collecte des paiements pour les commerçants au Gabon, leur offrant des outils efficaces pour améliorer les transactions financières dans toute la région.",
+    "gabonmerchants.section1.share": "Partagez l'histoire",
+
+    // Third Section: Impact and About Gabon Merchants
+    "gabonmerchants.section2.impact.title": "Impact",
+    "gabonmerchants.section2.impact.stat1.value": "30%",
+    "gabonmerchants.section2.impact.stat1.description":
+      "réduction des coûts de transaction",
+    "gabonmerchants.section2.impact.stat2.value": "250",
+    "gabonmerchants.section2.impact.stat2.description": "agents habilités",
+    "gabonmerchants.section2.impact.stat3.value": "40%",
+    "gabonmerchants.section2.impact.stat3.description":
+      "augmentation de la satisfaction des clients",
+    "gabonmerchants.section2.about.title": "À Propos de ZetCollect au Gabon",
+    "gabonmerchants.section2.about.description":
+      "ZetCollect, en partenariat avec les commerçants locaux au Gabon depuis 2024, utilise sa plateforme pour optimiser les processus de paiement, servant plus de 1 200 commerçants et améliorant l'efficacité du commerce de détail dans les zones urbaines et rurales.",
+
+    // Section: The Challenge
+    "gabonmerchants.section3.title": "Le Défi",
+    "gabonmerchants.section3.description1":
+      "Les commerçants gabonais ont été confrontés à des défis majeurs avec les systèmes de paiement traditionnels, notamment des coûts de transaction élevés et des temps de traitement lents qui ont entravé leur capacité à servir efficacement les clients. L'accès limité à des outils financiers modernes dans les zones urbaines et rurales a aggravé ces problèmes, entraînant des pertes de ventes et une réduction de la compétitivité.",
+    "gabonmerchants.section3.description2":
+      "L'absence de suivi en temps réel des paiements et de réconciliation a encore compliqué la gestion des stocks et la trésorerie, créant des goulets d'étranglement opérationnels. Cette situation a mis en lumière le besoin d'une solution technologique évolutive pour moderniser les paiements des commerçants et soutenir la croissance économique au Gabon.",
+
+    // Section: The Solution
+    "gabonmerchants.section4.title": "La Solution",
+    "gabonmerchants.section4.description1":
+      "ZetCollect a déployé une plateforme adaptée pour rationaliser les paiements des commerçants au Gabon, offrant un système mobile qui a réduit les coûts de transaction de 30 % et permis à 250 agents de traiter les paiements efficacement. La solution incluait des capacités hors ligne pour répondre aux défis de connectivité dans les zones reculées.",
+    "gabonmerchants.section4.description2":
+      "Des outils de reporting avancés ont été intégrés pour fournir aux commerçants des insights en temps réel sur leurs transactions, améliorant le contrôle des stocks et la gestion de la trésorerie. Cette technologie a permis aux commerçants d'élargir leur base de clients et d'améliorer la prestation de services à travers le paysage commercial diversifié du Gabon.",
+
+    // Section: The Transformation
+    "gabonmerchants.section5.title": "La Transformation",
+    "gabonmerchants.section5.description1":
+      "Avec ZetCollect, les commerçants gabonais ont transformé leurs opérations de paiement, servant plus de 1 500 clients et réduisant considérablement les coûts à partir de 08:50 AM EAT le 31 juillet 2025. Cela a permis aux petites entreprises de réinvestir leurs économies dans la croissance, renforçant l'économie locale.",
+    "gabonmerchants.section5.description2":
+      "Le succès de la plateforme a instauré la confiance entre les commerçants et les clients, entraînant une augmentation de 40 % des affaires répétées. L'approche innovante de ZetCollect positionne le secteur de la vente au détail du Gabon pour une expansion durable et une résilience financière améliorée.",
+
+    // First Section: ZetCollect Boosts Agent Efficiency in Tchad
+    "tchadagents.section1.title":
+      "ZetCollect Améliore l'Efficacité des Agents au Tchad",
+    "tchadagents.section1.description":
+      "ZetCollect améliore le traitement des paiements pour les agents au Tchad, leur offrant des outils fiables pour servir les clients dans toute la région.",
+    "tchadagents.section1.share": "Partagez l'histoire",
+
+    // Third Section: Impact and About Tchad Agents
+    "tchadagents.section2.impact.title": "Impact",
+    "tchadagents.section2.impact.stat1.value": "40%",
+    "tchadagents.section2.impact.stat1.description":
+      "traitement des paiements plus rapide",
+    "tchadagents.section2.impact.stat2.value": "350",
+    "tchadagents.section2.impact.stat2.description": "clients servis",
+    "tchadagents.section2.impact.stat3.value": "25%",
+    "tchadagents.section2.impact.stat3.description":
+      "augmentation de la productivité des agents",
+    "tchadagents.section2.about.title": "À Propos de ZetCollect au Tchad",
+    "tchadagents.section2.about.description":
+      "ZetCollect, en partenariat avec les réseaux d'agents au Tchad depuis 2024, optimise les opérations de paiement, servant plus de 800 clients et améliorant les services financiers dans les zones urbaines et rurales.",
+
+    // Section: The Challenge
+    "tchadagents.section3.title": "Le Défi",
+    "tchadagents.section3.description1":
+      "Les agents au Tchad ont eu du mal avec des systèmes de traitement des paiements lents et peu fiables, ce qui a limité leur capacité à servir efficacement les clients. Une infrastructure médiocre et une connectivité intermittente dans les zones reculées ont aggravé ces problèmes, entraînant des retards et des pertes d'opportunités de revenus.",
+    "tchadagents.section3.description2":
+      "Le manque d'outils de suivi et de reporting efficaces a également entravé le suivi des performances des agents, créant des inefficacités opérationnelles. Cela a conduit à la nécessité d'une solution robuste pour améliorer la fiabilité des paiements et soutenir le réseau financier en croissance du Tchad.",
+
+    // Section: The Solution
+    "tchadagents.section4.title": "La Solution",
+    "tchadagents.section4.description1":
+      "ZetCollect a introduit une plateforme mobile pour améliorer l'efficacité des agents au Tchad, permettant un traitement des paiements 40 % plus rapide et dotant 350 agents de capacités hors ligne pour surmonter les problèmes de connectivité.",
+    "tchadagents.section4.description2":
+      "La plateforme a inclus un suivi en temps réel et des outils d'analyse, permettant aux agents de gérer les transactions et de rapporter leurs performances efficacement. Cette solution a renforcé la fiabilité et la scalabilité, soutenant les opérations financières du Tchad dans diverses régions.",
+
+    // Section: The Transformation
+    "tchadagents.section5.title": "La Transformation",
+    "tchadagents.section5.description1":
+      "Avec ZetCollect, les agents au Tchad ont amélioré le traitement des paiements pour plus de 400 clients, atteignant une plus grande fiabilité à partir de 08:47 AM EAT le 31 juillet 2025. Cela a permis aux agents d'élargir leur portée et de soutenir la croissance économique locale.",
+    "tchadagents.section5.description2":
+      "L'augmentation de l'efficacité a renforcé les relations entre agents et clients, augmentant la confiance et entraînant une hausse de 25 % de la productivité. La technologie de ZetCollect positionne le secteur financier du Tchad pour un développement durable et une amélioration de la prestation de services.",
+
+    "customerStories.microfinances.title":
+      "Succès de la Microfinance à Nairobi",
+    "customerStories.microfinances.description":
+      "À Nairobi, ZetCollect s'est associé à un réseau de microfinance pour numériser les remboursements de prêts, réduisant les temps de traitement de 45 % et permettant à 400 agents de servir efficacement les clients ruraux. Cette transformation, effective à partir de 09:15 AM EAT le 31 juillet 2025, renforce l'accès aux finances à travers le Kenya.",
+    "customerStories.cooperative.title":
+      "ZetCollect transforme la collecte de paiements pour les agents.",
+    "customerStories.cooperative.description":
+      "ZetCollect dote les agents d'outils innovants pour numériser les collectes d'argent liquide et élargir l'accès aux finances à travers l'Afrique.",
+    "customerStories.merchants-gabon.title":
+      "ZetCollect Transforme les Paiements des Commerçants au Gabon",
+    "customerStories.merchants-gabon.description":
+      "Au Gabon, ZetCollect a rationalisé la collecte des paiements pour les commerçants locaux, réduisant les coûts de transaction de 30 % et permettant à 250 agents d'améliorer le service client. Cet effort, actif à partir de 09:15 AM EAT le 31 juillet 2025, renforce le secteur de la vente au détail en Tanzanie.",
+    "customerStories.agents-Tchad.title":
+      "ZetCollect Améliore l'Efficacité des Agents au Tchad",
+    "customerStories.agents-Tchad.description":
+      "Au Tchad, ZetCollect a permis à un réseau d'agents de traiter les paiements 40 % plus rapidement, servant 350 clients avec une fiabilité accrue. Ce succès, enregistré à partir de 09:15 AM EAT le 31 juillet 2025, améliore les opérations financières au Tchad.",
   },
-
-
-
-
-
-
 
   sw: {
     // About Page
@@ -1376,7 +2007,7 @@ const translations = {
     "footer.faq": "Maswali Yanayoulizwa Mara kwa Mara",
     "footer.training_certification": "Mafunzo na Uthibitisho",
     "footer.rights":
-      "Imewashwa na © {year} Evolv ZetCollect Group Ltd. Haki Zote Zimehifadhiwa.",
+      "Imewashwa na © {year} Evolv IZSoftwares Group Ltd. Haki Zote Zimehifadhiwa.",
 
     // WorkInProgressPage
     "wip.title": "Ukurasa Unaendelea kujengwa",
@@ -1433,27 +2064,70 @@ const translations = {
     // FAQPage
     "faq.title": "Maswali Yanayoulizwa Mara kwa Mara",
     "faq.subtitle":
-      "Hapa kuna majibu ya maswali yako yote ya moto kuhusu ZetCollect. Unaweza pia kuwasiliana nasi moja kwa moja au kuchunguza zaidi katika hifadhidata yetu ya maarifa na nyaraka za API.",
+      "Hapa kuna majibu ya maswali yako yote ya moto kuhusu ZetCollect. Unaweza pia kutuwasiliana moja kwa moja au uchunguze zaidi katika msingi wetu wa maarifa na hati za API.",
     "faq.questions.client_management":
-      "Je, Kipengele cha Usimamizi wa Wateja cha ZetCollect Kinafanyaje Kazi?",
+      "Je, kipengele cha Usimamizi wa Wateja cha ZetCollect kinavyofanya kazi vipi?",
     "faq.answers.client_management":
-      "Usimamizi wa Wateja wa ZetCollect hukuruhusu kuongeza, kusasisha, na kusimamia taarifa zote za wateja kwa urahisi, ikiwa ni pamoja na sehemu za desturi. Unaweza kugawa vitabu maalum vya ukusanyaji kwa wateja kwa ufuatiliaji wa kimuundo na kuweka matarajio ya akiba ya kila siku ili kufuatilia maendeleo yao kwa ufanisi.",
+      "Usimamizi wa Wateja wa ZetCollect hukuruhusu kuongeza, kusasisha, na kusimamia habari yote ya wateja wako kwa urahisi, ikiwa ni pamoja na sehemu za desturi. Unaweza kugawa vitabu vya ukusanyaji mahususi kwa wateja kwa ufuatiliaji wa muundo na kuweka matarajio ya akiba ya kila siku ili kufuatilia maendeleo yao kwa ufanisi.",
     "faq.questions.collector_management":
-      "Je, Usimamizi wa Wakusanya (Wakala) Unatoa Vipengele Gani?",
+      "Je, vipengele vya Usimamizi wa Wokovu (Wakala) vinatoa nini?",
     "faq.answers.collector_management":
-      "Kipengele cha Usimamizi wa Wakusanya (Wakala) hukuruhusu kugawa wakala kwa matawi maalum, kuwagawia wateja na maeneo ya ukusanyaji, na kufuatilia shughuli zao za kila siku kwa wakati halisi. Hii ni pamoja na kufuatilia kiasi kilichokusanywa na kutambua ukusanyaji uliopotea.",
+      "Kipengele cha Usimamizi wa Wokovu (Wakala) kinakuruhusu kuwapa mawakala matawi mahususi, kugawa wateja na maeneo ya ukusanyaji kwao, na kufuatilia shughuli zao za kila siku kwa wakati halisi. Hii ni pamoja na kufuatilia kiasi kilichokusanywa na kutambua ukusanyaji uliokosa.",
     "faq.questions.multi_branch":
-      "Je, ZetCollect Inaweza Kusaidia Matawi Mengi na Taasisi?",
+      "Je, ZetCollect inaweza kuunga mkono matawi na taasisi nyingi?",
     "faq.answers.multi_branch":
-      "Ndiyo, ZetCollect inasaidia usanidi wa matawi mengi na udhibiti wa upatikanaji unaotegemea majukumu, ikikuruhusu kusimamia matawi tofauti kwa ufanisi. Pia inatoa udhibiti wa kati wa ofisi ya kichwa kwa ufuatiliaji wa kina wa utendaji katika matawi yako yote.",
+      "Ndiyo, ZetCollect inasaidia usanidi wa matawi mengi na udhibiti wa ufikiaji wa majukumu, hukuruhusu kusimamia matawi yako kwa ufanisi. Pia inatoa udhibiti wa kichwa wa ofisi kuu kwa ufuatiliaji wa kina wa utendaji katika matawi yako yote.",
     "faq.questions.mobile_collection":
-      "Je, Ni Nini Uwezo wa Kiolesura cha Ukusanyaji wa Simu?",
+      "Je, uwezo wa Interface ya Ukusanyaji wa Simu ni nini?",
     "faq.answers.mobile_collection":
-      "Kiolesura cha Ukusanyaji wa Simu ni programu ya Android iliyoundwa kwa wakusanya, inayowezesha kuingiza ukusanyaji kwa wakati halisi moja kwa moja kutoka kwa maeneo ya wateja. Inafanya kazi bila mshono mtandaoni na nje ya mtandao, ikilandanisha data zote kiotomatiki wakati muunganisho wa intaneti unapatikana, ikihakikisha uendeshaji wa kuendelea.",
+      "Interface ya Ukusanyaji wa Simu ni programu ya Android iliyoundwa kwa wokusanyaji, inayowezesha ingizo la ukusanyaji wa wakati halisi moja kwa moja kutoka kwa maeneo ya wateja. Inafanya kazi vizuri kwa mtandao na bila mtandao, ikisawazisha data zote kiotomatiki wakati wa kuwa na muunganisho wa mtandao, na kuhakikisha uendeshaji endelevu.",
     "faq.questions.booklet_system":
-      "Je, Mfumo wa Vitabu (Carnet) Unazuiaje Ulaghai?",
+      "Je, Mfumo wa Kitabu (Carnet) unazuia udanganyifu vipi?",
     "faq.answers.booklet_system":
-      "Mfumo wa Vitabu (Carnet) unagawia kila mteja kitabu cha ukusanyaji cha kidijitali. Wakusanya huweka alama za miamala kwenye programu kulingana na ingizo katika kitabu hiki cha kidijitali. Mchakato huu unaunda rekodi ya uwazi na inayoweza kuthibitishwa, ikipunguza kwa kiasi kikubwa hatari ya ulaghai na kuripoti vibaya.",
+      "Mfumo wa Kitabu (Carnet) unawapa kila mteja kitabu cha ukusanyaji cha dijitali. Wokusanyaji wanaweka alama za miamala kwenye programu kulingana na maingizo katika kitabu hiki cha dijitali. Mchakato huu unaunda rekodi ya uwazi na inayoweza kuthibitishwa, ikipunguza hatari ya udanganyifu na kuripoti vibaya kwa kiasi kikubwa.",
+    "faq.questions.transaction_history":
+      "Je, kipengele cha Historia ya Miadi ya ZetCollect kinavyofanya kazi vipi?",
+    "faq.answers.transaction_history":
+      "Njia kamili ya ukaguzi wa shughuli zote za ukusanyaji na malipo, ikitoa rekodi ya kina kwa uwazi na uwajibikaji.",
+    "faq.questions.reports_analytics":
+      "Je, kipengele cha Ripoti na Uchambuzi kinatoa nini?",
+    "faq.answers.reports_analytics":
+      "Dashibodi za wakati halisi na kuripoti kwa kina kwa maamuzi ya msingi wa data, zinazowezesha ufahamu wa utendaji wa ukusanyaji na mitindo.",
+    "faq.questions.user_access":
+      "Je, Ufikiaji wa Watumiaji na Majukumu huhakikisha usalama vipi?",
+    "faq.answers.user_access":
+      "Ruhusa za majukumu zinahakikisha ufikiaji salama wa taarifa nyeti, zinalinda uadilifu wa data katika jukwaa.",
+    "faq.questions.sms_notifications":
+      "Je, utendakazi wa Arifa za SMS ni nini?",
+    "faq.answers.sms_notifications":
+      "Kukumbusha na uthibitisho kiotomatiki kupitia SMS kwa mawasiliano bora, kuwaweka wateja na wokusanyaji wakiwa na taarifa.",
+    "faq.questions.daily_sync":
+      "Je, Usawazishaji wa Kila Siku wa ZetCollect unafanya kazi vipi?",
+    "faq.answers.daily_sync":
+      "Usawazishaji wa data bila matatizo kati ya vifaa vya simu na hifadhidata ya kati, huhakikisha uthabiti wa data na upatikanaji.",
+    "faq.questions.gps_traceability":
+      "Je, GPS Traceability ni nini, na itawafaidi wokusanyaji vipi?",
+    "faq.answers.gps_traceability":
+      "Ufuatiliaji wa eneo la wakati halisi kwa usalama ulioimarishwa na uboreshaji wa njia, kuboresha ufanisi na usalama wa wokusanyaji.",
+    "faq.questions.missed_alerts": "Je, Arifa za Ukusanyaji wa Kukosa ni nini?",
+    "faq.answers.missed_alerts":
+      "Arifa za kiotomatiki za ukusanyaji uliokosa na vikumbusho vya ufuatiliaji, kuhakikisha ufuatiliaji wa wakati na uwajibikaji.",
+    "faq.questions.risk_profile":
+      "Je, Mfumo wa Wasifu wa Hatari wa Mteja na Ukadiriaji unavyofanya kazi vipi?",
+    "faq.answers.risk_profile":
+      "Tathmini ya hatari inayotegemea AI na mfumo wa ukadiriaji wa wateja kwa maamuzi bora, ikitambua hatari zinazowezekana mapema.",
+    "faq.questions.route_optimization": "Je, Ubora wa Njia na Ratiba ni nini?",
+    "faq.answers.route_optimization":
+      "Algoriti za njia za akili za kuboresha ratiba za wokusanyaji na kuongeza ufanisi, kupunguza muda na gharama.",
+    "faq.questions.self_access_portal":
+      "Je, Portal ya Ufikiaji wa Kujitegemea wa Mteja ni nini?",
+    "faq.answers.self_access_portal":
+      "Inaruhusu wateja kuona historia yao ya ukusanyaji na kufanya malipo kwa kujitegemea, ikiimarisha urahisi na uwazi.",
+    "faq.questions.currency_system":
+      "Je, Mfumo wa Sarafu Mpya (CDF) utatekelezwa vipi?",
+    "faq.answers.currency_system":
+      "Uunganisho wa sarafu ya Kikongomani (CDF) kwa urahisi kwa miamala yote na kuripoti kifedha, kuhakikisha utiifu na urahisi wa matumizi.",
+
     // Training and Certification Page
     "training.title": "Piga hatua ya juu katika kazi yako",
     "training.subtitle":
@@ -1465,7 +2139,9 @@ const translations = {
     "training.courses.onboarding.title": "Kujiunga na Utatuzi wa Masuala",
     "training.courses.productKnowledge.title":
       "Maarifa ya Bidhaa za ZetCollect",
-    "training.courses.compliance.title": "Uzingatiaji na Kanuni",
+    "training.courses.security.title": "Usalama wa ZetCollect",
+
+    //pricing page
     "pricing.section1.title": "Bei ya Haki kwa Ukuaji wa Haraka",
     "pricing.section1.description":
       "Tuna mipango ya bei rahisi inayofaa Biashara zinazokua za ukubwa wowote.",
@@ -1499,6 +2175,7 @@ const translations = {
     "pricing.features.userAccessRoles": "Ufikiaji na Majukumu ya Watumiaji",
     "pricing.features.smsNotifications": "Arifa za SMS (za Hiari)",
     "pricing.features.dailySynchronization": "Ulandanishi wa Kila Siku",
+    "pricing.compareFeatures.passwordPolicy": "Sera ya nenosiri",
     "pricing.features.gpsTraceability":
       "Ufuatiliaji wa GPS (Ufuatiliaji wa Jiografia wa Wakusanya)",
     "pricing.features.missedCollectionAlerts": "Arifa za Ukusanyaji Uliokosa",
@@ -1507,11 +2184,11 @@ const translations = {
     "pricing.features.routeOptimization": "Uboreshaji wa Njia na Ratiba",
     "pricing.features.clientSelfAccessPortal":
       "Jukwaa la Kujihudumia la Mteja (Ramani ya Baadaye)",
-    
-      // OnboardingCoursePage Component
+
+    // OnboardingCoursePage Component
     "onboarding.title": "Kozi",
     "onboarding.allCourses": "Kozi Zote",
-    "onboarding.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
+    "onboarding.": "Maarifa ya Bidhaa za ZetCollect",
     "onboarding.onboardingAndIssueResolution":
       "Kuingiza na Kusuluhisha Masuala",
     "onboarding.filter.all": "Masomo Yote",
@@ -1519,43 +2196,67 @@ const translations = {
     "onboarding.filter.inProgress": "Inaendelea",
     "onboarding.noLessons":
       "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
-
     // Courses Data (from coursesData.json)
-    "courses.onboarding.title": "Kuingiza na Kusuluhisha Masuala",
+    "courses.onboarding.title": "Uingizaji na Uthibitishaji wa Masuala",
     "courses.onboarding.lesson.protecting-accounts.title":
-      "Kulinda Akaunti kwa Uthibitishaji wa Sababu Mbili za ZetCollect",
+      "Kulinda Akaunti na Uthibitishaji wa Pili wa ZetCollect",
     "courses.onboarding.lesson.protecting-accounts.description":
-      "Katika kozi hii, utajifunza kila kitu unachohitaji kujua kuhusu Uthibitishaji wa Sababu Mbili (2FA) wa ZetCollect. Utakuwa na vifaa vya...",
-    "courses.product-knowledge.title": "Maarifa ya Bidhaa za ZetCollect",
+      "Katika kozi hii, utajifunza kila kitu unachohitaji kujua kuhusu Uthibitishaji wa Pili (2FA) wa ZetCollect. Utawaandaliwa ku...",
+    "courses.product-knowledge.title": "Maarifa ya Bidhaa ya ZetCollect",
     "courses.product-knowledge.lesson.mobile-app-basics.title":
       "Misingi ya Programu ya Simu ya ZetCollect",
     "courses.product-knowledge.lesson.mobile-app-basics.description":
-      "Jifunze jinsi ya kutumia programu ya simu ya ZetCollect, kufanya miamala ya msingi, na kutatua masuala ya kawaida.",
-    "courses.compliance.title": "Kuzingatia na Udhibiti",
+      "Jifunze jinsi ya kusogeza programu ya ZetCollect ya simu, kufanya miamala ya msingi, na kusuluhisha matatizo ya kawaida.",
+    "courses.compliance.title": "Ufuatiliaji na Kanuni",
     "courses.compliance.lesson.understanding-kyc-requirements.title":
       "Kuelewa Mahitaji ya KYC katika ZetCollect",
     "courses.compliance.lesson.understanding-kyc-requirements.description":
-      "Karibu katika sehemu ya tatu ya mfululizo wetu! Hapa, utajifunza misingi ya kuingiza wateja, kukagua hati zao, na zaidi...",
+      "Karibu katika sehemu ya tatu ya mfululizo wetu! Hapa, utajifunza misingi ya kuleta wateja kwenye bodi, kuangalia hati zao, na th..",
     "courses.compliance.lesson.fraud-prevention-training.title":
       "Mbinu Bora za Kuzuia Udanganyifu",
     "courses.compliance.lesson.fraud-prevention-training.description":
-      "Elewa mipango ya kawaida ya udanganyifu na ujifunze mbinu bora za kujikinga na wateja wako dhidi ya udanganyifu wa kifedha.",
+      "Elewa miradi ya kawaida ya udanganyifu na ujifunze mbinu bora za kujilinda wewe na wateja wako kutokana na ulaghai wa kifedha.",
     "courses.compliance.lesson.data-privacy-regulations.title":
       "Kanuni za Faragha ya Data na Mbinu Bora",
     "courses.compliance.lesson.data-privacy-regulations.description":
-      "Kozi muhimu kuhusu sheria za ulinzi wa data (kwa mfano, GDPR, kanuni za mitaa) na jinsi ya kushughulikia data ya wateja kwa usalama na kwa mujibu wa sheria.",
-    
-      // ProductKnowledgeCoursePage Component
+      "Kozi muhimu kuhusu sheria za ulinzi wa data (k.m. GDPR, kanuni za ndani) na jinsi ya kushughulikia data ya wateja kwa usalama na kumudu.",
+    "courses.security.title": "Usalama wa ZetCollect",
+    "courses.security.lesson.secure-transaction-protocols.title":
+      "Itifaki za Muamala Salama na ZetCollect",
+    "courses.security.lesson.secure-transaction-protocols.description":
+      "Chunguza itifaki za muamala salama zinazotumiwa na ZetCollect ili kuhakikisha usindikaji wa malipo salama na wa kuaminika. Utajifunza ku...",
+    "courses.security.lesson.encryption-standards.title":
+      "Viwango vya Usimbaji kwa ZetCollect",
+    "courses.security.lesson.encryption-standards.description":
+      "Kozi hii inashughulikia viwango vya usimbaji vinavyotekelezwa na ZetCollect ili kulinda data nyeti. Utafunzwa ku...",
+    "courses.security.lesson.incident-response-training.title":
+      "Mazoezi ya Kukabiliana na Matukio",
+    "courses.security.lesson.incident-response-training.description":
+      "Jifunze jinsi ya kukabiliana na matukio ya usalama kwa ufanisi kwa mikakati ya kukabiliana na matukio ya ZetCollect. Utaandaliwa ku...",
+    // ProductKnowledgeCoursePage Component
     "productKnowledge.title": "Kozi",
     "productKnowledge.allCourses": "Kozi Zote",
     "productKnowledge.productKnowledge": "Maarifa ya Bidhaa za ZetCollect",
     "productKnowledge.onboardingAndIssueResolution":
-    "Kuingiza na Kusuluhisha Masuala",
+      "Kuingiza na Kusuluhisha Masuala",
     "productKnowledge.filter.all": "Masomo Yote",
     "productKnowledge.filter.completed": "Yamekamilika",
     "productKnowledge.filter.inProgress": "Inaendelea",
     "productKnowledge.noLessons":
-    "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
+      "Hakuna masomo yaliyopatikana kwa kategoria hii au chujio.",
+
+    // SecurityCoursePage Component (Swahili)
+    "security.title": "Kozi",
+    "security.description":
+      "Jifunze jinsi ya kulinda data yako na mifumo kwa kutumia kozi za usalama za ZetCollect.",
+    "security.allCourses": "Kozi Zote",
+    "security.securityAwareness": "Uhamasishaji wa Usalama",
+    "security.securityTraining": "Mafunzo ya Usalama",
+    "security.filter.all": "Somo Zote",
+    "security.filter.completed": "Zilizokamilika",
+    "security.filter.inProgress": "Zinazoendelea",
+    "security.noLessons":
+      "Hakuna somo lililopatikana kwa jamii hii au kichujio hiki.",
 
     // CourseLessonPage Component
     "courseLesson.title": "{lessonTitle}",
@@ -1567,62 +2268,322 @@ const translations = {
 
     // lessonContent.json
     "lessons.protecting-accounts.title":
-      "Kulinda Akaunti kwa Uthibitishaji wa Sababu Mbili za ZetCollect",
-    "lessons.protecting-accounts.category": "Kuingiza na Kusuluhisha Masuala",
+      "Kulinda Akaunti na Uthibitishaji wa Miwili wa ZetCollect",
+    "lessons.protecting-accounts.category": "Ufungaji wa Matatizo",
     "lessons.protecting-accounts.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Utamu wa 2FA</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Uthibitishaji wa Sababu Mbili (2FA) huongeza safu ya ziada ya usalama kwenye akaunti yako ya ZetCollect. Inahitaji aina ya pili ya uthibitishaji pamoja na nenosiri lako, ikipunguza kwa kiasi kikubwa hatari ya upatikanaji usioidhinishwa.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Kwa nini 2FA ni ya Muhimu?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Hulinda dhidi ya wizi wa nenosiri.</li><li>Hiongeza safu muhimu ya ulinzi dhidi ya mashambulizi ya hadaa.</li><li>Huhakikisha kuwa ni wewe pekee unaoweza kufikia akaunti yako, hata kama nenosiri lako limeathirika.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Jinsi ya Kuwasha 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Fuata hatua hizi rahisi ili kuwasha 2FA kwenye akaunti yako ya ZetCollect:</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Ingia kwenye dashibodi yako ya ZetCollect.</li><li>Nenda kwenye \'Mipangilio ya Usalama\'.</li><li>Chagua \'Washa Uthibitishaji wa Sababu Mbili\'.</li><li>Chagua njia unayopendelea (kwa mfano, programu ya uthibitishaji, msimbo wa SMS).</li><li>Fuata maagizo kwenye skrini ili kukamilisha usanidi.</li></ol><p class="text-lg text-gray-600 italic mb-6">Kwa maelezo zaidi, rejelea mwongozo wetu rasmi wa mtumiaji.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Utangulizi wa 2FA</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Uthibitishaji wa Miwili (2FA) unaongeza safu ya ziada ya usalama kwenye akaunti yako ya ZetCollect. Unahitaji aina ya pili ya uthibitisho pamoja na nenosiri lako, na hivyo kupunguza hatari ya ufikiaji usioidhinishwa kwa kiasi kikubwa.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Kwa Nini 2FA Ni Muhimu?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Hulinda dhidi ya wizi wa nenosiri.</li><li>Huongeza safu muhimu ya ulinzi dhidi ya mashambulizi ya wizi wa habari kupitia mtandao.</li><li>Hakikisha wewe peke yako ndiye unaweza kufikia akaunti yako, hata kama nenosiri lako limeibiwa.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Jinsi ya Kuwezesha 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Fuata hatua hizi rahisi kuwezesha 2FA kwenye akaunti yako ya ZetCollect:</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Ingia kwenye dashibodi yako ya ZetCollect.</li><li>Sogea hadi \'Mipangilio ya Usalama\'.</li><li>Chagua \'Wezesha Uthibitishaji wa Miwili\'.</li><li>Chagua njia unayopenda (mfano, programu ya uthibitisho, nambari ya SMS).</li><li>Fuatilia maelekezo kwenye skrini kukamilisha usanidi.</li></ol><p class="text-lg text-gray-600 italic mb-6">For more details, refer to our official user guide.</p>',
     "lessons.protecting-accounts.relatedCourses.onboarding.title":
-      "Kuingiza na Kusuluhisha Masuala",
-    "lessons.protecting-accounts.relatedCourses.compliance.title":
-      "Kuzingatia na Udhibiti",
+      "Ufungaji na wa Matatizo",
+    "lessons.protecting-accounts.relatedCourses.product-knowledge.title":
+      "Maarifa ya ZetCollect",
+
     "lessons.adding-business-kyc3.title":
-      "Kuongeza Biashara kwenye Akaunti ya KYC ya Kiwango cha 3",
-    "lessons.adding-business-kyc3.category": "Kuingiza na Kusuluhisha Masuala",
+      "Kuongeza Biashara kwenye Akaunti ya KYC Level 3",
+    "lessons.adding-business-kyc3.category": "Ufungaji wa Matatizo",
     "lessons.adding-business-kyc3.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Kuelewa KYC ya Kiwango cha 3 kwa Biashara</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Akaunti za KYC za Kiwango cha 3 hutoa mipaka ya miamala iliyoboreshwa na vipengele kwa Biashara. Kozi hii inaelezea mahitaji na mchakato wa hatua kwa hatua wa kuboresha akaunti yako ya Biashara.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Hati Zinazohitajika:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Cheti cha usajili wa Biashara.</li><li>Nambari ya Kitambulisho cha Ushuru (TIN).</li><li>Thibitisho wa anwani ya Biashara.</li><li>Kitambulisho kwa wakurugenzi/washirika wote.</li><li>Taarifa ya akaunti ya benki ya Biashara.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Mchakato wa Maombi:</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Ingia kwenye akaunti yako ya Biashara ya ZetCollect.</li><li>Nenda kwenye sehemu ya \'Boresha Akaunti\'.</li><li>Chagua \'KYC ya Kiwango cha 3 kwa Biashara\'.</li><li>Pakia hati zote zinazohitajika.</li><li>Wasilisha ombi lako kwa ukaguzi.</li></ol><p class="text-lg text-gray-600 italic mb-6">Muda wa usindikaji unaweza kutofautiana. Utaarifiwa kupitia barua pepe baada ya idhini.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Kuelewa KYC Level 3 kwa Biashara</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Akaunti za KYC Level 3 hutoa mipaka ya juu ya miamala na vipengele vya ziada kwa biashara. Kozi hii inaainisha mahitaji na mchakato wa hatua kwa hatua wa kuboresha akaunti yako ya biashara.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Hati Zinazohitajika:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Cheti cha usajili wa biashara.</li><li>Namba ya utambulisho wa kodi (TIN).</li><li>Ushahidi wa anwani ya biashara.</li><li>Kitambulisho cha wakuu/washirika wote.</li><li>Hali ya akaunti ya benki ya biashara.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Mchakato wa Maombi:</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Ingia kwenye akaunti yako ya biashara ya ZetCollect.</li><li>Sogea hadi sehemu ya \'Boresha Akaunti\'.</li><li>Chagua \'KYC Level 3 kwa Biashara\'.</li><li>Pakia hati zote zinazohitajika.</li><li>Wasilisha ombi lako kwa mapitio.</li></ol><p class="text-lg text-gray-600 italic mb-6">Muda wa usindikaji unaweza kutofautiana. Utapopokea taarifa kupitia barua pepe baada ya kuidhinishwa.</p>',
     "lessons.adding-business-kyc3.relatedCourses.onboarding.title":
-      "Kuingiza na Kusuluhisha Masuala",
+      "Ufungaji wa Matatizo",
     "lessons.adding-business-kyc3.relatedCourses.product-knowledge.title":
-      "Maarifa ya Bidhaa za ZetCollect",
-    "lessons.understanding-kyc-requirements.title":
-      "Kuelewa Mahitaji ya KYC katika ZetCollect",
-    "lessons.understanding-kyc-requirements.category": "Kuzingatia na Udhibiti",
-    "lessons.understanding-kyc-requirements.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Utamu wa KYC</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Jua Mteja Wako (KYC) ni mchakato muhimu kwa taasisi za kifedha ili kuthibitisha utambulisho wa wateja wao. Hii ni muhimu kwa kuzuia udanganyifu, uchukuzi wa pesa, na ufadhili wa ugaidi.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Misingi ya KYC:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Programu ya Utambulisho wa Wateja (CIP).</li><li>Ukaguzi wa Wajibu wa Wateja (CDD).</li><li>Ufuatiliaji wa Mara kwa Mara.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Hati Zinazohitajika za Kawaida:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Kitambulisho kilichotolewa na Serikali (Paspoti, Kitambulisho cha Taifa).</li><li>Thibitisho wa anwani (Bili ya Huduma, Taarifa ya Benki).</li><li>Thibitisho wa mapato (kwa aina fulani za akaunti).</li></ul><p class="text-lg text-gray-600 italic mb-6">Hakikisha kila wakati hati ni halali na ziko za kisasa.</p>',
-    "lessons.understanding-kyc-requirements.relatedCourses.compliance.title":
-      "Kuzingatia na Udhibiti",
-    "lessons.mobile-app-basics.title":
-      "Misingi ya Programu ya Simu ya ZetCollect",
-    "lessons.mobile-app-basics.category": "Maarifa ya Bidhaa za ZetCollect",
+      "Maarifa ya ZetCollect",
+
+    "lessons.mobile-app-basics.title": "Misingi ya ZetCollect Mobile App",
+    "lessons.mobile-app-basics.category": "Maarifa ya ZetCollect",
     "lessons.mobile-app-basics.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Kuanza na Programu ya ZetCollect</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Somo hili linashughulikia vipengele na utendakazi wa msingi wa programu ya simu ya ZetCollect, iliyoundwa kwa usimamizi wa kifedha usio na mshono popote ulipo.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Vipengele za Msingi:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Usimamizi wa Wateja.</li><li>Ukusanyaji wa Simu.</li><li>Mfumo wa Vitabu.</li><li>Ripoti na Uchanganuzi.</li></ul><p class="text-lg text-gray-600 italic mb-6">Misasisho ya mara kwa mara huleta vipengele vipya na maboresho.</p>',
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Kuanza na ZetCollect App</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Kozi hii inashughulikia vipengele vya msingi na utendakazi wa programu ya ZetCollect mobile, iliyoundwa kwa usimamizi wa kifedha usio na matatizo wakati wa kusafiri.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Vipengele vya Msingi:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Usimamizi wa Wateja.</li><li>Ukusanyaji wa Mobile.</li><li>Sistemu ya Kitabu.</li><li>Ripoti na Uchambuzi.</li></ul><p class="text-lg text-gray-600 italic mb-6">Updates za mara kwa mara huleta vipengele na maboresho mapya.</p>',
     "lessons.mobile-app-basics.relatedCourses.product-knowledge.title":
-      "Maarifa ya Bidhaa za ZetCollect",
-    "lessons.fraud-prevention-training.title":
-      "Mbinu Bora za Kuzuia Udanganyifu",
-    "lessons.fraud-prevention-training.category": "Kuzingatia na Udhibiti",
-    "lessons.fraud-prevention-training.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Kutambua na Kuzuia Udanganyifu</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Udanganyifu ni tishio la mara kwa mara katika sekta ya kifedha. Mafunzo haya yanakupa maarifa ya kutambua viashiria vya kawaida vya udanganyifu na kutekeleza mikakati ya kuzuia yenye ufanisi.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Aina za Udanganyifu za Kawaida:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Hadaa na Smishing.</li><li>Wizi wa Utambulisho.</li><li>Kuchukua Akaunti.</li><li>Uhandisi wa Jamii.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Mikakati ya Kuzuia:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Thibitisha utambulisho wa mteja kwa ukali.</li><li>Elimu wateja juu ya mbinu bora za usalama.</li><li>Ripoti shughuli za kutiliwa shaka mara moja.</li><li>Tumia nywila zenye nguvu, za kipekee na 2FA.</li></ul><p class="text-lg text-red-600 font-semibold mb-6">Kumbuka: Ikiwa kitu kinahisi kuwa sio sawa, pengine sio sawa. Daima chagua tahadhari.</p>',
-    "lessons.fraud-prevention-training.relatedCourses.compliance.title":
-      "Kuzingatia na Udhibiti",
+      "Maarifa ya ZetCollect",
+
+    "lessons.zetcollect-security.title": "Muhtasari wa Usalama wa ZetCollect",
+    "lessons.zetcollect-security.category": "Usalama wa ZetCollect",
+    "lessons.zetcollect-security.content":
+      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Utangulizi wa Usalama wa ZetCollect</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">ZetCollect inaweka kipaumbele usalama wa miamala yako ya kifedha kwa hatua thabiti iliyoundwa kulinda data yako na kuhakikisha uaminifu. Kozi hii inachunguza vipengele vya msingi vya usalama vinavyopatikana kwa watumiaji wote.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Vipengele vya Usalama vya Msingi:</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Usimbaji fiche wa mwisho kwa mwisho wa miamala yote.</li><li>Tambuzi la ulaghai wa muda halisi na arifa.</li><li>Itifaki za uthibitisho salama za watumiaji.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">Jinsi ya Kubaki Salama:</h2><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Sasisha mara kwa mara programu yako ya ZetCollect.</li><li>Fuatilia shughuli za akaunti yako mara kwa mara.</li><li>Wasiliana na msaada ukiona tabia ya kutiliwa shaka.</li></ol><p class="text-lg text-gray-600 italic mb-6">For additional security tips, visit our support page.</p>',
+    "lessons.zetcollect-security.relatedCourses.onboarding.title":
+      "Ufungaji wa Matatizo",
+    "lessons.zetcollect-security.relatedCourses.product-knowledge.title":
+      "Maarifa ya ZetCollect",
     // Pricing Page (Updated)
     "pricing.compareFeatures.clientManagement": "Usimamizi wa Wateja",
     "pricing.compareFeatures.collectorManagement": "Usimamizi wa Wakusanyaji",
     "pricing.compareFeatures.branchSetup": "Usanidi wa Tawi na Taasisi",
-    "pricing.compareFeatures.mobileCollection": "Kiolesura cha Ukusanyaji wa Simu",
+    "pricing.compareFeatures.mobileCollection":
+      "Kiolesura cha Ukusanyaji wa Simu",
     "pricing.compareFeatures.bookletSystem": "Mfumo wa Vijarida",
     "pricing.compareFeatures.transactionHistory": "Historia ya Miamala",
     "pricing.compareFeatures.reportsAnalytics": "Ripoti na Uchanganuzi",
-    "pricing.compareFeatures.userAccessRoles": "Upatikanaji wa Watumiaji na Majukumu",
+    "pricing.compareFeatures.userAccessRoles":
+      "Upatikanaji wa Watumiaji na Majukumu",
     "pricing.compareFeatures.smsNotifications": "Arifa za SMS za Hiari",
-    "pricing.compareFeatures.dailySynchronization":   "Usawazishaji wa Data wa Kila Siku",
-    "pricing.compareFeatures.gpsTraceability":  "Ufuatiliaji wa GPS kwa Wakusanyaji",
-    "pricing.compareFeatures.missedCollectionAlerts":  "Arifa za Ukusanyaji Uliosahaulika",
+    "pricing.compareFeatures.dailySynchronization":
+      "Usawazishaji wa Data wa Kila Siku",
+    "pricing.compareFeatures.gpsTraceability":
+      "Ufuatiliaji wa GPS kwa Wakusanyaji",
+    "pricing.compareFeatures.missedCollectionAlerts":
+      "Arifa za Ukusanyaji Uliosahaulika",
     "pricing.compareFeatures.clientRiskProfile": "Profaili ya Hatari ya Wateja",
     "pricing.compareFeatures.routeOptimization": "Uboreshaji wa Njia na Ratiba",
-    "pricing.compareFeatures.clientSelfAccessPortal":   "Portali ya Huduma ya Wateja",
-    "pricing.compareFeatures.localBusinessHours":  "Msaada wa Saa za Biashara za Ndani",
+    "pricing.compareFeatures.clientSelfAccessPortal":
+      "Portali ya Huduma ya Wateja",
+    "pricing.compareFeatures.localBusinessHours":
+      "Msaada wa Saa za Biashara za Ndani",
     "pricing.compareFeatures.enterpriseSupport": "Msaada wa Mashirika 24/7",
+
+    // First Section: ZetCollect Empowers Agents
+    "combined.section1.title":
+      "ZetCollect inabadilisha ukusanyaji wa malipo kwa wawakilishi.",
+    "combined.section1.description":
+      "ZetCollect inawapa wawakilishi zana za ubunifu za kugeuza dijitali ukusanyaji wa pesa taslimu na kupanua upatikanaji wa kifedha kote Afrika.",
+    "combined.section1.share": "Shiriki hadithi",
+
+    // Second Section: ZetCollect Capabilities
+    "combined.section2.title": "ZetCollect Inatoa Nini",
+    "combined.section2.description":
+      "Jukwaa la kina lililoundwa ili kurahisisha ukusanyaji wa malipo na kuimarisha timu yako.",
+    "combined.section2.capability1.title": "Msaada wa Wateja Ulioboreshwa",
+    "combined.section2.capability1.description":
+      "Zana za kudhibiti uhusiano na wateja na kufuatilia historia za malipo kwa ufanisi.",
+    "combined.section2.capability2.title": "Maarifa ya Utendaji",
+    "combined.section2.capability2.description":
+      "Data ya wakati halisi ya kufuatilia na kuboresha utendaji wa wawakilishi na shughuli.",
+    "combined.section2.capability3.title": "Shughuli Zilizoweza Kupanuka",
+    "combined.section2.capability3.description":
+      "Suluhisho zinazonyumbulika za kusaidia ukuaji katika maeneo na timu nyingi.",
+
+    // Third Section: About ZetCollect
+    "combined.section3.impact.title": "Athari",
+    "combined.section3.impact.stat1.value": "400%+",
+    "combined.section3.impact.stat1.description":
+      "ukuu wa mtandao wa wawakilishi katika miaka 2",
+    "combined.section3.impact.stat2.value": "~500",
+    "combined.section3.impact.stat2.description":
+      "usajili wa wawakilishi wapya kwa wiki",
+    "combined.section3.impact.stat3.value": "~5min",
+    "combined.section3.impact.stat3.description":
+      "muda wa wastani wa uchukuzi wa muamala",
+    "combined.section3.about.title": "Kuhusu ZetCollect",
+    "combined.section3.about.description":
+      "ZetCollect, jukwaa la fintech la upainia lenye makao yake Nairobi, Kenya, lililozinduliwa mwaka 2022 ili kubadilisha ukusanyaji wa malipo na ujumuishaji wa kifedha kote Afrika. Lililoanzishwa na wajasiriamali wa teknolojia wenye maono, ZetCollect hutoa zana za ubunifu za kuwezesha wawakilishi na Biashara, ikihudumia wawakilishi zaidi ya 10,000 na kuchakata mamilioni ya miamala kila mwaka.",
+    "combined.section3.table.header.feature": "KIPENGELE",
+    "combined.section3.table.header.region": "MKOA",
+    "combined.section3.table.header.industry": "TAFRIJA",
+    "combined.section3.table.row1.feature":
+      "Uchukuzi wa muamala wa haraka na wa kuaminika",
+    "combined.section3.table.row1.region": "Afrika",
+    "combined.section3.table.row1.industry": "Fedha",
+
+    // Section: The Challenge for ZetCollect
+    "combined.section4.title": "Changamoto kwa ZetCollect",
+    "combined.section4.description1":
+      "ZetCollect ilihitaji kuwaingiza wawakilishi wapya mamia kwa ufanisi ili kukidhi mahitaji yanayopanda.",
+    "combined.section4.description2":
+      "Tangu ilipozinduliwa mwaka 2022, ZetCollect imekuwa kiongozi katika kupunguza pengo la ujumuishaji wa kifedha Afrika, ikiwezesha wawakilishi na zana za kudhibiti malipo na kusaidia uchumi wa ndani. Pamoja na mtandao wa wawakilishi unaokua, jukwaa linalenga kuhudumia jamii zaidi, lakini upanuzi unahitaji kushinda vizuizi vya kujiunga.",
+    "combined.section4.quote":
+      "Dhamira yetu katika ZetCollect ni kuleta huduma za kifedha kila kona ya Afrika",
+    "combined.section4.quote.author":
+      "Beryl, Mkurugenzi wa Operesheni katika ZetCollect",
+    "combined.section4.description3":
+      "Kupanua mtandao wa wawakilishi kunahusisha mafunzo juu ya mifumo tata ya malipo na kuhakikisha ubora wa huduma thabiti, hasa katika maeneo tofauti na ya mbali.",
+    "combined.section4.description4":
+      "ZetCollect inashughulikia hili kwa jukwaa lake la angavu, lililoundwa kusaidia ukuaji wa haraka na ubora wa uendeshaji.",
+
+    // Section: The Solution
+    "combined.section5.title": "Suluhisho",
+    "combined.section5.description1":
+      "Jukwaa la ZetCollect linatoa suluhisho la kutosha kwa kujiunga na kupanua mtandao wake wa wawakilishi. Zana zake za angavu zinawezesha wawakilishi kudhibiti miamala kwa ufanisi, hata katika mazingira magumu.",
+    "combined.section5.description2":
+      "Mfumo hutoa msaada wa wakati halisi na maarifa, kuruhusu wawakilishi kuzingatia kutoa thamani kwa wateja badala ya kazi za kiutawala. Upatikanaji huu unahakikisha utendaji thabiti kadiri mtandao unavyokua.",
+    "combined.section5.description3":
+      "Pamoja na ZetCollect, Biashara zinaweza kupanua upatikanaji wao na kuimarisha ujumuishaji wa kifedha kote Afrika kwa kujiamini.",
+
+    // Section: Impact Cards
+    "combined.section6.card1.value": "4x",
+    "combined.section6.card1.description":
+      "wawakilishi wengi zaidi waliowezeshwa",
+    "combined.section6.card2.value": "~5min",
+    "combined.section6.card2.description": "muda wa wastani wa muamala",
+
+    // Section: Action Banner
+    "combined.actionBanner.title": "Je, uko tayari kubadilisha Biashara yako?",
+    "combined.actionBanner.description":
+      "Wasiliana na timu yetu ili ugundue jinsi ZetCollect inavyoweza kurahisisha shughuli zako na kuendesha ukuaji wa maana.",
+    "combined.actionBanner.ctaButton": "Anza Sasa",
+
+    // Sehemu: Mabadiliko
+    "combined.section8.title": "Mabadiliko",
+    "combined.section8.description1":
+      "Kufikia saa 12:57 PM EAT mnamo Julai 29, 2025, ZetCollect imebadilisha ukusanyaji wa malipo katika Afrika Mashariki. Jukwaa hili la ubunifu limerahisisha miamala kwa maelfu ya watumiaji, kupunguza muda wa usindikaji kwa 60% na kuongeza ufanisi. Kwa kuunganisha teknolojia ya hali ya juu, ZetCollect inaendelea kukuza ujumuishaji wa kifedha na ubora wa kiutendaji.",
+    "combined.section8.description2":
+      "“ZetCollect imebadilisha njia yetu ya kushughulikia malipo, ikiwawezesha timu zetu kupata suluhisho za haraka na za kuaminika,” alisema msemaji wa ZetCollect. Maboresho ya jukwaa katika usimamizi wa data yanaweka msingi wa ukuaji endelevu na uvumbuzi.",
+    // Section: Additional Customer Success Stories
+    "combined.section9.title": "Hadithi za Ziada za Mafanikio ya Wateja",
+    "combined.section9.viewAll": "Tazama Hadithi Zote za Mafanikio",
+    "combined.section9.story1.label": "Hadithi ya Mteja",
+    "combined.section9.story1.title":
+      "Young Microfinances inapopanua na ZetCollect.",
+    "combined.section9.story1.description":
+      "Angalia jinsi ZetCollect inavyosaidia Young Microfinances katika kupanua shughuli zao.",
+    "combined.section9.story1.link": "Jifunze zaidi",
+
+    // First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents
+    "microfinances.section1.title":
+      "ZetCollect inabadilisha ukusanyaji wa malipo kwa ACEP Cameroun - Fondation Grameen Crédit-Agricole.",
+    "microfinances.section1.description":
+      "ZetCollect inawapa ACEP Cameroun - Fondation Grameen Crédit-Agricole zana za ubunifu za kugeuza dijitali umwagaji wa mikopo na kuimarisha ujumuishaji wa kifedha kote Afrika.",
+    "microfinances.section1.share": "Shiriki hadithi",
+
+    // Third Section: Impact and About ACEP Cameroun
+    "microfinances.section2.impact.title": "Athari",
+    "microfinances.section2.impact.stat1.value": "300%+",
+    "microfinances.section2.impact.stat1.description":
+      "ukuu wa umwagaji wa mikopo katika miaka 2",
+    "microfinances.section2.impact.stat2.value": "~400",
+    "microfinances.section2.impact.stat2.description":
+      "usajili wa wakopaji wapya kwa mwezi",
+    "microfinances.section2.impact.stat3.value": "~10min",
+    "microfinances.section2.impact.stat3.description":
+      "muda wa wastani wa uchukuzi wa mkopo",
+    "microfinances.section2.about.title":
+      "Kuhusu ACEP Cameroun - Fondation Grameen Crédit-Agricole na ZetCollect",
+    "microfinances.section2.about.description":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole, ikiwa na ushirikiano na ZetCollect tangu 2024, inatumia suluhisho za malipo za hali ya juu kupanua huduma za kifedha kwa jamii zisizohudumiwa Afrika. Ikihudumia wakopaji zaidi ya 5,000, ushirikiano huu umebadilisha ufanisi wa mikopo midogo.",
+
+    // Section: The Challenge
+    "microfinances.section3.title": "Changamoto",
+    "microfinances.section3.description1":
+      "ACEP Cameroun - Fondation Grameen Crédit-Agricole ilikabiliana na vizuizi vikubwa katika kupanua umwagaji wa mikopo katika maeneo ya mbali na vijijini ya Kamerun. Shirika lilikabiliwa na michakato ya zamani ya mikono ambayo ilipunguza idhini za mikopo na kupunguza upatikanaji wao kwa idadi ya watu wasiohudumiwa. Masuala ya miundombinu na muunganisho yalizidisha ugumu wa kutoa huduma za kifedha kwa wakati, ikifanya iwe changamoto kukidhi mahitaji yanayokua kutoka kwa wakulima wa ndani na wamiliki wa Biashara ndogo.",
+    "microfinances.section3.description2":
+      "Zaidi ya hayo, ukosefu wa data ya wakati halisi na mifumo ya ufuatiliaji wa ufanisi ulizuia uwezo wa kufuatilia utendaji wa mikopo na kuhakikisha msimamo wa malipo. Hii ilizua kizuizi ambacho kilitishia dhamira ya shirika ya kukuza maendeleo ya kilimo na uwezeshaji wa kiuchumi, ikihitaji suluhisho la teknolojia la nguvu kushinda vizuizi hivi vya uendeshaji.",
+
+    // Section: The Solution
+    "microfinances.section4.title": "Suluhisho",
+    "microfinances.section4.description1":
+      "ZetCollect ilianzisha jukwaa la hali ya juu lililoboreshwa ili kurahisisha uchukuzi wa mikopo na malipo kwa ACEP Cameroun - Fondation Grameen Crédit-Agricole. Suluhisho hilo lilitoa kiolesura kinachofaa mtumiaji ambacho kiliwaruhusu wafanyakazi kudhibiti maombi ya mikopo na umwagaji kwa ufanisi, hata katika maeneo yenye upatikanaji mdogo wa mtandao. Kwa kuunganisha teknolojia ya simu, ZetCollect iliwezesha wawakilishi wa shambani kukusanya malipo moja kwa moja kutoka kwa wakopaji, ikipunguza ucheleweshaji na kuboresha mtiririko wa pesa.",
+    "microfinances.section4.description2":
+      "Jukwaa hilo pia lilitoa zana za uchanganuzi na ripoti za hali ya juu, zikiwezesha shirika kufuatilia portfolios za mikopo kwa wakati halisi na kufanya maamuzi yanayotegemea data. Uboreshaji huu wa teknolojia haukushughulikia tu changamoto za muunganisho bali pia uliimarisha ufanisi wa jumla wa usimamizi wa mikopo, ukiiruhusu ACEP Cameroun kupanua shughuli zake na kuhudumia wateja zaidi katika maeneo tofauti kwa kujiamini na kuaminika.",
+
+    // Section: The Transformation
+    "microfinances.section5.title": "Mabadiliko",
+    "microfinances.section5.description1":
+      "Pamoja na ZetCollect, ACEP Cameroun - Fondation Grameen Crédit-Agricole iliboresha kwa kiasi kikubwa upatikanaji wa kifedha kwa maelfu ya wakopaji, hasa katika Kamerun ya vijijini. Uchukuzi wa jukwaa ulisababisha ongezeko la kushangaza la viwango vya umwagaji wa mikopo, ukiwezesha wakulima wadogo na wajasiriamali kuwekeza katika Biashara zao na kuboresha maisha yao. Mabadiliko haya yameimarisha sifa ya shirika kama kiongozi katika ubunifu wa microfinance.",
+    "microfinances.section5.description2":
+      "Zaidi ya hayo, ufanisi ulioboreshwa na uwazi ulioletwa na ZetCollect umekuza imani kubwa zaidi miongoni mwa wakopaji na washikadau, ikisababisha viwango vya juu vya malipo na ukuaji endelevu. Kwa kushinda mapungufu ya awali, ACEP Cameroun sasa iko katika nafasi bora ya kupanua upatikanaji wake, kusaidia jamii zaidi, na kuchangia maendeleo ya kiuchumi ya mkoa, ikiashiria enzi mpya ya mafanikio na athari.",
+
+    // Static Text Translations
+    "customerSuccessStories.section1.title":
+      "ZetCollect inaleta Mafanikio ya Wateja.",
+    "customerSuccessStories.section1.description":
+      "Kwa ZetCollect, biashara za kuongoza nchini Afrika zinawezesha mawakala kufanya zaidi kwa kutumia suluhisho za malipo za ubunifu, zikitumia data yao yote ya miamala kugundua maarifa ya kina, kurahisisha shughuli, na kuimarisha mafanikio ya kifedha ya wateja.",
+    "customerSuccessStories.section2.title":
+      "Hadithi za Ziada za Mafanikio ya Wateja 1",
+    "customerSuccessStories.section2.viewAll": "Tazama Zote",
+    "customerSuccessStories.section2.label": "Hadithi ya Mteja",
+    "customerSuccessStories.section2.link": "Soma zaidi",
+    "customerSuccessStories.section3.title":
+      "Hadithi za Ziada za Mafanikio ya Wateja 2",
+    "customerSuccessStories.section3.viewAll": "Tazama Zote",
+    "customerSuccessStories.section3.label": "Hadithi ya Mteja",
+    "customerSuccessStories.section3.link": "Soma zaidi",
+
+    // First Section: ZetCollect Transforms Merchant Payments in Gabon
+    "gabonmerchants.section1.title":
+      "ZetCollect Inabadilisha Malipo ya Wafanyabiashara huko Gabon",
+    "gabonmerchants.section1.description":
+      "ZetCollect inabadilisha ukusanyaji wa malipo kwa wafanyabiashara huko Gabon, ikiwawezesha na zana za ufanisi ili kuboresha miamala ya kifedha katika eneo lote.",
+    "gabonmerchants.section1.share": "Shiriki hadithi",
+
+    // Third Section: Impact and About Gabon Merchants
+    "gabonmerchants.section2.impact.title": "Athari",
+    "gabonmerchants.section2.impact.stat1.value": "30%",
+    "gabonmerchants.section2.impact.stat1.description":
+      "kupunguza gharama za miamala",
+    "gabonmerchants.section2.impact.stat2.value": "250",
+    "gabonmerchants.section2.impact.stat2.description":
+      "mawakala waliowekewa uwezo",
+    "gabonmerchants.section2.impact.stat3.value": "40%",
+    "gabonmerchants.section2.impact.stat3.description":
+      "ongezeko la kuridhika kwa wateja",
+    "gabonmerchants.section2.about.title": "Kuhusu ZetCollect huko Gabon",
+    "gabonmerchants.section2.about.description":
+      "ZetCollect, iliyoshirikiana na wafanyabiashara wa ndani huko Gabon tangu 2024, inatumia jukwaa lake kuboresha michakato ya malipo, ikihudumia zaidi ya wafanyabiashara 1,200 na kuimarisha ufanisi wa rejareja katika maeneo ya mijini na vijijini.",
+
+    // Section: The Challenge
+    "gabonmerchants.section3.title": "Changamoto",
+    "gabonmerchants.section3.description1":
+      "Wafanyabiashara wa Gabon walikabiliwa na changamoto kubwa na mifumo ya jadi ya malipo, ikiwa ni pamoja na gharama za juu za miamala na muda wa usindikaji wa polepole ambao ulizuia uwezo wao wa kuwahudumia wateja kwa ufanisi. Upatikanaji mdogo wa zana za kisasa za kifedha katika maeneo ya mijini na vijijini ulizidisha matatizo haya, na kusababisha upotevu wa mauzo na kupungua kwa ushindani.",
+    "gabonmerchants.section3.description2":
+      "Ukosefu wa ufuatiliaji wa malipo wa moja kwa moja na upatanisho ulikazia zaidi usimamizi wa hesabu na mtiririko wa fedha, na kuunda vizuizi vya kiutendaji. Hali hii iliangazia hitaji la suluhisho la teknolojia linaloweza kukua ili kuboresha malipo ya wafanyabiashara na kuunga mkono ukuaji wa kiuchumi huko Gabon.",
+
+    // Section: The Solution
+    "gabonmerchants.section4.title": "Suluhisho",
+    "gabonmerchants.section4.description1":
+      "ZetCollect ilianzisha jukwaa lililoundwa kwa ajili ya kurahisisha malipo ya wafanyabiashara huko Gabon, likitoa mfumo wa msingi wa simu ambao ulipunguza gharama za miamala kwa 30% na kuwawezesha mawakala 250 kusindika malipo kwa ufanisi. Suluhisho hili lilijumuisha uwezo wa kufanya kazi nje ya mtandao ili kukabiliana na changamoto za muunganisho katika maeneo ya mbali.",
+    "gabonmerchants.section4.description2":
+      "Zana za kuripoti za hali ya juu ziliunganishwa ili kuwapa wafanyabiashara maarifa ya moja kwa moja kuhusu miamala yao, kuboresha udhibiti wa hesabu na usimamizi wa mtiririko wa fedha. Teknolojia hii iliwawezesha wafanyabiashara kupanua msingi wao wa wateja na kuboresha utoaji wa huduma katika mazingira tofauti ya soko la Gabon.",
+
+    // Section: The Transformation
+    "gabonmerchants.section5.title": "Mabadiliko",
+    "gabonmerchants.section5.description1":
+      "Kwa ZetCollect, wafanyabiashara wa Gabon wamebadilisha shughuli za malipo yao, wakihudumia zaidi ya wateja 1,500 na kupunguza gharama kwa kiasi kikubwa kufikia 08:50 AM EAT mnamo Julai 31, 2025. Hii imewawezesha wafanyabiashara wadogo kuwekeza tena akiba yao katika ukuaji, na kuimarisha uchumi wa ndani.",
+    "gabonmerchants.section5.description2":
+      "Mafanikio ya jukwaa yameunda uaminifu kati ya wafanyabiashara na wateja, na kusababisha ongezeko la 40% la biashara ya mara kwa mara. Mbinu ya ubunifu ya ZetCollect inaweka sekta ya rejareja ya Gabon katika nafasi ya upanuzi endelevu na ustahimilivu bora wa kifedha.",
+
+    // First Section: ZetCollect Boosts Agent Efficiency in Tchad
+    "tchadagents.section1.title":
+      "ZetCollect Inboea Ufanisi wa Mawakala huko Tchad",
+    "tchadagents.section1.description":
+      "ZetCollect inaimarisha usindikaji wa malipo kwa mawakala huko Tchad, ikiwawezesha na zana za kuaminika kuhudumia wateja katika eneo lote.",
+    "tchadagents.section1.share": "Shiriki hadithi",
+
+    // Third Section: Impact and About Tchad Agents
+    "tchadagents.section2.impact.title": "Athari",
+    "tchadagents.section2.impact.stat1.value": "40%",
+    "tchadagents.section2.impact.stat1.description":
+      "usindikaji wa malipo wa haraka",
+    "tchadagents.section2.impact.stat2.value": "350",
+    "tchadagents.section2.impact.stat2.description": "wateja waliotumikia",
+    "tchadagents.section2.impact.stat3.value": "25%",
+    "tchadagents.section2.impact.stat3.description":
+      "ongezeko la tija ya mawakala",
+    "tchadagents.section2.about.title": "Kuhusu ZetCollect huko Tchad",
+    "tchadagents.section2.about.description":
+      "ZetCollect, iliyoshirikiana na mitandao ya mawakala huko Tchad tangu 2024, inaboresha shughuli za malipo, ikihudumia zaidi ya wateja 800 na kuboresha huduma za kifedha katika maeneo ya mijini na vijijini.",
+
+    // Section: The Challenge
+    "tchadagents.section3.title": "Changamoto",
+    "tchadagents.section3.description1":
+      "Mawakala huko Tchad walikabiliwa na mifumo ya usindikaji wa malipo ya polepole na isiyo ya kuaminika, ambayo ilizuia uwezo wao wa kuwahudumia wateja kwa ufanisi. Miundombinu duni na muunganisho wa mara kwa mara katika maeneo ya mbali ulizidisha matatizo haya, na kusababisha ucheleweshaji na upotevu wa fursa za mapato.",
+    "tchadagents.section3.description2":
+      "Ukosefu wa zana za ufuatiliaji na kuripoti kwa ufanisi pia ulizuia ufuatiliaji wa utendaji wa mawakala, na kuunda uzembe wa kiutendaji. Hii ilihitaji suluhisho thabiti la kuimarisha kuaminika kwa malipo na kuunga mkono mtandao wa kifedha unaokua wa Tchad.",
+
+    // Section: The Solution
+    "tchadagents.section4.title": "Suluhisho",
+    "tchadagents.section4.description1":
+      "ZetCollect ilianzisha jukwaa la msingi wa simu kuimarisha ufanisi wa mawakala huko Tchad, ikiwezesha usindikaji wa malipo wa haraka kwa 40% na kuwapa mawakala 350 uwezo wa kufanya kazi nje ya mtandao ili kukabiliana na matatizo ya muunganisho.",
+    "tchadagents.section4.description2":
+      "Jukwaa hilo lilijumuisha ufuatiliaji wa moja kwa moja na uchanganuzi, kuruhusu mawakala kusimamia miamala na kuripoti utendaji wao kwa ufanisi. Suluhisho hili liliimarisha kuaminika na uwezo wa kuenea, lakiungwa mkono shughuli za kifedha za Tchad katika maeneo tofauti.",
+
+    // Section: The Transformation
+    "tchadagents.section5.title": "Mabadiliko",
+    "tchadagents.section5.description1":
+      "Kwa ZetCollect, mawakala huko Tchad wameboresha usindikaji wa malipo kwa zaidi ya wateja 400, wakipata kuaminika zaidi kufikia 08:47 AM EAT mnamo Julai 31, 2025. Hii imewapa uwezo wawakala kupanua wigo wao na kuunga mkono ukuaji wa kiuchumi wa ndani.",
+    "tchadagents.section5.description2":
+      "Ufanisi ulioongezeka umeimarisha uhusiano wa mawakala na wateja, kuongeza uaminifu na kusababisha ongezeko la 25% la tija. Teknolojia ya ZetCollect inaweka sekta ya kifedha ya Tchad katika nafasi ya maendeleo endelevu na uboreshaji wa utoaji wa huduma.",
+
+    "customerStories.microfinances.title": "Mafanikio ya Mikopo ya Nairobi",
+    "customerStories.microfinances.description":
+      "Huko Nairobi, ZetCollect ilishirikiana na mtandao wa mikopo ya ndogo ili kubadilisha malipo ya mikopo kuwa ya kidijitali, ikipunguza muda wa usindikaji kwa 45% na kuwapa uwezo mawakala 400 kuhudumia wateja wa vijijini kwa ufanisi. Mabadiliko haya, yanayotumika kuanzia 09:15 AM EAT mnamo Julai 31, 2025, yanaongeza ufikiaji wa kifedha kote Kenya.",
+    "customerStories.cooperative.title":
+      "ZetCollect inabadilisha ukusanyaji wa malipo kwa mawakala.",
+    "customerStories.cooperative.description":
+      "ZetCollect inawawezesha mawakala kwa zana za ubunifu kubadilisha ukusanyaji wa pesa taslimu na kupanua ufikiaji wa kifedha kote Afrika.",
+    "customerStories.merchants-gabon.title":
+      "ZetCollect Inabadilisha Malipo ya Wafanyabiashara huko Gabon",
+    "customerStories.merchants-gabon.description":
+      "Huko Gabon, ZetCollect ilirahisisha ukusanyaji wa malipo kwa wafanyabiashara wa ndani, ikipunguza gharama za miamala kwa 30% na kuwapa uwezo mawakala 250 kuboresha huduma ya wateja. Juhudi hii, inayotumika kuanzia 09:15 AM EAT mnamo Julai 31, 2025, inaimarisha sekta ya rejareja ya Tanzania.",
+    "customerStories.agents-Tchad.title":
+      "ZetCollect Inaboeka Ufanisi wa Mawakala huko Tchad",
+    "customerStories.agents-Tchad.description":
+      "Huko Tchad, ZetCollect iliwapa uwezo mtandao wa mawakala kusindika malipo 40% kwa haraka, ukatumikia wateja 350 kwa kuaminika zaidi. Mafanikio haya, yaliyorekodiwa kuanzia 09:15 AM EAT mnamo Julai 31, 2025, yanaimarisha shughuli za kifedha huko Tchad.",
   },
 };
 

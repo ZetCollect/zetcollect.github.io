@@ -5,6 +5,20 @@ import Footer from './Footer';
 const ReleaseNotesPage = () => {
   const { t } = useLanguage();
 
+  // Mobile Release Versions
+  const mobileReleases = [
+    { key: 'release.saas.systemVersion' },
+    { key: 'release.saas.systemVersion2' },
+  ];
+
+  // Web Release Versions
+  const webReleases = [
+    { key: 'release.saas.systemVersionWeb' },
+    { key: 'release.saas.systemVersionWeb2' },
+    { key: 'release.saas.systemVersionWeb3' },
+    { key: 'release.saas.systemVersionWeb4' },
+  ];
+
   return (
     <>
       <section className="min-h-screen py-16 bg-white lg:py-24">
@@ -27,54 +41,34 @@ const ReleaseNotesPage = () => {
             <h2 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
               {t('release.saas.title')}
             </h2>
-            {/* System Version 1 */}
-            <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-              {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-              <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersion') }} />
-            </div>
-            {/* System Version 2 */}
-            <div className="mt-5">
-              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersion2') }} />
+            {mobileReleases.map((release, index) => (
+              <div
+                key={index}
+                className="max-w-4xl p-6 mb-5 border-l-4 rounded-lg border-Complementary bg-secondary/20"
+              >
+                <p
+                  className="text-lg text-primary"
+                  dangerouslySetInnerHTML={{ __html: t(release.key) }}
+                />
               </div>
-            </div>
+            ))}
           </div>
 
-          <div className="mb-12"> {/* Added mb-12 for consistent spacing */}
+          <div className="mb-12">
             <h2 className="mb-6 text-2xl font-bold text-primary lg:text-3xl">
               {t('release.saas.title2')}
             </h2>
-            {/* System Version Web */}
-            <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-              {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-              <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb') }} />
-            </div>
-            {/* System Version Web 2 */}
-            <div className="mt-5">
-              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb2') }} />
+            {webReleases.map((release, index) => (
+              <div
+                key={index}
+                className="max-w-4xl p-6 mb-5 border-l-4 rounded-lg border-Complementary bg-secondary/20"
+              >
+                <p
+                  className="text-lg text-primary"
+                  dangerouslySetInnerHTML={{ __html: t(release.key) }}
+                />
               </div>
-            </div>
-            <div className="mt-5">
-              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb3') }} />
-              </div>
-            </div>
-            <div className="mt-5">
-              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb4') }} />
-              </div>
-            </div>
-            <div className="mt-5">
-              <div className="max-w-4xl p-6 border-l-4 rounded-lg border-Complementary bg-secondary/20">
-                {/* Using dangerouslySetInnerHTML to render HTML from translation */}
-                <p className="text-lg text-primary" dangerouslySetInnerHTML={{ __html: t('release.saas.systemVersionWeb5') }} />
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>

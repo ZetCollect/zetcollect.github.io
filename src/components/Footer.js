@@ -14,7 +14,7 @@ const Footer = () => {
           <div className="flex flex-col w-full gap-6 lg:w-1/3">
             <img
               className="w-[200px] h-auto"
-              src='applogo.png'
+              src='/applogo.png'
               alt={t('footer.logo_alt')}
             />
             
@@ -23,7 +23,7 @@ const Footer = () => {
             </div>
             
             <div className="flex items-center mt-4 transition duration-300 text-primary hover:text-secondary">
-              <Link to="/contactPage" className="mr-2 text-base font-semibold">
+              <Link to="/contact-page" className="mr-2 text-base font-semibold">
                 {t('common.contactUs')}
               </Link>
               <svg className="w-6 h-6 transform rotate-0" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -33,10 +33,10 @@ const Footer = () => {
             
             {/* Social Icons (LinkedIn, YouTube) */}
             <div className="flex mt-8 space-x-4">
-              <a href="https://www.linkedin.com/company/zetscore" target="_blank" rel="noopener noreferrer" className="p-2 text-black transition duration-300 bg-white border border-black rounded-full hover:bg-gray-100" aria-label={t('footer.social.linkedin')}>
+              <a href="https://www.linkedin.com/showcase/zetcollect/about/" target="_blank" rel="noopener noreferrer" className="p-2 text-black transition duration-300 bg-white border border-black rounded-full hover:bg-gray-100" aria-label={t('footer.social.linkedin')}>
                 <FaLinkedin className="w-5 h-5" />
               </a>
-              <a href="https://twitter.com/zetscore" target="_blank" rel="noopener noreferrer" className="p-2 text-black transition duration-300 bg-white border border-black rounded-full hover:bg-gray-100" aria-label={t('footer.social.youtube')}>
+              <a href="https://www.youtube.com/@izsoftwares" target="_blank" rel="noopener noreferrer" className="p-2 text-black transition duration-300 bg-white border border-black rounded-full hover:bg-gray-100" aria-label={t('footer.social.youtube')}>
                 <FaYoutube className="w-5 h-5" />
               </a>
             </div>
@@ -49,7 +49,7 @@ const Footer = () => {
               <p className="font-bold ">{t('footer.about')}</p>
               <Link to="/about-us" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.about_us')}</Link>
               <Link to="/pricing" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.pricing')}</Link>
-              <Link to="/work-in-progress-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.customer_story')}</Link>
+              <Link to="/customer-story" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.customer_story')}</Link>
               <Link to="/contact-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('common.contactUs')}</Link>
             </div>
             

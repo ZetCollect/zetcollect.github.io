@@ -44,7 +44,7 @@ const ContactUs = () => {
                   type="text"
                   id="first_name"
                   placeholder={t('contact.form.first_name')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
@@ -56,7 +56,7 @@ const ContactUs = () => {
                   type="text"
                   id="last_name"
                   placeholder={t('contact.form.last_name')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
@@ -68,7 +68,7 @@ const ContactUs = () => {
                   type="email"
                   id="email_id"
                   placeholder={t('contact.form.email')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
@@ -80,7 +80,7 @@ const ContactUs = () => {
                   type="tel"
                   id="contact_number"
                   placeholder={t('contact.form.contact_number')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
@@ -92,7 +92,7 @@ const ContactUs = () => {
                   type="text"
                   id="organisation"
                   placeholder={t('contact.form.organisation')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 />
               </div>
@@ -102,7 +102,7 @@ const ContactUs = () => {
                 <label htmlFor="country" className="sr-only">{t('contact.form.country')}</label>
                 <select
                   id="country"
-                  className="w-full px-5 py-4 text-gray-900 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                  className="w-full px-5 py-4 text-gray-900 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
                   required
                 >
                   <option value="" disabled selected className="text-gray-500">
@@ -121,7 +121,7 @@ const ContactUs = () => {
               <label htmlFor="how_did_you_hear" className="sr-only">{t('contact.form.how_did_you_hear')}</label>
               <select
                 id="how_did_you_hear"
-                className="w-full px-5 py-4 text-gray-900 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                className="w-full px-5 py-4 text-gray-900 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
               >
                 <option value="" disabled selected>{t('contact.form.how_did_you_hear')}</option>
                 <option value="search">{t('contact.form.how_did_you_hear.search')}</option>

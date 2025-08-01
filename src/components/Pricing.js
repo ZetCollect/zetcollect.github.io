@@ -24,6 +24,7 @@ const Pricing = () => {
     { name: t('pricing.compareFeatures.userAccessRoles'), business: true, enterprise: true },
     { name: t('pricing.compareFeatures.smsNotifications'), business: true, enterprise: true },
     { name: t('pricing.compareFeatures.dailySynchronization'), business: true, enterprise: true },
+    { name: t('pricing.compareFeatures.passwordPolicy'), business: true, enterprise: true },
     { name: t('pricing.compareFeatures.gpsTraceability'), business: false, enterprise: true },
     { name: t('pricing.compareFeatures.missedCollectionAlerts'), business: false, enterprise: true },
     { name: t('pricing.compareFeatures.clientRiskProfile'), business: false, enterprise: true },
@@ -34,7 +35,7 @@ const Pricing = () => {
   return (
     <>
       {/* Section 1: Fair pricing Morte da fame per una crescita più rapida */}
-      <section className="relative h-screen bg-center bg-cover" style={{ backgroundImage: "url('/you-also-take-care-yourself-coronavirus-pandemic.jpg')" }}>
+      <section className="relative h-screen bg-center bg-cover" style={{ backgroundImage: "url('/workplace-team-cooperation-businesswoman-laptop-office.jpg')" }}>
         <div className="absolute inset-0 bg-black opacity-40"></div>
         <div className="relative z-10 flex flex-col items-start justify-center h-full px-8 mx-auto text-white max-w-7xl md:px-24">
           <h1 className="mb-6 text-4xl font-bold leading-tight text-left md:text-6xl">
@@ -173,6 +174,52 @@ const Pricing = () => {
                     </td>
                   </tr>
                 ))}
+                 <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                   Custom Domain
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Default
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Private Domain
+                    </div>
+                  </td>
+                </tr>
+                
+                 <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                   Custom Branding
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     Default
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      On Demand
+                    </div>
+                  </td>
+                </tr>
+                   <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                    Storage
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                     5 GB of storage
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      Unlimited Storage
+                    </div>
+                  </td>
+                </tr>
                 <tr className="border-b border-gray-100">
                   <td className="px-6 py-4 text-left text-gray-700">
                     Support
@@ -184,7 +231,7 @@ const Pricing = () => {
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      24/7 Entreprise Support
+                      24/7 Enterprise Support
                     </div>
                   </td>
                 </tr>

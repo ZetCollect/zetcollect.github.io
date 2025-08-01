@@ -24,26 +24,14 @@
     ]
   },
   {
-    "id": "compliance",
-    "titleKey": "courses.compliance.title",
+    "id": "security",
+    "titleKey": "courses.security.title",
     "lessons": [
       {
-        "id": "understanding-kyc-requirements",
-        "titleKey": "courses.compliance.lesson.understanding-kyc-requirements.title",
-        "descriptionKey": "courses.compliance.lesson.understanding-kyc-requirements.description",
-        "image": "/kyc.jpg"
-      },
-      {
-        "id": "fraud-prevention-training",
-        "titleKey": "courses.compliance.lesson.fraud-prevention-training.title",
-        "descriptionKey": "courses.compliance.lesson.fraud-prevention-training.description",
-        "image": "/privacy-confidential-protection-security-solitude-concept.jpg"
-      },
-      {
-        "id": "data-privacy-regulations",
-        "titleKey": "courses.compliance.lesson.data-privacy-regulations.title",
-        "descriptionKey": "courses.compliance.lesson.data-privacy-regulations.description",
-        "image": "/woman-with-gdpr-speech-bubbe-holding-padlock-icon.jpg"
+        "id": "secure-transaction-protocols",
+        "titleKey": "courses.security.lesson.secure-transaction-protocols.title",
+        "descriptionKey": "courses.security.lesson.secure-transaction-protocols.description",
+        "image": "/6534510.jpg"
       }
     ]
   }

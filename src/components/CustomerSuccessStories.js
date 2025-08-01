@@ -31,7 +31,7 @@ const CustomerSuccessStories = () => {
     },
     {
       id: "agents-Tchad",
-      logo: "/delivery-african-american-man-yellow-polo-shirt-cap-holding-clipboard-cardboard-box-with-confident-smile-standing-isolated-blue.jpg",
+      logo: "/delivery-african-american-man.jpg",
       logoAlt: "Tchad Agents Logo",
       title: t('customerStories.agents-Tchad.title'),
       description: t('customerStories.agents-Tchad.description'),
@@ -52,7 +52,7 @@ const CustomerSuccessStories = () => {
     },
     {
       id: "agents-Tchad",
-      logo: "/delivery-african-american-man-yellow-polo-shirt-cap-holding-clipboard-cardboard-box-with-confident-smile-standing-isolated-blue.jpg",
+      logo: "/delivery-african-american-man.jpg",
       logoAlt: "Tchad Agents Logo",
       title: t('customerStories.agents-Tchad.title'),
       description: t('customerStories.agents-Tchad.description'),

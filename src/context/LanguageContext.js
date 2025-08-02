@@ -434,9 +434,8 @@ const translations = {
     "training.courses.productKnowledge.title": "ZetCollect Product Knowledge",
     "training.courses.security.title": "ZetCollect Security",
     // Pricing Page (Updated)
-    "pricing.section1.title": "Fair pricing for faster growth",
-    "pricing.section1.description":
-      "Flexible pricing plans to suit businesses of all sizes.",
+    "pricing.section1.title": "Competitive pricing for faster growth",
+    "pricing.section1.description": "Flexible pricing & payment plans to suit businesses of all sizes.",
     "pricing.section1.cta": "Get Started",
     "pricing.section2.title": "Flexible fees tailored to your business",
     "pricing.section2.business.title": "Business",
@@ -463,10 +462,9 @@ const translations = {
     "pricing.compareFeatures.transactionHistory": "Transaction History",
     "pricing.compareFeatures.reportsAnalytics": "Reports and Analytics",
     "pricing.compareFeatures.userAccessRoles": "User Access and Roles",
-    "pricing.compareFeatures.smsNotifications": "Optional SMS Notifications",
-    "pricing.compareFeatures.dailySynchronization":
-      "Daily Data Synchronization",
+    "pricing.compareFeatures.dailySynchronization": "Daily Data Synchronization",
     "pricing.compareFeatures.passwordPolicy": "Password Policy",
+    "pricing.compareFeatures.databaseHosting": "Database Hosting",
     "pricing.compareFeatures.gpsTraceability": "GPS Tracking for Agents",
     "pricing.compareFeatures.missedCollectionAlerts":
       "Missed Collection Alerts",
@@ -1281,10 +1279,8 @@ const translations = {
       "Connaissance des produits ZetCollect",
     "training.courses.security.title": "ZetCollect sécurité",
     //pricing Page
-    "pricing.section1.title":
-      "Tarification équitable pour une croissance rapide",
-    "pricing.section1.description":
-      "Des plans tarifaires flexibles adaptés aux entreprises de toutes tailles.",
+    "pricing.section1.title": "Des prix compétitifs pour une croissance plus rapide",
+    "pricing.section1.description": "Des tarifs et des plans de paiement flexibles adaptés aux entreprises de toutes tailles.",
     "pricing.section1.cta": "Commencer",
     "pricing.section2.title": "Frais flexibles adaptés à votre entreprise",
     "pricing.section2.business.title": "Business",
@@ -1313,8 +1309,7 @@ const translations = {
     "pricing.compareFeatures.reportsAnalytics": "Rapports et analyses",
     "pricing.compareFeatures.userAccessRoles":
       "Accès et rôles des utilisateurs",
-    "pricing.compareFeatures.smsNotifications":
-      "Notifications SMS optionnelles",
+    "pricing.compareFeatures.databaseHosting": "Hébergement de bases de données",
     "pricing.compareFeatures.dailySynchronization":
       "Synchronisation quotidienne des données",
     "pricing.compareFeatures.passwordPolicy": "Politique de mot de passe",
@@ -2139,9 +2134,8 @@ const translations = {
     "training.courses.security.title": "Usalama wa ZetCollect",
 
     //pricing page
-    "pricing.section1.title": "Bei ya Haki kwa Ukuaji wa Haraka",
-    "pricing.section1.description":
-      "Tuna mipango ya bei rahisi inayofaa Biashara zinazokua za ukubwa wowote.",
+    "pricing.section1.title": "Bei shindani kwa ukuaji wa haraka",
+    "pricing.section1.description": "Mipango ya bei na malipo inayobadilika kuendana na biashara za ukubwa wote.",
     "pricing.section1.cta": "Anza",
     "pricing.section2.title": "Ada Zinazobadilika Zinazofaa Ukubwa Wako",
     "pricing.section2.business.title": "Biashara",
@@ -2310,7 +2304,7 @@ const translations = {
     "pricing.compareFeatures.reportsAnalytics": "Ripoti na Uchanganuzi",
     "pricing.compareFeatures.userAccessRoles":
       "Upatikanaji wa Watumiaji na Majukumu",
-    "pricing.compareFeatures.smsNotifications": "Arifa za SMS za Hiari",
+    "pricing.compareFeatures.databaseHosting": "Kuhifadhi Hifadhidata",
     "pricing.compareFeatures.dailySynchronization":
       "Usawazishaji wa Data wa Kila Siku",
     "pricing.compareFeatures.gpsTraceability":

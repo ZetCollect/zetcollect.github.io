@@ -10,52 +10,52 @@ const CustomerSupportPage = () => {
   const featureSupport = [
     {
       name: t('support.feature.client'),
-      phone: '+237 677 123 456',
+      phone: '+254 703 468 300',
       email: 'support.financial@zetcollect.com',
     },
     {
       name: t('support.feature.collector'),
-      phone: '+237 677 234 567',
+      phone: '+254 703 468 300',
       email: 'support.financial@zetcollect.com',
     },
     {
       name: t('support.feature.branch'),
-      phone: '+237 677 345 678',
+      phone: '+254 703 468 300',
       email: 'support.financial@zetcollect.com',
     },
     {
       name: t('support.feature.mobile'),
-      phone: '+254 722 987 654',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
     {
       name: t('support.feature.booklet'),
-      phone: '+241 077 876 543',
+      phone: '+254 703 468 300',
       email: 'support.financial@zetcollect.com',
     },
     {
       name: t('support.feature.history'),
-      phone: '+237 677 456 789',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
     {
       name: t('support.feature.reports'),
-      phone: '+254 722 876 543',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
     {
       name: t('support.feature.access'),
-      phone: '+237 677 567 890',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
     {
       name: t('support.feature.sms'),
-      phone: '+241 077 765 432',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
     {
       name: t('support.feature.sync'),
-      phone: '+254 722 765 432',
+      phone: '+254 703 468 300',
       email: 'support.technical@zetcollect.com',
     },
   ];
@@ -67,9 +67,9 @@ const CustomerSupportPage = () => {
 
   return (
     <>
-      <div className="flex flex-col items-center justify-center min-h-screen px-4 py-26 bg-secondary sm:px-6 lg:px-8">
+      <div className="flex flex-col items-center justify-center px-4 py-24 bg-secondary sm:px-6 lg:px-8">
         {/* Main Header: Customer Support */}
-        <h1 className="w-full max-w-5xl mb-16 text-6xl font-extrabold leading-tight text-center text-white md:text-7xl">
+        <h1 className="w-full max-w-4xl mb-16 text-6xl font-extrabold leading-tight text-center text-white md:text-7xl">
           {t('support.title')}
         </h1>
 
@@ -85,22 +85,18 @@ const CustomerSupportPage = () => {
           </div>
 
           {/* Right Section: Dropdown and Support Details */}
-          <div className="flex flex-col items-center justify-center p-12 md:w-1/2 lg:p-16">
+          <div className="flex flex-col justify-center p-12 md:w-1/2 lg:p-12">
             <h2 className="mb-8 text-2xl font-bold text-center text-gray-900">
               {t('support.subtitle')}
             </h2>
 
             {/* Dropdown for selecting a feature */}
-            <div className="w-full max-w-md mb-10">
-              <label htmlFor="feature-select" className="block mb-4 text-xl font-medium text-center text-gray-700">
-                {t('support.selectLabel')}
-              </label>
+            <div className="w-full max-w-md mb-2">
               <select
                 id="feature-select"
-                className="w-full px-6 py-5 text-2xl text-gray-900 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
+                className="w-full px-2 py-2 text-xl text-gray-900 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-primary focus:border-primary"
                 value={selectedFeature}
-                onChange={(e) => setSelectedFeature(e.target.value)}
-              >
+                onChange={(e) => setSelectedFeature(e.target.value)}>
                 <option value="" disabled>{t('support.selectPlaceholder')}</option>
                 {featureSupport.map((feature, index) => (
                   <option key={index} value={feature.name}>
@@ -112,30 +108,29 @@ const CustomerSupportPage = () => {
 
             {/* Display contact information based on selection */}
             {currentSupportInfo ? (
-              <div className="space-y-4 text-center">
-                <p className="text-2xl text-gray-700">
+              <div className="space-y-5 mt-8">
+                <p className="text-xl text-gray-900">
                   <span className="font-semibold">
                     {t('support.contactLabel').replace('{feature}', currentSupportInfo.name)}
                   </span>
                 </p>
-                <p className="text-xl text-primary hover:underline">
+                <p className="text-l">
                   {t('support.phone')}: <a href={`tel:${currentSupportInfo.phone}`}>{currentSupportInfo.phone}</a>
                 </p>
-                <p className="text-xl text-primary hover:underline">
+                <p className="text-l">
                   {t('support.email')}: <a href={`mailto:${currentSupportInfo.email}`}>{currentSupportInfo.email}</a>
                 </p>
               </div>
             ) : (
-              <p className="text-xl text-center text-gray-500">{t('support.noSelection')}</p>
+              <p className="text-xl text-center text-gray-700">{t('support.noSelection')}</p>
             )}
 
             {/* Online Support Community Button */}
-            <div className="flex justify-center mt-10">
+            <div className="flex mt-8">
               <button
                 type="button"
-                className="inline-flex items-center px-10 py-5 text-xl font-medium text-white transition-colors border border-transparent rounded-full shadow-sm bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-                onClick={() => window.open('https://zetcollect.com/', '_blank')}
-              >
+                className="inline-flex items-center px-5 py-5 text-xl font-medium text-white transition-colors border border-transparent shadow-sm bg-primary hover:bg-primary focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                onClick={() => window.open('https://zetcollect.com/', '_blank')}>
                 {t('support.communityButton')} →
               </button>
             </div>

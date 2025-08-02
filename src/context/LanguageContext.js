@@ -312,8 +312,7 @@ const translations = {
 
     // CustomerSupportPage
     "support.title": "Customer support",
-    "support.subtitle": "Solution specific support",
-    "support.selectLabel": "Select a feature",
+    "support.subtitle": "Features Specific Support",
     "support.selectPlaceholder": "Select a feature",
     "support.contactLabel": "{feature} Support:",
     "support.phone": "Phone",
@@ -1156,8 +1155,7 @@ const translations = {
 
     // CustomerSupportPage
     "support.title": "Support client",
-    "support.subtitle": "Support spécifique à la solution",
-    "support.selectLabel": "Sélectionner une fonctionnalité",
+    "support.subtitle": "Fonctionnalités Support Spécifique",
     "support.selectPlaceholder": "Sélectionner une fonctionnalité",
     "support.contactLabel": "Support pour {feature} :",
     "support.phone": "Téléphone",
@@ -2017,8 +2015,7 @@ const translations = {
 
     // CustomerSupportPage
     "support.title": "Msaada wa Wateja",
-    "support.subtitle": "Msaada Maalum wa Suluhisho",
-    "support.selectLabel": "Chagua Kipengele",
+    "support.subtitle": "Vipengele vya Usaidizi Maalum",
     "support.selectPlaceholder": "Chagua Kipengele",
     "support.contactLabel": "Msaada wa {feature}:",
     "support.phone": "Simu",

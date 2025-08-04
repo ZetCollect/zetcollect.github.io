@@ -550,22 +550,17 @@ const translations = {
 
     // CourseLessonPage Component
     "courseLesson.title": "{lessonTitle}",
-    "courseLesson.notFound":
-      "Lesson not found. Please check the URL or return to the main training page.",
+    "courseLesson.notFound": "Lesson not found. Please check the URL or return to the main training page.",
     "courseLesson.backToCourse": "Back to {category}",
     "courseLesson.backToAllCourses": "Back to All Courses",
     "courseLesson.relatedCourses": "Related Courses",
 
     // lessonContent.json
-    "lessons.protecting-accounts.title":
-      "Protecting Accounts With ZetCollect Two Factor Authentication",
+    "lessons.protecting-accounts.title":   "Protecting Accounts With ZetCollect Two Factor Authentication",
     "lessons.protecting-accounts.category": "Onboarding and Issue Resolution",
-    "lessons.protecting-accounts.content":
-      '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction to 2FA</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Two-Factor Authentication (2FA) adds an extra layer of security to your ZetCollect account. It requires a second form of verification in addition to your password, significantly reducing the risk of unauthorized access.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Why is 2FA Important?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Protects against password theft.</li><li>Adds a crucial layer of defense against phishing attacks.</li><li>Ensures only you can access your account, even if your password is compromised.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">How to Enable 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Follow these simple steps to enable 2FA on your ZetCollect account:</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Log in to your ZetCollect dashboard.</li><li>Navigate to \'Security Settings\'.</li><li>Select \'Enable Two-Factor Authentication\'.</li><li>Choose your preferred method (e.g., authenticator app, SMS code).</li><li>Follow the on-screen instructions to complete the setup.</li></ol><p class="text-lg text-gray-600 italic mb-6">For more details, refer to our official user guide.</p>',
-    "lessons.protecting-accounts.relatedCourses.onboarding.title":
-      "Onboarding and Issue Resolution",
-    "lessons.protecting-accounts.relatedCourses.product-knowledge.title":
-      "ZetCollect Product Knowledge",
+    "lessons.protecting-accounts.content": '<h1 class="text-4xl font-bold text-gray-900 mb-6">Introduction to 2FA</h1><p class="text-lg text-gray-700 mb-6 leading-relaxed">Two-Factor Authentication (2FA) adds an extra layer of security to your ZetCollect account. It requires a second form of verification in addition to your password, significantly reducing the risk of unauthorized access.</p><h2 class="text-2xl font-bold text-gray-900 mb-4">Why is 2FA Important?</h2><ul class="list-disc list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Protects against password theft.</li><li>Adds a crucial layer of defense against phishing attacks.</li><li>Ensures only you can access your account, even if your password is compromised.</li></ul><h2 class="text-2xl font-bold text-gray-900 mb-4">How to Enable 2FA</h2><p class="text-lg text-gray-700 mb-6 leading-relaxed">Follow these simple steps to enable 2FA on your ZetCollect account:</p><ol class="list-decimal list-inside mb-6 space-y-2 text-lg text-gray-700"><li>Log in to your ZetCollect dashboard.</li><li>Navigate to \'Security Settings\'.</li><li>Select \'Enable Two-Factor Authentication\'.</li><li>Choose your preferred method (e.g., authenticator app, SMS code).</li><li>Follow the on-screen instructions to complete the setup.</li></ol><p class="text-lg text-gray-600 italic mb-6">For more details, refer to our official user guide.</p>',
+    "lessons.protecting-accounts.relatedCourses.onboarding.title":  "Onboarding and Issue Resolution",
+    "lessons.protecting-accounts.relatedCourses.product-knowledge.title": "ZetCollect Product Knowledge",
 
     "lessons.adding-business-kyc3.title":
       "Adding a Business to a KYC Level 3 Account",

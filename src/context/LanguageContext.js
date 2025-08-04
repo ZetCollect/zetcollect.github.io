@@ -233,12 +233,9 @@ const translations = {
     "upcoming.route.title": "Route & Schedule Optimization",
     "upcoming.route.desc":
       "Smart routing algorithms to optimize collector schedules and maximize efficiency.",
-    "upcoming.portal.title": "Client Self-Access Portal",
-    "upcoming.portal.desc":
-      "Allow clients to view their collection history and make payments independently.",
-    "upcoming.currency.title": "New Currency System (CDF)",
-    "upcoming.currency.desc":
-      "Seamless integration of Congolese Franc (CDF) for all transactions and financial reporting.",
+    "upcoming.portal.title": "What does our Client Self Portal Provides ?",
+    "upcoming.portal.desc": "Allow clients to view their collection history, verify if agent (collector) threshold has been reached and verify if he is authorised to collect.",
+   
 
     // Contact Us
     "contact.title": "Contact Us",
@@ -356,10 +353,16 @@ const translations = {
 
     // FAQPage
     "faq.title": "Frequently Asked Questions",
-    "faq.subtitle":
-      "Here's the answers to all your burning questions about ZetCollect. You can also contact us directly or dive deeper into our knowledge base and API documentation.",
-    "faq.questions.client_management":
-      "How does ZetCollect's Client Management feature work?",
+    "faq.subtitle": "Here's the answers to all your burning questions about ZetCollect. You can also contact us directly or dive deeper into our knowledge base and API documentation.",
+    
+    "faq.questions.product_infoA": "What is ZetCollect  ?",
+    "faq.answers.product_infoA": "It’s a cash collection management system for microfinance institutions and cooperatives. It helps you manage clients, agents(collectors) and branches while improving transparency, reporting, and operational control.",
+    "faq.questions.product_infoB": "Is the system tailored for microfinance institutions in the CEMAC region ?",
+    "faq.answers.product_infoB": "Yes, ZetCollect is built to align with CEMAC regulations, supporting agents working in rural or urban settings and integrating both digital and booklet-based collection.",
+    "faq.questions.product_infoC": "What are the main benefits of using ZetCollect ?",
+    "faq.answers.product_infoC": "You gain improved Cash Flow Tracking, Faster Reconciliation, Automated reporting, Agent Commission, and better compliance with regional financial standards.",
+   
+    "faq.questions.client_management": "How does ZetCollect's Client Management feature work?",
     "faq.answers.client_management":
       "ZetCollect's Client Management allows you to easily add, update, and manage all your client information, including custom fields. You can allocate specific collection books to clients for structured tracking and set daily saving expectations to monitor their progress effectively.",
     "faq.questions.collector_management":
@@ -435,7 +438,8 @@ const translations = {
     "training.courses.security.title": "ZetCollect Security",
     // Pricing Page (Updated)
     "pricing.section1.title": "Competitive pricing for faster growth",
-    "pricing.section1.description": "Flexible pricing & payment plans to suit businesses of all sizes.",
+    "pricing.section1.description":
+      "Flexible pricing & payment plans to suit businesses of all sizes.",
     "pricing.section1.cta": "Get Started",
     "pricing.section2.title": "Flexible fees tailored to your business",
     "pricing.section2.business.title": "Business",
@@ -462,7 +466,8 @@ const translations = {
     "pricing.compareFeatures.transactionHistory": "Transaction History",
     "pricing.compareFeatures.reportsAnalytics": "Reports and Analytics",
     "pricing.compareFeatures.userAccessRoles": "User Access and Roles",
-    "pricing.compareFeatures.dailySynchronization": "Daily Data Synchronization",
+    "pricing.compareFeatures.dailySynchronization":
+      "Daily Data Synchronization",
     "pricing.compareFeatures.passwordPolicy": "Password Policy",
     "pricing.compareFeatures.databaseHosting": "Database Hosting",
     "pricing.compareFeatures.gpsTraceability": "GPS Tracking for Agents",
@@ -1070,12 +1075,9 @@ const translations = {
     "upcoming.route.title": "Optimisation des Itinéraires et des Horaires",
     "upcoming.route.desc":
       "Algorithmes de routage intelligents pour optimiser les horaires des collecteurs et maximiser l'efficacité.",
-    "upcoming.portal.title": "Portail Libre-Service Client",
-    "upcoming.portal.desc":
-      "Permettre aux clients de consulter leur historique de collecte et d'effectuer des paiements de manière autonome.",
-    "upcoming.currency.title": "Nouveau Système Monétaire (KES)",
-    "upcoming.currency.desc":
-      "Intégration transparente des shillings kenyans (KES) pour toutes les transactions et les rapports financiers.",
+    "upcoming.portal.title": "Que propose notre portail client ?",
+    "upcoming.portal.desc": "Permettre aux clients de consulter leur historique de collecte, de vérifier si le seuil de l'agent (collecteur) a été atteint et de vérifier s'il est autorisé à collecter.",
+   
 
     // Contact Us
     "contact.title": "Nous Contacter",
@@ -1198,10 +1200,15 @@ const translations = {
 
     // FAQPage
     "faq.title": "Questions Fréquemment Posées",
-    "faq.subtitle":
-      "Voici les réponses à toutes vos questions brûlantes sur ZetCollect. Vous pouvez également nous contacter directement ou explorer plus en détail notre base de connaissances et la documentation de notre API.",
-    "faq.questions.client_management":
-      "Comment fonctionne la fonctionnalité de Gestion des Clients de ZetCollect ?",
+    "faq.subtitle": "Voici les réponses à toutes vos questions brûlantes sur ZetCollect. Vous pouvez également nous contacter directement ou explorer plus en détail notre base de connaissances et la documentation de notre API.",
+    "faq.questions.product_infoA": "Qu'est-ce que ZetCollect ?",
+    "faq.answers.product_infoA": "C’est un système de gestion de collecte de fonds conçu pour les institutions de microfinance et les coopératives. Il vous aide à gérer les clients, les agents (collecteurs) et les agences, tout en améliorant la transparence, les rapports et le contrôle opérationnel.",
+    "faq.questions.product_infoB": "ZetCollect est-il adapté aux institutions de microfinance de la région CEMAC ?",
+    "faq.answers.product_infoB": "Oui, ZetCollect est conçu pour être conforme aux réglementations de la CEMAC, en soutenant les agents (collecteur) opérant en zones rurales ou urbaines et en intégrant à la fois la collecte numérique et celle basée sur les carnets.",
+    "faq.questions.product_infoC": "Quels sont les principaux avantages de l’utilisation de ZetCollect ?",
+    "faq.answers.product_infoC": "Vous bénéficiez d’un meilleur suivi des flux de trésorerie, d’un rapprochement plus rapide, de rapports automatisés, de commissions pour les agents, et d’une meilleure conformité aux normes financières régionales.",
+   
+    "faq.questions.client_management": "Comment fonctionne la fonctionnalité de Gestion des Clients de ZetCollect ?",
     "faq.answers.client_management":
       "La Gestion des Clients de ZetCollect vous permet d’ajouter, de mettre à jour et de gérer facilement toutes les informations de vos clients, y compris des champs personnalisés. Vous pouvez attribuer des livres de collecte spécifiques aux clients pour un suivi structuré et définir des attentes d’épargne quotidienne pour surveiller efficacement leurs progrès.",
     "faq.questions.collector_management":
@@ -1279,8 +1286,10 @@ const translations = {
       "Connaissance des produits ZetCollect",
     "training.courses.security.title": "ZetCollect sécurité",
     //pricing Page
-    "pricing.section1.title": "Des prix compétitifs pour une croissance plus rapide",
-    "pricing.section1.description": "Des tarifs et des plans de paiement flexibles adaptés aux entreprises de toutes tailles.",
+    "pricing.section1.title":
+      "Des prix compétitifs pour une croissance plus rapide",
+    "pricing.section1.description":
+      "Des tarifs et des plans de paiement flexibles adaptés aux entreprises de toutes tailles.",
     "pricing.section1.cta": "Commencer",
     "pricing.section2.title": "Frais flexibles adaptés à votre entreprise",
     "pricing.section2.business.title": "Business",
@@ -1309,7 +1318,8 @@ const translations = {
     "pricing.compareFeatures.reportsAnalytics": "Rapports et analyses",
     "pricing.compareFeatures.userAccessRoles":
       "Accès et rôles des utilisateurs",
-    "pricing.compareFeatures.databaseHosting": "Hébergement de bases de données",
+    "pricing.compareFeatures.databaseHosting":
+      "Hébergement de bases de données",
     "pricing.compareFeatures.dailySynchronization":
       "Synchronisation quotidienne des données",
     "pricing.compareFeatures.passwordPolicy": "Politique de mot de passe",
@@ -1929,13 +1939,9 @@ const translations = {
     "upcoming.route.title": "Uboreshaji wa Njia na Ratiba",
     "upcoming.route.desc":
       "Algoriti za kupanga njia mahiri ili kuboresha ratiba za wakusanyaji na kuongeza ufanisi.",
-    "upcoming.portal.title": "Jukwaa la Kujihudumia la Mteja",
-    "upcoming.portal.desc":
-      "Waruhusu wateja kutazama historia yao ya ukusanyaji na kufanya malipo wenyewe.",
-    "upcoming.currency.title": "Mfumo Mpya wa Sarafu (KES)",
-    "upcoming.currency.desc":
-      "Ujumuishaji usio na mshono wa Shilingi za Kenya (KES) kwa miamala yote na ripoti za kifedha.",
-
+    "upcoming.portal.title": "Je! Tovuti yetu ya Self Self hutoa nini?",
+    "upcoming.portal.desc": "Ruhusu wateja kuona historia yao ya mkusanyiko, kuthibitisha ikiwa kiwango cha juu zaidi cha wakala (Collector) kimefikiwa na kuthibitisha ikiwa ameidhinishwa kukusanya.",
+   
     // Contact Us
     "contact.title": "Wasiliana Nasi",
     "contact.subtitle":
@@ -2055,10 +2061,16 @@ const translations = {
 
     // FAQPage
     "faq.title": "Maswali Yanayoulizwa Mara kwa Mara",
-    "faq.subtitle":
-      "Hapa kuna majibu ya maswali yako yote ya moto kuhusu ZetCollect. Unaweza pia kutuwasiliana moja kwa moja au uchunguze zaidi katika msingi wetu wa maarifa na hati za API.",
-    "faq.questions.client_management":
-      "Je, kipengele cha Usimamizi wa Wateja cha ZetCollect kinavyofanya kazi vipi?",
+    "faq.subtitle": "Hapa kuna majibu ya maswali yako yote ya moto kuhusu ZetCollect. Unaweza pia kutuwasiliana moja kwa moja au uchunguze zaidi katika msingi wetu wa maarifa na hati za API.",
+ 
+    "faq.questions.product_infoA": "ZetCollect ni nini ?",
+    "faq.answers.product_infoA": "Ni mfumo wa usimamizi wa ukusanyaji wa pesa ulioundwa kwa ajili ya taasisi za microfinance na vyama vya ushirika. Unakusaidia kusimamia wateja, mawakala (collectors), na matawi huku ukiboresha uwazi, utoaji wa ripoti, na udhibiti wa shughuli.",
+    "faq.questions.product_infoB": "Je, ZetCollect umebuniwa mahsusi kwa taasisi za microfinance katika ukanda wa CEMAC?",
+    "faq.answers.product_infoB": "Ndiyo, ZetCollect imeundwa kufuata kanuni za CEMAC, ikiwaunga mkono mawakala wanaofanya kazi vijijini au mijini, na ikijumuisha ukusanyaji wa kidijitali pamoja na ule wa kutumia vijitabu.",
+    "faq.questions.product_infoC": "Ni faida gani kuu za kutumia ZetCollect ?",
+    "faq.answers.product_infoC": "Unapata ufuatiliaji bora wa mtiririko wa pesa, upatanisho wa haraka, utoaji wa ripoti kiotomatiki, tume ya wakala, na ulinganifu bora na viwango vya kifedha vya kikanda.",
+ 
+    "faq.questions.client_management":  "Je, kipengele cha Usimamizi wa Wateja cha ZetCollect kinavyofanya kazi vipi?",
     "faq.answers.client_management":
       "Usimamizi wa Wateja wa ZetCollect hukuruhusu kuongeza, kusasisha, na kusimamia habari yote ya wateja wako kwa urahisi, ikiwa ni pamoja na sehemu za desturi. Unaweza kugawa vitabu vya ukusanyaji mahususi kwa wateja kwa ufuatiliaji wa muundo na kuweka matarajio ya akiba ya kila siku ili kufuatilia maendeleo yao kwa ufanisi.",
     "faq.questions.collector_management":
@@ -2135,7 +2147,8 @@ const translations = {
 
     //pricing page
     "pricing.section1.title": "Bei shindani kwa ukuaji wa haraka",
-    "pricing.section1.description": "Mipango ya bei na malipo inayobadilika kuendana na biashara za ukubwa wote.",
+    "pricing.section1.description":
+      "Mipango ya bei na malipo inayobadilika kuendana na biashara za ukubwa wote.",
     "pricing.section1.cta": "Anza",
     "pricing.section2.title": "Ada Zinazobadilika Zinazofaa Ukubwa Wako",
     "pricing.section2.business.title": "Biashara",

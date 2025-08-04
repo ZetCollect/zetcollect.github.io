@@ -13,6 +13,18 @@ const FAQPage = () => {
 
   const faqs = [
     {
+      question: t('faq.questions.product_infoA'),
+      answer: t('faq.answers.product_infoA'),
+    },
+    {
+      question: t('faq.questions.product_infoB'),
+      answer: t('faq.answers.product_infoB'),
+    },
+    {
+      question: t('faq.questions.product_infoC'),
+      answer: t('faq.answers.product_infoC'),
+    },
+    {
       question: t('faq.questions.client_management'),
       answer: t('faq.answers.client_management'),
     },
@@ -23,10 +35,6 @@ const FAQPage = () => {
     {
       question: t('faq.questions.multi_branch'),
       answer: t('faq.answers.multi_branch'),
-    },
-    {
-      question: t('faq.questions.mobile_collection'),
-      answer: t('faq.answers.mobile_collection'),
     },
     {
       question: t('faq.questions.booklet_system'),
@@ -69,13 +77,9 @@ const FAQPage = () => {
       answer: t('upcoming.route.desc'),
     },
     {
-      question: "What is the Client Self-Access Portal?",
-      answer: t('upcoming.portal.desc'),
-    },
-    {
-      question: "How will the New Currency System (CDF) be implemented?",
-      answer: t('upcoming.currency.desc'),
-    },
+      question: t('upcoming.portal.title'),
+      answer: t('upcoming.portal.desc')
+    }
   ];
 
   return (

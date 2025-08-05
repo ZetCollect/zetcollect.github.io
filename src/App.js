@@ -13,21 +13,21 @@ import ContactPage from './components/ContactPage';
 import FAQPage from './components/FAQPage';
 import ReleaseNotesPage from './components/ReleaseNotesPage';
 import WorkInProgressPage from './components/WorkInProgressPage';
-import CustomerSupportPage from './components/CustomerSupportPage';
-import Articles from './components/Articles';
-import EventsPage from './components/Events';
+import CustomerSupportPage from './components/CustomerSupport/CustomerSupportPage';
+import Articles from './components/Articles/Articles';
+import EventsPage from './components/EventsandWebinars/Events';
 import AboutUsPage from './components/AboutUsPage';
-import TrainingAndCertificationPage from './components/TrainingAndCertificationPage';
-import OnboardingCoursePage from './components/OnboardingCoursePage';
-import ProductKnowledgeCoursePage from './components/ProductKnowledgeCoursePage';
-import CourseLessonPage from './components/CourseLessonPage';
+import TrainingAndCertificationPage from './components/Training/TrainingAndCertificationPage';
+import OnboardingCoursePage from './components/Training/OnboardingCoursePage';
+import ProductKnowledgeCoursePage from './components/Training/ProductKnowledgeCoursePage';
+import CourseLessonPage from './components/Training/CourseLessonPage';
 import Pricing from './components/Pricing';
-import CustomerStory from './components/CustomerStory';
-import CustomerSuccessStories from './components/CustomerSuccessStories';
-import YoungMicrofinancesStory from './components/MicrofinancesStory';
-import GabonMerchantsStory from './components/GabonMerchantsStory';
-import TchadAgentsStory from './components/TchadAgentsStory';
-import SecurityCoursePage from './components/SecurityCoursePage';
+import CustomerStory from './components/CustomerStory/CustomerStory';
+import CustomerSuccessStories from './components/CustomerStory/CustomerSuccessStories';
+import YoungMicrofinancesStory from './components/CustomerStory/MicrofinancesStory';
+import GabonMerchantsStory from './components/CustomerStory/GabonMerchantsStory';
+import TchadAgentsStory from './components/CustomerStory/TchadAgentsStory';
+import SecurityCoursePage from './components/Training/SecurityCoursePage';
 
 const App = () => {
   useEffect(() => {

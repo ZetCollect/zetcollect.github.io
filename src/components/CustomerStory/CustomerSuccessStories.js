@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext';
+import Footer from '../Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const CustomerSuccessStories = () => {
   const { t } = useLanguage();

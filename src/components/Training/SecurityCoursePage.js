@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import coursesData from "../data/coursesData.json";
-import Footer from "../components/Footer";
-import { useLanguage } from "../context/LanguageContext";
+import coursesData from "../../data/coursesData.json";
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const SecurityCoursePage = () => {
   const { t } = useLanguage();
@@ -117,7 +117,7 @@ const SecurityCoursePage = () => {
                   onError={(e) => {
                     e.target.onerror = null;
                     e.target.src =
-                      "https://placehold.co/400x250/cccccc/000000?text=Lesson+Image";
+                    "/No-Image-Placeholder.png";
                   }}
                 />
                 <div className="p-6">

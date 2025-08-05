@@ -1,41 +1,41 @@
 import React from 'react';
-import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext';
-import ResponsiveBannner from '../components/ResponsiveBanner';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
+import ResponsiveBannner from '../../components/ResponsiveBanner';
 
-const TchadAgentsStory = () => {
-  const { t } = useLanguage();
+const MicrofinancesStory = () => {
+   const { t } = useLanguage();
 
   // Array for Impact Statistics
   const impactStats = [
     {
-      value: t('tchadagents.section2.impact.stat1.value'),
-      description: t('tchadagents.section2.impact.stat1.description'),
+      value: t('microfinances.section2.impact.stat1.value'),
+      description: t('microfinances.section2.impact.stat1.description'),
     },
     {
-      value: t('tchadagents.section2.impact.stat2.value'),
-      description: t('tchadagents.section2.impact.stat2.description'),
+      value: t('microfinances.section2.impact.stat2.value'),
+      description: t('microfinances.section2.impact.stat2.description'),
     },
     {
-      value: t('tchadagents.section2.impact.stat3.value'),
-      description: t('tchadagents.section2.impact.stat3.description'),
+      value: t('microfinances.section2.impact.stat3.value'),
+      description: t('microfinances.section2.impact.stat3.description'),
     },
   ];
 
   return (
     <>
-      {/* First Section: ZetCollect Boosts Agent Efficiency in Tchad */}
+      {/* First Section: ACEP Cameroun - Fondation Grameen Crédit-Agricole Empowers Agents */}
       <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           <div className="mb-12 text-center lg:w-3/4 lg:pr-12 lg:text-left lg:mb-0">
             <h1 className="mb-6 text-4xl font-extrabold leading-normal text-gray-900 sm:text-5xl lg:text-6xl">
-              {t('tchadagents.section1.title')}
+              {t('microfinances.section1.title')}
             </h1>
             <p className="max-w-xl mx-auto mb-8 text-lg text-gray-700 lg:mx-0">
-              {t('tchadagents.section1.description')}
+              {t('microfinances.section1.description')}
             </p>
             <div className="flex items-center justify-center space-x-4 lg:justify-start">
-              <span className="text-sm font-semibold text-gray-600">{t('tchadagents.section1.share')}</span>
+              <span className="text-sm font-semibold text-gray-600">{t('microfinances.section1.share')}</span>
               <a href="https://www.linkedin.com/showcase/zetcollect/about/" className="flex items-center justify-center w-10 h-10 text-gray-600 transition-colors border border-gray-300 rounded-full hover:bg-gray-100">
                 <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                   <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
@@ -44,17 +44,17 @@ const TchadAgentsStory = () => {
             </div>
           </div>
           <div className="flex justify-center h-500 lg:w-1/2">
-            <img src="/african-woman-working-small-business-ecommerce-smiling-pointing-head-with-one-finger-great-idea-thought-good-memory.jpg" alt="Tchad Agents Logo" className="w-full h-auto rounded-lg shadow-xl" />
+            <img src="/black-businessman-using-computer-laptop.jpg" alt="ACEP Cameroun - Fondation Grameen Crédit-Agricole Logo" className="w-full h-auto rounded-lg shadow-xl" />
           </div>
         </div>
       </section>
 
-      {/* Third Section: Impact and About Tchad Agents */}
+      {/* Third Section: Impact and About ACEP Cameroun */}
       <section className="px-4 py-16 text-white bg-secondary sm:px-6 lg:px-8">
         <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           {/* Left Side: Impact Statistics */}
           <div className="mb-12 text-center lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-center">
-            <h2 className="mb-8 text-3xl font-bold sm:text-4xl">{t('tchadagents.section2.impact.title')}</h2>
+            <h2 className="mb-8 text-3xl font-bold sm:text-4xl">{t('microfinances.section2.impact.title')}</h2>
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-3">
               {impactStats.map((stat, index) => (
                 <div key={index} className="flex flex-col items-center lg:items-center">
@@ -68,13 +68,13 @@ const TchadAgentsStory = () => {
           {/* Vertical Separator Line - Hidden on small screens, visible on large */}
           <div className="self-stretch hidden h-auto mx-6 border-l border-white lg:block"></div>
 
-          {/* Right Side: About Tchad Agents */}
+          {/* Right Side: About ACEP Cameroun */}
           <div className="lg:w-1/2 lg:pl-12">
             <h2 className="mb-8 text-3xl font-bold text-center sm:text-4xl lg:text-left">
-              {t('tchadagents.section2.about.title')}
+              {t('microfinances.section2.about.title')}
             </h2>
             <p className="mb-8 text-lg leading-relaxed text-white">
-              {t('tchadagents.section2.about.description')}
+              {t('microfinances.section2.about.description')}
             </p>
           </div>
         </div>
@@ -84,13 +84,13 @@ const TchadAgentsStory = () => {
       <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl">
-            {t('tchadagents.section3.title')}
+            {t('microfinances.section3.title')}
           </h2>
           <p className="mb-4 text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section3.description1')}
+            {t('microfinances.section3.description1')}
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section3.description2')}
+            {t('microfinances.section3.description2')}
           </p>
         </div>
       </section>
@@ -99,35 +99,36 @@ const TchadAgentsStory = () => {
       <section className="px-4 py-16 bg-gray-50 sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl">
-            {t('tchadagents.section4.title')}
+            {t('microfinances.section4.title')}
           </h2>
           <p className="mb-4 text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section4.description1')}
+            {t('microfinances.section4.description1')}
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section4.description2')}
+            {t('microfinances.section4.description2')}
           </p>
         </div>
       </section>
 
-      <ResponsiveBannner
+       <ResponsiveBannner
         title={t('combined.actionBanner.title')}
         description={t('combined.actionBanner.description')}
         ctaText={t('combined.actionBanner.ctaButton')}
         ctaLink="/contact-page"
       />
 
+
       {/* Section: The Transformation */}
       <section className="px-4 py-16 bg-white sm:px-6 lg:px-8">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-8 text-3xl font-bold text-gray-900 sm:text-4xl">
-            {t('tchadagents.section5.title')}
+            {t('microfinances.section5.title')}
           </h2>
           <p className="mb-4 text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section5.description1')}
+            {t('microfinances.section5.description1')}
           </p>
           <p className="text-lg leading-relaxed text-gray-700">
-            {t('tchadagents.section5.description2')}
+            {t('microfinances.section5.description2')}
           </p>
         </div>
       </section>
@@ -156,4 +157,4 @@ const TchadAgentsStory = () => {
   );
 };
 
-export default TchadAgentsStory;
+export default MicrofinancesStory;

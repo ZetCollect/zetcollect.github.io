@@ -2,6 +2,7 @@ import React from 'react';
 import { MapPin, Globe, Shield, Smartphone, Settings, Plug, BarChart3, Star, Lock } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import Footer from '../components/Footer';
+import keyFeatures from '../data/keyFeatures.json';
 
 const AboutUsPage = () => {
   const { t } = useLanguage();
@@ -16,50 +17,6 @@ const AboutUsPage = () => {
     'CamCCUL Logo.jpg',
     'cropped-cropped-Logo-Croped logo.jpg',
     '(BHG) logo.png',
-  ];
-
-  // Key Features
-  const keyFeatures = [
-    {
-      title: t('about.keyFeatures.clientManagement.title'),
-      description: t('about.keyFeatures.clientManagement.description'),
-    },
-    {
-      title: t('about.keyFeatures.collectorManagement.title'),
-      description: t('about.keyFeatures.collectorManagement.description'),
-    },
-    {
-      title: t('about.keyFeatures.mobileCollection.title'),
-      description: t('about.keyFeatures.mobileCollection.description'),
-    },
-    {
-      title: t('about.keyFeatures.bookletSystem.title'),
-      description: t('about.keyFeatures.bookletSystem.description'),
-    },
-    {
-      title: t('about.keyFeatures.reportsAnalytics.title'),
-      description: t('about.keyFeatures.reportsAnalytics.description'),
-    },
-    {
-      title: t('about.keyFeatures.transactionHistory.title'),
-      description: t('about.keyFeatures.transactionHistory.description'),
-    },
-    {
-      title: t('about.keyFeatures.smsNotifications.title'),
-      description: t('about.keyFeatures.smsNotifications.description'),
-    },
-    {
-      title: t('about.keyFeatures.userAccessRoles.title'),
-      description: t('about.keyFeatures.userAccessRoles.description'),
-    },
-    {
-      title: t('about.keyFeatures.dailySynchronization.title'),
-      description: t('about.keyFeatures.dailySynchronization.description'),
-    },
-    {
-      title: t('about.keyFeatures.branchSetup.title'),
-      description: t('about.keyFeatures.branchSetup.description'),
-    },
   ];
 
   // Why ZetCollect Benefits
@@ -217,8 +174,8 @@ const AboutUsPage = () => {
                   key={index}
                   className="p-6 border rounded-lg shadow-sm border-primary bg-gray-50 custom-shadow-strong hover:-translate-y-2 hover:shadow-3xl"
                 >
-                  <h3 className="mb-4 text-xl font-semibold text-gray-900">{feature.title}</h3>
-                  <p className="text-gray-700">{feature.description}</p>
+                  <h3 className="mb-4 text-xl font-semibold text-gray-900">{t(feature.title)}</h3>
+                  <p className="text-gray-700">{t(feature.description)}</p>
                 </div>
               ))}
             </div>

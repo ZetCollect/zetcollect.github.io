@@ -1,20 +1,19 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import coursesData from '../data/coursesData.json';
-import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer'
+import coursesData from '../../data/coursesData.json';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
-const ProductKnowledgeCoursePage = () => {
-  const { t } = useLanguage();
+const OnboardingCoursePage = () => {
+  const { t } = useLanguage(); 
   const [filter, setFilter] = useState('All');
   const [lessons, setLessons] = useState([]);
-  const [activeTab] = useState('ZetCollect Product Knowledge');
+  const [activeTab] = useState('Onboarding and Issue Resolution');
 
   useEffect(() => {
-    // Find the product knowledge course data from the JSON file
-    const productKnowledgeCourse = coursesData.find(course => course.id === 'product-knowledge');
-    if (productKnowledgeCourse) {
-      setLessons(productKnowledgeCourse.lessons);
+    const onboardingCourse = coursesData.find(course => course.id === 'onboarding');
+    if (onboardingCourse) {
+      setLessons(onboardingCourse.lessons);
     }
   }, []);
 
@@ -31,7 +30,7 @@ const ProductKnowledgeCoursePage = () => {
           <div className="mx-auto max-w-7xl">
             <div className="pl-4 sm:pl-6 lg:pl-8">
               <h1 className="mb-6 text-4xl font-extrabold text-gray-900 lg:text-5xl">
-                {t('productKnowledge.title')}
+                {t('onboarding.title')}
               </h1>
 
               {/* Navigation Tabs and Filter */}
@@ -41,25 +40,25 @@ const ProductKnowledgeCoursePage = () => {
                     to="/training-and-certification"
                     className={`pb-1 border-b-2 ${activeTab === 'All Courses' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
                   >
-                    {t('productKnowledge.allCourses')}
+                    {t('onboarding.allCourses')}
                   </Link>
                   <Link
                     to="/training/product-knowledge"
                     className={`pb-1 border-b-2 ${activeTab === 'ZetCollect Product Knowledge' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
                   >
-                    {t('productKnowledge.productKnowledge')}
+                    {t('onboarding.productKnowledge')}
                   </Link>
                   <Link
                     to="/training/onboarding"
                     className={`pb-1 border-b-2 ${activeTab === 'Onboarding and Issue Resolution' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
                   >
-                    {t('productKnowledge.onboardingAndIssueResolution')}
+                    {t('onboarding.onboardingAndIssueResolution')}
                   </Link>
                   <Link
                     to="/training/security"
                     className={`pb-1 border-b-2 ${activeTab === 'ZetCollect Security' ? 'border-primary text-primary' : 'border-transparent text-gray-700 hover:text-primary'}`}
                   >
-                    {t('productKnowledge.security')}
+                    {t('onboarding.security')}
                   </Link>
                 </nav>
 
@@ -70,9 +69,9 @@ const ProductKnowledgeCoursePage = () => {
                     value={filter}
                     onChange={(e) => setFilter(e.target.value)}
                   >
-                    <option value="All">{t('productKnowledge.filter.all')}</option>
-                    <option value="Completed">{t('productKnowledge.filter.completed')}</option>
-                    <option value="In Progress">{t('productKnowledge.filter.inProgress')}</option>
+                    <option value="All">{t('onboarding.filter.all')}</option>
+                    <option value="Completed">{t('onboarding.filter.completed')}</option>
+                    <option value="In Progress">{t('onboarding.filter.inProgress')}</option>
                   </select>
                 </div>
               </div>
@@ -94,7 +93,7 @@ const ProductKnowledgeCoursePage = () => {
                     src={lesson.image}
                     alt={t(lesson.titleKey)}
                     className="object-cover w-full h-48"
-                    onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/400x250/cccccc/000000?text=Lesson+Image'; }}
+                    onError={(e) => { e.target.onerror = null; e.target.src='/No-Image-Placeholder.png'; }}
                   />
                   <div className="p-6">
                     <h3 className="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary">
@@ -109,14 +108,14 @@ const ProductKnowledgeCoursePage = () => {
             </div>
           ) : (
             <div className="text-lg text-center text-gray-600">
-              {t('productKnowledge.noLessons')}
+              {t('onboarding.noLessons')}
             </div>
           )}
         </div>
       </section>
-     <Footer /> 
+      <Footer />
     </>
   );
 };
 
-export default ProductKnowledgeCoursePage;
+export default OnboardingCoursePage;

@@ -12,23 +12,25 @@ import {
   RefreshCw,
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
-import '../App.css'; // Assuming your global styles are here
+import features from '../data/features.json';
+import '../App.css';
+
+// Map string icon names to actual Lucide React components
+const iconMap = {
+  Users,
+  UserCheck,
+  Building,
+  Smartphone,
+  BookOpen,
+  Clock,
+  BarChart3,
+  Shield,
+  MessageSquare,
+  RefreshCw,
+};
 
 const KeyFeatures = () => {
   const { t } = useLanguage();
-
-  const features = [
-    { icon: Users, title: t('features.client.title'), description: t('features.client.desc'), color: 'orange' },
-    { icon: UserCheck, title: t('features.collector.title'), description: t('features.collector.desc'), color: 'green' },
-    { icon: Building, title: t('features.branch.title'), description: t('features.branch.desc'), color: 'blue' },
-    { icon: Smartphone, title: t('features.mobile.title'), description: t('features.mobile.desc'), color: 'purple' },
-    { icon: BookOpen, title: t('features.booklet.title'), description: t('features.booklet.desc'), color: 'yellow' },
-    { icon: Clock, title: t('features.history.title'), description: t('features.history.desc'), color: 'red' },
-    { icon: BarChart3, title: t('features.reports.title'), description: t('features.reports.desc'), color: 'orange' },
-    { icon: Shield, title: t('features.access.title'), description: t('features.access.desc'), color: 'green' },
-    { icon: MessageSquare, title: t('features.sms.title'), description: t('features.sms.desc'), color: 'blue' },
-    { icon: RefreshCw, title: t('features.sync.title'), description: t('features.sync.desc'), color: 'purple' },
-  ];
 
   const colorClasses = {
     orange: { bg: 'bg-orange-100', icon: 'text-orange-600', border: 'hover:border-orange-200', hover: 'hover:shadow-orange-100' },
@@ -55,7 +57,7 @@ const KeyFeatures = () => {
         {/* Features Grid */}
         <div className="grid gap-6 mb-16 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
           {features.map((feature, index) => {
-            const Icon = feature.icon;
+            const Icon = iconMap[feature.icon]; // Map string to component
             const colors = colorClasses[feature.color];
 
             return (
@@ -67,14 +69,14 @@ const KeyFeatures = () => {
                       <Icon className={`w-6 h-6 ${colors.icon}`} />
                     </div>
                     <h3 className="text-lg font-semibold text-gray-900 transition-colors group-hover:text-secondary">
-                      {feature.title}
+                      {t(feature.title)}
                     </h3>
                   </div>
 
                   {/* Back Side */}
                   <div className={`flip-card-back w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 flex items-center justify-center shadow-lg custom-shadow-blue hover:custom-shadow-blue-xl`}>
                     <p className="text-sm leading-relaxed text-center text-gray-600">
-                      {feature.description}
+                      {t(feature.description)}
                     </p>
                   </div>
                 </div>

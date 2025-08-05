@@ -1,0 +1,62 @@
+[
+  {
+    "icon": "Users",
+    "title": "features.client.title",
+    "description": "features.client.desc",
+    "color": "orange"
+  },
+  {
+    "icon": "UserCheck",
+    "title": "features.collector.title",
+    "description": "features.collector.desc",
+    "color": "green"
+  },
+  {
+    "icon": "Building",
+    "title": "features.branch.title",
+    "description": "features.branch.desc",
+    "color": "blue"
+  },
+  {
+    "icon": "Smartphone",
+    "title": "features.mobile.title",
+    "description": "features.mobile.desc",
+    "color": "purple"
+  },
+  {
+    "icon": "BookOpen",
+    "title": "features.booklet.title",
+    "description": "features.booklet.desc",
+    "color": "yellow"
+  },
+  {
+    "icon": "Clock",
+    "title": "features.history.title",
+    "description": "features.history.desc",
+    "color": "red"
+  },
+  {
+    "icon": "BarChart3",
+    "title": "features.reports.title",
+    "description": "features.reports.desc",
+    "color": "orange"
+  },
+  {
+    "icon": "Shield",
+    "title": "features.access.title",
+    "description": "features.access.desc",
+    "color": "green"
+  },
+  {
+    "icon": "MessageSquare",
+    "title": "features.sms.title",
+    "description": "features.sms.desc",
+    "color": "blue"
+  },
+  {
+    "icon": "RefreshCw",
+    "title": "features.sync.title",
+    "description": "features.sync.desc",
+    "color": "purple"
+  }
+]

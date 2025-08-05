@@ -1,9 +1,9 @@
 import React from 'react';
 import { Users, BarChart2, Globe } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext';
-import ResponsiveBannner from '../components/ResponsiveBanner';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
+import ResponsiveBannner from '../../components/ResponsiveBanner';
 
 const CustomerStory = () => {
   const { t } = useLanguage();

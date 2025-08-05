@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { ArrowLeft } from 'lucide-react';
-import lessonContentData from '../data/lessonContent.json';
-import coursesData from '../data/coursesData.json';
-import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext';
+import lessonContentData from '../../data/lessonContent.json';
+import coursesData from '../../data/coursesData.json';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const CourseLessonPage = () => {
   const { t } = useLanguage(); 

@@ -1,0 +1,32 @@
+{
+  "en": {
+    "blog.title": "Blog",
+    "blog.category.financial": "FINANCIAL TECHNOLOGY",
+    "blog.post1.title": "Transforming Financial Collections with ZetCollect’s Mobile-First Innovation",
+    "blog.post1.description": "ZetCollect simplifies financial collections across Africa with its intuitive, offline-capable mobile app. Packed with robust security and smart analytics, it streamlines payments and builds trust. Discover how it’s revolutionizing finance for institutions.",
+    "blog.post2.title": "Securing Financial Futures with ZetCollect’s Advanced Protection",
+    "blog.post2.description": "ZetCollect safeguards your financial collections with cutting-edge fraud prevention tools. Its robust security ensures trust and reliability for African institutions. Learn how it protects your operations.",
+    "blog.post3.title": "Boost Efficiency with ZetCollect’s Smart Analytics",
+    "blog.post3.description": "ZetCollect’s powerful analytics dashboard delivers real-time insights for smarter financial decisions. Tailored for Africa, it streamlines collections and enhances transparency. Explore its data-driven impact."
+  },
+  "fr": {
+    "blog.title": "Blog",
+    "blog.category.financial": "Technologie financière",
+    "blog.post1.title": "Transformer les collectes financières avec l'innovation mobile de ZetCollect",
+    "blog.post1.description": "ZetCollect simplifie les collectes financières à travers l'Afrique avec son application mobile intuitive, capable de fonctionner hors ligne. Dotée d'une sécurité robuste et d'analyses intelligentes, elle rationalise les paiements et renforce la confiance. Découvrez comment elle révolutionne la finance pour les institutions.",
+    "blog.post2.title": "Sécuriser l'avenir financier avec la protection avancée de ZetCollect",
+    "blog.post2.description": "ZetCollect protège vos collectes financières avec des outils de prévention de la fraude de pointe. Sa sécurité robuste garantit confiance et fiabilité pour les institutions africaines. Apprenez comment elle protège vos opérations.",
+    "blog.post3.title": "Améliorer l'efficacité avec les analyses intelligentes de ZetCollect",
+    "blog.post3.description": "Le tableau de bord analytique puissant de ZetCollect fournit des informations en temps réel pour des décisions financières plus intelligentes. Conçu pour l'Afrique, il rationalise les collectes et améliore la transparence. Explorez son impact basé sur les données."
+  },
+  "sw": {
+    "blog.title": "Blogu",
+    "blog.category.financial": "Teknolojia ya Kifedha",
+    "blog.post1.title": "Kubadilisha Ukusanyaji wa Fedha na Ubunifu wa Simu za Mkononi wa ZetCollect",
+    "blog.post1.description": "ZetCollect hurahisisha ukusanyaji wa fedha kote barani Afrika kwa kutumia programu yake ya simu ya mkononi inayofaa mtumiaji na inayoweza kufanya kazi nje ya mtandao. Imejaa usalama wa hali ya juu na uchanganuzi wa akili, inarahisisha malipo na kujenga imani. Gundua jinsi inavyobadilisha fedha kwa taasisi.",
+    "blog.post2.title": "Kuhakikisha Mustakabali wa Kifedha na Ulinzi wa Hali ya Juu wa ZetCollect",
+    "blog.post2.description": "ZetCollect hulinda ukusanyaji wako wa fedha kwa zana za hali ya juu za kuzuia udanganyifu. Usalama wake wa nguvu huhakikisha imani na kutegemewa kwa taasisi za Afrika. Jifunze jinsi inavyolinda shughuli zako.",
+    "blog.post3.title": "Kuongeza Ufanisi na Uchanganuzi wa Akili wa ZetCollect",
+    "blog.post3.description": "Dashibodi yenye nguvu ya uchanganuzi ya ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi ya kifedha ya akili zaidi. Iliyoundwa kwa Afrika, inarahisisha ukusanyaji na inaboresha uwazi. Chunguza athari zake zinazoendeshwa na data."
+  }
+}

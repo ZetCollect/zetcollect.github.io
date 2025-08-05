@@ -1,9 +1,10 @@
 import React from "react";
 import Footer from "../components/Footer";
-import { useLanguage } from "../context/LanguageContext"; // Import the language context hook
+import { useLanguage } from "../context/LanguageContext";
+import compareFeatures from "../data/compareFeatures.json";
 
 const Pricing = () => {
-  const { t } = useLanguage(); // Access the translation function
+  const { t } = useLanguage();
 
   // Helper component for the checkmark icon
   const CheckIcon = () => (
@@ -21,93 +22,9 @@ const Pricing = () => {
     </svg>
   );
 
-  // Define the features for comparison (use translation keys)
-  const compareFeatures = [
-    {
-      name: t("pricing.compareFeatures.clientManagement"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.collectorManagement"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.branchSetup"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.mobileCollection"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.bookletSystem"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.transactionHistory"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.reportsAnalytics"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.userAccessRoles"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.dailySynchronization"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.passwordPolicy"),
-      business: true,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.databaseHosting"),
-      business: false,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.gpsTraceability"),
-      business: false,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.missedCollectionAlerts"),
-      business: false,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.clientRiskProfile"),
-      business: false,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.routeOptimization"),
-      business: false,
-      enterprise: true,
-    },
-    {
-      name: t("pricing.compareFeatures.clientSelfAccessPortal"),
-      business: false,
-      enterprise: true,
-    },
-  ];
-
   return (
     <>
-      {/* Section 1: Fair pricing Morte da fame per una crescita più rapida */}
+      {/* Section 1: Fair pricing for faster growth */}
       <section
         className="relative h-screen bg-center bg-cover"
         style={{ backgroundImage: "url('/Pricing.jpg')" }}
@@ -197,7 +114,7 @@ const Pricing = () => {
                   {t("pricing.section2.enterprise.description")}
                 </p>
                 <h4 className="mb-4 text-lg font-semibold text-left">
-                  Everything from Business, Plus:
+                  {t("pricing.section2.enterprise.features.title")}
                 </h4>
                 <ul className="mb-8 space-y-3">
                   <li className="flex items-center text-white">
@@ -269,7 +186,7 @@ const Pricing = () => {
                 {compareFeatures.map((feature, index) => (
                   <tr key={index} className="border-b border-gray-100">
                     <td className="px-6 py-4 text-left text-gray-700">
-                      {feature.name}
+                      {t(feature.name)}
                     </td>
                     <td className="px-6 py-4 text-center">
                       <div className="flex flex-col items-center">
@@ -285,63 +202,76 @@ const Pricing = () => {
                 ))}
                 <tr className="border-b border-gray-100">
                   <td className="px-6 py-4 text-left text-gray-700">
-                    SMS Notifications
+                    {t("pricing.compareFeatures.smsNotifications")}
                   </td>
                   <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">On Demand</div>
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.smsNotifications.business")}
+                    </div>
                   </td>
                   <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">On Demand</div>
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.smsNotifications.enterprise")}
+                    </div>
                   </td>
                 </tr>
                 <tr className="border-b border-gray-100">
                   <td className="px-6 py-4 text-left text-gray-700">
-                    Custom Domain
-                  </td>
-                  <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">Default</div>
+                    {t("pricing.compareFeatures.customDomain")}
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      Private Domain
+                      {t("pricing.compareFeatures.customDomain.business")}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.customDomain.enterprise")}
                     </div>
                   </td>
                 </tr>
-
                 <tr className="border-b border-gray-100">
                   <td className="px-6 py-4 text-left text-gray-700">
-                    Custom Branding
+                    {t("pricing.compareFeatures.customBranding")}
                   </td>
-                  <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">Default</div>
-                  </td>
-                  <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">Personal Branding</div>
-                  </td>
-                </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="px-6 py-4 text-left text-gray-700">Storage</td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      5 GB of storage
+                      {t("pricing.compareFeatures.customBranding.business")}
                     </div>
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      Unlimited Storage
+                      {t("pricing.compareFeatures.customBranding.enterprise")}
                     </div>
                   </td>
                 </tr>
                 <tr className="border-b border-gray-100">
-                  <td className="px-6 py-4 text-left text-gray-700">Support</td>
+                  <td className="px-6 py-4 text-left text-gray-700">
+                    {t("pricing.compareFeatures.storage")}
+                  </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      Local Business Hours
+                      {t("pricing.compareFeatures.storage.business")}
                     </div>
                   </td>
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
-                      24/7 Enterprise Support
+                      {t("pricing.compareFeatures.storage.enterprise")}
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                    {t("pricing.compareFeatures.support")}
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.support.business")}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.support.enterprise")}
                     </div>
                   </td>
                 </tr>

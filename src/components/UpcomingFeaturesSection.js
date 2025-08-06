@@ -6,6 +6,7 @@ import {
   Route,
   User,
   Landmark,
+  DollarSign
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 import upcomingFeatures from '../data/upcomingFeatures.json';
@@ -18,6 +19,7 @@ const iconMap = {
   Route,
   User,
   Landmark,
+  DollarSign,
 };
 
 const UpcomingFeaturesSection = () => {

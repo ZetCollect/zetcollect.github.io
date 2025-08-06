@@ -7,7 +7,10 @@
     "blog.post2.title": "Securing Financial Futures with ZetCollect’s Advanced Protection",
     "blog.post2.description": "ZetCollect safeguards your financial collections with cutting-edge fraud prevention tools. Its robust security ensures trust and reliability for African institutions. Learn how it protects your operations.",
     "blog.post3.title": "Boost Efficiency with ZetCollect’s Smart Analytics",
-    "blog.post3.description": "ZetCollect’s powerful analytics dashboard delivers real-time insights for smarter financial decisions. Tailored for Africa, it streamlines collections and enhances transparency. Explore its data-driven impact."
+    "blog.post3.description": "ZetCollect’s powerful analytics dashboard delivers real-time insights for smarter financial decisions. Tailored for Africa, it streamlines collections and enhances transparency. Explore its data-driven impact.",
+    "blog.sections.overview": "Overview",
+    "blog.sections.keyBenefits": "Key Benefits",
+    "blog.sections.challengesSolved": "Challenges We Solve"
   },
   "fr": {
     "blog.title": "Blog",
@@ -17,7 +20,10 @@
     "blog.post2.title": "Sécuriser l'avenir financier avec la protection avancée de ZetCollect",
     "blog.post2.description": "ZetCollect protège vos collectes financières avec des outils de prévention de la fraude de pointe. Sa sécurité robuste garantit confiance et fiabilité pour les institutions africaines. Apprenez comment elle protège vos opérations.",
     "blog.post3.title": "Améliorer l'efficacité avec les analyses intelligentes de ZetCollect",
-    "blog.post3.description": "Le tableau de bord analytique puissant de ZetCollect fournit des informations en temps réel pour des décisions financières plus intelligentes. Conçu pour l'Afrique, il rationalise les collectes et améliore la transparence. Explorez son impact basé sur les données."
+    "blog.post3.description": "Le tableau de bord analytique puissant de ZetCollect fournit des informations en temps réel pour des décisions financières plus intelligentes. Conçu pour l'Afrique, il rationalise les collectes et améliore la transparence. Explorez son impact basé sur les données.",
+    "blog.sections.overview": "Aperçu",
+    "blog.sections.keyBenefits": "Avantages principaux",
+    "blog.sections.challengesSolved": "Défis que nous résolvons"
   },
   "sw": {
     "blog.title": "Blogu",
@@ -27,6 +33,9 @@
     "blog.post2.title": "Kuhakikisha Mustakabali wa Kifedha na Ulinzi wa Hali ya Juu wa ZetCollect",
     "blog.post2.description": "ZetCollect hulinda ukusanyaji wako wa fedha kwa zana za hali ya juu za kuzuia udanganyifu. Usalama wake wa nguvu huhakikisha imani na kutegemewa kwa taasisi za Afrika. Jifunze jinsi inavyolinda shughuli zako.",
     "blog.post3.title": "Kuongeza Ufanisi na Uchanganuzi wa Akili wa ZetCollect",
-    "blog.post3.description": "Dashibodi yenye nguvu ya uchanganuzi ya ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi ya kifedha ya akili zaidi. Iliyoundwa kwa Afrika, inarahisisha ukusanyaji na inaboresha uwazi. Chunguza athari zake zinazoendeshwa na data."
+    "blog.post3.description": "Dashibodi yenye nguvu ya uchanganuzi ya ZetCollect hutoa maarifa ya wakati halisi kwa maamuzi ya kifedha ya akili zaidi. Iliyoundwa kwa Afrika, inarahisisha ukusanyaji na inaboresha uwazi. Chunguza athari zake zinazoendeshwa na data.",
+    "blog.sections.overview": "Muhtasari",
+    "blog.sections.keyBenefits": "Faida za Msingi",
+    "blog.sections.challengesSolved": "Changamoto Tunazoshughulikia"
   }
 }

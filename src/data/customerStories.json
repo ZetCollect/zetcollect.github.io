@@ -1,0 +1,244 @@
+{
+  "stories": [
+    {
+      "id": "microfinances",
+      "logo": "/log_ACEP_NEW.png",
+      "logoAlt": "Microfinance Nairobi Logo",
+      "titleKey": "customerStories.microfinances.title",
+      "descriptionKey": "customerStories.microfinances.description",
+      "page": {
+        "section1": {
+          "titleKey": "microfinances.section1.title",
+          "descriptionKey": "microfinances.section1.description",
+          "shareTextKey": "microfinances.section1.share",
+          "image": "/black-businessman-using-computer-laptop.jpg",
+          "imageAlt": "ACEP Cameroun - Fondation Grameen Crédit-Agricole Logo"
+        },
+        "section2": {
+          "impact": {
+            "titleKey": "microfinances.section2.impact.title",
+            "stats": [
+              {
+                "valueKey": "microfinances.section2.impact.stat1.value",
+                "descriptionKey": "microfinances.section2.impact.stat1.description"
+              },
+              {
+                "valueKey": "microfinances.section2.impact.stat2.value",
+                "descriptionKey": "microfinances.section2.impact.stat2.description"
+              },
+              {
+                "valueKey": "microfinances.section2.impact.stat3.value",
+                "descriptionKey": "microfinances.section2.impact.stat3.description"
+              }
+            ]
+          },
+          "about": {
+            "titleKey": "microfinances.section2.about.title",
+            "descriptionKey": "microfinances.section2.about.description"
+          }
+        },
+        "section3": {
+          "titleKey": "microfinances.section3.title",
+          "descriptionKeys": [
+            "microfinances.section3.description1",
+            "microfinances.section3.description2"
+          ]
+        },
+        "section4": {
+          "titleKey": "microfinances.section4.title",
+          "descriptionKeys": [
+            "microfinances.section4.description1",
+            "microfinances.section4.description2"
+          ]
+        },
+        "section5": {
+          "titleKey": "microfinances.section5.title",
+          "descriptionKeys": [
+            "microfinances.section5.description1",
+            "microfinances.section5.description2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "cooperative",
+      "logo": "/person-waiting-food-restaurant.jpg",
+      "logoAlt": "Cooperative Logo",
+      "titleKey": "customerStories.cooperative.title",
+      "descriptionKey": "customerStories.cooperative.description",
+      "page": {
+        "section1": {
+          "titleKey": "cooperative.section1.title",
+          "descriptionKey": "cooperative.section1.description",
+          "shareTextKey": "cooperative.section1.share",
+          "image": "/intercultural-hand-shake-outdoor.jpg",
+          "imageAlt": "Cooperative Image"
+        },
+        "section2": {
+          "impact": {
+            "titleKey": "cooperative.section2.impact.title",
+            "stats": [
+              {
+                "valueKey": "cooperative.section2.impact.stat1.value",
+                "descriptionKey": "cooperative.section2.impact.stat1.description"
+              },
+              {
+                "valueKey": "cooperative.section2.impact.stat2.value",
+                "descriptionKey": "cooperative.section2.impact.stat2.description"
+              },
+              {
+                "valueKey": "cooperative.section2.impact.stat3.value",
+                "descriptionKey": "cooperative.section2.impact.stat3.description"
+              }
+            ]
+          },
+          "about": {
+            "titleKey": "cooperative.section2.about.title",
+            "descriptionKey": "cooperative.section2.about.description"
+          }
+        },
+        "section3": {
+          "titleKey": "cooperative.section3.title",
+          "descriptionKeys": [
+            "cooperative.section3.description1",
+            "cooperative.section3.description2"
+          ]
+        },
+        "section4": {
+          "titleKey": "cooperative.section4.title",
+          "descriptionKeys": [
+            "cooperative.section4.description1",
+            "cooperative.section4.description2"
+          ]
+        },
+        "section5": {
+          "titleKey": "cooperative.section5.title",
+          "descriptionKeys": [
+            "cooperative.section5.description1",
+            "cooperative.section5.description2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "merchants-gabon",
+      "logo": "/medium-shot-smiley-man-with-smartphone.jpg",
+      "logoAlt": "Gabon Merchants Logo",
+      "titleKey": "customerStories.merchants-gabon.title",
+      "descriptionKey": "customerStories.merchants-gabon.description",
+      "page": {
+        "section1": {
+          "titleKey": "gabonmerchants.section1.title",
+          "descriptionKey": "gabonmerchants.section1.description",
+          "shareTextKey": "gabonmerchants.section1.share",
+          "image": "/smiley-woman-holding-phone-side-view.jpg",
+          "imageAlt": "Gabon Merchants Image"
+        },
+        "section2": {
+          "impact": {
+            "titleKey": "gabonmerchants.section2.impact.title",
+            "stats": [
+              {
+                "valueKey": "gabonmerchants.section2.impact.stat1.value",
+                "descriptionKey": "gabonmerchants.section2.impact.stat1.description"
+              },
+              {
+                "valueKey": "gabonmerchants.section2.impact.stat2.value",
+                "descriptionKey": "gabonmerchants.section2.impact.stat2.description"
+              },
+              {
+                "valueKey": "gabonmerchants.section2.impact.stat3.value",
+                "descriptionKey": "gabonmerchants.section2.impact.stat3.description"
+              }
+            ]
+          },
+          "about": {
+            "titleKey": "gabonmerchants.section2.about.title",
+            "descriptionKey": "gabonmerchants.section2.about.description"
+          }
+        },
+        "section3": {
+          "titleKey": "gabonmerchants.section3.title",
+          "descriptionKeys": [
+            "gabonmerchants.section3.description1",
+            "gabonmerchants.section3.description2"
+          ]
+        },
+        "section4": {
+          "titleKey": "gabonmerchants.section4.title",
+          "descriptionKeys": [
+            "gabonmerchants.section4.description1",
+            "gabonmerchants.section4.description2"
+          ]
+        },
+        "section5": {
+          "titleKey": "gabonmerchants.section5.title",
+          "descriptionKeys": [
+            "gabonmerchants.section5.description1",
+            "gabonmerchants.section5.description2"
+          ]
+        }
+      }
+    },
+    {
+      "id": "agents-Tchad",
+      "logo": "/delivery-african-american-man.jpg",
+      "logoAlt": "Tchad Agents Logo",
+      "titleKey": "customerStories.agents-Tchad.title",
+      "descriptionKey": "customerStories.agents-Tchad.description",
+      "page": {
+        "section1": {
+          "titleKey": "tchadagents.section1.title",
+          "descriptionKey": "tchadagents.section1.description",
+          "shareTextKey": "tchadagents.section1.share",
+          "image": "/african-woman.jpg",
+          "imageAlt": "Tchad Agents Image"
+        },
+        "section2": {
+          "impact": {
+            "titleKey": "tchadagents.section2.impact.title",
+            "stats": [
+              {
+                "valueKey": "tchadagents.section2.impact.stat1.value",
+                "descriptionKey": "tchadagents.section2.impact.stat1.description"
+              },
+              {
+                "valueKey": "tchadagents.section2.impact.stat2.value",
+                "descriptionKey": "tchadagents.section2.impact.stat2.description"
+              },
+              {
+                "valueKey": "tchadagents.section2.impact.stat3.value",
+                "descriptionKey": "tchadagents.section2.impact.stat3.description"
+              }
+            ]
+          },
+          "about": {
+            "titleKey": "tchadagents.section2.about.title",
+            "descriptionKey": "tchadagents.section2.about.description"
+          }
+        },
+        "section3": {
+          "titleKey": "tchadagents.section3.title",
+          "descriptionKeys": [
+            "tchadagents.section3.description1",
+            "tchadagents.section3.description2"
+          ]
+        },
+        "section4": {
+          "titleKey": "tchadagents.section4.title",
+          "descriptionKeys": [
+            "tchadagents.section4.description1",
+            "tchadagents.section4.description2"
+          ]
+        },
+        "section5": {
+          "titleKey": "tchadagents.section5.title",
+          "descriptionKeys": [
+            "tchadagents.section5.description1",
+            "tchadagents.section5.description2"
+          ]
+        }
+      }
+    }
+  ]
+}

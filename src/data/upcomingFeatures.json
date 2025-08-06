@@ -52,5 +52,14 @@
     "bgColor": "bg-yellow-50",
     "textColor": "text-yellow-600",
     "progress": 10
+  },
+    {
+"icon": "DollarSign",
+    "title": "upcoming.mobile_money.title",
+    "description": "upcoming.mobile_money.desc",
+    "color": "Complementary",
+    "bgColor": "bg-teal-50",
+    "textColor": "text-teal-600",
+    "progress": 15
   }
 ]

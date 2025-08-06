@@ -190,25 +190,22 @@ const translations = {
     "demo.points.multi_branch": "Multi-branch management",
 
     // Upcoming Features
-    "upcoming.title": "Upcoming Features",
-    "upcoming.subtitle":
-      "Exciting features coming soon to enhance your collection experience",
-    "upcoming.gps.title": "GPS Traceability",
-    "upcoming.gps.desc":
-      "Real-time location tracking for enhanced security and route optimization.",
-    "upcoming.alerts.title": "Missed Collection Alerts",
-    "upcoming.alerts.desc":
-      "Automated notifications for missed collections and follow-up reminders.",
-    "upcoming.risk.title": "Client Risk Profile & Rating",
-    "upcoming.risk.desc":
-      "AI-powered risk assessment and client rating system for better decision making.",
-    "upcoming.route.title": "Route & Schedule Optimization",
-    "upcoming.route.desc":
-      "Smart routing algorithms to optimize collector schedules and maximize efficiency.",
-    "upcoming.portal.title": "What does our Client Self Portal Provides ?",
-    "upcoming.portal.desc":
-      "Allow clients to view their collection history, verify if agent (collector) threshold has been reached and verify if he is authorised to collect.",
-
+  "upcoming.title": "Upcoming Features",
+  "upcoming.subtitle": "Exciting features coming soon to enhance your collection experience",
+  "upcoming.gps.title": "GPS Traceability",
+  "upcoming.gps.desc": "Real-time location tracking for enhanced security and route optimization.",
+  "upcoming.alerts.title": "Missed Collection Alerts",
+  "upcoming.alerts.desc": "Automated notifications for missed collections and follow-up reminders.",
+  "upcoming.risk.title": "Client Risk Profile & Rating",
+  "upcoming.risk.desc": "AI-powered risk assessment and client rating system for better decision making.",
+  "upcoming.route.title": "Route & Schedule Optimization",
+  "upcoming.route.desc": "Smart routing algorithms to optimize collector schedules and maximize efficiency.",
+  "upcoming.portal.title": "What does our Client Self Portal Provides ?",
+  "upcoming.portal.desc": "Allow clients to view their collection history, verify if agent (collector) threshold has been reached and verify if he is authorised to collect.",
+  "upcoming.currency.title": "New Currency System (CDF)",
+  "upcoming.currency.desc": "Seamless integration of Congolese Franc (CDF) for all transactions and financial reporting.",
+  "upcoming.mobile_money.title": "Mobile Money",
+  "upcoming.mobile_money.desc": "ZetCollect adds support for Orange Money and MTN Mobile Money, enabling seamless transactions and secure payments via mobile devices.",
     // Contact Us
     "contact.title": "Contact Us",
     "contact.subtitle": "Please contact us to discuss any other queries.",
@@ -626,25 +623,24 @@ const translations = {
       "Fonctionnalités de prévention de la fraude",
     "demo.points.multi_branch": "Gestion multi-succursales",
 
-    "upcoming.title": "Fonctionnalités à Venir",
-    "upcoming.subtitle":
-      "Des fonctionnalités passionnantes à venir pour améliorer votre expérience de collecte",
-    "upcoming.gps.title": "Traçabilité GPS",
-    "upcoming.gps.desc":
-      "Suivi de localisation en temps réel pour une sécurité renforcée et une optimisation des itinéraires.",
-    "upcoming.alerts.title": "Alertes de Collecte Manquée",
-    "upcoming.alerts.desc":
-      "Notifications automatiques pour les collectes manquées et rappels de suivi.",
-    "upcoming.risk.title": "Profil et Évaluation des Risques Client",
-    "upcoming.risk.desc":
-      "Évaluation des risques basée sur l'IA et système de notation client pour une meilleure prise de décision.",
-    "upcoming.route.title": "Optimisation des Itinéraires et des Horaires",
-    "upcoming.route.desc":
-      "Algorithmes de routage intelligents pour optimiser les horaires des collecteurs et maximiser l'efficacité.",
-    "upcoming.portal.title": "Que propose notre portail client ?",
-    "upcoming.portal.desc":
-      "Permettre aux clients de consulter leur historique de collecte, de vérifier si le seuil de l'agent (collecteur) a été atteint et de vérifier s'il est autorisé à collecter.",
-
+  // Upcoming Features
+ // Upcoming Features
+  "upcoming.title": "Fonctionnalités à Venir",
+  "upcoming.subtitle": "Des fonctionnalités excitantes à venir pour améliorer votre expérience de collecte",
+  "upcoming.gps.title": "Traçabilité GPS",
+  "upcoming.gps.desc": "Suivi de localisation en temps réel pour une sécurité renforcée et une optimisation des itinéraires.",
+  "upcoming.alerts.title": "Alertes de Collectes Manquées",
+  "upcoming.alerts.desc": "Notifications automatisées pour les collectes manquées et rappels de suivi.",
+  "upcoming.risk.title": "Profil de Risque Client et Évaluation",
+  "upcoming.risk.desc": "Évaluation des risques alimentée par l’IA et système d’évaluation des clients pour de meilleures décisions.",
+  "upcoming.route.title": "Optimisation des Itinéraires et Horaires",
+  "upcoming.route.desc": "Algorithmes de routage intelligents pour optimiser les horaires des collecteurs et maximiser l’efficacité.",
+  "upcoming.portal.title": "Que Propose Notre Portail d’Accès Autonome des Clients ?",
+  "upcoming.portal.desc": "Permet aux clients de consulter leur historique de collecte, de vérifier si le seuil de l’agent (collecteur) a été atteint et de confirmer s’il est autorisé à collecter.",
+  "upcoming.currency.title": "Nouveau Système de Devise (CDF)",
+  "upcoming.currency.desc": "Intégration fluide du Franc Congolais (CDF) pour toutes les transactions et rapports financiers.",
+  "upcoming.mobile_money.title": "Argent Mobile",
+  "upcoming.mobile_money.desc": "ZetCollect ajoute un soutien pour Orange Money et MTN Mobile Money, permettant des transactions fluides et des paiements sécurisés via des appareils mobiles.",
     // Contact Us
     "contact.title": "Nous Contacter",
     "contact.subtitle":
@@ -1076,26 +1072,24 @@ const translations = {
     "demo.points.fraud_prevention": "Vipengele vya kuzuia ulaghai",
     "demo.points.multi_branch": "Usimamizi wa matawi mengi",
 
-    // Upcoming Features
-    "upcoming.title": "Vipengele Vijavyo",
-    "upcoming.subtitle":
-      "Vipengele vya kusisimua vinakuja hivi karibuni ili kuboresha uzoefu wako wa ukusanyaji",
-    "upcoming.gps.title": "Ufuatiliaji wa GPS",
-    "upcoming.gps.desc":
-      "Kufuatilia eneo kwa wakati halisi kwa usalama ulioimarishwa na uboreshaji wa njia.",
-    "upcoming.alerts.title": "Arifa za Ukusanyaji Uliokosa",
-    "upcoming.alerts.desc":
-      "Arifa za kiotomatiki kwa makusanyo yaliyokosa na vikumbusho vya kufuatilia.",
-    "upcoming.risk.title": "Profaili na Ukadiriaji wa Hatari ya Mteja",
-    "upcoming.risk.desc":
-      "Tathmini ya hatari inayoendeshwa na AI na mfumo wa ukadiriaji wa mteja kwa kufanya maamuzi bora.",
-    "upcoming.route.title": "Uboreshaji wa Njia na Ratiba",
-    "upcoming.route.desc":
-      "Algoriti za kupanga njia mahiri ili kuboresha ratiba za wakusanyaji na kuongeza ufanisi.",
-    "upcoming.portal.title": "Je! Tovuti yetu ya Self Self hutoa nini?",
-    "upcoming.portal.desc":
-      "Ruhusu wateja kuona historia yao ya mkusanyiko, kuthibitisha ikiwa kiwango cha juu zaidi cha wakala (Collector) kimefikiwa na kuthibitisha ikiwa ameidhinishwa kukusanya.",
+  // Upcoming Features
 
+  "upcoming.title": "Vipengele Vijavyo",
+  "upcoming.subtitle": "Vipengele vya kusisimua vinavyokuja hivi karibuni kuimarisha uzoefu wako wa ukusanyaji",
+  "upcoming.gps.title": "Ufuatiliaji wa GPS",
+  "upcoming.gps.desc": "Ufuatiliaji wa eneo la wakati halisi kwa usalama ulioimarishwa na uboreshaji wa njia.",
+  "upcoming.alerts.title": "Arifa za Ukusanyaji wa Kukosa",
+  "upcoming.alerts.desc": "Arifa za kiotomatiki za ukusanyaji uliokosa na vikumbusho vya ufuatiliaji.",
+  "upcoming.risk.title": "Wasifu wa Hatari wa Mteja na Ukadiriaji",
+  "upcoming.risk.desc": "Tathmini ya hatari inayotegemea AI na mfumo wa ukadiriaji wa wateja kwa maamuzi bora.",
+  "upcoming.route.title": "Ubora wa Njia na Ratiba",
+  "upcoming.route.desc": "Algoriti za njia za akili za kuboresha ratiba za wokusanyaji na kuongeza ufanisi.",
+  "upcoming.portal.title": "Je, Portal Yetu ya Kujitegemea ya Mteja Inatoa Nini?",
+  "upcoming.portal.desc": "Inaruhusu wateja kuona historia yao ya ukusanyaji, kuthibitisha ikiwa kizingiti cha wakala (wokusanyaji) kimefikia na kuthibitisha ikiwa ana idhini ya kukusanya.",
+  "upcoming.currency.title": "Mfumo Mpya wa Sarafu (CDF)",
+  "upcoming.currency.desc": "Uunganisho wa sarafu ya Kikongomani (CDF) kwa urahisi kwa miamala yote na kuripoti kifedha.",
+  "upcoming.mobile_money.title": "Pesa za Simu",
+  "upcoming.mobile_money.desc": "ZetCollect inaongeza uungaji wa Orange Money na MTN Mobile Money, kuruhusu miamala ya moja kwa moja na malipo salama kupitia vifaa vya simu.",
     // Contact Us
     "contact.title": "Wasiliana Nasi",
     "contact.subtitle":

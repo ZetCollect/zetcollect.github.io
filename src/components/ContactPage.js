@@ -29,7 +29,7 @@ const ContactPage = () => {
               </div>
             </div>
             {/* Right Section: Form Container */}
-            <div className="flex flex-col justify-center p-8 bg-white border rounded-lg border-secondary vmd:w-1/2 lg:p-12 md:rounded-l-none">
+            <div className="flex flex-col justify-center p-8 bg-white border rounded-lg border-secondary md:w-1/2 lg:p-12 md:rounded-l-none">
               <h2 className="mb-8 text-2xl font-bold text-gray-900">{t('contact.title')}</h2>
 
               <form className="space-y-6">

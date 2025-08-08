@@ -38,16 +38,21 @@ const Pricing = () => {
             {t("pricing.section1.description")}
           </p>
           <div className="flex space-x-4">
-            <button className="px-6 py-3 font-semibold text-white rounded-full bg-primary hover:bg-primary-dark">
+            {/* The change is here: A tag with href to the cards section */}
+            <a
+              href="#pricing-cards"
+              className="px-6 py-3 font-semibold text-white rounded-full bg-primary hover:bg-primary-dark"
+            >
               {t("pricing.section1.cta")}
-            </button>
+            </a>
           </div>
           <div className="absolute bottom-10 right-10"></div>
         </div>
       </section>
 
       {/* Section 2: Flexible fees that suits your size */}
-      <section className="px-8 py-16 bg-gray-100 md:px-24">
+      {/* The change is here: Added id="pricing-cards" */}
+      <section id="pricing-cards" className="px-8 py-16 bg-gray-100 md:px-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-3xl font-bold text-left md:text-4xl">
             {t("pricing.section2.title")}
@@ -167,7 +172,109 @@ const Pricing = () => {
             <a href="learn">{t("pricing.section3.link")}</a>
           </p>
 
-          <div className="overflow-x-auto">
+          {/* New Responsive Card View (visible only on small screens) */}
+          <div className="md:hidden">
+            {compareFeatures.map((feature, index) => (
+              <div key={index} className="p-4 my-4 bg-white rounded-lg shadow-md">
+                <h3 className="mb-4 text-lg font-bold">
+                  {t(feature.name)}
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-center justify-between">
+                    <span>{t("pricing.section2.business.title")}</span>
+                    {feature.business ? <CheckIcon /> : null}
+                  </li>
+                  <li className="flex items-center justify-between">
+                    <span>{t("pricing.section2.enterprise.title")}</span>
+                    {feature.enterprise ? <CheckIcon /> : null}
+                  </li>
+                </ul>
+              </div>
+            ))}
+            
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.smsNotifications")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.smsNotifications.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.smsNotifications.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.customDomain")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.customDomain.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.customDomain.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.customBranding")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.customBranding.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.customBranding.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
+
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.storage")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.storage.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.storage.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
+            
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.support")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.support.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.support.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Original Table View (visible only on larger screens) */}
+          <div className="hidden overflow-x-auto md:block">
             <table className="min-w-full bg-white border-collapse">
               <thead>
                 <tr className="border-b border-gray-200">

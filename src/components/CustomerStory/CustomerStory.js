@@ -21,10 +21,10 @@ const CustomerStory = () => {
         <div className="px-4 py-8 mx-auto max-w-7xl sm:px-6 sm:py-12 lg:px-8 lg:py-16">
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-8 text-center sm:mb-10 lg:w-1/2 lg:pr-12 lg:text-left lg:mb-0">
-              <h1 className="mb-4 text-3xl font-extrabold leading-tight text-gray-900 sm:text-4xl lg:text-6xl">
+              <h1 className="mb-4 text-2xl font-extrabold leading-tight text-gray-900 sm:text-4xl lg:text-4xl">
                 {t(story.page.section1.titleKey)}
               </h1>
-              <p className="max-w-lg mx-auto mb-6 text-sm text-gray-700 sm:max-w-xl sm:text-base lg:mx-0">
+              <p className="max-w-lg mx-auto mb-6 text-sm text-justify text-gray-700 sm:max-w-xl sm:text-base lg:mx-0">
                 {t(story.page.section1.descriptionKey)}
               </p>
               <div className="flex items-center justify-center space-x-3 sm:space-x-4 lg:justify-start">
@@ -54,11 +54,11 @@ const CustomerStory = () => {
           <div className="flex flex-col items-center justify-between lg:flex-row">
             <div className="mb-8 text-center sm:mb-10 lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-center">
               <h2 className="mb-6 text-2xl font-bold sm:text-3xl lg:text-4xl">{t(story.page.section2.impact.titleKey)}</h2>
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
+              <div className="flex flex-row justify-between sm:grid sm:grid-cols-2 sm:gap-8 lg:grid-cols-3">
                 {story.page.section2.impact.stats.map((stat, index) => (
-                  <div key={index} className="flex flex-col items-center">
-                    <p className="text-4xl font-extrabold text-primary sm:text-5xl">{t(stat.valueKey)}</p>
-                    <p className="mt-2 text-xs text-white sm:text-sm">{t(stat.descriptionKey)}</p>
+                  <div key={index} className="flex flex-col items-center flex-1 p-2">
+                    <p className="text-xl font-extrabold text-primary sm:text-5xl">{t(stat.valueKey)}</p>
+                    <p className="mt-1 text-[8px] text-justify text-white sm:text-sm">{t(stat.descriptionKey)}</p>
                   </div>
                 ))}
               </div>
@@ -68,7 +68,7 @@ const CustomerStory = () => {
               <h2 className="mb-6 text-2xl font-bold text-center sm:text-3xl lg:text-4xl lg:text-left">
                 {t(story.page.section2.about.titleKey)}
               </h2>
-              <p className="mb-6 text-sm leading-relaxed text-white sm:text-base">
+              <p className="mb-6 text-sm leading-relaxed text-justify text-white sm:text-base">
                 {t(story.page.section2.about.descriptionKey)}
               </p>
             </div>
@@ -83,7 +83,7 @@ const CustomerStory = () => {
             {t(story.page.section3.titleKey)}
           </h2>
           {story.page.section3.descriptionKeys.map((key, index) => (
-            <p key={index} className="mb-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+            <p key={index} className="mb-4 text-sm leading-relaxed text-justify text-gray-700 sm:text-base">
               {t(key)}
             </p>
           ))}
@@ -97,7 +97,7 @@ const CustomerStory = () => {
             {t(story.page.section4.titleKey)}
           </h2>
           {story.page.section4.descriptionKeys.map((key, index) => (
-            <p key={index} className="mb-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+            <p key={index} className="mb-4 text-sm leading-relaxed text-justify text-gray-700 sm:text-base">
               {t(key)}
             </p>
           ))}
@@ -118,7 +118,7 @@ const CustomerStory = () => {
             {t(story.page.section5.titleKey)}
           </h2>
           {story.page.section5.descriptionKeys.map((key, index) => (
-            <p key={index} className="mb-4 text-sm leading-relaxed text-gray-700 sm:text-base">
+            <p key={index} className="mb-4 text-sm leading-relaxed text-justify text-gray-700 sm:text-base">
               {t(key)}
             </p>
           ))}
@@ -136,7 +136,7 @@ const CustomerStory = () => {
               <div className="absolute inset-0 bg-gray-800 rounded-lg opacity-20"></div>
               <div className="relative z-10 text-center">
                 <p className="mb-2 text-5xl font-extrabold text-primary sm:text-6xl">{t('combined.section6.card1.value')}</p>
-                <p className="text-sm text-primary sm:text-lg">{t('combined.section6.card1.description')}</p>
+                <p className="text-sm text-justify text-primary sm:text-lg">{t('combined.section6.card1.description')}</p>
               </div>
             </div>
             <div
@@ -146,7 +146,7 @@ const CustomerStory = () => {
               <div className="absolute inset-0 bg-gray-800 rounded-lg opacity-20"></div>
               <div className="relative z-10 text-center">
                 <p className="mb-2 text-5xl font-extrabold text-primary sm:text-6xl">{t('combined.section6.card2.value')}</p>
-                <p className="text-sm text-primary sm:text-lg">{t('combined.section6.card2.description')}</p>
+                <p className="text-sm text-justify text-primary sm:text-lg">{t('combined.section6.card2.description')}</p>
               </div>
             </div>
           </div>

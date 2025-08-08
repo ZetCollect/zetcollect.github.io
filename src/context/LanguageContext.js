@@ -302,15 +302,15 @@ const translations = {
     "release.saas.title2": "ZetCollect Website: 2025 release",
 
     "release.saas.systemVersionWeb":
-      "<strong>Version</strong>: 1.0.1-Beta - 25th April 2025",
+      "<strong>Version</strong>: 1.0.1-Beta - 12th July 2025",
     "release.saas.systemVersionWeb2":
-      "<strong>Version</strong>: 1.0.2-Beta - 27th June 2025",
+      "<strong>Version</strong>: 1.0.2-Beta - 18th July 2025",
     "release.saas.systemVersionWeb3":
-      "<strong>Version</strong>: 1.0.3-Beta - 12th July 2025",
+      "<strong>Version</strong>: 1.0.3-Beta - 25th July 2025",
     "release.saas.systemVersionWeb4":
-      "<strong>Version</strong>: 1.0.4-Beta - 18th July 2025",
+      "<strong>Version</strong>: 1.0.4-Beta - 1st August 2025",
     "release.saas.systemVersionWeb5":
-      "<strong>Version</strong>: 1.0.5-Beta - 25th July 2025",
+      "<strong>Version</strong>: 1.0.5-Beta - 8th August 2025",
 
     //pricing
     "pricing.section1.title": "Competitive pricing for faster growth",
@@ -624,7 +624,6 @@ const translations = {
     "demo.points.multi_branch": "Gestion multi-succursales",
 
   // Upcoming Features
- // Upcoming Features
   "upcoming.title": "Fonctionnalités à Venir",
   "upcoming.subtitle": "Des fonctionnalités excitantes à venir pour améliorer votre expérience de collecte",
   "upcoming.gps.title": "Traçabilité GPS",
@@ -750,15 +749,15 @@ const translations = {
       "<strong>Version</strong>: 1.2.1 - 27 juin 2025",
     "release.saas.title2": "ZetCollect le site: 2025 libérer",
     "release.saas.systemVersionWeb":
-      "<strong>Version</strong>: 1.0.1-Bêta - 25 avril 2025",
+      "<strong>Version</strong>: 1.0.1-Beta - 12th Julliet 2025",
     "release.saas.systemVersionWeb2":
-      "<strong>Version</strong>: 1.0.2-Bêta - 27 juin 2025",
+      "<strong>Version</strong>: 1.0.2-Beta - 18th Julliet 2025",
     "release.saas.systemVersionWeb3":
-      "<strong>Version</strong>: 1.0.3-Beta - 12th Juillet 2025",
+      "<strong>Version</strong>: 1.0.3-Beta - 25th Julliet 2025",
     "release.saas.systemVersionWeb4":
-      "<strong>Version</strong>: 1.0.4-Beta - 18th Juillet 2025",
+      "<strong>Version</strong>: 1.0.4-Beta - 1st Août 2025",
     "release.saas.systemVersionWeb5":
-      "<strong>Version</strong>: 1.0.5-Beta - 25th Juillet 2025",
+      "<strong>Version</strong>: 1.0.5-Beta - 8th Août 2025",
 
     //pricing Page
     "pricing.section1.title":
@@ -1197,15 +1196,15 @@ const translations = {
       "<strong>Toleo la</strong>: 1.2.1 - 27 Juni 2025",
     "release.saas.title2": "Tovuti ya ZetCollect: Toleo la 2025",
     "release.saas.systemVersionWeb":
-      "<strong>Toleo la</strong>: 1.0.1-Beta - 25 Aprili 2025",
+      "<strong>Version</strong>: 1.0.1-Beta - 12th Julai 2025",
     "release.saas.systemVersionWeb2":
-      "<strong>Toleo la</strong>: 1.0.2-Beta - 27 Juni 2025",
+      "<strong>Version</strong>: 1.0.2-Beta - 18th Julai 2025",
     "release.saas.systemVersionWeb3":
-      "<strong>Version</strong>: 1.0.3-Beta - 12th Julai 2025",
+      "<strong>Version</strong>: 1.0.3-Beta - 25th Julai 2025",
     "release.saas.systemVersionWeb4":
-      "<strong>Version</strong>: 1.0.4-Beta - 18th Julai 2025",
+      "<strong>Version</strong>: 1.0.4-Beta - 1st Augusti 2025",
     "release.saas.systemVersionWeb5":
-      "<strong>Version</strong>: 1.0.5-Beta - 25th Julai 2025",
+      "<strong>Version</strong>: 1.0.5-Beta - 8th Augusti 2025",
 
     // FAQPage
     "faq.title": "Maswali Yanayoulizwa Mara kwa Mara",

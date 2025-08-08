@@ -13,7 +13,7 @@ const ResponsiveBanner = ({ title, description, ctaText, ctaLink }) => {
 
   return (
     <section 
-      className="relative px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 sm:py-12 lg:px-8 lg:py-24"               
+      className="relative px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 sm:py-8 lg:px-8 lg:py-16"               
       style={backgroundStyle}
       aria-labelledby="banner-title" 
     >

@@ -1,4 +1,4 @@
-# ZETCOLLECT v1.0.6-beta
+# ZETCOLLECT v1.0.7-beta
 
 Empowering African microfinance institutions with efficient, transparent, and fraud-resistant digital collection solutions.
 

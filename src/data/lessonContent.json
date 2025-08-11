@@ -10,12 +10,12 @@
     ]
   },
   {
-    "id": "mobile-app-basics",
-    "titleKey": "lessons.mobile-app-basics.title",
-    "categoryKey": "lessons.mobile-app-basics.category",
-    "contentKey": "lessons.mobile-app-basics.content",
+    "id": "zetcollect-business",
+    "titleKey": "lessons.zetcollect-business.title",
+    "categoryKey": "lessons.zetcollect-business.category",
+    "contentKey": "lessons.zetcollect-business.content",
     "relatedCourses": [
-      { "titleKey": "lessons.mobile-app-basics.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
+      { "titleKey": "lessons.zetcollect-business.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
     ]
   },
   {
@@ -37,6 +37,16 @@
       { "titleKey": "lessons.onboarding-basics.relatedCourses.onboarding.title", "link": "/training/onboarding" },
       { "titleKey": "lessons.onboarding-basics.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" },
       { "titleKey": "lessons.onboarding-basics.relatedCourses.security.title", "link": "/training/security" }
+    ]
+  },
+  {
+    "id": "zetcollect-enterprise-features",
+    "titleKey": "lessons.zetcollect-enterprise-features.title",
+    "categoryKey": "lessons.zetcollect-enterprise-features.category",
+    "contentKey": "lessons.zetcollect-enterprise-features.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.zetcollect-enterprise-features.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" },
+      { "titleKey": "lessons.zetcollect-enterprise-features.relatedCourses.security.title", "link": "/training/security" }
     ]
   }
 ]

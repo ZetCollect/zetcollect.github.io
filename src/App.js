@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import { LanguageProvider } from './context/LanguageContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -15,7 +15,7 @@ import ReleaseNotesPage from './components/ReleaseNotesPage';
 import WorkInProgressPage from './components/WorkInProgressPage';
 import CustomerSupportPage from './components/CustomerSupport/CustomerSupportPage';
 import Articles from './components/Articles/Articles';
-import BlogPost from './components/Articles/BlogPost'; // Added import for BlogPost
+import BlogPost from './components/Articles/BlogPost';
 import EventsPage from './components/EventsandWebinars/Events';
 import AboutUsPage from './components/AboutUsPage';
 import TrainingAndCertificationPage from './components/Training/TrainingAndCertificationPage';
@@ -26,52 +26,45 @@ import Pricing from './components/Pricing';
 import CustomerStory from './components/CustomerStory/CustomerStory';
 import CustomerSuccessStories from './components/CustomerStory/CustomerSuccessStories';
 import SecurityCoursePage from './components/Training/SecurityCoursePage';
+import Error404 from './components/Error404';
+
+// Component to handle scrolling for section routes
+const HomeWithScroll = ({ sectionId }) => {
+  const location = useLocation();
+
+  useEffect(() => {
+    const targetElement = document.getElementById(sectionId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
+  }, [sectionId, location]);
+
+  return (
+    <>
+      <Hero id="hero" />
+      <KeyFeatures id="features" />
+      <WhyZetCollectSection id="why-zetcollect" />
+      <DemoSection id="demo" />
+      <UpcomingFeaturesSection id="upcoming" />
+      <ContactUs id="contactUs" />
+      <Footer id="footer" />
+    </>
+  );
+};
 
 const App = () => {
-  useEffect(() => {
-    const handleSmoothScroll = (e) => {
-      e.preventDefault();
-      const targetId = e.currentTarget.getAttribute('href').substring(1);
-      const targetElement = document.getElementById(targetId);
-      if (targetElement) {
-        targetElement.scrollIntoView({
-          behavior: 'smooth',
-        });
-      }
-    };
-
-    const links = document.querySelectorAll('a[href^="#"]');
-    links.forEach((anchor) => {
-      anchor.addEventListener('click', handleSmoothScroll);
-    });
-
-    return () => {
-      links.forEach((anchor) => {
-        anchor.removeEventListener('click', handleSmoothScroll);
-      });
-    };
-  }, []);
-
   return (
     <LanguageProvider>
       <Router>
         <Navbar />
         <div>
           <Routes>
-            <Route
-              path="/"
-              element={
-                <>
-                  <Hero id="hero" />
-                  <KeyFeatures id="features" />
-                  <WhyZetCollectSection id="why-zetcollect" />
-                  <DemoSection id="demo" />
-                  <UpcomingFeaturesSection id="upcoming" />
-                  <ContactUs id="contactUs" />
-                  <Footer id="footer" />
-                </>
-              }
-            />
+            <Route path="/" element={<HomeWithScroll sectionId="hero" />} />
+            <Route path="/features" element={<HomeWithScroll sectionId="features" />} />
+            <Route path="/why-zetcollect" element={<HomeWithScroll sectionId="why-zetcollect" />} />
+            <Route path="/demo" element={<HomeWithScroll sectionId="demo" />} />
+            <Route path="/upcoming" element={<HomeWithScroll sectionId="upcoming" />} />
+            <Route path="/contactUs" element={<HomeWithScroll sectionId="contactUs" />} />
             <Route path="/contact-page" element={<ContactPage id="ContactPage" />} />
             <Route path="/faq-page" element={<FAQPage id="FAQPage" />} />
             <Route path="/release-notes-page" element={<ReleaseNotesPage id="ReleaseNotesPage" />} />
@@ -89,8 +82,7 @@ const App = () => {
             <Route path="/course-lesson/:lessonId" element={<CourseLessonPage />} />
             <Route path="/customer-story" element={<CustomerSuccessStories />} />
             <Route path="/customer-story/:id" element={<CustomerStory />} />
-            {/* Catch-all route for any undefined paths (404 page) */}
-            <Route path="*" element={<div>404 Not Found</div>} />
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </div>
       </Router>

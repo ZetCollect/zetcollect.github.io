@@ -1,5 +1,5 @@
-import React, { useState, useRef, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import React, { useState, useRef } from 'react';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { Menu, X, ChevronDown } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
 
@@ -10,6 +10,7 @@ const Navbar = () => {
   const { language, setLanguage, t } = useLanguage();
   const timeoutRef = useRef(null);
   const location = useLocation();
+  const navigate = useNavigate();
 
   const languages = [
     { code: 'en', label: 'English', flag: '🇬🇧' },
@@ -18,10 +19,10 @@ const Navbar = () => {
   ];
 
   const navigation = [
-    { name: t('nav.home') || 'Home', href: '/', hash: '#hero' },
-    { name: t('nav.features') || 'Features', href: '/', hash: '#features' },
-    { name: t('nav.why') || 'Why ZetCollect', href: '/', hash: '#why-zetcollect' },
-    { name: t('nav.pricing') || 'Pricing', href: '/pricing', hash: '' },
+    { name: t('nav.home') || 'Home', href: '/', sectionId: 'hero' },
+    { name: t('nav.features') || 'Features', href: '/features', sectionId: 'features' },
+    { name: t('nav.why') || 'Why ZetCollect', href: '/why-zetcollect', sectionId: 'why-zetcollect' },
+    { name: t('nav.pricing') || 'Pricing', href: '/pricing', sectionId: '' },
   ];
 
   const supportLinks = [
@@ -56,27 +57,29 @@ const Navbar = () => {
     }, 200);
   };
 
-  const handleNavClick = (href, hash, e) => {
-    if (href !== '/' || !hash) {
-      return;
-    }
-    if (location.pathname === '/' && hash) {
+  const handleNavClick = (href, sectionId, e) => {
+    // If on the home page and clicking a section link, prevent default and scroll
+    if (location.pathname === '/' && sectionId && href !== '/') {
       e.preventDefault();
-      const targetElement = document.getElementById(hash.substring(1));
+      const targetElement = document.getElementById(sectionId);
       if (targetElement) {
         targetElement.scrollIntoView({ behavior: 'smooth' });
+        // Update URL without reloading
+        navigate(href, { replace: true });
+      }
+    } else if (href === '/' && sectionId === 'hero') {
+      // Handle "Home" button click
+      e.preventDefault();
+      if (location.pathname === '/') {
+        // If already on home, scroll to top
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+        navigate('/', { replace: true });
+      } else {
+        // Navigate to home page
+        navigate('/');
       }
     }
   };
-
-  useEffect(() => {
-    if (location.hash === '#demo' && location.pathname === '/') {
-      const targetElement = document.getElementById('demo');
-      if (targetElement) {
-        targetElement.scrollIntoView({ behavior: 'smooth' });
-      }
-    }
-  }, [location]);
 
   return (
     <header className="sticky top-0 z-50 bg-white shadow-md">
@@ -159,7 +162,7 @@ const Navbar = () => {
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" onClick={(e) => handleNavClick('/', 'hero', e)} className="flex items-center space-x-2">
             <img className="w-[200px] h-auto" src="/applogo.png" alt="Company Logo" />
           </Link>
 
@@ -168,8 +171,8 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href + (item.hash || '')}
-                  onClick={(e) => handleNavClick(item.href, item.hash, e)}
+                  to={item.href}
+                  onClick={(e) => handleNavClick(item.href, item.sectionId, e)}
                   className="px-3 py-2 text-sm font-medium text-gray-700 transition-colors hover:text-Complementary"
                   aria-label={`Navigate to ${item.name} section`}
                 >
@@ -178,8 +181,8 @@ const Navbar = () => {
               ))}
             </nav>
             <Link
-              to="/#demo"
-              onClick={(e) => handleNavClick('/', '#demo', e)}
+              to="/demo"
+              onClick={(e) => handleNavClick('/demo', 'demo', e)}
               className="px-4 py-2 text-sm font-medium text-white transition-colors rounded-lg bg-primary hover:bg-primary/80"
             >
               Request Demo
@@ -203,9 +206,9 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Link
                   key={item.name}
-                  to={item.href + (item.hash || '')}
+                  to={item.href}
                   onClick={(e) => {
-                    handleNavClick(item.href, item.hash, e);
+                    handleNavClick(item.href, item.sectionId, e);
                     setIsMenuOpen(false);
                   }}
                   className="block px-3 py-2 text-base font-medium text-gray-700 hover:text-secondary hover:bg-gray-50"
@@ -215,16 +218,9 @@ const Navbar = () => {
                 </Link>
               ))}
               <Link
-                to="/login"
-                onClick={() => setIsMenuOpen(false)}
-                className="block px-3 py-2 mt-4 font-medium text-center text-white transition-colors rounded-lg bg-secondary hover:bg-secondary/80"
-              >
-                {t('nav.login') || 'Login'}
-              </Link>
-              <Link
-                to="/#demo"
+                to="/demo"
                 onClick={(e) => {
-                  handleNavClick('/', '#demo', e);
+                  handleNavClick('/demo', 'demo', e);
                   setIsMenuOpen(false);
                 }}
                 className="block px-3 py-2 mt-4 font-medium text-center text-white transition-colors rounded-lg bg-primary hover:bg-primary/80"

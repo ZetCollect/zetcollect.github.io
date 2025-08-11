@@ -368,7 +368,10 @@ const translations = {
     "pricing.compareFeatures.support": "Support",
     "pricing.compareFeatures.support.business": "Local Business Hours",
     "pricing.compareFeatures.support.enterprise": "24/7 Enterprise Support",
-
+    "pricing.compareFeatures.mobileMoney": "Mobile Money",
+  "pricing.compareFeatures.mobileMoney.business": "Upcoming",
+  "pricing.compareFeatures.mobileMoney.enterprise": "Upcoming",
+  "pricing.compareFeatures.upcoming": "(upcoming)",
     //testimonials
     "testimonial.1.quote":
       "ZetCollect has transformed our daily cash collection operations. The offline capability is crucial for our rural branches, and the fraud prevention features give us complete peace of mind.",
@@ -400,6 +403,8 @@ const translations = {
     "testimonial.5.title": "Operations Manager, Cameroon Rural Bank",
     "testimonial.5.country": "Cameroon",
     "testimonial.5.initials": "EM",
+
+  "not404.imageAlt": "404 Error Image"
   },
 
   fr: {

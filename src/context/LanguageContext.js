@@ -26,24 +26,20 @@ const translations = {
     ...Faqcontext.en,
     ...TrainingandCerificationContext.en,
     // About Page
-    "about.title": "About ZetCollect:",
-    "about.description":
-      "ZetCollect is a cutting-edge, mobile-first platform designed to transform cash collection and management for microfinance institutions, cooperatives, and financial service providers across Africa. Built with the unique needs of African markets in mind, ZetCollect streamlines operations, enhances transparency, and fosters trust between institutions and their clients. Our mission is to empower organizations to manage collections efficiently, securely, and at scale, while bridging the gap to financial inclusion in underserved communities.",
+    "about.title": "About ZetCollect",
+    "about.description": "ZetCollect is a cutting-edge, designed to transform cash collection for microfinance institutions, cooperatives, insurance and financial service providers across Africa. Built with the unique needs of African markets in mind, ZetCollect streamlines operations, enhances transparency, and fosters trust between institutions and their clients. \n Our mission is to empower organizations to manage collections efficiently, securely, and at scale, while bridging the gap to financial inclusion in underserved communities.",
     "about.numbers.title": "ZetCollect Group in Numbers",
-    "about.numbers.teamExperience": "Team Professional Experience",
+    "about.numbers.branch": "Total Branch Onboarded",
     "about.numbers.successStories": "Success Stories",
-    "about.numbers.industryCovers": "Microfinance Covers",
+    "about.numbers.microfinance": "Microfinance Covers",
     "about.geography.title": "Our Geography",
-    "about.geography.description":
-      "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
+    "about.geography.description": "Headquartered in Kenya and operating internationally, our team drives digital transformation for businesses globally. We ensure on-site and virtual presence to deliver services to our major target markets in:",
     "about.geography.kenya": "Kenya",
-    "about.geography.kenyaOffice":
-      "Office Locations: Oracle Tower, Westland, Nairobi",
+    "about.geography.kenyaOffice": "Oracle Tower, Westland, Nairobi",
     "about.geography.cameroon": "Cameroon",
-    "about.geography.cameroonOffice": "V. Office Locations: Akwa, Douala",
+    "about.geography.cameroonOffice": "Akwa, Douala, Littoral (Virtual)",
     "about.clients.title": "Our Clients",
-    "about.clients.description":
-      "We have collaborated with companies from 3 continents which are Africa, North America and Europe. Some of our prominent clients include:",
+    "about.clients.description": "We have collaborated with companies from 3 contries within Africa (Kenya, Gabon, Cameroon). Some of our prominent clients include:",
     "about.clients.logoAlt": "Client Logo {index}",
     "about.pricingPolicy.title": "Our Pricing Policy",
     "about.pricingPolicy.description":
@@ -414,13 +410,12 @@ const translations = {
     ...Faqcontext.fr,
     ...TrainingandCerificationContext.fr,
     // About Page
-    "about.title": "À propos de ZetCollect :",
-    "about.description":
-      "ZetCollect est une plateforme mobile de pointe conçue pour transformer la collecte et la gestion de l'argent pour les institutions de microfinance, les coopératives et les fournisseurs de services financiers à travers l'Afrique. Construite en tenant compte des besoins uniques des marchés africains, ZetCollect rationalise les opérations, améliore la transparence et renforce la confiance entre les institutions et leurs clients. Notre mission est de permettre aux organisations de gérer les collectes de manière efficace, sécurisée et à grande échelle, tout en réduisant l'écart pour l'inclusion financière dans les communautés mal desservies.",
+    "about.title": "À propos de ZetCollect",
+    "about.description": "ZetCollect est une solution conçue pour transformer la collecte de l'argent pour des Microfinances, les Coopératives, Assurance et les fournisseurs de services financiers à travers l'Afrique. Construite en tenant compte des besoins uniques des marchés africains, ZetCollect rationalise les opérations, améliore la transparence et renforce la confiance entre les institutions et leurs clients. Notre mission est de permettre aux organisations de gérer les collectes de manière efficace, sécurisée et à grande échelle, tout en réduisant l'écart pour l'inclusion financière dans les communautés mal desservies.",
     "about.numbers.title": "ZetCollect Group en chiffres",
-    "about.numbers.teamExperience": "Expérience professionnelle de l'équipe",
+    "about.numbers.branch": "Total de Branch Intégrée",
     "about.numbers.successStories": "Histoires de succès",
-    "about.numbers.industryCovers": "Secteurs couverts",
+    "about.numbers.microfinance": "Microfinance couverts",
     "about.geography.title": "Notre géographie",
     "about.geography.description":
       "Basé au Kenya et opérant à l'international, notre équipe favorise la transformation numérique des entreprises à l'échelle mondiale. Nous assurons une présence sur site et virtuelle pour fournir des services à nos principaux marchés cibles :",
@@ -864,13 +859,12 @@ const translations = {
     ...Faqcontext.sw,
     ...TrainingandCerificationContext.sw,
     // About Page
-    "about.title": "Kuhusu ZetCollect:",
-    "about.description":
-      "ZetCollect ni jukwaa la hali ya juu linalotumia simu za mkononi lililoundwa kubadilisha ukusanyaji na usimamizi wa pesa kwa taasisi za microfinance, vyama vya ushirika, na watoa huduma za kifedha kote Afrika. Imejengwa kwa kuzingatia mahitaji ya kipekee ya masoko ya Afrika, ZetCollect inarahisisha shughuli, inaboresha uwazi, na inakuza uaminifu kati ya taasisi na wateja wao. Dhamira yetu ni kuwezesha mashirika kusimamia ukusanyaji kwa ufanisi, salama, na kwa kiwango kikubwa, huku ikishughulikia pengo la ujumuishaji wa kifedha katika jamii zisizohudumiwa vya kutosha.",
+    "about.title": "Kuhusu ZetCollect",
+    "about.description": "ZetCollect ni ya kisasa, iliyoundwa ili kubadilisha ukusanyaji wa fedha kwa taasisi ndogo za fedha, vyama vya ushirika, bima na watoa huduma za kifedha kote Afrika. Imejengwa kwa kuzingatia mahitaji ya kipekee ya masoko ya Kiafrika, ZetCollect hurahisisha utendakazi, huongeza uwazi, na kukuza uaminifu kati ya taasisi na wateja wao. \n Dhamira yetu ni kuwezesha mashirika kudhibiti mikusanyiko kwa ufanisi, usalama na kwa kiwango, huku tukiziba pengo la ujumuishaji wa kifedha katika jumuiya ambazo hazijahudumiwa.",
     "about.numbers.title": "ZetCollect Group katika Nambari",
-    "about.numbers.teamExperience": "Uzoefu wa Kitaalamu wa Timu",
+    "about.numbers.branch": "Jumla ya Tawi Lililowekwa",
     "about.numbers.successStories": "Hadithi za Mafanikio",
-    "about.numbers.industryCovers": "Sekta Zilizofunikwa",
+    "about.numbers.microfinance": "Microfinance Imefunikwa",
     "about.geography.title": "Jiografia Yetu",
     "about.geography.description":
       "Ikiwa na makao makuu nchini Kenya na ikifanya kazi kimataifa, timu yetu inasukuma mabadiliko ya kidijitali kwa Biashara duniani kote. Tunahakikisha uwepo wa moja kwa moja na wa mtandaoni ili kutoa huduma kwa masoko yetu ya msingi ya lengo katika:",

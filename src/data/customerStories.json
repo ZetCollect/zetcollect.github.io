@@ -114,8 +114,8 @@
         "section5": {
           "titleKey": "cooperative.section5.title",
           "descriptionKeys": [
-            "cooperative.section5.description1",
-            "cooperative.section5.description2"
+            "cooperative.section5.description1"
+
           ]
         }
       }
@@ -131,7 +131,7 @@
           "titleKey": "gabonmerchants.section1.title",
           "descriptionKey": "gabonmerchants.section1.description",
           "shareTextKey": "gabonmerchants.section1.share",
-          "image": "/smiley-woman-holding-phone-side-view.jpg",
+          "image": "/black-businessman-using-computer-laptop.jpg",
           "imageAlt": "Gabon Merchants Image"
         },
         "section2": {
@@ -174,8 +174,8 @@
         "section5": {
           "titleKey": "gabonmerchants.section5.title",
           "descriptionKeys": [
-            "gabonmerchants.section5.description1",
-            "gabonmerchants.section5.description2"
+            "gabonmerchants.section5.description1"
+
           ]
         }
       }
@@ -191,7 +191,7 @@
           "titleKey": "tchadagents.section1.title",
           "descriptionKey": "tchadagents.section1.description",
           "shareTextKey": "tchadagents.section1.share",
-          "image": "/african-woman.jpg",
+          "image": "/black-businessman-using-computer-laptop.jpg",
           "imageAlt": "Tchad Agents Image"
         },
         "section2": {
@@ -234,8 +234,8 @@
         "section5": {
           "titleKey": "tchadagents.section5.title",
           "descriptionKeys": [
-            "tchadagents.section5.description1",
-            "tchadagents.section5.description2"
+            "tchadagents.section5.description1"
+
           ]
         }
       }

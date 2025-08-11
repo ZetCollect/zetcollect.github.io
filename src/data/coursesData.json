@@ -8,6 +8,12 @@
         "titleKey": "courses.onboarding.lesson.protecting-accounts.title",
         "descriptionKey": "courses.onboarding.lesson.protecting-accounts.description",
         "image": "/2FA.jpg"
+      },
+      {
+        "id": "onboarding-basics",
+        "titleKey": "courses.onboarding.lesson.onboarding-basics.title",
+        "descriptionKey": "courses.onboarding.lesson.onboarding-basics.description",
+        "image": "/4565.jpg"
       }
     ]
   },
@@ -21,6 +27,7 @@
         "descriptionKey": "courses.product-knowledge.lesson.mobile-app-basics.description",
         "image": "/Asset 23x.png"
       }
+     
     ]
   },
   {

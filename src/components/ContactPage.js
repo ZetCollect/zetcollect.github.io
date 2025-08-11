@@ -8,11 +8,11 @@ const ContactPage = () => {
   const buttonColor = 'bg-primary';
 
   const microservices = [
-    { country: 'Kenya', name: 'SMEP Microfinance Bank', img: 'SMEP Microfinance Bank logo.png' },
-    { country: 'Cameroon', name: 'Cameroon Cooperative Credit Union League Ltd', img: 'CamCCUL Logo.jpg' },
-    { country: 'Cameroon', name: 'CRCCU', img: 'cropped-cropped-Logo-Croped logo.jpg' },
-    { country: 'Gabon', name: 'Banque de l’Habitat du Gabon (BHG)', img: '(BHG) logo.png' },
-    { country: 'Cameroon', name: 'ACEP Cameroun - Fondation Grameen Crédit-Agricole', img: 'log_ACEP_NEW.png' },
+    { country: 'Kenya', name: 'Rafiki', img: 'SMEP Microfinance Bank logo.png' },
+    { country: 'Kenya', name: 'LOLC Kenya', img: 'LOLC_Kenya_Cropped.png' },
+    { country: 'Kenya', name: 'Muungano Microfinance Kenya', img: 'Muungano_Cropped.png' },
+    { country: 'Gabon', name: 'Cofidec', img: 'Cofidec_Logo.jpg' },
+    { country: 'Gabon', name: 'Sodec', img: 'Sodec_Logo.svg' },
   ];
 
   return (

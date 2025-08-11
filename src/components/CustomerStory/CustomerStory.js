@@ -14,6 +14,11 @@ const CustomerStory = () => {
     return <div>Story not found</div>;
   }
 
+  // Prepare the LinkedIn share URL with the story title
+  const shareTitle = encodeURIComponent(t(story.page.section1.titleKey));
+  const shareUrl = encodeURIComponent(window.location.href);
+  const linkedInShareUrl = `https://www.linkedin.com/feed/?linkOrigin=LI_BADGE&shareActive=true&shareUrl=${shareUrl}&title=${shareTitle}`;
+
   return (
     <>
       {/* First Section: Hero */}
@@ -32,7 +37,9 @@ const CustomerStory = () => {
                   {t(story.page.section1.shareTextKey)}
                 </span>
                 <a
-                  href="https://www.linkedin.com/showcase/zetcollect/about/"
+                  href={linkedInShareUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="flex items-center justify-center w-8 h-8 text-gray-600 transition-colors border border-gray-300 rounded-full sm:w-10 sm:h-10 hover:bg-gray-100"
                 >
                   <svg className="w-4 h-4 sm:w-5 sm:h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

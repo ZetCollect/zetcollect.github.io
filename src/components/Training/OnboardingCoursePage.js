@@ -82,7 +82,7 @@ const OnboardingCoursePage = () => {
         {/* Lessons Grid */}
         <div className="px-4 py-16 mx-auto lg:py-24 max-w-7xl">
           {filteredLessons.length > 0 ? (
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {filteredLessons.map((lesson) => (
                 <Link
                   to={`/course-lesson/${lesson.id}`}

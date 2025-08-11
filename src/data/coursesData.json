@@ -22,12 +22,17 @@
     "titleKey": "courses.product-knowledge.title",
     "lessons": [
       {
-        "id": "mobile-app-basics",
-        "titleKey": "courses.product-knowledge.lesson.mobile-app-basics.title",
-        "descriptionKey": "courses.product-knowledge.lesson.mobile-app-basics.description",
+        "id": "zetcollect-business",
+        "titleKey": "courses.product-knowledge.lesson.zetcollect-business.title",
+        "descriptionKey": "courses.product-knowledge.lesson.zetcollect-business.description",
+        "image": "/Asset 23x.png"
+      },
+      {
+        "id": "zetcollect-enterprise-features",
+        "titleKey": "courses.product-knowledge.lesson.zetcollect-enterprise-features.title",
+        "descriptionKey": "courses.product-knowledge.lesson.zetcollect-enterprise-features.description",
         "image": "/Asset 23x.png"
       }
-     
     ]
   },
   {

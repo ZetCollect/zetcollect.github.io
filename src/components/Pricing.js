@@ -102,6 +102,10 @@ const Pricing = () => {
                     </span>
                     {t("pricing.compareFeatures.localBusinessHours")}
                   </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2"></span>
+                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+                  </li>
                 </ul>
               </div>
               <button className="px-6 py-3 mt-6 font-semibold text-white rounded-full bg-primary hover:bg-secondary">
@@ -151,6 +155,10 @@ const Pricing = () => {
                       <CheckIcon />
                     </span>
                     {t("pricing.compareFeatures.enterpriseSupport")}
+                  </li>
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2"></span>
+                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
                   </li>
                 </ul>
               </div>
@@ -271,6 +279,22 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
+
+            <div className="p-4 my-4 bg-white rounded-lg shadow-md">
+              <h3 className="mb-4 text-lg font-bold">
+                {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+              </h3>
+              <ul className="space-y-2">
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.business.title")}</span>
+                  <span>{t("pricing.compareFeatures.mobileMoney.business")}</span>
+                </li>
+                <li className="flex items-center justify-between">
+                  <span>{t("pricing.section2.enterprise.title")}</span>
+                  <span>{t("pricing.compareFeatures.mobileMoney.enterprise")}</span>
+                </li>
+              </ul>
+            </div>
           </div>
 
           {/* Original Table View (visible only on larger screens) */}
@@ -379,6 +403,21 @@ const Pricing = () => {
                   <td className="px-6 py-4 text-center">
                     <div className="flex flex-col items-center">
                       {t("pricing.compareFeatures.support.enterprise")}
+                    </div>
+                  </td>
+                </tr>
+                <tr className="border-b border-gray-100">
+                  <td className="px-6 py-4 text-left text-gray-700">
+                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.mobileMoney.business")}
+                    </div>
+                  </td>
+                  <td className="px-6 py-4 text-center">
+                    <div className="flex flex-col items-center">
+                      {t("pricing.compareFeatures.mobileMoney.enterprise")}
                     </div>
                   </td>
                 </tr>

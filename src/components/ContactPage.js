@@ -8,11 +8,11 @@ const ContactPage = () => {
   const buttonColor = 'bg-primary';
 
   const microservices = [
-    { country: 'Kenya', name: 'SMEP Microfinance Bank', img: 'SMEP Microfinance Bank logo.png' },
-    { country: 'Cameroon', name: 'Cameroon Cooperative Credit Union League Ltd', img: 'CamCCUL Logo.jpg' },
-    { country: 'Cameroon', name: 'CRCCU', img: 'cropped-cropped-Logo-Croped logo.jpg' },
-    { country: 'Gabon', name: 'Banque de l’Habitat du Gabon (BHG)', img: '(BHG) logo.png' },
-    { country: 'Cameroon', name: 'ACEP Cameroun - Fondation Grameen Crédit-Agricole', img: 'log_ACEP_NEW.png' },
+    { country: 'Kenya', name: 'Rafiki', img: 'SMEP Microfinance Bank logo.png' },
+    { country: 'Kenya', name: 'LOLC Kenya', img: 'LOLC_Kenya_Cropped.png' },
+    { country: 'Kenya', name: 'Muungano Microfinance Kenya', img: 'Muungano_Cropped.png' },
+    { country: 'Gabon', name: 'Cofidec', img: 'Cofidec_Logo.jpg' },
+    { country: 'Gabon', name: 'Sodec', img: 'Sodec_Logo.svg' },
   ];
 
   return (
@@ -29,7 +29,7 @@ const ContactPage = () => {
               </div>
             </div>
             {/* Right Section: Form Container */}
-            <div className="flex flex-col justify-center p-8 bg-white border rounded-lg border-secondary vmd:w-1/2 lg:p-12 md:rounded-l-none">
+            <div className="flex flex-col justify-center p-8 bg-white border rounded-lg border-secondary md:w-1/2 lg:p-12 md:rounded-l-none">
               <h2 className="mb-8 text-2xl font-bold text-gray-900">{t('contact.title')}</h2>
 
               <form className="space-y-6">

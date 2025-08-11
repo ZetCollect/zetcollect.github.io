@@ -1,0 +1,44 @@
+[
+  {
+    "icon": "Globe",
+    "title": "why.africa.title",
+    "description": "why.africa.desc",
+    "fallbackTitle": "Africa-Focused",
+    "image": "🌍"
+  },
+  {
+    "icon": "Shield",
+    "title": "why.fraud.title",
+    "description": "why.fraud.desc",
+    "fallbackTitle": "Fraud Prevention",
+    "image": "🛡️"
+  },
+  {
+    "icon": "Smartphone",
+    "title": "why.mobile.title",
+    "description": "why.mobile.desc",
+    "fallbackTitle": "Mobile-First",
+    "image": "📱"
+  },
+  {
+    "icon": "Settings",
+    "title": "why.customizable.title",
+    "description": "why.customizable.desc",
+    "fallbackTitle": "Customizable",
+    "image": "⚙️"
+  },
+  {
+    "icon": "Plug",
+    "title": "why.integrable.title",
+    "description": "why.integrable.desc",
+    "fallbackTitle": "Integrable",
+    "image": "🔌"
+  },
+  {
+    "icon": "BarChart3",
+    "title": "why.data.title",
+    "description": "why.data.desc",
+    "fallbackTitle": "Data-Driven",
+    "image": "📊"
+  }
+]

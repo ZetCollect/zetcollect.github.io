@@ -1,5 +1,3 @@
-// src/components/ResponsiveBanner.jsx
-
 import React from 'react';
 import { Link } from 'react-router-dom';
 
@@ -15,22 +13,15 @@ const ResponsiveBanner = ({ title, description, ctaText, ctaLink }) => {
 
   return (
     <section 
-      className="relative max-w-7xl mx-auto    
-                 px-4 sm:px-6 lg:px-8          
-                 py-12 md:py-16 lg:py-24         
-                 flex items-center justify-center 
-                 min-h-[250px] md:min-h-[200px] lg:min-h-[250px] 
-                 overflow-hidden"               
+      className="relative px-4 py-12 mx-auto overflow-hidden max-w-7xl sm:px-6 sm:py-8 lg:px-8 lg:py-16"               
       style={backgroundStyle}
       aria-labelledby="banner-title" 
     >
       <div className="absolute inset-0"></div> 
 
-      <div className="relative z-10 flex justify-center w-full md:justify-end">
-        
+      <div className="relative z-10 mx-auto max-w-7xl">
         {/* Text and Button Block */}
         <div className="flex flex-col items-center max-w-2xl text-justify text-white md:items-end md:text-justify md:ml-auto">               
-        
           <h2 id="banner-title" className="mb-4 text-3xl font-bold leading-tight sm:text-4xl lg:text-5xl drop-shadow-lg">
             {title}
           </h2>

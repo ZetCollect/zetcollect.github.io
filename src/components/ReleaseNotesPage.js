@@ -17,6 +17,7 @@ const ReleaseNotesPage = () => {
     { key: 'release.saas.systemVersionWeb2' },
     { key: 'release.saas.systemVersionWeb3' },
     { key: 'release.saas.systemVersionWeb4' },
+    { key: 'release.saas.systemVersionWeb5' },
   ];
 
   return (

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import coursesData from '../data/coursesData.json';
-import Footer from '../components/Footer';
-import { useLanguage } from '../context/LanguageContext'; // Import the language context hook
+import coursesData from '../../data/coursesData.json';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const OnboardingCoursePage = () => {
-  const { t } = useLanguage(); // Access the translation function
+  const { t } = useLanguage(); 
   const [filter, setFilter] = useState('All');
   const [lessons, setLessons] = useState([]);
   const [activeTab] = useState('Onboarding and Issue Resolution');
@@ -82,7 +82,7 @@ const OnboardingCoursePage = () => {
         {/* Lessons Grid */}
         <div className="px-4 py-16 mx-auto lg:py-24 max-w-7xl">
           {filteredLessons.length > 0 ? (
-            <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+            <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
               {filteredLessons.map((lesson) => (
                 <Link
                   to={`/course-lesson/${lesson.id}`}
@@ -91,9 +91,9 @@ const OnboardingCoursePage = () => {
                 >
                   <img
                     src={lesson.image}
-                    alt={t(lesson.titleKey)} // Use translated title for alt text
+                    alt={t(lesson.titleKey)}
                     className="object-cover w-full h-48"
-                    onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/400x250/cccccc/000000?text=Lesson+Image'; }}
+                    onError={(e) => { e.target.onerror = null; e.target.src='/No-Image-Placeholder.png'; }}
                   />
                   <div className="p-6">
                     <h3 className="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary">

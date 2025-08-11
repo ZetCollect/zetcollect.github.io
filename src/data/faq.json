@@ -1,0 +1,66 @@
+[
+  {
+    "question": "faq.questions.product_infoA",
+    "answer": "faq.answers.product_infoA"
+  },
+  {
+    "question": "faq.questions.product_infoB",
+    "answer": "faq.answers.product_infoB"
+  },
+  {
+    "question": "faq.questions.product_infoC",
+    "answer": "faq.answers.product_infoC"
+  },
+  {
+    "question": "faq.questions.client_management",
+    "answer": "faq.answers.client_management"
+  },
+  {
+    "question": "faq.questions.collector_management",
+    "answer": "faq.answers.collector_management"
+  },
+  {
+    "question": "faq.questions.multi_branch",
+    "answer": "faq.answers.multi_branch"
+  },
+  {
+    "question": "faq.questions.booklet_system",
+    "answer": "faq.answers.booklet_system"
+  },
+  {
+    "question": "faq.questions.reports_analytics",
+    "answer": "faq.answers.reports_analytics"
+  },
+  {
+    "question": "faq.questions.user_access",
+    "answer": "faq.answers.user_access"
+  },
+  {
+    "question": "faq.questions.sms_notifications",
+    "answer": "faq.answers.sms_notifications"
+  },
+  {
+    "question": "faq.questions.daily_sync",
+    "answer": "faq.answers.daily_sync"
+  },
+  {
+    "question": "faq.questions.gps_traceability",
+    "answer": "faq.answers.gps_traceability"
+  },
+  {
+    "question": "faq.questions.missed_alerts",
+    "answer": "faq.answers.missed_alerts"
+  },
+  {
+    "question": "faq.questions.risk_profile",
+    "answer": "faq.answers.risk_profile"
+  },
+  {
+    "question": "faq.questions.route_optimization",
+    "answer": "faq.answers.route_optimization"
+  },
+  {
+    "question": "faq.questions.self_access_portal",
+    "answer": "faq.answers.self_access_portal"
+  }
+]

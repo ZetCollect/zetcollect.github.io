@@ -1,0 +1,42 @@
+[
+  {
+    "title": "about.keyFeatures.clientManagement.title",
+    "description": "about.keyFeatures.clientManagement.description"
+  },
+  {
+    "title": "about.keyFeatures.collectorManagement.title",
+    "description": "about.keyFeatures.collectorManagement.description"
+  },
+  {
+    "title": "about.keyFeatures.mobileCollection.title",
+    "description": "about.keyFeatures.mobileCollection.description"
+  },
+  {
+    "title": "about.keyFeatures.bookletSystem.title",
+    "description": "about.keyFeatures.bookletSystem.description"
+  },
+  {
+    "title": "about.keyFeatures.reportsAnalytics.title",
+    "description": "about.keyFeatures.reportsAnalytics.description"
+  },
+  {
+    "title": "about.keyFeatures.transactionHistory.title",
+    "description": "about.keyFeatures.transactionHistory.description"
+  },
+  {
+    "title": "about.keyFeatures.smsNotifications.title",
+    "description": "about.keyFeatures.smsNotifications.description"
+  },
+  {
+    "title": "about.keyFeatures.userAccessRoles.title",
+    "description": "about.keyFeatures.userAccessRoles.description"
+  },
+  {
+    "title": "about.keyFeatures.dailySynchronization.title",
+    "description": "about.keyFeatures.dailySynchronization.description"
+  },
+  {
+    "title": "about.keyFeatures.branchSetup.title",
+    "description": "about.keyFeatures.branchSetup.description"
+  }
+]

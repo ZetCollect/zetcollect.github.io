@@ -1,0 +1,82 @@
+[
+  {
+    "name": "pricing.compareFeatures.clientManagement",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.collectorManagement",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.branchSetup",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.mobileCollection",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.bookletSystem",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.transactionHistory",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.reportsAnalytics",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.userAccessRoles",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.dailySynchronization",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.passwordPolicy",
+    "business": true,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.databaseHosting",
+    "business": false,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.gpsTraceability",
+    "business": false,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.missedCollectionAlerts",
+    "business": false,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.clientRiskProfile",
+    "business": false,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.routeOptimization",
+    "business": false,
+    "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.clientSelfAccessPortal",
+    "business": false,
+    "enterprise": true
+  }
+]

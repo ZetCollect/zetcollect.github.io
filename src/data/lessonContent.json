@@ -1,4 +1,3 @@
-
 [
   {
     "id": "protecting-accounts",
@@ -8,16 +7,6 @@
     "relatedCourses": [
       { "titleKey": "lessons.protecting-accounts.relatedCourses.onboarding.title", "link": "/training/onboarding" },
       { "titleKey": "lessons.protecting-accounts.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
-    ]
-  },
-  {
-    "id": "adding-business-kyc3",
-    "titleKey": "lessons.adding-business-kyc3.title",
-    "categoryKey": "lessons.adding-business-kyc3.category",
-    "contentKey": "lessons.adding-business-kyc3.content",
-    "relatedCourses": [
-      { "titleKey": "lessons.adding-business-kyc3.relatedCourses.onboarding.title", "link": "/training/onboarding" },
-      { "titleKey": "lessons.adding-business-kyc3.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
     ]
   },
   {
@@ -37,6 +26,17 @@
     "relatedCourses": [
       { "titleKey": "lessons.zetcollect-security.relatedCourses.onboarding.title", "link": "/training/onboarding" },
       { "titleKey": "lessons.zetcollect-security.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" }
+    ]
+  },
+  {
+    "id": "onboarding-basics",
+    "titleKey": "lessons.onboarding-basics.title",
+    "categoryKey": "lessons.onboarding-basics.category",
+    "contentKey": "lessons.onboarding-basics.content",
+    "relatedCourses": [
+      { "titleKey": "lessons.onboarding-basics.relatedCourses.onboarding.title", "link": "/training/onboarding" },
+      { "titleKey": "lessons.onboarding-basics.relatedCourses.product-knowledge.title", "link": "/training/product-knowledge" },
+      { "titleKey": "lessons.onboarding-basics.relatedCourses.security.title", "link": "/training/security" }
     ]
   }
 ]

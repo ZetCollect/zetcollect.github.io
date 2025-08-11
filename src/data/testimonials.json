@@ -1,0 +1,37 @@
+[
+  {
+    "quote": "testimonial.1.quote",
+    "author": "testimonial.1.author",
+    "title": "testimonial.1.title",
+    "country": "testimonial.1.country",
+    "initials": "testimonial.1.initials"
+  },
+  {
+    "quote": "testimonial.2.quote",
+    "author": "testimonial.2.author",
+    "title": "testimonial.2.title",
+    "country": "testimonial.2.country",
+    "initials": "testimonial.2.initials"
+  },
+  {
+    "quote": "testimonial.3.quote",
+    "author": "testimonial.3.author",
+    "title": "testimonial.3.title",
+    "country": "testimonial.3.country",
+    "initials": "testimonial.3.initials"
+  },
+  {
+    "quote": "testimonial.4.quote",
+    "author": "testimonial.4.author",
+    "title": "testimonial.4.title",
+    "country": "testimonial.4.country",
+    "initials": "testimonial.4.initials"
+  },
+  {
+    "quote": "testimonial.5.quote",
+    "author": "testimonial.5.author",
+    "title": "testimonial.5.title",
+    "country": "testimonial.5.country",
+    "initials": "testimonial.5.initials"
+  }
+]

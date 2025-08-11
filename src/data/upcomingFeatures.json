@@ -1,0 +1,65 @@
+[
+  {
+    "icon": "MapPin",
+    "title": "upcoming.gps.title",
+    "description": "upcoming.gps.desc",
+    "color": "Complementary",
+    "bgColor": "bg-blue-50",
+    "textColor": "text-primary",
+    "progress": 20
+  },
+  {
+    "icon": "Bell",
+    "title": "upcoming.alerts.title",
+    "description": "upcoming.alerts.desc",
+    "color": "Complementary",
+    "bgColor": "bg-red-50",
+    "textColor": "text-red-600",
+    "progress": 10
+  },
+  {
+    "icon": "TrendingUp",
+    "title": "upcoming.risk.title",
+    "description": "upcoming.risk.desc",
+    "color": "Complementary",
+    "bgColor": "bg-purple-50",
+    "textColor": "text-purple-600",
+    "progress": 0
+  },
+  {
+    "icon": "Route",
+    "title": "upcoming.route.title",
+    "description": "upcoming.route.desc",
+    "color": "Complementary",
+    "bgColor": "bg-green-50",
+    "textColor": "text-green-600",
+    "progress": 0
+  },
+  {
+    "icon": "User",
+    "title": "upcoming.portal.title",
+    "description": "upcoming.portal.desc",
+    "color": "Complementary",
+    "bgColor": "bg-orange-50",
+    "textColor": "text-orange-600",
+    "progress": 0
+  },
+  {
+    "icon": "Landmark",
+    "title": "upcoming.currency.title",
+    "description": "upcoming.currency.desc",
+    "color": "Complementary",
+    "bgColor": "bg-yellow-50",
+    "textColor": "text-yellow-600",
+    "progress": 10
+  },
+    {
+"icon": "DollarSign",
+    "title": "upcoming.mobile_money.title",
+    "description": "upcoming.mobile_money.desc",
+    "color": "Complementary",
+    "bgColor": "bg-teal-50",
+    "textColor": "text-teal-600",
+    "progress": 15
+  }
+]

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
+import Footer from '../Footer';
 
 const CustomerSupportPage = () => {
   const { t } = useLanguage();

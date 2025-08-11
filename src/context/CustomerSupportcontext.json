@@ -1,0 +1,32 @@
+{
+  "en": {
+    "support.title": "Customer support",
+    "support.subtitle": "Features Specific Support",
+    "support.selectPlaceholder": "Select a feature",
+    "support.contactLabel": "{feature} Support:",
+    "support.phone": "Phone",
+    "support.email": "Email",
+    "support.noSelection": "Please select a feature to view support details.",
+    "support.communityButton": "Online Support Community"
+  },
+  "fr": {
+    "support.title": "Support client",
+    "support.subtitle": "Support spécifique aux fonctionnalités",
+    "support.selectPlaceholder": "Sélectionner une fonctionnalité",
+    "support.contactLabel": "Support {feature} :",
+    "support.phone": "Téléphone",
+    "support.email": "Email",
+    "support.noSelection": "Veuillez sélectionner une fonctionnalité pour voir les détails du support.",
+    "support.communityButton": "Communauté de support en ligne"
+  },
+  "sw": {
+    "support.title": "Msaada wa Wateja",
+    "support.subtitle": "Msaada Maalum wa Vipengele",
+    "support.selectPlaceholder": "Chagua kipengele",
+    "support.contactLabel": "Msaada wa {feature}:",
+    "support.phone": "Simu",
+    "support.email": "Barua pepe",
+    "support.noSelection": "Tafadhali chagua kipengele ili kuona maelezo ya msaada.",
+    "support.communityButton": "Jumuiya ya Msaada Mtandaoni"
+  }
+}

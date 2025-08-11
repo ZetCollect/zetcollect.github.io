@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer'; 
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const TrainingAndCertificationPage = () => {
   const { t } = useLanguage();
@@ -74,7 +74,7 @@ const TrainingAndCertificationPage = () => {
                   src={course.image}
                   alt={course.title}
                   className="object-contain w-36 h-36"
-                  onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/150x150/cccccc/000000?text=Course+Icon'; }}
+                  onError={(e) => { e.target.onerror = null; e.target.src='/No-Image-Placeholder.png'; }}
                   aria-hidden="true"
                 />
               </div>

@@ -6,68 +6,24 @@ import {
   Route,
   User,
   Landmark,
+  DollarSign
 } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import upcomingFeatures from '../data/upcomingFeatures.json';
+
+// Map string icon names to actual Lucide React components
+const iconMap = {
+  MapPin,
+  Bell,
+  TrendingUp,
+  Route,
+  User,
+  Landmark,
+  DollarSign,
+};
 
 const UpcomingFeaturesSection = () => {
   const { t } = useLanguage();
-
-  const upcomingFeatures = [
-    {
-      icon: MapPin,
-      title: t('upcoming.gps.title'),
-      description: t('upcoming.gps.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-blue-50',
-      textColor: 'text-primary',
-      progress: 20,
-    },
-    {
-      icon: Bell,
-      title: t('upcoming.alerts.title'),
-      description: t('upcoming.alerts.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-red-50',
-      textColor: 'text-red-600',
-      progress: 10,
-    },
-    {
-      icon: TrendingUp,
-      title: t('upcoming.risk.title'),
-      description: t('upcoming.risk.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-purple-50',
-      textColor: 'text-purple-600',
-      progress: 0
-    },
-    {
-      icon: Route,
-      title: t('upcoming.route.title'),
-      description: t('upcoming.route.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-green-50',
-      textColor: 'text-green-600',
-      progress: 0
-    },
-    {
-      icon: User,
-      title: t('upcoming.portal.title'),
-      description: t('upcoming.portal.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-orange-50',
-      textColor: 'text-orange-600',
-      progress: 0
-    },
-    {
-      icon: Landmark,
-      title: t('upcoming.currency.title'),
-      description: t('upcoming.currency.desc'),
-      color: 'Complementary',
-      bgColor: 'bg-yellow-50',
-      textColor: 'text-yellow-600',
-      progress: 10
-    },
-  ];
 
   return (
     <section id="upcoming" className="py-16 bg bg-gradient-to-br from-white via-white to-secondary lg:py-24">
@@ -85,7 +41,7 @@ const UpcomingFeaturesSection = () => {
         {/* Features Grid */}
         <div className="grid gap-8 mb-16 md:grid-cols-2 lg:grid-cols-3">
           {upcomingFeatures.map((feature, index) => {
-            const Icon = feature.icon;
+            const Icon = iconMap[feature.icon];
 
             return (
               <div
@@ -104,10 +60,10 @@ const UpcomingFeaturesSection = () => {
 
                 {/* Content */}
                 <h3 className="mb-4 text-xl font-bold text-gray-900">
-                  {feature.title}
+                  {t(feature.title)}
                 </h3>
                 <p className="mb-6 leading-relaxed text-gray-600">
-                  {feature.description}
+                  {t(feature.description)}
                 </p>
 
                 {/* Progress Indicator */}

@@ -1,7 +1,8 @@
 import React, { useState } from 'react';
 import { ExternalLink } from 'lucide-react';
-import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
+
 
 const EventsPage = () => {
   const { t } = useLanguage();
@@ -95,9 +96,9 @@ const EventsPage = () => {
                       <ExternalLink className="w-5 h-5" />
                     </a>
                   </h3>
-                  <p className="mb-4 text-gray-700">{event.description}</p>
-                  <p className="text-sm font-medium text-gray-600">{event.dateTime}</p>
-                  <p className="text-sm text-gray-600">{event.time}</p>
+                  <p className="mb-4 text-gray-700 sm:text-justify">{event.description}</p>
+                  <p className="text-sm font-medium text-gray-600 sm:text-justify">{event.dateTime}</p>
+                  <p className="text-sm text-gray-600 sm:text-justify">{event.time}</p>
                 </div>
               </div>
             ))}

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import coursesData from '../data/coursesData.json';
-import { useLanguage } from '../context/LanguageContext';
-import Footer from '../components/Footer'
+import coursesData from '../../data/coursesData.json';
+import Footer from '../../components/Footer';
+import { useLanguage } from '../../context/LanguageContext';
 
 const ProductKnowledgeCoursePage = () => {
   const { t } = useLanguage();
@@ -94,7 +94,7 @@ const ProductKnowledgeCoursePage = () => {
                     src={lesson.image}
                     alt={t(lesson.titleKey)}
                     className="object-cover w-full h-48"
-                    onError={(e) => { e.target.onerror = null; e.target.src='https://placehold.co/400x250/cccccc/000000?text=Lesson+Image'; }}
+                    onError={(e) => { e.target.onerror = null; e.target.src='/No-Image-Placeholder.png'; }}
                   />
                   <div className="p-6">
                     <h3 className="mb-2 text-xl font-bold text-gray-900 transition-colors group-hover:text-primary">

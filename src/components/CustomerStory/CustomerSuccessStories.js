@@ -14,10 +14,10 @@ const CustomerSuccessStories = () => {
       <section className="px-4 py-8 bg-gradient-to-br from-white to-secondary sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="flex flex-col items-center justify-between mx-auto max-w-7xl lg:flex-row">
           <div className="mx-4 mb-8 text-justify sm:mx-6 lg:w-1/2 lg:pr-12 lg:mb-0 lg:text-left">
-            <h1 className="mb-4 text-3xl font-extrabold leading-tight text-black sm:text-4xl lg:text-6xl">
-              {t('customerSuccessStories.section1.title') || 'ZetCollect Delivers Customer Success'}
+            <h1 className="mb-4 text-3xl font-extrabold leading-tight text-black sm:text-4xl lg:text-6xl text-justify">
+              {t('customerSuccessStories.section1.title')}
             </h1>
-            <p className="text-sm text-gray-700 sm:text-base">
+            <p className="text-sm text-gray-700 sm:text-base text-justify">
               {t('customerSuccessStories.section1.description') || 'Discover how ZetCollect empowers businesses with transformative solutions.'}
             </p>
           </div>
@@ -36,20 +36,13 @@ const CustomerSuccessStories = () => {
         </div>
       </section>
 
-      {/* Section: Additional Customer Success Stories */}
+      {/* Section: Customer Success Stories */}
       <section className="px-4 py-8 bg-white sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-6 text-2xl font-bold text-center text-gray-900 sm:text-3xl lg:text-4xl">
             {t('customerSuccessStories.section2.title') || 'Customer Success Stories'}
           </h2>
-          <div className="flex justify-center mb-8 sm:mb-10">
-            <Link
-              to="/customer-stories"
-              className="text-sm text-primary hover:underline sm:text-base"
-            >
-              {t('customerSuccessStories.section2.viewAll') || 'View All Stories'}
-            </Link>
-          </div>
+         
           <div className="grid grid-cols-1 gap-4 mx-auto sm:grid-cols-2 sm:gap-6 lg:mx-8 lg:grid-cols-4 max-w-7xl">
             {customerStories.map((story, index) => (
               <div

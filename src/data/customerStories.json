@@ -1,9 +1,9 @@
 {
   "stories": [
     {
-      "id": "microfinances",
-      "logo": "/log_ACEP_NEW.png",
-      "logoAlt": "Microfinance Nairobi Logo",
+      "id": "rafiki-microfinance-kenya",
+      "logo": "/Rafiki_Logo_Cropped.png",
+      "logoAlt": "Rafiki Microfinance Kenya Logo",
       "titleKey": "customerStories.microfinances.title",
       "descriptionKey": "customerStories.microfinances.description",
       "page": {
@@ -12,7 +12,7 @@
           "descriptionKey": "microfinances.section1.description",
           "shareTextKey": "microfinances.section1.share",
           "image": "/black-businessman-using-computer-laptop.jpg",
-          "imageAlt": "ACEP Cameroun - Fondation Grameen Crédit-Agricole Logo"
+          "imageAlt": "Rafiki Microfinance Kenya Logo"
         },
         "section2": {
           "impact": {
@@ -61,9 +61,9 @@
       }
     },
     {
-      "id": "cooperative",
-      "logo": "/person-waiting-food-restaurant.jpg",
-      "logoAlt": "Cooperative Logo",
+      "id": "lolc-microfinance-kenya",
+      "logo": "/LOLC_Kenya_Cropped.png",
+      "logoAlt": "LOLC Microfinance Kenya Logo",
       "titleKey": "customerStories.cooperative.title",
       "descriptionKey": "customerStories.cooperative.description",
       "page": {
@@ -121,9 +121,9 @@
       }
     },
     {
-      "id": "merchants-gabon",
-      "logo": "/medium-shot-smiley-man-with-smartphone.jpg",
-      "logoAlt": "Gabon Merchants Logo",
+      "id": "muungano-microfinance-kenya",
+      "logo": "/Muungano_Cropped.png",
+      "logoAlt": "Muungano Microfinance Kenya Logo",
       "titleKey": "customerStories.merchants-gabon.title",
       "descriptionKey": "customerStories.merchants-gabon.description",
       "page": {
@@ -181,9 +181,9 @@
       }
     },
     {
-      "id": "agents-Tchad",
-      "logo": "/delivery-african-american-man.jpg",
-      "logoAlt": "Tchad Agents Logo",
+      "id": "cofidec-microfinance-gabon",
+      "logo": "/Cofidec_Logo.jpg",
+      "logoAlt": "Cofidec Microfinance Gabon Logo",
       "titleKey": "customerStories.agents-Tchad.title",
       "descriptionKey": "customerStories.agents-Tchad.description",
       "page": {

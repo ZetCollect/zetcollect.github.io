@@ -8,9 +8,9 @@ const ContactPage = () => {
   const buttonColor = 'bg-primary';
 
   const microservices = [
-    { country: 'Kenya', name: 'Rafiki', img: 'SMEP Microfinance Bank logo.png' },
-    { country: 'Kenya', name: 'LOLC Kenya', img: 'LOLC_Kenya_Cropped.png' },
-    { country: 'Kenya', name: 'Muungano Microfinance Kenya', img: 'Muungano_Cropped.png' },
+    { country: 'Kenya', name: 'Rafiki', img: 'Rafiki_Logo_Cropped.png' },
+    { country: 'Kenya', name: 'LOLC', img: 'LOLC_Kenya_Cropped.png' },
+    { country: 'Kenya', name: 'Muungano', img: 'Muungano_Cropped.png' },
     { country: 'Gabon', name: 'Cofidec', img: 'Cofidec_Logo.jpg' },
     { country: 'Gabon', name: 'Sodec', img: 'Sodec_Logo.svg' },
   ];
@@ -195,7 +195,7 @@ const ContactPage = () => {
                     alt={`${service.country} ${service.name} Logo`} 
                     className="object-contain h-20 mb-2"
                   />
-                  <p className="text-sm font-semibold text-center text-gray-800">{service.country} - {service.name}</p>
+                  <p className="text-sm font-semibold text-center text-gray-800">{service.name} - {service.country}</p>
                 </div>
               ))}
             </div>

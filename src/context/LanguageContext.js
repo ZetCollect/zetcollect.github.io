@@ -348,10 +348,9 @@ const translations = {
     "pricing.compareFeatures.clientRiskProfile": "Client Risk Profiling",
     "pricing.compareFeatures.routeOptimization":
       "Route and Schedule Optimization",
-    "pricing.compareFeatures.clientSelfAccessPortal":
-      "Client Self-Service Portal",
-    "pricing.compareFeatures.localBusinessHours":
-      "Local Business Hours Support",
+    "pricing.compareFeatures.clientSelfAccessPortal": "Client Self-Service Portal",
+    "pricing.compareFeatures.MobileMoney": "Mobile Money",
+    "pricing.compareFeatures.localBusinessHours": "Local Business Hours Support",
     "pricing.compareFeatures.enterpriseSupport": "24/7 Enterprise Support",
     "pricing.compareFeatures.smsNotifications": "SMS Notifications",
     "pricing.compareFeatures.smsNotifications.business": "On Demand",
@@ -802,10 +801,9 @@ const translations = {
     "pricing.compareFeatures.clientRiskProfile": "Profil de risque des clients",
     "pricing.compareFeatures.routeOptimization":
       "Optimisation des itinéraires et des horaires",
-    "pricing.compareFeatures.clientSelfAccessPortal":
-      "Portail d'auto-service pour les clients",
-    "pricing.compareFeatures.localBusinessHours":
-      "Support pendant les heures ouvrables locales",
+    "pricing.compareFeatures.clientSelfAccessPortal": "Portail d'auto-service pour les clients",
+    "pricing.compareFeatures.MobileMoney": "Mobile Money",
+    "pricing.compareFeatures.localBusinessHours":"Support pendant les heures ouvrables locales",
     "pricing.compareFeatures.enterpriseSupport": "Support entreprise 24/7",
     "pricing.compareFeatures.smsNotifications": "Notifications SMS",
     "pricing.compareFeatures.smsNotifications.business": "Sur demande",
@@ -1340,8 +1338,8 @@ const translations = {
       "Arifa za Mkusanyiko Uliokosa",
     "pricing.compareFeatures.clientRiskProfile": "Wasifu wa Hatari ya Mteja",
     "pricing.compareFeatures.routeOptimization": "Uboreshaji wa Njia na Ratiba",
-    "pricing.compareFeatures.clientSelfAccessPortal":
-      "Tovuti ya Huduma ya Mteja Binafsi",
+    "pricing.compareFeatures.clientSelfAccessPortal": "Tovuti ya Huduma ya Mteja Binafsi",
+    "pricing.compareFeatures.MobileMoney": "Pesa ya Simu",
     "pricing.compareFeatures.localBusinessHours":
       "Msaada wa Saa za Biashara za Mitaa",
     "pricing.compareFeatures.enterpriseSupport":

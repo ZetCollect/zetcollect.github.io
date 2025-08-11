@@ -78,5 +78,10 @@
     "name": "pricing.compareFeatures.clientSelfAccessPortal",
     "business": false,
     "enterprise": true
+  },
+  {
+    "name": "pricing.compareFeatures.MobileMoney",
+    "business": true,
+    "enterprise": true
   }
 ]

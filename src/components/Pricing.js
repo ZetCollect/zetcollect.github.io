@@ -406,21 +406,6 @@ const Pricing = () => {
                     </div>
                   </td>
                 </tr>
-                <tr className="border-b border-gray-100">
-                  <td className="px-6 py-4 text-left text-gray-700">
-                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
-                  </td>
-                  <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">
-                      {t("pricing.compareFeatures.mobileMoney.business")}
-                    </div>
-                  </td>
-                  <td className="px-6 py-4 text-center">
-                    <div className="flex flex-col items-center">
-                      {t("pricing.compareFeatures.mobileMoney.enterprise")}
-                    </div>
-                  </td>
-                </tr>
               </tbody>
             </table>
           </div>

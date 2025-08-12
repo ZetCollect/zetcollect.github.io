@@ -50,6 +50,11 @@
     "enterprise": true
   },
   {
+    "name": "pricing.compareFeatures.MobileMoney",
+    "business": true,
+    "enterprise": true
+  },
+  {
     "name": "pricing.compareFeatures.databaseHosting",
     "business": false,
     "enterprise": true
@@ -77,11 +82,6 @@
   {
     "name": "pricing.compareFeatures.clientSelfAccessPortal",
     "business": false,
-    "enterprise": true
-  },
-  {
-    "name": "pricing.compareFeatures.MobileMoney",
-    "business": true,
     "enterprise": true
   }
 ]

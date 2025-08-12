@@ -103,8 +103,10 @@ const Pricing = () => {
                     {t("pricing.compareFeatures.localBusinessHours")}
                   </li>
                   <li className="flex items-center text-gray-700">
-                    <span className="inline-flex w-5 h-5 mr-2"></span>
-                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.compareFeatures.accountBusiness")} 
                   </li>
                 </ul>
               </div>
@@ -157,8 +159,10 @@ const Pricing = () => {
                     {t("pricing.compareFeatures.enterpriseSupport")}
                   </li>
                   <li className="flex items-center text-white">
-                    <span className="inline-flex w-5 h-5 mr-2"></span>
-                    {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.compareFeatures.accountEnterprise")} 
                   </li>
                 </ul>
               </div>

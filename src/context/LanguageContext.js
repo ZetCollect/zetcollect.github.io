@@ -349,7 +349,7 @@ const translations = {
     "pricing.compareFeatures.routeOptimization":
       "Route and Schedule Optimization",
     "pricing.compareFeatures.clientSelfAccessPortal": "Client Self-Service Portal",
-    "pricing.compareFeatures.MobileMoney": "Mobile Money",
+    "pricing.compareFeatures.MobileMoney": "Mobile Money (Upcoming)",
     "pricing.compareFeatures.localBusinessHours": "Local Business Hours Support",
     "pricing.compareFeatures.enterpriseSupport": "24/7 Enterprise Support",
     "pricing.compareFeatures.smsNotifications": "SMS Notifications",
@@ -367,10 +367,9 @@ const translations = {
     "pricing.compareFeatures.support": "Support",
     "pricing.compareFeatures.support.business": "Local Business Hours",
     "pricing.compareFeatures.support.enterprise": "24/7 Enterprise Support",
-    "pricing.compareFeatures.mobileMoney": "Mobile Money",
-  "pricing.compareFeatures.mobileMoney.business": "Upcoming",
-  "pricing.compareFeatures.mobileMoney.enterprise": "Upcoming",
-  "pricing.compareFeatures.upcoming": "(upcoming)",
+    "pricing.compareFeatures.accountBusiness": "Support Engineer",
+    "pricing.compareFeatures.accountEnterprise": "Technical Account Specialist",
+
     //testimonials
     "testimonial.1.quote":
       "ZetCollect has transformed our daily cash collection operations. The offline capability is crucial for our rural branches, and the fraud prevention features give us complete peace of mind.",
@@ -802,7 +801,7 @@ const translations = {
     "pricing.compareFeatures.routeOptimization":
       "Optimisation des itinéraires et des horaires",
     "pricing.compareFeatures.clientSelfAccessPortal": "Portail d'auto-service pour les clients",
-    "pricing.compareFeatures.MobileMoney": "Mobile Money",
+    "pricing.compareFeatures.MobileMoney": "Mobile Money (Upcoming)",
     "pricing.compareFeatures.localBusinessHours":"Support pendant les heures ouvrables locales",
     "pricing.compareFeatures.enterpriseSupport": "Support entreprise 24/7",
     "pricing.compareFeatures.smsNotifications": "Notifications SMS",
@@ -1339,7 +1338,7 @@ const translations = {
     "pricing.compareFeatures.clientRiskProfile": "Wasifu wa Hatari ya Mteja",
     "pricing.compareFeatures.routeOptimization": "Uboreshaji wa Njia na Ratiba",
     "pricing.compareFeatures.clientSelfAccessPortal": "Tovuti ya Huduma ya Mteja Binafsi",
-    "pricing.compareFeatures.MobileMoney": "Pesa ya Simu",
+    "pricing.compareFeatures.MobileMoney": "Pesa ya Simu (Upcoming)",
     "pricing.compareFeatures.localBusinessHours":
       "Msaada wa Saa za Biashara za Mitaa",
     "pricing.compareFeatures.enterpriseSupport":

@@ -2,7 +2,7 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useLanguage } from '../../context/LanguageContext';
 import Footer from '../Footer';
-import blogPosts from '../../data/blogPosts.json'; // Adjust to '../../data/blogPosts.json' if needed
+import blogPosts from '../../data/blogPosts.json';
 
 const BlogPost = () => {
   const { id } = useParams();

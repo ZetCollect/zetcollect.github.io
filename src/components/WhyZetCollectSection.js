@@ -105,7 +105,7 @@ const WhyZetCollectSection = () => {
             <Quote className="w-12 h-12 mx-auto mb-6 text-Complementary opacity-70" />
 
             {/* Current Testimonial */}
-            <div className="text-center transition-all duration-500 ease-in-out opacity-0 animate-[fadeIn_0.5s_ease-in-out_forwards]">
+            <div className="text-justify transition-all duration-500 ease-in-out opacity-0 animate-[fadeIn_0.5s_ease-in-out_forwards]">
               <blockquote className="mb-6 text-xl font-semibold leading-relaxed lg:text-2xl">
                 {t(testimonials[activeTestimonial].quote)}
               </blockquote>

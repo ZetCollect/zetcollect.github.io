@@ -370,37 +370,25 @@ const translations = {
     "pricing.compareFeatures.accountBusiness": "Support Engineer",
     "pricing.compareFeatures.accountEnterprise": "Technical Account Specialist",
 
-    //testimonials
-    "testimonial.1.quote":
-      "ZetCollect has transformed our daily cash collection operations. The offline capability is crucial for our rural branches, and the fraud prevention features give us complete peace of mind.",
-    "testimonial.1.author": "Jason Mwangi",
-    "testimonial.1.title": "Operations Director, Kenya Microfinance",
+    //Testimonials
+
+    "testimonial.1.quote":  "Before ZetCollect, our cash collection process was a daily nightmare. Agents would return late, reconciliation took hours, and sometimes funds simply couldn’t be traced. Now, every collector is tracked in real-time, transactions are instantly recorded, and our branch managers   receive daily summaries without lifting a finger. Fraud attempts have dropped to almost zero, and our   clients trust us more because they receive SMS confirmations instantly after deposits",
+    "testimonial.1.author": "Paul Karanja",
+    "testimonial.1.title": "Head of Finance, Rafiki Microfinance Kenya",
     "testimonial.1.country": "Kenya",
-    "testimonial.1.initials": "JM",
-    "testimonial.2.quote":
-      "The mobile interface of ZetCollect is a game-changer for our field agents. It’s intuitive and reliable, even in areas with poor connectivity.",
-    "testimonial.2.author": "Marie Ndong",
-    "testimonial.2.title": "Branch Manager, Gabon Savings Bank",
-    "testimonial.2.country": "Gabon",
-    "testimonial.2.initials": "MN",
-    "testimonial.3.quote":
-      "With ZetCollect, we’ve streamlined our collection process and reduced errors significantly. The analytics dashboard provides insights we never had before.",
-    "testimonial.3.author": "Pauline Eto",
-    "testimonial.3.title": "Finance Lead, Cameroon Credit Union",
-    "testimonial.3.country": "Cameroon",
-    "testimonial.3.initials": "PE",
-    "testimonial.4.quote":
-      "ZetCollect’s fraud prevention tools have protected our operations, and the customizable features allow us to tailor it to our needs.",
-    "testimonial.4.author": "Samuel Ngu",
-    "testimonial.4.title": "CEO, Cameroon Microfinance Co.",
-    "testimonial.4.country": "Cameroon",
-    "testimonial.4.initials": "SN",
-    "testimonial.5.quote":
-      "The real-time tracking in ZetCollect has improved our efficiency and accountability across multiple branches.",
-    "testimonial.5.author": "Esther Mbi",
-    "testimonial.5.title": "Operations Manager, Cameroon Rural Bank",
-    "testimonial.5.country": "Cameroon",
-    "testimonial.5.initials": "EM",
+    "testimonial.1.initials": "PK",
+
+    "testimonial.2.quote": "When we first heard about ZetCollect, we were skeptical — another tech solution promising to ‘simplify’ cash  collection. But after the first month, we knew this was different.  Our collectors are now equipped with a reliable, easy-to-use mobile responsive system. Transactions are synced   daily, and the branch management feature gives us full visibility of our field operations.",
+    "testimonial.2.author": "Carolyne Ngeru",
+    "testimonial.2.title": "ICT Manager, Muungano Microfinance",
+    "testimonial.2.country": "Kenya",
+    "testimonial.2.initials": "CN",
+
+    "testimonial.3.quote":  "The real-time tracking in ZetCollect has improved our efficiency and accountability across our multiple branches.",
+    "testimonial.3.author": "Stephen Karanja",
+    "testimonial.3.title": "Finance Manager, LOLC Kenya Microfinance",
+    "testimonial.3.country": "Kenya",
+    "testimonial.3.initials": "SK",
 
   "not404.imageAlt": "404 Error Image"
   },
@@ -821,36 +809,23 @@ const translations = {
     "pricing.compareFeatures.support.enterprise": "Support entreprise 24/7",
 
     //testimonial
-    "testimonial.1.quote":
-      "ZetCollect a transformé nos opérations quotidiennes de collecte d'argent. La capacité hors ligne est cruciale pour nos succursales rurales, et les fonctionnalités de prévention de la fraude nous offrent une tranquillité d'esprit totale.",
-    "testimonial.1.author": "Jason Mwangi",
-    "testimonial.1.title": "Directeur des opérations, Kenya Microfinance",
+    "testimonial.1.quote":  "Avant ZetCollect, notre processus d'encaissement était un cauchemar quotidien. Les agents revenaient en retard, les rapprochements prenaient des heures et, parfois, les fonds étaient tout simplement introuvables. Désormais, chaque encaisseur est suivi en temps réel, les transactions sont enregistrées instantanément et nos directeurs d'agence reçoivent des récapitulatifs quotidiens sans même lever le petit doigt. Les tentatives de fraude sont quasiment nulles et nos clients nous font davantage confiance, car ils reçoivent des confirmations par SMS immédiatement après leurs dépôts.",
+    "testimonial.1.author": "Paul Karanja",
+    "testimonial.1.title": "Head of Finance, Rafiki Microfinance Kenya",
     "testimonial.1.country": "Kenya",
-    "testimonial.1.initials": "JM",
-    "testimonial.2.quote":
-      "L'interface mobile de ZetCollect change la donne pour nos agents de terrain. Elle est intuitive et fiable, même dans les zones à faible connectivité.",
-    "testimonial.2.author": "Marie Ndong",
-    "testimonial.2.title": "Directrice de succursale, Gabon Savings Bank",
-    "testimonial.2.country": "Gabon",
-    "testimonial.2.initials": "MN",
-    "testimonial.3.quote":
-      "Avec ZetCollect, nous avons rationalisé notre processus de collecte et réduit les erreurs de manière significative. Le tableau de bord analytique fournit des informations que nous n'avions jamais eues auparavant.",
-    "testimonial.3.author": "Pauline Eto",
-    "testimonial.3.title": "Responsable des finances, Cameroon Credit Union",
-    "testimonial.3.country": "Cameroun",
-    "testimonial.3.initials": "PE",
-    "testimonial.4.quote":
-      "Les outils de prévention de la fraude de ZetCollect ont protégé nos opérations, et les fonctionnalités personnalisables nous permettent de l'adapter à nos besoins.",
-    "testimonial.4.author": "Samuel Ngu",
-    "testimonial.4.title": "PDG, Cameroon Microfinance Co.",
-    "testimonial.4.country": "Cameroun",
-    "testimonial.4.initials": "SN",
-    "testimonial.5.quote":
-      "Le suivi en temps réel de ZetCollect a amélioré notre efficacité et notre responsabilité à travers plusieurs succursales.",
-    "testimonial.5.author": "Esther Mbi",
-    "testimonial.5.title": "Responsable des opérations, Cameroon Rural Bank",
-    "testimonial.5.country": "Cameroun",
-    "testimonial.5.initials": "EM",
+    "testimonial.1.initials": "PK",
+
+    "testimonial.2.quote":  "Lorsque nous avons entendu parler de ZetCollect pour la première fois, nous étions sceptiques : une autre solution technologique promettant de simplifier l'encaissement. Mais après le premier mois, nous avons compris que ce serait différent. Nos agents de recouvrement disposent désormais d'un système mobile fiable et facile à utiliser. Les transactions sont synchronisées quotidiennement et la fonctionnalité de gestion des agences nous offre une visibilité totale sur nos opérations sur le terrain.",
+    "testimonial.2.author": "Carolyne Ngeru",
+    "testimonial.2.title": "ICT Manager, Muungano Microfinance",
+    "testimonial.2.country": "Kenya",
+    "testimonial.2.initials": "CN",
+
+    "testimonial.3.quote": "Le suivi en temps réel dans ZetCollect a amélioré notre efficacité et notre responsabilité dans nos multiples succursales.",
+    "testimonial.3.author": "Stephen Karanja",
+    "testimonial.3.title": "Finance Manager, LOLC Kenya Microfinance",
+    "testimonial.3.country": "Kenya",
+    "testimonial.3.initials": "SK"
   },
 
   sw: {
@@ -1361,36 +1336,23 @@ const translations = {
       "Msaada wa Biashara ya Juu 24/7",
 
     //testimonial
-    "testimonial.1.quote":
-      "ZetCollect imebadilisha shughuli zetu za kila siku za ukusanyaji wa fedha. Uwezo wa kufanya kazi nje ya mtandao ni muhimu kwa matawi yetu ya vijijini, na vipengele vya kuzuia udanganyifu vinatupa amani ya akili kabisa.",
-    "testimonial.1.author": "Jason Mwangi",
-    "testimonial.1.title": "Mkurugenzi wa Shughuli, Kenya Microfinance",
+    "testimonial.1.quote":  "Kabla ya ZetCollect, mchakato wetu wa kukusanya pesa ulikuwa ndoto ya kila siku. Mawakala walichelewa kurudi, upatanisho ulichukua saa nyingi, na wakati mwingine pesa hazikuweza kupatikana. Sasa, kila mkusanyaji anafuatiliwa katika muda halisi, miamala hurekodiwa papo hapo, na wasimamizi wetu wa tawi hupokea muhtasari wa kila siku bila kuinua kidole. Majaribio ya ulaghai yamepungua hadi karibu sifuri, na wateja wetu wanatuamini zaidi kwa sababu wanapokea uthibitisho wa SMS papo hapo baada ya kuweka amana.",
+    "testimonial.1.author": "Paul Karanja",
+    "testimonial.1.title": "Head of Finance, Rafiki Microfinance Kenya",
     "testimonial.1.country": "Kenya",
-    "testimonial.1.initials": "JM",
-    "testimonial.2.quote":
-      "Kiolesura cha simu cha ZetCollect ni kibadilishaji mchezo kwa wawakilishi wetu wa nje. Ni rahisi kutumia na ya kuaminika, hata katika maeneo yenye muunganisho dhaifu.",
-    "testimonial.2.author": "Marie Ndong",
-    "testimonial.2.title": "Meneja wa Tawi, Gabon Savings Bank",
-    "testimonial.2.country": "Gabon",
-    "testimonial.2.initials": "MN",
-    "testimonial.3.quote":
-      "Kwa ZetCollect, tumerahisisha mchakato wetu wa ukusanyaji na kupunguza makosa kwa kiasi kikubwa. Dashibodi ya uchanganuzi inatoa maarifa ambayo hatukuwahi kuwa nayo hapo awali.",
-    "testimonial.3.author": "Pauline Eto",
-    "testimonial.3.title": "Kiongozi wa Fedha, Cameroon Credit Union",
-    "testimonial.3.country": "Kamerun",
-    "testimonial.3.initials": "PE",
-    "testimonial.4.quote":
-      "Zana za kuzuia udanganyifu za ZetCollect zimehifadhi shughuli zetu, na vipengele vinavyoweza kubinafsishwa vinaturuhusu kuirekebisha kwa mahitaji yetu.",
-    "testimonial.4.author": "Samuel Ngu",
-    "testimonial.4.title": "Mkurugenzi Mkuu, Cameroon Microfinance Co.",
-    "testimonial.4.country": "Kamerun",
-    "testimonial.4.initials": "SN",
-    "testimonial.5.quote":
-      "Ufuatiliaji wa wakati halisi wa ZetCollect umeboresha ufanisi wetu na uwajibikaji katika matawi mengi.",
-    "testimonial.5.author": "Esther Mbi",
-    "testimonial.5.title": "Meneja wa Shughuli, Cameroon Rural Bank",
-    "testimonial.5.country": "Kamerun",
-    "testimonial.5.initials": "EM",
+    "testimonial.1.initials": "PK",
+
+    "testimonial.2.quote":  "Tuliposikia kuhusu ZetCollect kwa mara ya kwanza, tulikuwa na mashaka - suluhisho lingine la kiteknolojia likiahidi 'kurahisisha' ukusanyaji wa pesa. Lakini baada ya mwezi wa kwanza, tulijua kuwa hii ilikuwa tofauti. Wakusanyaji wetu sasa wamewekewa mfumo wa kuitikia wa simu unaotegemewa na rahisi kutumia. Shughuli za malipo husawazishwa kila siku, na kipengele cha usimamizi wa tawi hutupatia mwonekano kamili wa shughuli zetu za uga.",
+    "testimonial.2.author": "Carolyne Ngeru",
+    "testimonial.2.title": "ICT Manager, Muungano Microfinance",
+    "testimonial.2.country": "Kenya",
+    "testimonial.2.initials": "CN",
+
+    "testimonial.3.quote": "Ufuatiliaji wa wakati halisi katika ZetCollect umeboresha ufanisi wetu na uwajibikaji katika matawi yetu mengi.",
+    "testimonial.3.author": "Stephen Karanja",
+    "testimonial.3.title": "Finance Manager, LOLC Kenya Microfinance",
+    "testimonial.3.country": "Kenya",
+    "testimonial.3.initials": "SK"
   },
 };
 

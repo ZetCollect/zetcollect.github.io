@@ -64,7 +64,7 @@ const KeyFeatures = () => {
               <div key={index} className="w-full h-64 flip-card group">
                 <div className="w-full h-full flip-card-inner group-hover:rotate-y-180">
                   {/* Front Side */}
-                  <div className={`flip-card-front w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 flex flex-col items-center justify-center text-center sm:p-6 sm:flex-row sm:items-start sm:justify-start sm:text-left shadow-lg custom-shadow-blue hover:custom-shadow-blue-xl`}>
+                  <div className={`flip-card-front w-full h-full bg-white rounded-xl p-6 border border-gray-200 ${colors.border} ${colors.hover} transition-all duration-300 flex flex-col items-center justify-center text-center sm:flex-row sm:items-start sm:justify-start sm:text-left lg:flex-col lg:items-center lg:justify-center lg:text-center shadow-lg custom-shadow-blue hover:custom-shadow-blue-xl`}>
                     <div className={`w-12 h-12 ${colors.bg} rounded-lg flex items-center justify-center mb-4 sm:justify-center group-hover:scale-110 transition-transform duration-300`}>
                       <Icon className={`w-6 h-6 ${colors.icon}`} />
                     </div>

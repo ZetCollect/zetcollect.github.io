@@ -38,7 +38,6 @@ const Pricing = () => {
             {t("pricing.section1.description")}
           </p>
           <div className="flex space-x-4">
-            {/* The change is here: A tag with href to the cards section */}
             <a
               href="#pricing-cards"
               className="px-6 py-3 font-semibold text-white rounded-full bg-primary hover:bg-primary-dark"
@@ -50,13 +49,14 @@ const Pricing = () => {
         </div>
       </section>
 
-      {/* Section 2: Flexible fees that suits your size */}
-      {/* The change is here: Added id="pricing-cards" */}
       <section id="pricing-cards" className="px-8 py-16 bg-gray-100 md:px-24">
         <div className="mx-auto max-w-7xl">
-          <h2 className="mb-12 text-3xl font-bold text-left md:text-4xl">
+          <h2 className="mb-4 text-3xl font-bold text-left md:text-4xl">
             {t("pricing.section2.title")}
           </h2>
+          <p className="mb-12 text-lg text-left text-gray-600 max-w-7xl">
+            {t("pricing.section2.description")}
+          </p>
 
           <div className="flex flex-col items-stretch justify-center gap-8 md:flex-row">
             {/* Business Plan Card */}
@@ -76,37 +76,31 @@ const Pricing = () => {
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.clientManagement")}
+                    {t("pricing.section2.business.features.tokens")}
                   </li>
                   <li className="flex items-center text-gray-700">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.collectorManagement")}
+                    {t("pricing.section2.business.features.selectServices")}
                   </li>
                   <li className="flex items-center text-gray-700">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.branchSetup")}
+                    {t("pricing.section2.business.features.noCharges")}
                   </li>
                   <li className="flex items-center text-gray-700">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.mobileCollection")}
+                    {t("pricing.section2.business.features.enterpriseServices")}
                   </li>
                   <li className="flex items-center text-gray-700">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.localBusinessHours")}
-                  </li>
-                  <li className="flex items-center text-gray-700">
-                    <span className="inline-flex w-5 h-5 mr-2">
-                      <CheckIcon />
-                    </span>
-                    {t("pricing.compareFeatures.accountBusiness")} 
+                    {t("pricing.section2.business.features.allServices")}
                   </li>
                 </ul>
               </div>
@@ -132,37 +126,25 @@ const Pricing = () => {
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.gpsTraceability")}
+                    {t("pricing.section2.enterprise.features.tokens")}
                   </li>
                   <li className="flex items-center text-white">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.missedCollectionAlerts")}
+                    {t("pricing.section2.enterprise.features.payBeyondTokens")}
                   </li>
                   <li className="flex items-center text-white">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.clientRiskProfile")}
+                    {t("pricing.section2.enterprise.features.scaleWorkloads")}
                   </li>
                   <li className="flex items-center text-white">
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.routeOptimization")}
-                  </li>
-                  <li className="flex items-center text-white">
-                    <span className="inline-flex w-5 h-5 mr-2">
-                      <CheckIcon />
-                    </span>
-                    {t("pricing.compareFeatures.enterpriseSupport")}
-                  </li>
-                  <li className="flex items-center text-white">
-                    <span className="inline-flex w-5 h-5 mr-2">
-                      <CheckIcon />
-                    </span>
-                    {t("pricing.compareFeatures.accountEnterprise")} 
+                    {t("pricing.section2.enterprise.features.allServices")}
                   </li>
                 </ul>
               </div>

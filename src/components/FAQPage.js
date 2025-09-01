@@ -34,34 +34,108 @@ const FAQPage = () => {
           </div>
         </div>
 
-        {/* FAQ Items Section */}
+        {/* FAQ Sections */}
         <div className="max-w-4xl px-4 mx-auto sm:px-6 lg:px-8">
-          <div className="overflow-hidden bg-white shadow-lg rounded-xl">
-            {faqs.map((faq, index) => (
-              <div
-                key={index}
-                className="border-b border-gray-200 last:border-b-0"
-              >
-                <button
-                  className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
-                  onClick={() => toggleFAQ(index)}
+          {/* General Section */}
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">
+              {t('faq.sections.general')}
+            </h2>
+            <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+              {faqs.general.map((faq, index) => (
+                <div
+                  key={index}
+                  className="border-b border-gray-200 last:border-b-0"
                 >
-                  <span className="text-lg font-semibold text-gray-900">
-                    {t(faq.question)}
-                  </span>
-                  {openIndex === index ? (
-                    <Minus className="w-6 h-6 text-gray-500" />
-                  ) : (
-                    <Plus className="w-6 h-6 text-gray-500" />
+                  <button
+                    className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                    onClick={() => toggleFAQ(`general-${index}`)}
+                  >
+                    <span className="text-lg font-semibold text-gray-900">
+                      {t(faq.question)}
+                    </span>
+                    {openIndex === `general-${index}` ? (
+                      <Minus className="w-6 h-6 text-gray-500" />
+                    ) : (
+                      <Plus className="w-6 h-6 text-gray-500" />
+                    )}
+                  </button>
+                  {openIndex === `general-${index}` && (
+                    <div className="px-6 pb-6 text-gray-600">
+                      <p>{t(faq.answer)}</p>
+                    </div>
                   )}
-                </button>
-                {openIndex === index && (
-                  <div className="px-6 pb-6 text-gray-600">
-                    <p>{t(faq.answer)}</p>
-                  </div>
-                )}
-              </div>
-            ))}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Free Plan Account Section */}
+          <div className="mb-8">
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">
+              {t('faq.sections.freePlan')}
+            </h2>
+            <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+              {faqs.freePlan.map((faq, index) => (
+                <div
+                  key={index}
+                  className="border-b border-gray-200 last:border-b-0"
+                >
+                  <button
+                    className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                    onClick={() => toggleFAQ(`freePlan-${index}`)}
+                  >
+                    <span className="text-lg font-semibold text-gray-900">
+                      {t(faq.question)}
+                    </span>
+                    {openIndex === `freePlan-${index}` ? (
+                      <Minus className="w-6 h-6 text-gray-500" />
+                    ) : (
+                      <Plus className="w-6 h-6 text-gray-500" />
+                    )}
+                  </button>
+                  {openIndex === `freePlan-${index}` && (
+                    <div className="px-6 pb-6 text-gray-600">
+                      <p>{t(faq.answer)}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Paid Plan Account Section */}
+          <div>
+            <h2 className="mb-4 text-2xl font-bold text-gray-900">
+              {t('faq.sections.paidPlan')}
+            </h2>
+            <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+              {faqs.paidPlan.map((faq, index) => (
+                <div
+                  key={index}
+                  className="border-b border-gray-200 last:border-b-0"
+                >
+                  <button
+                    className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                    onClick={() => toggleFAQ(`paidPlan-${index}`)}
+                  >
+                    <span className="text-lg font-semibold text-gray-900">
+                      {t(faq.question)}
+                    </span>
+                    {openIndex === `paidPlan-${index}` ? (
+                      <Minus className="w-6 h-6 text-gray-500" />
+                    ) : (
+                      <Plus className="w-6 h-6 text-gray-500" />
+                    )}
+                  </button>
+                  {openIndex === `paidPlan-${index}` && (
+                    <div className="px-6 pb-6 text-gray-600">
+                      <p>{t(faq.answer)}</p>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </section>

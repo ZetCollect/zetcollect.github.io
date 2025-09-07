@@ -6,7 +6,7 @@
     "color": "Complementary",
     "bgColor": "bg-blue-50",
     "textColor": "text-primary",
-    "progress": 20
+    "progress": 10
   },
   {
     "icon": "Bell",
@@ -15,7 +15,7 @@
     "color": "Complementary",
     "bgColor": "bg-red-50",
     "textColor": "text-red-600",
-    "progress": 10
+    "progress": 20
   },
   {
     "icon": "TrendingUp",
@@ -24,7 +24,7 @@
     "color": "Complementary",
     "bgColor": "bg-purple-50",
     "textColor": "text-purple-600",
-    "progress": 0
+    "progress": 5
   },
   {
     "icon": "Route",
@@ -33,7 +33,7 @@
     "color": "Complementary",
     "bgColor": "bg-green-50",
     "textColor": "text-green-600",
-    "progress": 0
+    "progress": 5
   },
   {
     "icon": "User",
@@ -42,7 +42,7 @@
     "color": "Complementary",
     "bgColor": "bg-orange-50",
     "textColor": "text-orange-600",
-    "progress": 0
+    "progress": 20
   },
   {
     "icon": "Landmark",
@@ -51,7 +51,7 @@
     "color": "Complementary",
     "bgColor": "bg-yellow-50",
     "textColor": "text-yellow-600",
-    "progress": 10
+    "progress": 5
   },
     {
 "icon": "DollarSign",
@@ -60,6 +60,6 @@
     "color": "Complementary",
     "bgColor": "bg-teal-50",
     "textColor": "text-teal-600",
-    "progress": 15
+    "progress": 5
   }
 ]

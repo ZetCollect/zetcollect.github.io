@@ -49,9 +49,6 @@ const Pricing = () => {
           <div className="absolute bottom-10 right-10"></div>
         </div>
       </section>
-
-      {/* Section 2: Flexible fees that suits your size */}
-      {/* The change is here: Added id="pricing-cards" */}
       <section id="pricing-cards" className="px-8 py-16 bg-gray-100 md:px-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-3xl font-bold text-left md:text-4xl">

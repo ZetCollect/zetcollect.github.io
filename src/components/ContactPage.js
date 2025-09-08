@@ -8,21 +8,21 @@ const API_CONFIG = {
   MAX_RETRIES: 2
 };
 
-// Toast notification component
-const Toast = ({ message, type, onClose }) => {
-  React.useEffect(() => {
-    const timer = setTimeout(onClose, 4000);
-    return () => clearTimeout(timer);
-  }, [onClose]);
-
-  const bgColor = type === 'success' ? 'bg-green-500' : 'bg-red-500';
+// Modal notification component
+const Modal = ({ message, type, onClose }) => {
+  const bgColor = type === 'success' ? 'bg-secondary' : 'bg-red-500';
   
   return (
-    <div className={`fixed top-4 right-4 ${bgColor} text-white px-6 py-3 rounded-lg shadow-lg z-50 flex items-center gap-2`}>
-      <span>{message}</span>
-      <button onClick={onClose} className="ml-2 text-white hover:text-gray-200">
-        ✕
-      </button>
+    <div className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-50">
+      <div className={`${bgColor} text-white px-6 py-4 rounded-lg shadow-lg max-w-sm w-full flex flex-col items-center gap-4`}>
+        <span className="text-center">{message}</span>
+        <button 
+          onClick={onClose} 
+          className="px-4 py-2 text-black transition duration-300 bg-white rounded-lg hover:bg-gray-200"
+        >
+          Close
+        </button>
+      </div>
     </div>
   );
 };
@@ -31,7 +31,7 @@ const Toast = ({ message, type, onClose }) => {
 const ContactUs = () => {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [toast, setToast] = useState(null);
+  const [modal, setModal] = useState(null);
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -52,12 +52,12 @@ const ContactUs = () => {
     { value: 'Republic-Of-Congo', label: t('contact.form.country.congo') },
   ];
 
-  const showToast = (message, type = 'success') => {
-    setToast({ message, type });
+  const showModal = (message, type = 'success') => {
+    setModal({ message, type });
   };
 
-  const hideToast = () => {
-    setToast(null);
+  const hideModal = () => {
+    setModal(null);
   };
 
   const handleInputChange = (e) => {
@@ -78,7 +78,7 @@ const ContactUs = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        mode: 'cors', // Explicitly set CORS mode
+        mode: 'cors',
         body: JSON.stringify({
           name: `${data.first_name} ${data.last_name}`,
           email: data.email_id,
@@ -105,7 +105,7 @@ const ContactUs = () => {
 
       if (retryCount < API_CONFIG.MAX_RETRIES) {
         console.log(`Retrying... (${retryCount + 1}/${API_CONFIG.MAX_RETRIES})`);
-        await new Promise(resolve => setTimeout(resolve, 1000)); // Wait 1 second before retry
+        await new Promise(resolve => setTimeout(resolve, 1000));
         return submitToAPI(data, retryCount + 1);
       }
 
@@ -118,8 +118,8 @@ const ContactUs = () => {
     setIsSubmitting(true);
 
     try {
-      // Show immediate success toast
-      showToast('Thank you! Your message has been submitted successfully.', 'success');
+      // Show immediate success modal
+      showModal('Thank you! Your message has been submitted successfully.', 'success');
       
       // Reset form immediately
       setFormData({
@@ -139,11 +139,11 @@ const ContactUs = () => {
     } catch (error) {
       console.error('API submission failed:', error.message);
       
-      // Show error toast if API fails
+      // Show error modal if API fails
       if (error.name === 'TypeError' && error.message.includes('CORS')) {
-        showToast('Form submitted! Note: Unable to connect to server due to CORS policy, but your message was recorded locally.', 'success');
+        showModal('Form submitted! Note: Unable to connect to server due to CORS policy, but your message was recorded locally.', 'success');
       } else {
-        showToast('Form submitted! There was a network issue, but we have recorded your information.', 'success');
+        showModal('Form submitted! There was a network issue, but we have recorded your information.', 'success');
       }
       
       // Log the form data for debugging or manual processing
@@ -157,12 +157,12 @@ const ContactUs = () => {
     <section id="contactUs" className="min-h-screen py-16 bg-gray-100 lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         
-        {/* Toast notification */}
-        {toast && (
-          <Toast 
-            message={toast.message} 
-            type={toast.type} 
-            onClose={hideToast} 
+        {/* Modal notification */}
+        {modal && (
+          <Modal 
+            message={modal.message} 
+            type={modal.type} 
+            onClose={hideModal} 
           />
         )}
         
@@ -315,7 +315,7 @@ const ContactUs = () => {
 const ContactPage = () => {
   const { t } = useLanguage();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [toast, setToast] = useState(null);
+  const [modal, setModal] = useState(null);
   const [formData, setFormData] = useState({
     first_name: '',
     last_name: '',
@@ -340,12 +340,12 @@ const ContactPage = () => {
     { country: 'Gabon', name: 'Sodec', img: 'Sodec_Logo.svg' },
   ];
 
-  const showToast = (message, type = 'success') => {
-    setToast({ message, type });
+  const showModal = (message, type = 'success') => {
+    setModal({ message, type });
   };
 
-  const hideToast = () => {
-    setToast(null);
+  const hideModal = () => {
+    setModal(null);
   };
 
   const handleInputChange = (e) => {
@@ -406,8 +406,8 @@ const ContactPage = () => {
     setIsSubmitting(true);
 
     try {
-      // Show immediate success toast
-      showToast('Thank you! Your message has been submitted successfully.', 'success');
+      // Show immediate success modal
+      showModal('Thank you! Your message has been submitted successfully.', 'success');
       
       // Reset form immediately
       setFormData({
@@ -430,11 +430,11 @@ const ContactPage = () => {
     } catch (error) {
       console.error('API submission failed:', error.message);
       
-      // Show error toast if API fails
+      // Show error modal if API fails
       if (error.name === 'TypeError' && error.message.includes('CORS')) {
-        showToast('Form submitted! Note: Unable to connect to server due to CORS policy, but your message was recorded locally.', 'success');
+        showModal('Form submitted! Note: Unable to connect to server due to CORS policy, but your message was recorded locally.', 'success');
       } else {
-        showToast('Form submitted! There was a network issue, but we have recorded your information.', 'success');
+        showModal('Form submitted! There was a network issue, but we have recorded your information.', 'success');
       }
       
       // Log the form data for debugging or manual processing
@@ -448,12 +448,12 @@ const ContactPage = () => {
     <section className="min-h-screen py-16 bg-white lg:py-24">
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         
-        {/* Toast notification */}
-        {toast && (
-          <Toast 
-            message={toast.message} 
-            type={toast.type} 
-            onClose={hideToast} 
+        {/* Modal notification */}
+        {modal && (
+          <Modal 
+            message={modal.message} 
+            type={modal.type} 
+            onClose={hideModal} 
           />
         )}
         

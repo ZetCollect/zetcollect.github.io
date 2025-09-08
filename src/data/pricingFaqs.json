@@ -1,0 +1,44 @@
+{
+  "general": [
+    {
+      "question": "pricing.section4.faqs.general.whatIsZetCollect",
+      "answer": "pricing.section4.faqs.general.whatIsZetCollect.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.general.howToSignUp",
+      "answer": "pricing.section4.faqs.general.howToSignUp.answer"
+    }
+  ],
+  "freePlan": [
+    {
+      "question": "pricing.section4.faqs.freePlan.whatIsFreeTier",
+      "answer": "pricing.section4.faqs.freePlan.whatIsFreeTier.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.freePlan.howToActivateZetCollect",
+      "answer": "pricing.section4.faqs.freePlan.howToActivateZetCollect.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.freePlan.limitsOfFreeTier",
+      "answer": "pricing.section4.faqs.freePlan.limitsOfFreeTier.answer"
+    }
+  ],
+  "paidPlan": [
+    {
+      "question": "pricing.section4.faqs.paidPlan.whatIsPaidPlan",
+      "answer": "pricing.section4.faqs.paidPlan.whatIsPaidPlan.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.paidPlan.howToUpgrade",
+      "answer": "pricing.section4.faqs.paidPlan.howToUpgrade.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.paidPlan.exceedTokenLimit",
+      "answer": "pricing.section4.faqs.paidPlan.exceedTokenLimit.answer"
+    },
+    {
+      "question": "pricing.section4.faqs.paidPlan.switchPlans",
+      "answer": "pricing.section4.faqs.paidPlan.switchPlans.answer"
+    }
+  ]
+}

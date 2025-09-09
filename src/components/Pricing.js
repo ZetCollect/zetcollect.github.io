@@ -66,7 +66,7 @@ const Pricing = () => {
           </h2>
 
           <div className="flex flex-col items-stretch justify-center gap-8 md:flex-row">
-            {/* Business Plan Card */}
+             {/* Business Plan Card */}
             <div className="flex flex-col justify-between flex-1 max-w-2xl p-8 bg-white rounded-lg shadow-lg">
               <div>
                 <h3 className="mb-4 text-2xl font-bold text-left">
@@ -113,7 +113,7 @@ const Pricing = () => {
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.accountBusiness")}
+                    {t("pricing.compareFeatures.accountBusiness")} 
                   </li>
                 </ul>
               </div>
@@ -169,7 +169,7 @@ const Pricing = () => {
                     <span className="inline-flex w-5 h-5 mr-2">
                       <CheckIcon />
                     </span>
-                    {t("pricing.compareFeatures.accountEnterprise")}
+                    {t("pricing.compareFeatures.accountEnterprise")} 
                   </li>
                 </ul>
               </div>
@@ -180,7 +180,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-
       {/* Section 3: Compare features */}
       <section className="px-8 py-16 bg-white md:px-24">
         <div className="mx-auto max-w-7xl">
@@ -492,9 +491,6 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <button className="px-6 py-3 mt-6 font-semibold text-white rounded-full bg-primary hover:bg-secondary">
-                {t("pricing.section4.business.cta")}
-              </button>
             </div>
 
             {/* Enterprise Plan Card */}
@@ -536,9 +532,6 @@ const Pricing = () => {
                   </li>
                 </ul>
               </div>
-              <button className="px-6 py-3 mt-6 font-semibold text-white rounded-full bg-primary hover:bg-secondary">
-                {t("pricing.section4.enterprise.cta")}
-              </button>
             </div>
           </div>
 

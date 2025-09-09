@@ -1,10 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import Footer from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext";
+import { Plus, Minus } from "lucide-react";
 import compareFeatures from "../data/compareFeatures.json";
+import pricingFaqs from "../data/pricingFaqs.json";
 
 const Pricing = () => {
   const { t } = useLanguage();
+  const [openIndex, setOpenIndex] = useState(null);
 
   // Helper component for the checkmark icon
   const CheckIcon = () => (
@@ -22,6 +25,11 @@ const Pricing = () => {
     </svg>
   );
 
+  // FAQ toggle function
+  const toggleFAQ = (index) => {
+    setOpenIndex(openIndex === index ? null : index);
+  };
+
   return (
     <>
       {/* Section 1: Fair pricing for faster growth */}
@@ -38,7 +46,6 @@ const Pricing = () => {
             {t("pricing.section1.description")}
           </p>
           <div className="flex space-x-4">
-            {/* The change is here: A tag with href to the cards section */}
             <a
               href="#pricing-cards"
               className="px-6 py-3 font-semibold text-white rounded-full bg-primary hover:bg-primary-dark"
@@ -46,12 +53,12 @@ const Pricing = () => {
               {t("pricing.section1.cta")}
             </a>
           </div>
+          {/* This div is to push the image higher */}
           <div className="absolute bottom-10 right-10"></div>
         </div>
       </section>
 
-      {/* Section 2: Flexible fees that suits your size */}
-      {/* The change is here: Added id="pricing-cards" */}
+      {/* Section 2: Pricing Cards */}
       <section id="pricing-cards" className="px-8 py-16 bg-gray-100 md:px-24">
         <div className="mx-auto max-w-7xl">
           <h2 className="mb-12 text-3xl font-bold text-left md:text-4xl">
@@ -59,7 +66,7 @@ const Pricing = () => {
           </h2>
 
           <div className="flex flex-col items-stretch justify-center gap-8 md:flex-row">
-            {/* Business Plan Card */}
+             {/* Business Plan Card */}
             <div className="flex flex-col justify-between flex-1 max-w-2xl p-8 bg-white rounded-lg shadow-lg">
               <div>
                 <h3 className="mb-4 text-2xl font-bold text-left">
@@ -173,7 +180,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-
       {/* Section 3: Compare features */}
       <section className="px-8 py-16 bg-white md:px-24">
         <div className="mx-auto max-w-7xl">
@@ -203,7 +209,7 @@ const Pricing = () => {
                 </ul>
               </div>
             ))}
-            
+
             <div className="p-4 my-4 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-lg font-bold">
                 {t("pricing.compareFeatures.smsNotifications")}
@@ -219,7 +225,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="p-4 my-4 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-lg font-bold">
                 {t("pricing.compareFeatures.customDomain")}
@@ -235,7 +241,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="p-4 my-4 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-lg font-bold">
                 {t("pricing.compareFeatures.customBranding")}
@@ -267,7 +273,7 @@ const Pricing = () => {
                 </li>
               </ul>
             </div>
-            
+
             <div className="p-4 my-4 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-lg font-bold">
                 {t("pricing.compareFeatures.support")}
@@ -286,7 +292,8 @@ const Pricing = () => {
 
             <div className="p-4 my-4 bg-white rounded-lg shadow-md">
               <h3 className="mb-4 text-lg font-bold">
-                {t("pricing.compareFeatures.mobileMoney")} {t("pricing.compareFeatures.upcoming")}
+                {t("pricing.compareFeatures.mobileMoney")}{" "}
+                {t("pricing.compareFeatures.upcoming")}
               </h3>
               <ul className="space-y-2">
                 <li className="flex items-center justify-between">
@@ -415,6 +422,227 @@ const Pricing = () => {
           </div>
         </div>
       </section>
+
+      {/* Section 4: Additional Information and FAQs */}
+      <section id="additional-info" className="px-8 py-16 bg-gray-100 md:px-24">
+        <div className="mx-auto max-w-7xl">
+          <div className="flex flex-row items-stretch justify-between gap-8">
+            <div className="flex-[3] mt-14">
+              <h2 className="mb-4 text-3xl font-bold text-left md:text-4xl">
+                {t("pricing.section4.title")}
+              </h2>
+              <p className="mb-12 text-lg text-left text-gray-600">
+                {t("pricing.section4.description")}
+              </p>
+            </div>
+            <div className="flex-[1] min-w-[300px] h-full mb-8">
+              {/* eslint-disable-next-line jsx-a11y/img-redundant-alt */}
+              <img
+                src="/ZetCollect-1month_free_trial_banner.png"
+                alt="Section 4 Image"
+                className="object-cover w-full h-full mb-5 rounded-lg"
+              />
+            </div>
+          </div>
+
+          <div className="flex flex-col items-stretch justify-center gap-8 md:flex-row">
+            {/* Business Plan Card */}
+            <div className="flex flex-col justify-between flex-1 max-w-2xl p-8 bg-white rounded-lg shadow-lg">
+              <div>
+                <h3 className="mb-4 text-2xl font-bold text-left">
+                  {t("pricing.section4.business.title")}
+                </h3>
+                <p className="mb-6 text-left text-gray-600">
+                  {t("pricing.section4.business.description")}
+                </p>
+                <h4 className="mb-4 text-lg font-semibold text-left">
+                  {t("pricing.section4.business.features.title")}
+                </h4>
+                <ul className="mb-8 space-y-3">
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.business.features.tokens")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.business.features.selectServices")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.business.features.noCharges")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.business.features.enterpriseServices")}
+                  </li>
+                  <li className="flex items-center text-gray-700">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.business.features.allServices")}
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            {/* Enterprise Plan Card */}
+            <div className="flex flex-col justify-between flex-1 max-w-2xl p-8 text-white bg-black rounded-lg shadow-lg">
+              <div>
+                <h3 className="mb-4 text-2xl font-bold text-left">
+                  {t("pricing.section4.enterprise.title")}
+                </h3>
+                <p className="mb-6 text-left text-white">
+                  {t("pricing.section4.enterprise.description")}
+                </p>
+                <h4 className="mb-4 text-lg font-semibold text-left">
+                  {t("pricing.section4.enterprise.features.title")}
+                </h4>
+                <ul className="mb-8 space-y-3">
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.enterprise.features.tokens")}
+                  </li>
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.enterprise.features.payBeyondTokens")}
+                  </li>
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.enterprise.features.scaleWorkloads")}
+                  </li>
+                  <li className="flex items-center text-white">
+                    <span className="inline-flex w-5 h-5 mr-2">
+                      <CheckIcon />
+                    </span>
+                    {t("pricing.section4.enterprise.features.allServices")}
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* FAQs Section */}
+          <div className="mt-16">
+            <h2 className="mb-8 text-3xl font-bold text-left md:text-4xl">
+              {t("pricing.section4.faqs.title")}
+            </h2>
+            {/* General FAQs */}
+            <div className="mb-8">
+              <h3 className="mb-4 text-2xl font-bold text-gray-900">
+                {t("pricing.section4.faqs.sections.general")}
+              </h3>
+              <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+                {pricingFaqs.general.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-gray-200 last:border-b-0"
+                  >
+                    <button
+                      className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                      onClick={() => toggleFAQ(`general-${index}`)}
+                    >
+                      <span className="text-lg font-semibold text-gray-900">
+                        {t(faq.question)}
+                      </span>
+                      {openIndex === `general-${index}` ? (
+                        <Minus className="w-6 h-6 text-gray-500" />
+                      ) : (
+                        <Plus className="w-6 h-6 text-gray-500" />
+                      )}
+                    </button>
+                    {openIndex === `general-${index}` && (
+                      <div className="px-6 pb-6 text-gray-600">
+                        <p>{t(faq.answer)}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Free Plan Account FAQs */}
+            <div className="mb-8">
+              <h3 className="mb-4 text-2xl font-bold text-gray-900">
+                {t("pricing.section4.faqs.sections.freePlan")}
+              </h3>
+              <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+                {pricingFaqs.freePlan.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-gray-200 last:border-b-0"
+                  >
+                    <button
+                      className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                      onClick={() => toggleFAQ(`freePlan-${index}`)}
+                    >
+                      <span className="text-lg font-semibold text-gray-900">
+                        {t(faq.question)}
+                      </span>
+                      {openIndex === `freePlan-${index}` ? (
+                        <Minus className="w-6 h-6 text-gray-500" />
+                      ) : (
+                        <Plus className="w-6 h-6 text-gray-500" />
+                      )}
+                    </button>
+                    {openIndex === `freePlan-${index}` && (
+                      <div className="px-6 pb-6 text-gray-600">
+                        <p>{t(faq.answer)}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+            {/* Paid Plan Account FAQs */}
+            <div className="mb-8">
+              <h3 className="mb-4 text-2xl font-bold text-gray-900">
+                {t("pricing.section4.faqs.sections.paidPlan")}
+              </h3>
+              <div className="overflow-hidden bg-white shadow-lg rounded-xl">
+                {pricingFaqs.paidPlan.map((faq, index) => (
+                  <div
+                    key={index}
+                    className="border-b border-gray-200 last:border-b-0"
+                  >
+                    <button
+                      className="flex items-center justify-between w-full p-6 text-left focus:outline-none"
+                      onClick={() => toggleFAQ(`paidPlan-${index}`)}
+                    >
+                      <span className="text-lg font-semibold text-gray-900">
+                        {t(faq.question)}
+                      </span>
+                      {openIndex === `paidPlan-${index}` ? (
+                        <Minus className="w-6 h-6 text-gray-500" />
+                      ) : (
+                        <Plus className="w-6 h-6 text-gray-500" />
+                      )}
+                    </button>
+                    {openIndex === `paidPlan-${index}` && (
+                      <div className="px-6 pb-6 text-gray-600">
+                        <p>{t(faq.answer)}</p>
+                      </div>
+                    )}
+                  </div>
+                ))}
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </>
   );

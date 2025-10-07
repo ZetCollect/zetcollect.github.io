@@ -82,7 +82,8 @@ const ContactUs = () => {
         body: JSON.stringify({
           name: `${data.first_name} ${data.last_name}`,
           email: data.email_id,
-          message: `Contact Number: ${data.contact_number}\nOrganisation: ${data.organisation}\nCountry: ${data.country}\nHow did you hear: ${data.how_did_you_hear}`
+          message: `Contact Number: ${data.contact_number}\nOrganisation: ${data.organisation}\nCountry: ${data.country}\nHow did you hear: ${data.how_did_you_hear}`,
+          source: 'ZetCollect' // Added to satisfy API requirement
         }),
         signal: controller.signal
       });
@@ -121,6 +122,9 @@ const ContactUs = () => {
       // Show immediate success modal
       showModal('Thank you! Your message has been submitted successfully.', 'success');
       
+      // Store form data before reset for logging
+      const formDataToSubmit = { ...formData };
+      
       // Reset form immediately
       setFormData({
         first_name: '',
@@ -133,7 +137,7 @@ const ContactUs = () => {
       });
 
       // Background API call
-      await submitToAPI(formData);
+      await submitToAPI(formDataToSubmit);
       console.log('Form submitted successfully to API');
       
     } catch (error) {
@@ -146,8 +150,8 @@ const ContactUs = () => {
         showModal('Form submitted! There was a network issue, but we have recorded your information.', 'success');
       }
       
-      // Log the form data for debugging or manual processing
-      console.log('Form data for manual processing:', formData);
+      // eslint-disable-next-line no-undef
+      console.log('Form data for manual processing:', formDataToSubmit);
     } finally {
       setIsSubmitting(false);
     }
@@ -370,7 +374,8 @@ const ContactPage = () => {
         body: JSON.stringify({
           name: `${data.first_name} ${data.last_name}`,
           email: data.email,
-          message: `Job Title: ${data.job_title}\nWork Phone: ${data.work_phone}\nCompany: ${data.company}\nCountry: ${data.country}\nJob Level: ${data.job_level}\nFunctional Role: ${data.help_needed}\nOpt-in: ${data.opt_in ? 'Yes' : 'No'}`
+          message: `Job Title: ${data.job_title}\nWork Phone: ${data.work_phone}\nCompany: ${data.company}\nCountry: ${data.country}\nJob Level: ${data.job_level}\nFunctional Role: ${data.help_needed}\nOpt-in: ${data.opt_in ? 'Yes' : 'No'}`,
+          source: 'ZetCollect' // Added to satisfy API requirement
         }),
         signal: controller.signal
       });
@@ -409,6 +414,9 @@ const ContactPage = () => {
       // Show immediate success modal
       showModal('Thank you! Your message has been submitted successfully.', 'success');
       
+      // Store form data before reset for logging
+      const formDataToSubmit = { ...formData };
+      
       // Reset form immediately
       setFormData({
         first_name: '',
@@ -424,7 +432,7 @@ const ContactPage = () => {
       });
 
       // Background API call
-      await submitToAPI(formData);
+      await submitToAPI(formDataToSubmit);
       console.log('Form submitted successfully to API');
       
     } catch (error) {
@@ -436,9 +444,9 @@ const ContactPage = () => {
       } else {
         showModal('Form submitted! There was a network issue, but we have recorded your information.', 'success');
       }
-      
-      // Log the form data for debugging or manual processing
-      console.log('Form data for manual processing:', formData);
+
+      // eslint-disable-next-line no-undef
+      console.log('Form data for manual processing:', formDataToSubmit); // Log the original data
     } finally {
       setIsSubmitting(false);
     }

@@ -83,7 +83,7 @@ const ContactUs = () => {
           name: `${data.first_name} ${data.last_name}`,
           email: data.email_id,
           message: `Contact Number: ${data.contact_number}\nOrganisation: ${data.organisation}\nCountry: ${data.country}\nHow did you hear: ${data.how_did_you_hear}`,
-          source: 'ZetCollect' // Added to satisfy API requirement
+          source: 'ZetCollect'
         }),
         signal: controller.signal
       });

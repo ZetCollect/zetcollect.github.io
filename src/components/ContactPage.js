@@ -5,8 +5,11 @@ import { useLanguage } from '../context/LanguageContext';
 const API_CONFIG = {
   URL: "https://contact-form-handler-885787520862.europe-west1.run.app",
   TIMEOUT: 40000, // 40 seconds
-  MAX_RETRIES: 2
+  MAX_RETRIES: 3
 };
+
+// Email validation regex pattern
+const EMAIL_REGEX = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
 
 // Modal notification component
 const Modal = ({ message, type, onClose }) => {
@@ -41,16 +44,26 @@ const ContactUs = () => {
     country: '',
     how_did_you_hear: ''
   });
+  const [errors, setErrors] = useState({});
 
   const formBgColor = 'bg-secondary';
 
+  // Countries with Cameroon first, then Central African Republic, then alphabetical order
   const countries = [
     { value: 'Cameroon', label: t('contact.form.country.cameroon') },
+    { value: 'Central African Republic', label: t('contact.form.country.central_african_republic') || 'Central African Republic' },
     { value: 'Gabon', label: t('contact.form.country.gabon') },
     { value: 'Kenya', label: t('contact.form.country.kenya') },
     { value: 'Tchad', label: t('contact.form.country.tchad') },
     { value: 'Republic-Of-Congo', label: t('contact.form.country.congo') },
-  ];
+  ].sort((a, b) => {
+    // Keep Cameroon first, then Central African Republic, then sort the rest alphabetically
+    if (a.value === 'Cameroon') return -1;
+    if (b.value === 'Cameroon') return 1;
+    if (a.value === 'Central African Republic') return -1;
+    if (b.value === 'Central African Republic') return 1;
+    return a.value.localeCompare(b.value);
+  });
 
   const showModal = (message, type = 'success') => {
     setModal({ message, type });
@@ -60,12 +73,48 @@ const ContactUs = () => {
     setModal(null);
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Email validation
+    if (formData.email_id && !EMAIL_REGEX.test(formData.email_id)) {
+      newErrors.email_id = 'Please enter a valid email address';
+    }
+
+    // Phone number validation (only numbers)
+    if (formData.contact_number && !/^\d+$/.test(formData.contact_number)) {
+      newErrors.contact_number = 'Phone number should contain only numbers';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleInputChange = (e) => {
     const { id, value } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [id]: value
-    }));
+    
+    // For phone number input, only allow numbers
+    if (id === 'contact_number') {
+      // Remove any non-digit characters
+      const numbersOnly = value.replace(/\D/g, '');
+      setFormData(prev => ({
+        ...prev,
+        [id]: numbersOnly
+      }));
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [id]: value
+      }));
+    }
+
+    // Clear error when user starts typing
+    if (errors[id]) {
+      setErrors(prev => ({
+        ...prev,
+        [id]: ''
+      }));
+    }
   };
 
   const submitToAPI = async (data, retryCount = 0) => {
@@ -83,7 +132,7 @@ const ContactUs = () => {
           name: `${data.first_name} ${data.last_name}`,
           email: data.email_id,
           message: `Contact Number: ${data.contact_number}\nOrganisation: ${data.organisation}\nCountry: ${data.country}\nHow did you hear: ${data.how_did_you_hear}`,
-          source: 'ZetCollect' // Added to satisfy API requirement
+          source: 'ZetCollect'
         }),
         signal: controller.signal
       });
@@ -116,6 +165,13 @@ const ContactUs = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate form before submission
+    if (!validateForm()) {
+      showModal('Please check your form for errors.', 'error');
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -135,6 +191,9 @@ const ContactUs = () => {
         country: '',
         how_did_you_hear: ''
       });
+
+      // Clear errors
+      setErrors({});
 
       // Background API call
       await submitToAPI(formDataToSubmit);
@@ -227,9 +286,14 @@ const ContactUs = () => {
                   value={formData.email_id}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.email')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  className={`w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary ${
+                    errors.email_id ? 'border-red-500' : 'border-gray-700'
+                  }`}
                   required
                 />
+                {errors.email_id && (
+                  <p className="mt-1 text-sm text-red-300">{errors.email_id}</p>
+                )}
               </div>
 
               {/* Contact Number */}
@@ -241,9 +305,14 @@ const ContactUs = () => {
                   value={formData.contact_number}
                   onChange={handleInputChange}
                   placeholder={t('contact.form.contact_number')}
-                  className="w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border border-gray-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary"
+                  className={`w-full px-5 py-4 text-gray-900 placeholder-gray-500 bg-white border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary ${
+                    errors.contact_number ? 'border-red-500' : 'border-gray-700'
+                  }`}
                   required
                 />
+                {errors.contact_number && (
+                  <p className="mt-1 text-sm text-red-300">{errors.contact_number}</p>
+                )}
               </div>
 
               {/* Organisation */}
@@ -332,6 +401,7 @@ const ContactPage = () => {
     help_needed: '',
     opt_in: false
   });
+  const [errors, setErrors] = useState({});
 
   const gradientClasses = 'bg-secondary';
   const buttonColor = 'bg-primary';
@@ -344,6 +414,23 @@ const ContactPage = () => {
     { country: 'Gabon', name: 'Sodec', img: 'Sodec_Logo.svg' },
   ];
 
+  // Countries with Cameroon first, then Central African Republic, then alphabetical order
+  const countries = [
+    { value: 'Cameroon', label: t('contact.form.country.cameroon') },
+    { value: 'Central African Republic', label: t('contact.form.country.central_african_republic') || 'Central African Republic' },
+    { value: 'Gabon', label: t('contact.form.country.gabon') },
+    { value: 'Kenya', label: t('contact.form.country.kenya') },
+    { value: 'Tchad', label: t('contact.form.country.tchad') },
+    { value: 'Republic of Congo', label: t('contact.form.country.congo') },
+  ].sort((a, b) => {
+    // Keep Cameroon first, then Central African Republic, then sort the rest alphabetically
+    if (a.value === 'Cameroon') return -1;
+    if (b.value === 'Cameroon') return 1;
+    if (a.value === 'Central African Republic') return -1;
+    if (b.value === 'Central African Republic') return 1;
+    return a.value.localeCompare(b.value);
+  });
+
   const showModal = (message, type = 'success') => {
     setModal({ message, type });
   };
@@ -352,12 +439,48 @@ const ContactPage = () => {
     setModal(null);
   };
 
+  const validateForm = () => {
+    const newErrors = {};
+
+    // Email validation
+    if (formData.email && !EMAIL_REGEX.test(formData.email)) {
+      newErrors.email = 'Please enter a valid email address';
+    }
+
+    // Phone number validation (only numbers)
+    if (formData.work_phone && !/^\d+$/.test(formData.work_phone)) {
+      newErrors.work_phone = 'Phone number should contain only numbers';
+    }
+
+    setErrors(newErrors);
+    return Object.keys(newErrors).length === 0;
+  };
+
   const handleInputChange = (e) => {
     const { id, value, type, checked } = e.target;
-    setFormData(prev => ({
-      ...prev,
-      [id]: type === 'checkbox' ? checked : value
-    }));
+    
+    // For phone number input, only allow numbers
+    if (id === 'work_phone') {
+      // Remove any non-digit characters
+      const numbersOnly = value.replace(/\D/g, '');
+      setFormData(prev => ({
+        ...prev,
+        [id]: numbersOnly
+      }));
+    } else {
+      setFormData(prev => ({
+        ...prev,
+        [id]: type === 'checkbox' ? checked : value
+      }));
+    }
+
+    // Clear error when user starts typing
+    if (errors[id]) {
+      setErrors(prev => ({
+        ...prev,
+        [id]: ''
+      }));
+    }
   };
 
   const submitToAPI = async (data, retryCount = 0) => {
@@ -408,6 +531,13 @@ const ContactPage = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Validate form before submission
+    if (!validateForm()) {
+      showModal('Please check your form for errors.', 'error');
+      return;
+    }
+
     setIsSubmitting(true);
 
     try {
@@ -430,6 +560,9 @@ const ContactPage = () => {
         help_needed: '',
         opt_in: false
       });
+
+      // Clear errors
+      setErrors({});
 
       // Background API call
       await submitToAPI(formDataToSubmit);
@@ -518,9 +651,14 @@ const ContactPage = () => {
                     value={formData.email}
                     onChange={handleInputChange}
                     placeholder={t('contact.form.email')}
-                    className="w-full px-4 py-3 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    className={`w-full px-4 py-3 text-gray-900 placeholder-gray-500 border rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent ${
+                      errors.email ? 'border-red-500' : 'border-gray-300'
+                    }`}
                     required
                   />
+                  {errors.email && (
+                    <p className="mt-1 text-sm text-red-500">{errors.email}</p>
+                  )}
                 </div>
 
                 {/* Job title */}
@@ -546,9 +684,14 @@ const ContactPage = () => {
                     value={formData.work_phone}
                     onChange={handleInputChange}
                     placeholder={t('contact.form.contact_number')}
-                    className="w-full px-4 py-3 text-gray-900 placeholder-gray-500 border border-gray-300 rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent"
+                    className={`w-full px-4 py-3 text-gray-900 placeholder-gray-500 border rounded-lg focus:ring-2 focus:ring-secondary focus:border-transparent ${
+                      errors.work_phone ? 'border-red-500' : 'border-gray-300'
+                    }`}
                     required
                   />
+                  {errors.work_phone && (
+                    <p className="mt-1 text-sm text-red-500">{errors.work_phone}</p>
+                  )}
                 </div>
 
                 {/* Company */}
@@ -576,11 +719,11 @@ const ContactPage = () => {
                     required
                   >
                     <option value="" disabled className="text-gray-500">{t('contact.form.country')}</option>
-                    <option value="Cameroon">{t('contact.form.country.cameroon')}</option>
-                    <option value="Kenya">{t('contact.form.country.kenya')}</option>
-                    <option value="Gabon">{t('contact.form.country.gabon')}</option>
-                    <option value="Tchad">{t('contact.form.country.tchad')}</option>
-                    <option value="Republic of Congo">{t('contact.form.country.congo')}</option>
+                    {countries.map((country) => (
+                      <option key={country.value} value={country.value}>
+                        {country.label}
+                      </option>
+                    ))}
                   </select>
                 </div>
                 

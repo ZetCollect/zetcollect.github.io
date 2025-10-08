@@ -220,6 +220,7 @@ const translations = {
     "contact.form.country.gabon": "Gabon",
     "contact.form.country.tchad": "Tchad",
     "contact.form.country.congo": "Republic of Congo",
+    "contact.form.country.central_african_republic": "Central African Republic",
     "contact.form.message": "Your Message*",
     "contact.form.functional_role": "Functional Role*",
     "contact.form.functional_role.finance": "Finance and Accounting",

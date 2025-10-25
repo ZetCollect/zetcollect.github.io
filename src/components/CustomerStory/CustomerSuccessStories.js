@@ -25,7 +25,7 @@ const CustomerSuccessStories = () => {
             <div className="relative w-full max-w-lg overflow-hidden rounded-lg shadow-xl aspect-video sm:max-w-xl lg:max-w-none">
               <iframe
                 className="w-full h-full"
-                src="https://www.youtube.com/embed/_zShxJofkjU?rel=0&autoplay=0&controls=1"
+                src="https://www.youtube.com/embed/PbBwoS3TW7I?rel=0&autoplay=0&controls=1"
                 title="ZetCollect Video"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

@@ -6,7 +6,7 @@ const DemoSection = () => {
   const { t } = useLanguage();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
 
-  const youtubeVideoId = '_zShxJofkjU';
+  const youtubeVideoId = 'PbBwoS3TW7I';
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?controls=1&modestbranding=1&rel=0`;
 
   const demoPoints = [

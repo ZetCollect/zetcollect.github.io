@@ -67,6 +67,7 @@ const Footer = () => {
               <Link to="/faq-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
               <Link to="/customer-support-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
               <Link to="/training-and-certification" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
+              <Link to="/zetcollect-status" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('Status')}</Link>
             </div>
           </div>
         </div>

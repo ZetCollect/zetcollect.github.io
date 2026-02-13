@@ -164,51 +164,67 @@ function NotificationCard({ notification }) {
         style={{ background: `linear-gradient(to bottom, ${PRIMARY}, ${PRIMARY_DARK})` }}
       />
 
-      <div className="pl-8 py-7 pr-7">
-        <div className="grid items-start grid-cols-12 gap-6">
-
+      <div className="pl-6 sm:pl-8 py-6 sm:py-7 pr-5 sm:pr-7">
+        {/* Mobile: Stack layout, Desktop: Grid layout */}
+        <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-6">
+          
           {/* ── Date / Time ── */}
-          <div className="col-span-2 flex flex-col items-center justify-start pt-0.5">
-            <span
-              className="text-[13px] font-semibold uppercase mb-3 text-center"
-              style={{ letterSpacing: "0.13em", color: "#94a3b8" }}
-            >
-              {notification.date}
-            </span>
-            <span
-              className="text-[26px] font-semibold tabular-nums text-slate-800 leading-none"
-            >
-              {notification.timeStart}
-            </span>
-            <span className="text-[15px] text-slate-400 font-semibold my-2">to</span>
-            <span
-              className="text-[26px] font-semibold tabular-nums text-slate-800 leading-none"
-            >
-              {notification.timeEnd}
-            </span>
+          <div className="flex flex-row items-center justify-between mb-4 lg:mb-0 lg:flex-col lg:items-center lg:justify-start lg:col-span-2 lg:pt-0.5">
+            <div className="flex items-center lg:flex-col">
+              <span
+                className="text-[12px] sm:text-[13px] font-semibold uppercase lg:mb-3 text-center mr-3 lg:mr-0"
+                style={{ letterSpacing: "0.13em", color: "#94a3b8" }}
+              >
+                {notification.date}
+              </span>
+              <div className="flex items-center lg:flex-col">
+                <span className="text-[20px] sm:text-[26px] font-semibold tabular-nums text-slate-800 leading-none">
+                  {notification.timeStart}
+                </span>
+                <span className="text-[13px] sm:text-[15px] text-slate-400 font-semibold mx-2 lg:my-2 lg:mx-0">to</span>
+                <span className="text-[20px] sm:text-[26px] font-semibold tabular-nums text-slate-800 leading-none">
+                  {notification.timeEnd}
+                </span>
+              </div>
+            </div>
+            
+            {/* Arrow connector - visible only on desktop */}
+            <div className="hidden lg:flex items-center self-stretch justify-center lg:col-span-1 mt-3">
+              <div
+                className="flex items-center justify-center w-10 h-10 mt-1 rounded-full"
+                style={{
+                  background: PRIMARY_ALPHA_10,
+                  border: `1px solid ${PRIMARY_ALPHA_20}`,
+                }}
+              >
+                <svg viewBox="0 0 12 12" className="w-5 h-5" fill="none" stroke={PRIMARY} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M2 6h7M6.5 3.5L9 6l-2.5 2.5" />
+                </svg>
+              </div>
+            </div>
           </div>
 
-          {/* ── Arrow connector ── */}
-          <div className="flex items-center self-stretch justify-center col-span-1">
+          {/* Mobile arrow connector */}
+          <div className="flex lg:hidden items-center justify-center mb-4">
             <div
-              className="flex items-center justify-center w-10 h-10 mt-1 rounded-full"
+              className="flex items-center justify-center w-8 h-8 rounded-full"
               style={{
                 background: PRIMARY_ALPHA_10,
                 border: `1px solid ${PRIMARY_ALPHA_20}`,
               }}
             >
-              <svg viewBox="0 0 12 12" className="w-5 h-5" fill="none" stroke={PRIMARY} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg viewBox="0 0 12 12" className="w-4 h-4" fill="none" stroke={PRIMARY} strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M2 6h7M6.5 3.5L9 6l-2.5 2.5" />
               </svg>
             </div>
           </div>
 
           {/* ── Main Content ── */}
-          <div className="col-span-6">
+          <div className="lg:col-span-6 mb-4 lg:mb-0">
             {/* Status badge + platform chip */}
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <span
-                className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full text-[14px] font-semibold border"
+                className="inline-flex items-center gap-2 px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[12px] sm:text-[14px] font-semibold border"
                 style={{
                   background: PRIMARY_ALPHA_10,
                   color: PRIMARY,
@@ -216,19 +232,19 @@ function NotificationCard({ notification }) {
                 }}
               >
                 <span
-                  className="flex-shrink-0 w-2 h-2 rounded-full"
+                  className="flex-shrink-0 w-1.5 h-1.5 sm:w-2 sm:h-2 rounded-full"
                   style={{ background: PRIMARY }}
                 />
                 {config.label}
               </span>
-              <span className="inline-flex items-center px-4 py-1.5 rounded-full text-[14px] font-semibold bg-slate-100 text-slate-500 border border-slate-200">
+              <span className="inline-flex items-center px-3 sm:px-4 py-1 sm:py-1.5 rounded-full text-[12px] sm:text-[14px] font-semibold bg-slate-100 text-slate-500 border border-slate-200">
                 {notification.platform}
               </span>
             </div>
 
             {/* Title */}
             <h3
-              className="text-[20px] font-semibold text-slate-800 leading-snug mb-4 transition-colors duration-200"
+              className="text-[18px] sm:text-[20px] font-semibold text-slate-800 leading-snug mb-3 sm:mb-4 transition-colors duration-200"
               style={{ letterSpacing: "-0.01em" }}
               ref={el => {
                 if (el) {
@@ -241,11 +257,11 @@ function NotificationCard({ notification }) {
             </h3>
 
             {/* Details link */}
-            <div className="flex items-center gap-2">
-              <span className="text-[15px] font-semibold text-slate-600">For details, see</span>
+            <div className="flex flex-wrap items-center gap-1.5 sm:gap-2">
+              <span className="text-[13px] sm:text-[15px] font-semibold text-slate-600">For details, see</span>
               <a
                 href={notification.detailsUrl}
-                className="inline-flex items-center gap-1.5 text-[15px] font-semibold transition-colors duration-200"
+                className="inline-flex items-center gap-1 text-[13px] sm:text-[15px] font-semibold transition-colors duration-200"
                 style={{ color: linkHover ? PRIMARY_DARK : PRIMARY }}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -254,7 +270,7 @@ function NotificationCard({ notification }) {
               >
                 release notes
                 <ExternalLink
-                  className="w-4 h-4 transition-transform duration-150 opacity-80"
+                  className="w-3.5 h-3.5 sm:w-4 sm:h-4 transition-transform duration-150 opacity-80"
                   style={{ transform: linkHover ? "translate(1px,-1px)" : "translate(0,0)" }}
                 />
               </a>
@@ -262,15 +278,15 @@ function NotificationCard({ notification }) {
           </div>
 
           {/* ── Description ── */}
-          <div className="flex self-stretch col-span-3">
+          <div className="lg:col-span-3 mt-2 lg:mt-0">
             <div
-              className="flex-1 p-5 rounded-xl"
+              className="p-4 sm:p-5 rounded-xl"
               style={{
                 background: "#f8fafb",
                 border: "1px solid #eaf3ef",
               }}
             >
-              <p className="text-[15px] text-slate-600 leading-relaxed font-semibold">
+              <p className="text-[13px] sm:text-[15px] text-slate-600 leading-relaxed font-semibold">
                 {notification.description}
               </p>
             </div>
@@ -329,14 +345,14 @@ export default function UpcomingMaintenance() {
       `}</style>
 
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
-        <div className="py-12">
+        <div className="py-8 sm:py-12">
           {/* ── Top bar ── */}
-          <div className="flex items-center justify-between mb-12">
+          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12">
             {/* Service dropdown */}
-            <div className="relative">
+            <div className="relative w-full sm:w-auto">
               <button
                 onClick={() => setDropdownOpen(!dropdownOpen)}
-                className="flex items-center gap-3 px-6 py-3.5 bg-white border rounded-2xl text-[16px] font-semibold text-slate-700 transition-all focus:outline-none"
+                className="flex items-center justify-between w-full sm:w-auto gap-2 sm:gap-3 px-4 sm:px-6 py-3 sm:py-3.5 bg-white border rounded-2xl text-[14px] sm:text-[16px] font-semibold text-slate-700 transition-all focus:outline-none"
                 style={{
                   borderColor: dropdownOpen ? PRIMARY : "#e2e8f0",
                   boxShadow: dropdownOpen
@@ -345,28 +361,28 @@ export default function UpcomingMaintenance() {
                 }}
               >
                 <Bell
-                  className="w-5 h-5"
+                  className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
                   style={{ color: dropdownOpen ? PRIMARY : "#94a3b8" }}
                 />
-                <span>{selectedService}</span>
+                <span className="truncate max-w-[180px] sm:max-w-none">{selectedService}</span>
                 <ChevronDown
-                  className={`w-5 h-5 text-slate-400 transition-transform duration-200 ${dropdownOpen ? "rotate-180" : ""}`}
+                  className={`w-4 h-4 sm:w-5 sm:h-5 text-slate-400 transition-transform duration-200 flex-shrink-0 ${dropdownOpen ? "rotate-180" : ""}`}
                 />
               </button>
 
               {dropdownOpen && (
                 <div
-                  className="absolute left-0 z-30 w-64 mt-2 overflow-hidden bg-white border dropdown-panel top-full border-slate-200 rounded-2xl"
+                  className="absolute left-0 z-30 w-full sm:w-64 mt-2 overflow-hidden bg-white border dropdown-panel top-full border-slate-200 rounded-2xl"
                   style={{ boxShadow: "0 12px 32px rgba(0,0,0,0.11)" }}
                 >
-                  <div className="py-2">
+                  <div className="py-2 max-h-[320px] overflow-y-auto">
                     {services.map((s) => {
                       const isActive = selectedService === s;
                       return (
                         <button
                           key={s}
                           onClick={() => { setSelectedService(s); setDropdownOpen(false); }}
-                          className="w-full text-left px-5 py-3 text-[15px] flex items-center gap-3 transition-colors"
+                          className="w-full text-left px-4 sm:px-5 py-2.5 sm:py-3 text-[14px] sm:text-[15px] flex items-center gap-2 sm:gap-3 transition-colors"
                           style={{
                             background: isActive ? PRIMARY_ALPHA_10 : "transparent",
                             color: isActive ? PRIMARY : "#475569",
@@ -382,7 +398,7 @@ export default function UpcomingMaintenance() {
                               border: isActive ? "none" : "1.5px solid #cbd5e1",
                             }}
                           />
-                          {s}
+                          <span className="truncate">{s}</span>
                         </button>
                       );
                     })}
@@ -393,7 +409,7 @@ export default function UpcomingMaintenance() {
 
             {/* Notification count */}
             <div
-              className="flex items-center gap-2.5 px-5 py-3 rounded-full text-[15px] font-semibold"
+              className="flex items-center self-start sm:self-auto justify-center sm:justify-start gap-2 sm:gap-2.5 px-4 sm:px-5 py-2 sm:py-3 rounded-full text-[13px] sm:text-[15px] font-semibold w-full sm:w-auto"
               style={{
                 background: PRIMARY_ALPHA_10,
                 color: PRIMARY,
@@ -401,7 +417,7 @@ export default function UpcomingMaintenance() {
               }}
             >
               <span
-                className="flex-shrink-0 w-2.5 h-2.5 rounded-full"
+                className="flex-shrink-0 w-2 h-2 sm:w-2.5 sm:h-2.5 rounded-full"
                 style={{ background: PRIMARY }}
               />
               {filtered.length} release{filtered.length !== 1 ? "s" : ""} scheduled
@@ -409,9 +425,9 @@ export default function UpcomingMaintenance() {
           </div>
 
           {/* ── Month heading ── */}
-          <div className="flex items-center gap-5 mb-8">
+          <div className="flex items-center gap-3 sm:gap-5 mb-6 sm:mb-8">
             <h2
-              className="text-[30px] font-semibold text-slate-700 whitespace-nowrap"
+              className="text-[24px] sm:text-[30px] font-semibold text-slate-700 whitespace-nowrap"
               style={{ letterSpacing: "-0.025em" }}
             >
               Mar 2026
@@ -423,7 +439,7 @@ export default function UpcomingMaintenance() {
           </div>
 
           {/* ── Cards ── */}
-          <div className="flex flex-col gap-5">
+          <div className="flex flex-col gap-4 sm:gap-5">
             {filtered.map((n, i) => (
               <div
                 key={n.id}
@@ -435,18 +451,18 @@ export default function UpcomingMaintenance() {
             ))}
 
             {filtered.length === 0 && (
-              <div className="flex flex-col items-center justify-center py-28 text-slate-400">
+              <div className="flex flex-col items-center justify-center py-16 sm:py-28 px-4 text-slate-400">
                 <div
-                  className="flex items-center justify-center w-20 h-20 mb-5 rounded-2xl"
+                  className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 mb-4 sm:mb-5 rounded-2xl"
                   style={{ background: PRIMARY_ALPHA_10 }}
                 >
                   <Bell
-                    className="w-10 h-10"
+                    className="w-8 h-8 sm:w-10 sm:h-10"
                     style={{ color: PRIMARY, opacity: 0.5 }}
                   />
                 </div>
-                <p className="text-[18px] font-semibold text-slate-500">No releases scheduled for this feature</p>
-                <p className="text-[16px] text-slate-400 mt-2">Try selecting a different service from the dropdown</p>
+                <p className="text-[16px] sm:text-[18px] font-semibold text-slate-500 text-center">No releases scheduled for this feature</p>
+                <p className="text-[14px] sm:text-[16px] text-slate-400 mt-1 sm:mt-2 text-center">Try selecting a different service from the dropdown</p>
               </div>
             )}
           </div>

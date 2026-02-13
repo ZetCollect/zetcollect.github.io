@@ -3,18 +3,6 @@ import PropTypes from "prop-types";
 
 const notifications = [
   {
-    id: 1,
-    date: "Mar 15, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "GPS Traceability 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "GPS Traceability 1.0.0 is being released into production. This initial release enables real-time vehicle tracking, route history, and geofencing capabilities for fleet management.",
-    status: "scheduled",
-    platform: "GPS Traceability",
-  },
-  {
     id: 2,
     date: "Mar 15, 2026",
     timeStart: "00:00 GMT",
@@ -25,18 +13,6 @@ const notifications = [
       "Missed Collection Alerts 1.0.0 is being released into production. This feature automatically detects and notifies supervisors when scheduled collections are not completed.",
     status: "scheduled",
     platform: "Missed Collection Alerts",
-  },
-  {
-    id: 3,
-    date: "Mar 15, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Client Risk Profile & Rating 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Client Risk Profile & Rating 1.0.0 is being released into production. This feature provides automated credit scoring, risk assessment, and client rating based on payment history.",
-    status: "scheduled",
-    platform: "Client Risk Profile & Rating",
   },
   {
     id: 4,
@@ -63,8 +39,32 @@ const notifications = [
     platform: "Client Self Portal",
   },
   {
+    id: 1,
+    date: "Mar 29, 2026",
+    timeStart: "00:00 GMT",
+    timeEnd: "04:00 GMT",
+    title: "GPS Traceability 1.0.0 Release Notification",
+    detailsUrl: "#",
+    description:
+      "GPS Traceability 1.0.0 is being released into production. This initial release enables real-time vehicle tracking, route history, and geofencing capabilities for fleet management.",
+    status: "scheduled",
+    platform: "GPS Traceability",
+  },
+  {
+    id: 3,
+    date: "Mar 29, 2026",
+    timeStart: "00:00 GMT",
+    timeEnd: "04:00 GMT",
+    title: "Client Risk Profile & Rating 1.0.0 Release Notification",
+    detailsUrl: "#",
+    description:
+      "Client Risk Profile & Rating 1.0.0 is being released into production. This feature provides automated credit scoring, risk assessment, and client rating based on payment history.",
+    status: "scheduled",
+    platform: "Client Risk Profile & Rating",
+  },
+  {
     id: 6,
-    date: "Mar 15, 2026",
+    date: "Mar 29, 2026",
     timeStart: "00:00 GMT",
     timeEnd: "04:00 GMT",
     title: "New Currency System (CDF) 1.0.0 Release Notification",
@@ -76,7 +76,7 @@ const notifications = [
   },
   {
     id: 7,
-    date: "Mar 15, 2026",
+    date: "Mar 29, 2026",
     timeStart: "00:00 GMT",
     timeEnd: "04:00 GMT",
     title: "Mobile Money 1.0.0 Release Notification",
@@ -315,7 +315,23 @@ export default function UpcomingMaintenance() {
   const [selectedService, setSelectedService] = useState("All Services");
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
-  const filtered = notifications.filter(
+  // Sort notifications by date (earliest first) and then by platform name
+  const sortedNotifications = [...notifications].sort((a, b) => {
+    // Extract day numbers for comparison
+    const getDay = (dateStr) => parseInt(dateStr.split(' ')[1]);
+    const dayA = getDay(a.date);
+    const dayB = getDay(b.date);
+    
+    // Sort by date first (ascending - earlier dates first)
+    if (dayA !== dayB) {
+      return dayA - dayB;
+    }
+    
+    // If same date, sort alphabetically by platform
+    return a.platform.localeCompare(b.platform);
+  });
+
+  const filtered = sortedNotifications.filter(
     (n) => selectedService === "All Services" || n.platform === selectedService
   );
 

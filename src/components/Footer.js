@@ -67,7 +67,14 @@ const Footer = () => {
               <Link to="/faq-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
               <Link to="/customer-support-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
               <Link to="/training-and-certification" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
-              <Link to="/zetcollect-status" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('Status')}</Link>
+              <Link to="/zetcollect-status" className="inline-flex items-center font-semibold text-base text-gray-700 transition duration-200 hover:text-primary">
+                <span>{t('Status ')}</span>
+                <div className="inline-flex ml-1.5 animate-pulse text-green-600">
+                  <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z"/>
+                  </svg>
+                </div>
+              </Link>
             </div>
           </div>
         </div>

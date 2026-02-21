@@ -1,103 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PropTypes from "prop-types";
-
-const notifications = [
-  {
-    id: 2,
-    date: "Mar 15, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Missed Collection Alerts 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Missed Collection Alerts 1.0.0 is being released into production. This feature automatically detects and notifies supervisors when scheduled collections are not completed.",
-    status: "scheduled",
-    platform: "Missed Collection Alerts",
-  },
-  {
-    id: 4,
-    date: "Mar 15, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Route & Schedule Optimization 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Route & Schedule Optimization 1.0.0 is being released into production. This feature uses AI algorithms to optimize collection routes and schedule assignments for maximum efficiency.",
-    status: "scheduled",
-    platform: "Route & Schedule Optimization",
-  },
-  {
-    id: 5,
-    date: "Mar 15, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Client Self Portal 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Client Self Portal 1.0.0 is being released into production. This portal allows clients to view their transaction history, make payments, and update personal information online.",
-    status: "scheduled",
-    platform: "Client Self Portal",
-  },
-  {
-    id: 1,
-    date: "Mar 29, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "GPS Traceability 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "GPS Traceability 1.0.0 is being released into production. This initial release enables real-time vehicle tracking, route history, and geofencing capabilities for fleet management.",
-    status: "scheduled",
-    platform: "GPS Traceability",
-  },
-  {
-    id: 3,
-    date: "Mar 29, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Client Risk Profile & Rating 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Client Risk Profile & Rating 1.0.0 is being released into production. This feature provides automated credit scoring, risk assessment, and client rating based on payment history.",
-    status: "scheduled",
-    platform: "Client Risk Profile & Rating",
-  },
-  {
-    id: 6,
-    date: "Mar 29, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "New Currency System (CDF) 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "New Currency System (CDF) 1.0.0 is being released into production. This update adds support for Congolese Franc (CDF) as a native currency option for all transactions.",
-    status: "scheduled",
-    platform: "New Currency System (CDF)",
-  },
-  {
-    id: 7,
-    date: "Mar 29, 2026",
-    timeStart: "00:00 GMT",
-    timeEnd: "04:00 GMT",
-    title: "Mobile Money 1.0.0 Release Notification",
-    detailsUrl: "#",
-    description:
-      "Mobile Money 1.0.0 is being released into production. This integration enables mobile money payments through M-PESA, Airtel Money, and other popular mobile payment platforms.",
-    status: "scheduled",
-    platform: "Mobile Money",
-  },
-];
-
-const services = [
-  "All Services",
-  "GPS Traceability",
-  "Missed Collection Alerts",
-  "Client Risk Profile & Rating",
-  "Route & Schedule Optimization",
-  "Client Self Portal",
-  "New Currency System (CDF)",
-  "Mobile Money",
-];
+import zetcollectData from '../../data/Zetcollect_status.json';
 
 const statusConfig = {
   scheduled: { label: "Scheduled" },
@@ -164,7 +67,7 @@ function NotificationCard({ notification }) {
         style={{ background: `linear-gradient(to bottom, ${PRIMARY}, ${PRIMARY_DARK})` }}
       />
 
-      <div className="pl-6 sm:pl-8 py-6 sm:py-7 pr-5 sm:pr-7">
+      <div className="py-6 pl-6 pr-5 sm:pl-8 sm:py-7 sm:pr-7">
         {/* Mobile: Stack layout, Desktop: Grid layout */}
         <div className="flex flex-col lg:grid lg:grid-cols-12 lg:gap-6">
           
@@ -189,7 +92,7 @@ function NotificationCard({ notification }) {
             </div>
             
             {/* Arrow connector - visible only on desktop */}
-            <div className="hidden lg:flex items-center self-stretch justify-center lg:col-span-1 mt-3">
+            <div className="items-center self-stretch justify-center hidden mt-3 lg:flex lg:col-span-1">
               <div
                 className="flex items-center justify-center w-10 h-10 mt-1 rounded-full"
                 style={{
@@ -205,7 +108,7 @@ function NotificationCard({ notification }) {
           </div>
 
           {/* Mobile arrow connector */}
-          <div className="flex lg:hidden items-center justify-center mb-4">
+          <div className="flex items-center justify-center mb-4 lg:hidden">
             <div
               className="flex items-center justify-center w-8 h-8 rounded-full"
               style={{
@@ -220,7 +123,7 @@ function NotificationCard({ notification }) {
           </div>
 
           {/* ── Main Content ── */}
-          <div className="lg:col-span-6 mb-4 lg:mb-0">
+          <div className="mb-4 lg:col-span-6 lg:mb-0">
             {/* Status badge + platform chip */}
             <div className="flex flex-wrap items-center gap-2 mb-3">
               <span
@@ -278,7 +181,7 @@ function NotificationCard({ notification }) {
           </div>
 
           {/* ── Description ── */}
-          <div className="lg:col-span-3 mt-2 lg:mt-0">
+          <div className="mt-2 lg:col-span-3 lg:mt-0">
             <div
               className="p-4 sm:p-5 rounded-xl"
               style={{
@@ -314,6 +217,25 @@ NotificationCard.propTypes = {
 export default function UpcomingMaintenance() {
   const [selectedService, setSelectedService] = useState("All Services");
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [notifications, setNotifications] = useState([]);
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    // Load data from JSON
+    try {
+      setNotifications(zetcollectData.maintenanceNotifications || []);
+      
+      // Extract service names from upcoming features
+      const serviceNames = (zetcollectData.upcomingFeatures || []).map(f => f.service);
+      setServices(["All Services", ...serviceNames]);
+      
+      setLoading(false);
+    } catch (error) {
+      console.error("Error loading notifications data:", error);
+      setLoading(false);
+    }
+  }, []);
 
   // Sort notifications by date (earliest first) and then by platform name
   const sortedNotifications = [...notifications].sort((a, b) => {
@@ -334,6 +256,14 @@ export default function UpcomingMaintenance() {
   const filtered = sortedNotifications.filter(
     (n) => selectedService === "All Services" || n.platform === selectedService
   );
+
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-slate-50">
+        <div className="text-slate-400">Loading release notifications...</div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -363,7 +293,7 @@ export default function UpcomingMaintenance() {
       <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
         <div className="py-8 sm:py-12">
           {/* ── Top bar ── */}
-          <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 mb-8 sm:mb-12">
+          <div className="flex flex-col gap-4 mb-8 sm:flex-row sm:items-center sm:justify-between sm:mb-12">
             {/* Service dropdown */}
             <div className="relative w-full sm:w-auto">
               <button
@@ -377,7 +307,7 @@ export default function UpcomingMaintenance() {
                 }}
               >
                 <Bell
-                  className="w-4 h-4 sm:w-5 sm:h-5 flex-shrink-0"
+                  className="flex-shrink-0 w-4 h-4 sm:w-5 sm:h-5"
                   style={{ color: dropdownOpen ? PRIMARY : "#94a3b8" }}
                 />
                 <span className="truncate max-w-[180px] sm:max-w-none">{selectedService}</span>
@@ -388,7 +318,7 @@ export default function UpcomingMaintenance() {
 
               {dropdownOpen && (
                 <div
-                  className="absolute left-0 z-30 w-full sm:w-64 mt-2 overflow-hidden bg-white border dropdown-panel top-full border-slate-200 rounded-2xl"
+                  className="absolute left-0 z-30 w-full mt-2 overflow-hidden bg-white border sm:w-64 dropdown-panel top-full border-slate-200 rounded-2xl"
                   style={{ boxShadow: "0 12px 32px rgba(0,0,0,0.11)" }}
                 >
                   <div className="py-2 max-h-[320px] overflow-y-auto">
@@ -441,7 +371,7 @@ export default function UpcomingMaintenance() {
           </div>
 
           {/* ── Month heading ── */}
-          <div className="flex items-center gap-3 sm:gap-5 mb-6 sm:mb-8">
+          <div className="flex items-center gap-3 mb-6 sm:gap-5 sm:mb-8">
             <h2
               className="text-[24px] sm:text-[30px] font-semibold text-slate-700 whitespace-nowrap"
               style={{ letterSpacing: "-0.025em" }}
@@ -467,9 +397,9 @@ export default function UpcomingMaintenance() {
             ))}
 
             {filtered.length === 0 && (
-              <div className="flex flex-col items-center justify-center py-16 sm:py-28 px-4 text-slate-400">
+              <div className="flex flex-col items-center justify-center px-4 py-16 sm:py-28 text-slate-400">
                 <div
-                  className="flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 mb-4 sm:mb-5 rounded-2xl"
+                  className="flex items-center justify-center w-16 h-16 mb-4 sm:w-20 sm:h-20 sm:mb-5 rounded-2xl"
                   style={{ background: PRIMARY_ALPHA_10 }}
                 >
                   <Bell

@@ -1,0 +1,182 @@
+{
+  "currentServices": [
+    {
+      "service": "Client Management",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Collector Management",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Branch Setup",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Mobile Collection",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Booklet System",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Transaction History",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "Reports & Analytics",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "User Access & Roles",
+      "status": "Operational",
+      "reason": "All systems operational"
+    },
+    {
+      "service": "SMS Notifications",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Daily Synchronization",
+      "status": "Operational",
+      "reason": "All systems operational"
+    }
+  ],
+  "upcomingFeatures": [
+    {
+      "service": "GPS Traceability",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Missed Collection Alerts",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Client Risk Profile & Rating",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Route & Schedule Optimization",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Client Self Portal",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "New Currency System (CDF)",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    },
+    {
+      "service": "Mobile Money",
+      "status": "Under Maintenance",
+      "reason": "System under maintenance"
+    }
+  ],
+  "maintenanceNotifications": [
+    {
+      "id": 2,
+      "date": "Mar 15, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "Missed Collection Alerts 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "Missed Collection Alerts 1.0.0 is being released into production. This feature automatically detects and notifies supervisors when scheduled collections are not completed.",
+      "status": "scheduled",
+      "platform": "Missed Collection Alerts"
+    },
+    {
+      "id": 4,
+      "date": "Mar 15, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "Route & Schedule Optimization 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "Route & Schedule Optimization 1.0.0 is being released into production. This feature uses AI algorithms to optimize collection routes and schedule assignments for maximum efficiency.",
+      "status": "scheduled",
+      "platform": "Route & Schedule Optimization"
+    },
+    {
+      "id": 5,
+      "date": "Mar 15, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "Client Self Portal 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "Client Self Portal 1.0.0 is being released into production. This portal allows clients to view their transaction history, make payments, and update personal information online.",
+      "status": "scheduled",
+      "platform": "Client Self Portal"
+    },
+    {
+      "id": 1,
+      "date": "Mar 29, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "GPS Traceability 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "GPS Traceability 1.0.0 is being released into production. This initial release enables real-time vehicle tracking, route history, and geofencing capabilities for fleet management.",
+      "status": "scheduled",
+      "platform": "GPS Traceability"
+    },
+    {
+      "id": 3,
+      "date": "Mar 29, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "Client Risk Profile & Rating 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "Client Risk Profile & Rating 1.0.0 is being released into production. This feature provides automated credit scoring, risk assessment, and client rating based on payment history.",
+      "status": "scheduled",
+      "platform": "Client Risk Profile & Rating"
+    },
+    {
+      "id": 6,
+      "date": "Mar 29, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "New Currency System (CDF) 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "New Currency System (CDF) 1.0.0 is being released into production. This update adds support for Congolese Franc (CDF) as a native currency option for all transactions.",
+      "status": "scheduled",
+      "platform": "New Currency System (CDF)"
+    },
+    {
+      "id": 7,
+      "date": "Mar 29, 2026",
+      "timeStart": "00:00 GMT",
+      "timeEnd": "04:00 GMT",
+      "title": "Mobile Money 1.0.0 Release Notification",
+      "detailsUrl": "#",
+      "description": "Mobile Money 1.0.0 is being released into production. This integration enables mobile money payments through M-PESA, Airtel Money, and other popular mobile payment platforms.",
+      "status": "scheduled",
+      "platform": "Mobile Money"
+    }
+  ],
+  "metadata": {
+    "totalCurrentServices": 10,
+    "operationalCurrentServices": 9,
+    "maintenanceCurrentServices": 1,
+    "totalUpcomingFeatures": 7,
+    "maintenanceUpcomingFeatures": 7,
+    "totalNotifications": 7,
+    "releaseDates": {
+      "mar15": 3,
+      "mar29": 4
+    }
+  }
+}

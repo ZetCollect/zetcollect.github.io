@@ -67,7 +67,7 @@ const Footer = () => {
               <Link to="/faq-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.faq')}</Link>
               <Link to="/customer-support-page" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('support.title')}</Link>
               <Link to="/training-and-certification" className="text-base text-gray-700 transition duration-200 hover:text-primary">{t('footer.training_certification')}</Link>
-              <Link to="/zetcollect-status" className="inline-flex items-center font-semibold text-base text-gray-700 transition duration-200 hover:text-primary">
+              <Link to="/zetcollect-status" className="inline-flex items-center text-base font-semibold text-gray-700 transition duration-200 hover:text-primary">
                 <span>{t('Status ')}</span>
                 <div className="inline-flex ml-1.5 animate-pulse text-green-600">
                   <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">

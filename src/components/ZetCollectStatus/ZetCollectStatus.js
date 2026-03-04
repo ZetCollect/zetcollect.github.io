@@ -1,10 +1,47 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { CheckCircle, Settings, AlertTriangle, XCircle } from 'lucide-react';
-import statusData from '../../data/Zetcollect_status.json';
 
 const Status = () => {
-  const [currentServices] = useState(statusData.currentServices);
-  const [upcomingFeatures] = useState(statusData.upcomingFeatures);
+  const [currentServices, setCurrentServices] = useState([]);
+  const [upcomingFeatures, setUpcomingFeatures] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  const [lastUpdated, setLastUpdated] = useState(new Date());
+
+  const fetchStatusData = async () => {
+    try {
+      setLoading(true);
+      setError(null);
+      
+      const response = await fetch('https://raw.githubusercontent.com/IZSoftware/product-status/refs/heads/main/Zetcollect_status.json');
+      
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      
+      const data = await response.json();
+      
+      setCurrentServices(data.currentServices || []);
+      setUpcomingFeatures(data.upcomingFeatures || []);
+      setLastUpdated(new Date());
+      
+    } catch (err) {
+      console.error('Error fetching status data:', err);
+      setError(err.message || 'Failed to fetch status data');
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchStatusData();
+    
+    // Optional: Set up periodic refresh (every 5 minutes)
+    const intervalId = setInterval(fetchStatusData, 5 * 60 * 1000);
+    
+    // Cleanup interval on component unmount
+    return () => clearInterval(intervalId);
+  }, []);
 
   const getStatusIcon = (status) => {
     switch(status) {
@@ -28,6 +65,40 @@ const Status = () => {
   // Calculate maintenance count for upcoming features
   const maintenanceCount = upcomingFeatures.filter(item => item.status === 'Under Maintenance').length;
   const upcomingTotalCount = upcomingFeatures.length;
+
+  // Loading state
+  if (loading) {
+    return (
+      <div className="flex items-center justify-center min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="text-center">
+          <div className="inline-block w-8 h-8 border-4 border-green-500 border-solid rounded-full animate-spin border-r-transparent"></div>
+          <p className="mt-4 text-gray-600">Loading status data...</p>
+        </div>
+      </div>
+    );
+  }
+
+  // Error state
+  if (error) {
+    return (
+      <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100">
+        <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
+          <div className="py-8 sm:py-12">
+            <div className="p-6 border border-red-200 rounded-lg bg-red-50">
+              <h3 className="mb-2 text-lg font-semibold text-red-800">Error Loading Data</h3>
+              <p className="mb-4 text-red-600">{error}</p>
+              <button 
+                onClick={fetchStatusData}
+                className="px-4 py-2 text-white transition-colors bg-red-600 rounded hover:bg-red-700"
+              >
+                Retry
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div className="min-h-screen overflow-hidden bg-gradient-to-br from-gray-50 to-gray-100">
@@ -60,7 +131,7 @@ const Status = () => {
             <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
               <div>
                 <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">Current Status</h2>
-                <p className="mt-1 text-sm text-gray-600 sm:text-lg">Last updated: {new Date().toLocaleString()}</p>
+                <p className="mt-1 text-sm text-gray-600 sm:text-lg">Last updated: {lastUpdated.toLocaleString()}</p>
               </div>
               <div className="flex items-center self-start gap-2 px-4 py-2 rounded-full sm:gap-3 sm:px-6 sm:py-3 sm:self-auto" style={{ backgroundColor: '#e8f5e9' }}>
                 <CheckCircle className="w-5 h-5 sm:w-6 sm:h-6" style={{ color: '#3d9970' }} strokeWidth={1.5} />

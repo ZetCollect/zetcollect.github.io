@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Footer from "../components/Footer";
 import { useLanguage } from "../context/LanguageContext";
 import { Plus, Minus } from "lucide-react";
 import compareFeatures from "../data/compareFeatures.json";
@@ -642,8 +641,6 @@ const Pricing = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </>
   );
 };

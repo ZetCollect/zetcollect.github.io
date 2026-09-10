@@ -28,6 +28,7 @@ import CustomerSuccessStories from './components/CustomerStory/CustomerSuccessSt
 import SecurityCoursePage from './components/Training/SecurityCoursePage';
 import ZetCollectStatus from './components/ZetCollectStatus/ZetCollectStatus';
 import StatusMaintainance from './components/ZetCollectStatus/StatusMaintainance';
+import ZetCollectBanner from './components/ZetCollectBanner';
 import Error404 from './components/Error404';
 
 // Component to handle scrolling for section routes
@@ -42,14 +43,15 @@ const HomeWithScroll = ({ sectionId }) => {
   }, [sectionId, location]);
 
   return (
-    <>
-      <Hero id="hero" />
-      <KeyFeatures id="features" />
-      <WhyZetCollectSection id="why-zetcollect" />
-      <DemoSection id="demo" />
-      <UpcomingFeaturesSection id="upcoming" />
-      <ContactUs id="contactUs" />
-    </>
+<>
+  <Hero id="hero" />
+  <KeyFeatures id="features" />
+  <ZetCollectBanner />
+  <WhyZetCollectSection id="why-zetcollect" />
+  <DemoSection id="demo" />
+  <UpcomingFeaturesSection id="upcoming" />
+  <ContactUs id="contactUs" />
+</>
   );
 };
 

@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
 import { Play, Download, CheckCircle } from 'lucide-react';
 import { useLanguage } from '../context/LanguageContext';
+import RequestDemoModal from './RequestDemoModal';
 
 const DemoSection = () => {
   const { t } = useLanguage();
   const [isVideoPlaying, setIsVideoPlaying] = useState(false);
+  const [isDemoModalOpen, setIsDemoModalOpen] = useState(false);
 
   const youtubeVideoId = 'PbBwoS3TW7I';
   const youtubeEmbedUrl = `https://www.youtube.com/embed/${youtubeVideoId}?controls=1&modestbranding=1&rel=0`;
@@ -99,13 +101,20 @@ const DemoSection = () => {
 
             {/* Request Full Demo Button */}
             <div className="mt-6">
-              <button className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white transition-all duration-200 rounded-lg shadow-lg bg-primary hover:bg-primary/80 hover:shadow-xl">
+              <button
+                onClick={() => setIsDemoModalOpen(true)}
+                className="inline-flex items-center justify-center px-6 py-3 font-semibold text-white transition-all duration-200 rounded-lg shadow-lg bg-primary hover:bg-primary/80 hover:shadow-xl"
+              >
                 {t('demo.cta')}
               </button>
             </div>
           </div>
         </div>
       </div>
+
+      {isDemoModalOpen && (
+        <RequestDemoModal onClose={() => setIsDemoModalOpen(false)} />
+      )}
     </section>
   );
 };
